@@ -1,0 +1,131 @@
+% -*- root: diplomarbeit.tex -*-
+\section {Verwandte Themen (Verwandte Arbeiten?) }
+Arbeiten, die sich speziell mit dem Tracken von Quadro- oder Hexakopter beschäftigen, gibt es derzeit kaum. Im folgenden Abschnitt werden deshalb prinzipielle Tracking und Detection-Ansätze sowie verschiedene Machine Learning-Methoden vorgestellt. Ein strikte Trennung von Tracking und Detection ist im Übrigen kaum möglich, das aktuelle Algorithmen meist eine Kombination darstellen. Prinzipiell ist in jedem Ansatz auch eine Objektrepräsentation vorhanden, die mittels maschinellem Lernen online beziehnungsweise offline vorbereitet und gelernt werden muss.
+
+\subsection{Object Tracking}
+Object-Tracking ist, allgemein gesprochen, das Verfolgen von bewegten Objekten in einer Bildsequenz über die Zeit mittels Bewegungsschätzung. Es gibt verschiene Arten der Objektrepräsentation und Trackingmethoden, die in den letzten Jahren entwickelt wurden. Sie unterscheiden sich zum einen in der Repräsentaiton des Objekts, mittels Konturen, Punkte, Modelle oder optischem Fluss, als auch in der Schätzmethode. Ein verbreiteter und auch in TLD genutzter Ansatz ist das Frame-to-Frame Tracking, bei dem die Position des Objekts im Bild aufgrund der Daten des Vorgängerbildes geschätzt wird. Die genutzten Verfahren sind vielfältig und unterscheiden sich hinsichtlich Objektrepräsentaiton und Methodik.
+
+Beim Template-Tracking \cite{OPT}\cite{GFT}\cite{KBT} wird ein Objekt als Template (Histogramm oder Patch) erfasst und die Bewegung (Motion) ist als Änderung mit dem kleinesten Missmatch zum Kandidaten für das gesuchte Template definiert. Je nach Realisierung ist das Template statisch\cite{KBT} oder flexibel \cite{OPT}\cite{GFT}, es kann sich also während des Trackens ändern. Es gibt auch Ansätze, die eine Mischung aus beidem implementieren \cite{TUP}\cite{SMAT}\cite{RDT} oder auch nur Teile des Templates nutzen \cite{ROAM}\cite{RFT}.
+
+Um dem Nachteil der eingeschränkten Modellierung durch Templates zu begegnen, wurden weitere Repräsentationen für die Objekte entwickelt, beispielsweise die generative Modellierung. Die Idee hierbei ist, das Objekt mittels Parameter und Abhängigkeiten zu beschreiben. Diese Modelle werden entweder offline \cite{ETR} oder online während des Trackens erzeugt \cite{RFT}\cite{VTD}. Allerdings birgt das auch Nachteile, wie zum Beispiel bei detailreichen Hintergründen. Hier kann ein solcher Tracker leicht fehlschlagen. Deshalb wird neben dem Objekt auch die Umgebung modelliert, zum Beispiel als negative Klasse, wobei das Objekt dann die positive wäre. Hierbei sind vor allem lernfähige Tracker von Bedeutung, da sie, im Gegensatz zu ihren statischen Pendants, während der Abarbeitung das Wissen über das Objekt und seine Umgebung sammeln, wodurch eine erhöhte Flexibilität erreicht wird. Dies geschieht mittels Erzeugnung von Klassifier \cite{ONS}\cite{ENT}\cite{OBT}. 
+
+HIER NOCH WAS ZUM SILHUETTENREPRÄSENTATION????
+Neben der Modellierung lässt sich auch die Methodik spezifizieren. Hierbei wird von drei Grundformen ausgegangen: Point-Tracking, Kernel-Tracking und Silhouette-Tracking. Jede hat ihre spezifischen Eigenschaften und werden je nach unterschiedlichem Einsatz der späteren Applikation genutzt.
+
+\paragraph{Point-Tracking}
+Allgemein gesrpochen wird das zu verfolgende Objekt durch Punkte repräsentiert, die von einem Bild $t-1$ in $t$ gesucht werden. Da dieses Verfahren eine Reihe von Schwierigkeiten, wie das Handhaben von Verdeckungen oder falsche Punktdetektionen, aufweißt, gibt es unterschiedliche Ansätze, um ihnen zu begegnen und Lösungen zu finden. Diese werden in \textit{deterministische} und \textit{statitische} Methoden eingeteilt. 
+
+Deterministische Ansätze definieren eine Kostenfunktion $f$ für jedes Objekt in $t-1$ und versuchen durch Minimierung dieser Kosten und einer Reihe Bedingungen (Constraints) das korrespondierende Objekt in $t$ zu finden. Constraints können hierbei sein:
+
+\begin{itemize}
+\item Das Objekt verändert sein Erscheinungsbild von einem Bild zum nächsten nicht oder nur sehr wenig \cite{FPIS}
+\item Die maximale Geschwindigkeit, mit der sich ein Objekt bewegt, begrennzt den Radius, in dem das Objekt im Folgebild erscheinen kann.
+\item Richtungs- und Geschwindigkeitsänderungen eines Objekts sind eher klein.
+\item Objekte in der realen Welt sind starr, weshalb die Entfernung zweier Punkte sich nicht ändert.
+\item $\dots$
+\end{itemize}
+Diese Bedingung sind nicht auf die deterministischen Methoden beschränkt, sondern finden auch in den statitischen Ansätzen Verwendung. 
+
+Statistische Methoden modellieren Zustandräume zu bestimmten Objekteigenschaften wie zum Beispiel Geschwindigkeit oder Position im Bild. Der Tracking-Verlauf wird dann als eine Sequenz von Zuständen $X^{t}:t=1,2,\dots$ aufgefasst, wobei, und das ist der Unterschied, das Bildrauschen $W^{t}:t=1,2,\dots$, das unweigerlich auftritt, in die Berechnung einfließt. So wird die Statusänderung über die Zeit für ein sich durch eine Sequenz von Bildern bewegendes Objekt beispielsweise durch die Formel $X^{t}=f^{t}(X^{t-1})+W^{t}$ berechnet. Um solche Zustandsräume für das Objekttracking, also für das Schätzen der Positionsänderung des Objekts von einem Bild zum Folgebild, gibt es wiederum verschiedene Ansätze, die hier jedoch nicht näher vorgestellt werden. Zu nennen sind in diesem Zusammenhang allerdings der \textit{Kalman}-Filter\cite{KAF} für lineare Systeme und der \textit{Particle}-Filter \cite{PAF} für nichtlineare Systeme, die mit großem Erfolg in Tracking-Algorithmen verwendet wurden.
+
+\paragraph{Kernel-Tracking}
+Anders als beim Point Tracking dient hier eine Repräsentation des gesamten Objekts beziehungsweise einer Objektregion als Vorlage, und nicht nur einzelne Punkte. Auch hier unterscheiden sich einzelne Systeme und Ansätze hinsichtlich der Objektdarstellung, der Methodik und auch der Anzahl der zu verfolgenden Objekte. Zum Beispiel wird das Objekt mittels Template, oftmals bestimmte Color Features oder Histogramme, repräsentiert, das dann im aktuellen Bild gesucht wird. Die Postition wird dann mittels Ähnlichkeitsberechnung, beispielsweise durch Kreuzkorrelation, ermittelt. Am Ende wird die Region des Bildes als Objekt markiert, die dem Template am ähnlichsten ist. Der Nachteil dieses \textit{Template-Matching}-Verfahrens liegt vor allem in der rechenintensiven Methodik, da sie im Ansatz brute-force ist - es wird das gesamte Bild nach dem Template abgesucht. Dabei werden auch unterschiedliche Skalierungen, Orientierungen oder Transformationen des Templates gesucht, wodurch der eigentliche Berechnungsaufwand erzeugt wird. Verbesserungen in der Laufzeit können beispielsweise durch die Einschränkung des Suchraums oder die Arbeit mit integralen Bildern\cite{INT} erreicht werden.
+
+Ein weiteres Verfahren, das auch in TLD Verwendung findet, ist das Tracken mittels \textit{optischem Fluss}, die es durch Lucas und Kanade\cite{OPT} vorgeschlagen und später durch Tomasi und Kanade\cite{LKT} erstmals zum Tracken implementiert wurde. Die Grundidee ist die Berechnung eines Vectorfeldes, unter Annahme konstanter Helligkeit, das für jeden Pixel im Bild die Bewegungsrichtung und -geschwindigkeit von einem Bild zum nächsten enthält. Für das Tracken wird nun ein ROI im Bild (das Objekt) ausgewählt. Dann werden aus dieser Region bestimmte Pixel für die Berechnung der Position des Objekts mittels des optischen Flusses im Folgebild herangezogen. Im Anschluss wird die Qualität der Berechnung mittels affiner Transformation zwischen dem gesuchten und dem gefundenen Patch evaluiert. Wenn die mittlere quadratische Abweichung aller Pixel zu hoch ist, wird das Ergebnis verworfen, ansonsten wird das Tracken forgesetzt.
+
+Die genannten Verfahren eignen sich vor allem zum Single-Object-Tracking. Für das gleichzeitige Verfolgen von mehreren Objekten gibt es andere Kernel-Tracking-Algorithmen, die hier allerdings nicht näher vorgestellt werden.
+
+\paragraph{Silhouette-Tracking}
+Nicht jedes Objekt, das getrackt werden soll, kann durch eine einfache geometrische Figur wie ein Rechteck oder ein Elypse repräsentiert werden. Deshalb wird mittels Silhoutte-Tracking versucht, solche komplexen Objekte anhand ihrer Kontour zu repräsentieren. Außerdem motiviert zu diesem Ansatz die Tatsache, dass auch der Mensch Objekte nur anhand ihrer Silhouette erkennen kann. Da in dieser Arbeit dieses Verfahren keine Rolle spielt, sei es nur zur Vollständigkeit erwähnt (ODER SOLLTE ICH DOCH NOCH MEHR DAZU SCHREIBEN?)
+
+Welche Methode letzendlich genutzt wird, hängt von dem späteren Einsatzgebiet des Trackers ab.
+
+Dabei gehen die meisten Tracking-Algorithmen z.B. von einer gleichförmigen Bewegung des Objekts aus, also ohne plötzliche Bewegungsänderung. Die Geschwindigkeit beziehungsweise die Beschleunigung bleiben konstant, wodurch vorherige Informationen über das Objekt, wie Position und Größe, für das Tracken genutzt werden können und somit das Problem vereinfachen \cite{OTS}.
+
+Allerdings haben die meisten Tracker eins gemein: Sie versagen, wenn das Objekt kurzzeitig nicht mehr sichtbar ist, entweder wenn es den Bildbereich verlässt oder zu stark durch ein anderes Objekt verdeckt wird. Zusätzlich neigen sie meist zum Drift. Sie verlieren im Laufe der Abarbeitungszeit ihren Fokus und müssen dann reinitialisiert werden.
+
+\subsection{Object Detection}
+Object Detection ist das Finden eines Objekts in einem Bild beziehungsweise einer Bildsequenz. Grundlage bildet hier vor allem die Repräsentation des Objekts im Speicher und die damit verbundene Suchlogik. Im Laufe der letzten Jahre wurden auch hier unterschiedliche Repräsentationen entwickelt und untersucht \cite{OTS}:
+
+\begin{description}
+\item [{Punkte}] oder auch nur ein Punkt, der Centroid, repräsentieren das Objekt, was besonders für kleine Objekte in einem Bild nützlich ist.
+\item [{Rechtecke}] oder Ellipsen, also zweidimensionale geometrische Figuren bilden das Objekt und bilden Grundlage vor allem für die Berechnung von Transformationen des gesuchten Objekts, um entsprechende Änderungen zu modellieren.
+\item [{Silhouetten}] und Konturen bilden die Begrenzung des Objekts, und werden vor allem bei der Detektion von komplexen Objekten genutzt.
+\item [{Patches}] des Objekts, die als Templates für die Suche dienen.
+\item [{Multi-Shape-Patches}] bilden Teile eines zusammenhängenden Objekts. Die Verbindungen können durch unterschiedliche Verfahren, wie z.B. kinetic motion models, berechnet werden.
+\end{description}
+
+Alle genannten und ungenannte Repräsentationsverfahren können und werden in der Praxis und je nach Anwendungsgebiert kombiniert werden. Die große Herausforderung besteht nun vor allem im Segmentieren der gewählten Repräsentationen. Je nach Anwendungsfall ist eine solche Berechnung technisch leicht oder kompliziert zu realisieren. Einige Verfahren werden nun kurz vorgestellt.
+
+\paragraph{Point-Detectors}
+bla
+
+\paragraph{Background Substraction}
+bla
+
+\paragraph{Image Segmentation}
+bla
+
+\subsection{Maschinelles Lernen}
+Seit Mitte der 1990er Jahren halten Methoden aus dem Bereich des Machine Learning Einzug in das Gebiet der Objekterkennung. Und heutzutage gibt keinen neuen Detection-Ansatz mehr, der ohnen einen gewissen Teil \textit{Intelligenz} auskommt, wie auch TLD. Im Folgenden wird daher ein kurzer Überblick über verschiedene Lern-Ansätze gegeben mit Verweisen auf Implementierungen in der Bildverarbeitung gegeben.
+
+\subsubsection{Methoden}
+Eine genaue Definition für Machinellen Lernen zu finden ist schwierig, da die Einsatzgebiete der verwendeten Methoden und Ansätze sehr vielfältig sind. Eine der erste und sicher treffensten ist die Definition von Arthur Samuel (1995):
+\begin{quote}
+Maschine Learning: Field of study that gives computers the ability to learn without being explicitly programmed. 
+\end{quote}
+Eine aktuelle und eher mathematische Formulierung findet Tom Mitchel (1998):
+\begin{quote}
+Well-posed Learning Problem: A computer program is sait to \textit{learn} from experience $E$ with respect to some task $T$ and some performance measure $P$, if its performance on $T$, as measured by $P$, improves with experience $E$.
+\end{quote}
+Im Falle der Objektdetektion ist ``Finde das Objekt'' die Aufgabe $T$, die zugrundeliegenden Beispiele, also die Daten, die das Objekt beschreiben, sind die Erfahrung $E$ und der Erfolg ``Objekt gefunden'' ist $P$.
+
+Lernalgorithmen lassen sich in verschiedene Klassen enteilen:
+\begin{itemize}
+\item Superviced Learning, 
+\item Unsupervised Learning,
+\item Reinforcement Learning und
+\item Recommender Systems,
+\end{itemize}
+wobei die ersten beiden Klassen im Bereich vermehrt im Bereich der Bildverarbeitung Verwendung finden.
+
+Ohne im Detail Maschinelles Lernen vorzustellen, besteht jede Methode im Wesentlichen aus drei Komponenten: Das Training-Set, also das Model $M$ mit den $m$ Beispielen, das als Wissensbasis dient, der Lernalgorithmus (Kostenfunktion??), der als Eingabe $M$ erwartet, und der Bewertungsfuktion $h$, die für eine Eingabe $x$ eine Schätzung $y$ vornimmt. Die Funktion $h$ bestimmt hierbei die Abhängigkeit der Daten in $M$.
+
+\paragraph{Supervised Learning}
+Überwachtes Lernen. Man gibt Beispiele mit einem entsprechenden Ergebnis (Wert oder Klassefizierung) vor. Man sagt auch, dass die Beispiele gelabelt sind. Der Algorithmus kann dann anhand dieser gelernte Beispiele bestimmen, wie das neue Beispiel bewertet werden muss (also entweder wird ein Wert bestimmt oder eine Klassifzierung vorgenommen.
+
+Hierbei unterscheidet man zwei Problemarten, die sich hinsichtlich der Berechnungsart und ihres Outputs unterscheiden:
+\begin{enumerate}
+\item Regression und 
+\item Klassifikation.
+\end{enumerate}
+Regession wird verwendet, wenn zu einer bestimmten Eingabe ein konkreter (reeller) Wert erwartet wird. Klassifikation versucht hingegen die Eingabe einem diskreten Wert, also z.B. einer Klasse, zuzuordnen. Für Details wird an dieser Stelle auf die Fachliteratur verwiesen.
+
+\paragraph{Unsuperviced Learning}
+Hier versucht der Algorithmus für eine Anfangsmenge an Beispielen eigene Labels zu finden. Dazu werden sie anhand bestimmter Kriterien zu bestimmten Klassen zugeordnet (z.B. Entfernung). Ein Beispiel ist z.B. das Clustern von Daten.
+
+\begin{comment}
+(Hier werden die prinzipiellen Arbeitsweisen des Core-Algorithmus TLD dargestellt und erläutert. Einleitend werden sie anhand von Diagrammen/Bildern/Beispielen erläutert, unter den folgenden Teilüberschriften wird vertiefend erklärt.
+
+Die Initialisierung des Algorithmus erfolgt über die Definition der BoundingBox. Dies kann auf unterschiedliche Weise, wie z.B. das Markieren eines Objekts in einem Kamera- oder Videobild, oder durch vorgeschaltete Programmteile, die auf das Erkennen eines bestimmten Objekts trainiert wurden, geschehen. Ausgehende von diesem ersten Bild werden die einzelnen Komponenten initialisiert. )
+\end{comment}
+
+
+
+\subsection{Beispiele für Tracking-Implementationen}
+Das Feld der Objekterkennung ist weit und es gibt eine Vielzahl von unterschiedlichen Anwendungsszenarien. Im Folgenden wird eine kleine Auswahl solcher Szenarien vorgestellt, welche die oben genannten algorithmischen Ansätze implementieren.
+
+\paragraph{Gesichtserkennung}
+durch Farbe, Bewegung, Kombination aus beiden (alles eher schlecht), Besser: Neuronal Netze, Modelbasiert und das allerbester: Weak Classifier von viola and jones,
+
+\paragraph{Fußgänger}
+background seperation, foreground-silhuette-extraction kopf-detection, template-models
+
+\paragraph{Straßenschilder}
+bla
+
+\paragraph{Schrift}
+bla
+
+\paragraph{Autos}
+bla

@@ -1,0 +1,30 @@
+% -*- root: diplomarbeit.tex -*-
+\section{Auswertung und Ausblick}
+Object Detection ist eines der herausfordernsten Forschungsfelder in Computer Vision. Obwohl die Entwicklung von robusten und gut funktionierenden Ansätzen in den letzten Jahren stark zugenommen hat und unter kontrollierten Bedingungen auch sehr gute Ergebnisse liefert, ist das Problem des Suchen und Finden von einem oder mehreren Objekten in der ``realen'' Welt weiterhin ungelöst \cite{ODS}.
+
+TLD beeindruckt durch sehr gute Ergebnisse beim Tracken von sehr unterschiedlichen Objekten, wie Fußgänger, Autos und Gesichtern.
+
+Der Ansatz ist nur bedingt geeignet. Probleme:
+\begin{itemize}
+\item Speichern der Beispiele in Form von $15\times15$ patches, weil zu viel Hintergrund gespeichert wird,
+\item Objekt (Kopter) hat filigrane Struktur,
+\item ``Veschmelzung'' des Objekts mit dem Hintergrund
+\end{itemize}
+Weiteres...
+\begin{itemize}
+\item Ein paar Worte zur Umsetzung (openCV)
+\item Erweiterungsmöglichkeiten - z.B. Verfolgung mehrerer Kopter gleichzeitig, Optimierungsvorschläge, weitere Einsatzmöglichkeiten (da TLD an sich ``alles'' tracken kann)
+\item Zusammenfassung
+\item ohne zusätzlich Detectionsverfahren (eventuell Tiefenbilder oder andere nicht-visuelle Ansätze) kaum möglich
+\item Umwelteinflüsse in der Natur sind zu stark
+\item Einfluss der unterschiedlichen Beleuchtungen der Szene
+\item Hintergrund (Bäume etc)
+\item Problem bei zusätzlichen Verfahren: Rechenleistung des Roboters(?)
+\end{itemize}
+Verbesserungen/Ansätze
+\begin{itemize}
+\item eventuell stärke Orientierung an natürlich Seh-prozessen bzw. Sensoren in der Natur (Auge der Fliege)
+\item Eventuell ein anderer Ansatz: Vielleicht sollte man eine 3-D Repräsentation des Objekts während des Trackens erzeugen? Der Mensch macht es sicher auch nicht anders. Schließlich weiß man ja oft, wonach man suchen muss, auch wenn das Erscheinungsbild des Objekts nicht mit dem bereits ``Erlernten'' übereinstimmt...
+\item Articulated shape models > hierbei werden Teile des Objekts einzeln repräsentiert und zu einem ganzen Zusammengesetzt. 
+\item Eventuell nicht so allgemeine Ansätze, sondern vorher viel mehr Wissen über das Objekt, den Kopter, als Grundlage nehmen. Eventuell ein 3- -Modell erzeugen und aus dem ermittelten Bild alle entsprechende Objekte auf dieses ``mappen''. 
+\end{itemize}

@@ -1,0 +1,667 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"generate",
+				"generate_token"
+			],
+			[
+				"redi",
+				"redirect_to"
+			],
+			[
+				"del",
+				"deliveries"
+			],
+			[
+				"requ",
+				"request"
+			],
+			[
+				"new",
+				"newsletter_sign_up"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"ne",
+				"newsletter_sign_ups"
+			],
+			[
+				"resour",
+				"resource"
+			],
+			[
+				"valid",
+				"valid_attributes"
+			],
+			[
+				"val",
+				"valid_attributes"
+			],
+			[
+				"toke",
+				"token"
+			],
+			[
+				"enc",
+				"encrypt_with_aes"
+			],
+			[
+				"resd",
+				"respond_with"
+			],
+			[
+				"va",
+				"valid_attributes"
+			],
+			[
+				"New",
+				"NewsletterSignUp"
+			],
+			[
+				"creat",
+				"create_from_absolventa"
+			],
+			[
+				"abso",
+				"absolventa_authentication"
+			],
+			[
+				"crea",
+				"create_from_absolventa"
+			],
+			[
+				"decri",
+				"describe"
+			],
+			[
+				"n",
+				"now"
+			],
+			[
+				"tim",
+				"timestamp"
+			],
+			[
+				"be_",
+				"be_eql"
+			],
+			[
+				"sec",
+				"secret_token"
+			],
+			[
+				"ident",
+				"ident"
+			],
+			[
+				"trans",
+				"transform_umlaut"
+			],
+			[
+				"id",
+				"identifier"
+			],
+			[
+				"sub",
+				"subject"
+			],
+			[
+				"inj",
+				"inject"
+			],
+			[
+				"date",
+				"date_begin"
+			],
+			[
+				"num",
+				"number_of_calls_by_user"
+			],
+			[
+				"da",
+				"date_end"
+			],
+			[
+				"end",
+				"end_of_day"
+			],
+			[
+				"begin",
+				"beginning_of_day"
+			],
+			[
+				"expec",
+				"expected_forecast"
+			],
+			[
+				"number",
+				"number_offers"
+			],
+			[
+				"to_",
+				"to_date"
+			],
+			[
+				"accur",
+				"accuracy_forecast"
+			],
+			[
+				"acc",
+				"accuracy_forecast"
+			],
+			[
+				"recod",
+				"recordings"
+			],
+			[
+				"gr",
+				"groups"
+			],
+			[
+				"recor",
+				"recordings"
+			],
+			[
+				"comm",
+				"commissions"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"bakc",
+				"background-color"
+			],
+			[
+				"s",
+				"sans-serif"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"sho",
+				"should_not"
+			],
+			[
+				"direct",
+				"direction"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\\batchmode\n\\makeatletter\n% \\def\\input@path{{C:/Users/Ronald/Documents/Diplomarbeit/Ausarbeitung//}}\n\\makeatother\n\\documentclass[12pt,twoside,ngerman]{article}\n\\usepackage{mathpazo}\n\\usepackage[T1]{fontenc}\n\\usepackage[latin9]{inputenc}\n\\usepackage[a4paper]{geometry}\n\\geometry{verbose,tmargin=3.3cm,bmargin=6.6cm,lmargin=4.6cm,rmargin=2.3cm,headheight=2cm,footskip=3cm}\n\\pagestyle{headings}\n\\usepackage{xcolor}\n\\usepackage{pdfcolmk}\n\\usepackage{verbatim}\n\\usepackage{float}\n\\usepackage{amsmath}\n\\usepackage{graphicx}\n\\usepackage{setspace}\n\\PassOptionsToPackage{normalem}{ulem}\n\\usepackage{ulem}\n\\setstretch{1.2}\n\n\\makeatletter\n\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.\n%% Because html converters don't know tabularnewline\n\\providecommand{\\tabularnewline}{\\\\}\n\\floatstyle{ruled}\n\\newfloat{algorithm}{tbp}{loa}\n\\providecommand{\\algorithmname}{Algorithmus}\n\\floatname{algorithm}{\\protect\\algorithmname}\n\\providecolor{lyxadded}{rgb}{0,0,1}\n\\providecolor{lyxdeleted}{rgb}{1,0,0}\n%% Change tracking with ulem\n\\newcommand{\\lyxadded}[3]{{\\color{lyxadded}{}#3}}\n\\newcommand{\\lyxdeleted}[3]{{\\color{lyxdeleted}\\sout{#3}}}\n\n\\@ifundefined{date}{}{\\date{}}\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.\n\\usepackage{epstopdf}\n\\usepackage{graphicx}\n\\usepackage{float}\n\\usepackage[T1]{fontenc}\n\\usepackage{garamondx}\n\\usepackage{pdfcomment}\n\n\n\n\n\\end{document}\n",
+			"file": "/Users/employee_1/Documents/Diplomarbeit/Diplomarbeit.tex",
+			"file_size": 83066,
+			"file_write_time": 130267345980000000,
+			"settings":
+			{
+				"buffer_size": 1379,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Commit history"
+			],
+			[
+				"git com",
+				"Git: Commit history"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/employee_1/Documents/Diplomarbeit_mac/chapter_1.tex",
+		"/Users/employee_1/Documents/Diplomarbeit_mac/diplomarbeit.tex",
+		"/Applications/XAMPP/xamppfiles/etc/php.ini",
+		"/Applications/XAMPP/xamppfiles/htdocs/kubus-sym/app/config/parameters.yml",
+		"/Users/employee_1/absolventa/jobnet/lib/aes_security.rb",
+		"/Users/employee_1/absolventa/jobnet/spec/controllers/a/newsletter_sign_ups_controller_spec.rb",
+		"/Users/employee_1/absolventa/absolventa/config/config.yml",
+		"/Users/employee_1/absolventa/absolventa/spec/controllers/e/recruiter_sign_ups_controller_spec.rb",
+		"/Users/employee_1/absolventa/absolventa/config/initializers/teaspoon.rb",
+		"/Users/employee_1/absolventa/absolventa/spec/models/award_spec.rb",
+		"/Users/employee_1/absolventa/jobnet/app/models/permitted_attributes_commissioner.rb",
+		"/Users/employee_1/absolventa/jobnet/spec/support/factories.rb",
+		"/Users/employee_1/absolventa/jobnet/app/controllers/a/base_controller.rb",
+		"/Users/employee_1/absolventa/jobnet/app/controllers/a/newsletter_sign_ups_controller.rb",
+		"/Users/employee_1/absolventa/jobnet/app/views/public/_hr_celebrity.html.haml",
+		"/Users/employee_1/absolventa/jobnet/app/views/public/index.html.haml",
+		"/Users/employee_1/Downloads/jobnet.jpg",
+		"/Users/employee_1/absolventa/absolventa/app/controllers/s/recruiter_sign_ups_controller.rb",
+		"/Users/employee_1/absolventa/blog/Rakefile",
+		"/Users/employee_1/absolventa/blog/_site/index.html",
+		"/Users/employee_1/absolventa/blog/images/absolventa_logo_large.png",
+		"/Users/employee_1/absolventa/blog/assets/css/style.css",
+		"/Users/employee_1/absolventa/blog/_layouts/default.html",
+		"/Users/employee_1/absolventa/blog/_site/images/absolventa_logo_large.png",
+		"/Users/employee_1/absolventa/blog/assets/css/colors-light.css",
+		"/Users/employee_1/absolventa/blog/_config.yml",
+		"/Users/employee_1/absolventa/blog/_posts/2013-10-07-Welcome.md",
+		"/Users/employee_1/absolventa/blog/index.html",
+		"/Users/employee_1/absolventa/blog/_posts/2013-10-08-Markdown.md",
+		"/Users/employee_1/absolventa/devnull/Rakefile",
+		"/Users/employee_1/absolventa/jobnet/spec/controllers/p/newsletter_sign_ups_controller_spec.rb",
+		"/Users/employee_1/absolventa/jobnet/app/helpers/secure_helper.rb",
+		"/Users/employee_1/absolventa/absolventa/app/views/s/registration_pages/_form.html.haml",
+		"/Users/employee_1/absolventa/absolventa/app/views/s/registration_pages/new.html.haml",
+		"/Users/employee_1/absolventa/absolventa/app/models/registration_page.rb",
+		"/Users/employee_1/absolventa/absolventa/app/controllers/s/registration_pages_controller.rb",
+		"/Users/employee_1/absolventa/absolventa/spec/controllers/s/registration_pages_controller_spec.rb",
+		"/Users/employee_1/absolventa/absolventa/app/views/s/registration_pages/show.html.haml",
+		"/Users/employee_1/absolventa/absolventa/app/views/s/registration_pages/index.html.haml",
+		"/Users/employee_1/absolventa/jobnet/app/views/a/newsletter_sign_ups/new.html.haml",
+		"/Users/employee_1/absolventa/jobnet/app/controllers/p/newsletter_sign_ups_controller.rb",
+		"/Users/employee_1/absolventa/jobnet/app/views/a/newsletter_sign_ups/import.html.haml",
+		"/Users/employee_1/absolventa/jobnet/spec/features/meta_data_spec.rb",
+		"/Users/employee_1/absolventa/jobnet/app/views/layouts/application.html.haml",
+		"/Users/employee_1/absolventa/jobnet/app/views/a/landing_pages/show.html.haml",
+		"/Users/employee_1/absolventa/jobnet/app/views/a/hr_events/show.html.haml",
+		"/Users/employee_1/absolventa/jobnet/app/views/a/hr_referrals/show.html.haml",
+		"/Users/employee_1/absolventa/jobnet/spec/controllers/p/landing_pages_controller_spec.rb",
+		"/Users/employee_1/absolventa/jobnet/app/views/a/shared/_meta_data.html.haml",
+		"/Users/employee_1/absolventa/jobnet/db/schema.rb",
+		"/Users/employee_1/absolventa/jobnet/app/controllers/p/tags_controller.rb",
+		"/Users/employee_1/absolventa/jobnet/app/helpers/application_helper.rb",
+		"/Users/employee_1/absolventa/jobnet/app/models/admin.rb",
+		"/Users/employee_1/absolventa/jobnet/app/views/defacement/index.html.erb",
+		"/Users/employee_1/absolventa/absolventa/app/views/p/job_offers/show.html.erb",
+		"/Users/employee_1/absolventa/absolventa/app/views/e/accounts/new.html.erb",
+		"/Users/employee_1/absolventa/jobnet/spec/models/hr_event_spec.rb",
+		"/Users/employee_1/absolventa/jobnet/app/models/hr_event.rb",
+		"/Users/employee_1/absolventa/insolventa/app/models/invoice.rb",
+		"/Users/employee_1/absolventa/jobnet/app/models/tag.rb",
+		"/Users/employee_1/absolventa/jobnet/spec/models/permitted_attributes_commissioner_spec.rb",
+		"/Users/employee_1/absolventa/jobnet/spec/models/landing_page_spec.rb",
+		"/Users/employee_1/absolventa/jobnet/app/models/landing_page.rb",
+		"/Users/employee_1/absolventa/jobnet/spec/support/helper_methods.rb",
+		"/Users/employee_1/absolventa/insolventa/app/concerns/total_recalculation.rb",
+		"/Users/employee_1/absolventa/insolventa/app/models/offer_template.rb",
+		"/Users/employee_1/absolventa/insolventa/app/models/company.rb",
+		"/Users/employee_1/absolventa/insolventa/app/models/recording.rb",
+		"/Users/employee_1/absolventa/insolventa/app/models/commission.rb",
+		"/Users/employee_1/absolventa/insolventa/app/views/offers/index.html.haml",
+		"/Users/employee_1/absolventa/insolventa/Test.csv",
+		"/Users/employee_1/myprojects/kubus/app/assets/stylesheets/application.css",
+		"/Users/employee_1/myprojects/kubus/app/assets/stylesheets/users.css.scss",
+		"/Users/employee_1/myprojects/kubus/app/models/course_detail.rb",
+		"/Users/employee_1/myprojects/kubus/app/views/layouts/application.html.haml",
+		"/Users/employee_1/myprojects/kubus/config/routes.rb",
+		"/Users/employee_1/myprojects/kubus/app/assets/stylesheets/courses.sass",
+		"/Users/employee_1/myprojects/kubus/app/views/users/index.html.haml",
+		"/Users/employee_1/myprojects/kubus/app/models/course.rb",
+		"/Users/employee_1/myprojects/kubus/app/views/welcome/index.html.haml",
+		"/Users/employee_1/myprojects/kubus/Gemfile",
+		"/Users/employee_1/myprojects/kubus/app/models/user.rb",
+		"/Users/employee_1/myprojects/kubus/config/database.yml",
+		"/Users/employee_1/myprojects/kubus/app/controllers/models_controller.rb",
+		"/Users/employee_1/absolventa/jobnet/spec/support/standard_controller.rb",
+		"/Users/employee_1/absolventa/jobnet/lib/absolventa/permitted_attributes_for_inherited_resources.rb",
+		"/Users/employee_1/absolventa/jobnet/config/locales/database.yml",
+		"/Users/employee_1/absolventa/absolventa/app/controllers/r/profile_headers_controller.rb",
+		"/Users/employee_1/absolventa/absolventa/lib/profiles.rb",
+		"/Users/employee_1/absolventa/absolventa/lib/cv_item.rb",
+		"/Users/employee_1/absolventa/absolventa/app/controllers/r/logos_controller.rb",
+		"/Users/employee_1/absolventa/absolventa/app/views/s/registration_pages/edit.html.haml",
+		"/Users/employee_1/absolventa/absolventa/spec/lib/factories_spec.rb",
+		"/Users/employee_1/absolventa/absolventa/app/controllers/p/course_registrations_controller.rb",
+		"/Users/employee_1/absolventa/absolventa/app/controllers/application_controller.rb",
+		"/Users/employee_1/absolventa/absolventa/app/models/supervisor.rb",
+		"/Users/employee_1/absolventa/absolventa/db/migrate/049_add_title_to_favorite_departments.rb",
+		"/Users/employee_1/dumps/dump_restore_befehl",
+		"/Users/employee_1/absolventa/absolventa/app/models/company_data_aggregation.rb",
+		"/Users/employee_1/absolventa/devnull/source/_posts/2013-09-03-zweiter-tag-zweiter-eintrag.markdown",
+		"/Users/employee_1/absolventa/devnull/_config.yml",
+		"/Users/employee_1/absolventa/devnull/config.rb",
+		"/Users/employee_1/absolventa/devnull/source/_posts/2013-09-02-der-erste-post.markdown",
+		"/Users/employee_1/absolventa/devnull/sass/custom/_layout.scss",
+		"/Users/employee_1/absolventa/devnull/source/_posts/der-erste-post.html",
+		"/Users/employee_1/absolventa/insolventa/spec/controllers/offers_controller_spec.rb",
+		"/Users/employee_1/absolventa/insolventa/app/controllers/people_controller.rb",
+		"/Users/employee_1/absolventa/insolventa/app/views/tasks/index.html.haml",
+		"/Users/employee_1/absolventa/insolventa/app/helpers/application_helper.rb",
+		"/Users/employee_1/absolventa/insolventa/app/models/user.rb",
+		"/Users/employee_1/absolventa/insolventa/app/views/tasks/_tasks.html.haml",
+		"/Users/employee_1/absolventa/praktikum-info/config/database.yml.example",
+		"/Users/employee_1/absolventa/absolventa-master/app/models/job_application.rb",
+		"/Users/employee_1/absolventa/absolventa-master/app/models/company.rb",
+		"/Users/employee_1/absolventa/absolventa-master/spec/models/company_spec.rb",
+		"/Users/employee_1/Library/Application Support/Sublime Text 3/Packages/RubyTest/RubyTest.sublime-settings",
+		"/Users/employee_1/Library/Application Support/Sublime Text 3/Packages/User/RubyTest.sublime-settings",
+		"/Users/employee_1/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/employee_1/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/employee_1/myprojects/rails/kubus-app",
+			"/Users/employee_1/absolventa/jobnet",
+			"/Users/employee_1/absolventa/absolventa",
+			"/Users/employee_1/absolventa/jobnet",
+			"/Users/employee_1/absolventa/absolventa",
+			"/Users/employee_1/absolventa/devnull",
+			"/Users/employee_1/absolventa/trainee-gefluester",
+			"/Users/employee_1/absolventa/jobnet",
+			"/Users/employee_1/absolventa/jobnet/spec",
+			"/Users/employee_1/absolventa/jobnet",
+			"/Users/employee_1/absolventa/absolventa",
+			"/Users/employee_1/absolventa/jobnet",
+			"/Users/employee_1/absolventa/insolventa",
+			"/Users/employee_1/myprojects/kubus",
+			"/Users/employee_1/absolventa/jobnet",
+			"/Users/employee_1/absolventa/absolventa",
+			"/Users/employee_1/absolventa/absolventa/app",
+			"",
+			"/Users/employee_1/absolventa/insolventa",
+			"/Users/employee_1/absolventa/insolventa/app/views/tasks",
+			"/Users/employee_1/absolventa/absolventa-master"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"postgres",
+			"Welcome aboard",
+			"collection",
+			"newsletter_sign_ups",
+			"ActiveResource",
+			"ActiveRecord",
+			"ActiveRecord::Base.include_root",
+			"daniel.schoppmann",
+			"3000",
+			"CsvExporter",
+			"create!",
+			"build_resource",
+			"trainee_gefluester",
+			"links für bewerber",
+			"stringex",
+			"to_url",
+			"get_stdin",
+			"aes",
+			"CsvExporter",
+			"p_posts_path",
+			"news_path",
+			"post_path",
+			"carpybara/rspec",
+			"carpybara/rails",
+			"Carpybara",
+			"Capybara",
+			"metadata",
+			"HR-NEWS",
+			"meta",
+			"meta_data",
+			"content_for :head",
+			"content_for :meta",
+			".erb",
+			"meta",
+			"og:",
+			"content_for",
+			"og:",
+			"preview",
+			"FactoryGirl",
+			"before_save",
+			"if:",
+			"validates_with",
+			"AASM",
+			"invoices",
+			"for_billing_period",
+			"end_of_day",
+			"beginning_of_day",
+			"@recordings_per_user",
+			"billing_periods",
+			"Welcome aboard",
+			"HEAD",
+			"RestfulController",
+			"PermittedAttributesForInheritedResources",
+			"registr",
+			"build_resource",
+			"inherit_resources",
+			"def inherit_resources",
+			"inherit_resources",
+			"build_resource",
+			"registration",
+			"supervisor_id",
+			"devnull",
+			"theme",
+			"github",
+			"/github",
+			"Team",
+			"csv",
+			"csv Angebot",
+			"csv",
+			"company.title",
+			"IsSortable",
+			"sort_column",
+			"sortable_column",
+			"Betreff",
+			"Erledigt am",
+			" sidebar",
+			"= render sidebar",
+			"render = sidebar",
+			".sidebar",
+			"tab"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/employee_1/Documents/Diplomarbeit/Diplomarbeit.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1361,
+								1361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 196.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 24.0
+	},
+	"project": "diplomarbeit.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"commi",
+				"app/models/permitted_attributes_commissioner.rb"
+			],
+			[
+				"comission",
+				"app/models/commission.rb"
+			],
+			[
+				"reports",
+				"app/controllers/reports_controller.rb"
+			],
+			[
+				"total",
+				"app/concerns/total_recalculation.rb"
+			],
+			[
+				"invoic",
+				"app/models/invoice.rb"
+			],
+			[
+				"invoci",
+				"app/models/invoice.rb"
+			],
+			[
+				"",
+				"spec/models/registration_page_spec.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 180.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
