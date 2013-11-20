@@ -2,6 +2,29 @@
 \section{Auswertung und Ausblick}
 Object Detection ist eines der herausfordernsten Forschungsfelder in Computer Vision. Obwohl die Entwicklung von robusten und gut funktionierenden Ansätzen in den letzten Jahren stark zugenommen hat und unter kontrollierten Bedingungen auch sehr gute Ergebnisse liefert, ist das Problem des Suchen und Finden von einem oder mehreren Objekten in der ``realen'' Welt weiterhin ungelöst \cite{ODS}.
 
+\subsection{Evaluation}
+	Die Evaluierung von TLD erfolgt mit Hilfe eine Standardverfahrens zur Beurteilung von Klassifikatoren und findet auch in \cite{TLD}. Hierbei dienen die quantitativen Ergebnisse des Klassifizierers in jedem Testszenario als Maß. Da TLD ein binärer Klassifizier ist, gibt es zwei Arten von Fehlern die auftreten können. Entweder wird das Objekt in die Klasse $A$ eingeordnet, obwohl es zu $B$ gehört, oder es wird als Teil von $B$ bestimmt, gehört allerdings zur Klasse $A$. $A$ und $B$ sind in Falle von TLD ``gefunden'' und ``nicht gefunden''.
+	
+	Als Vergleichsbasis dient der Ground Truth. Das ist der Bereich, der die genaue Position des gesuchten Kopters im Bild markiert, gegeben durch eine BoundingBox $BB_{GT}$. Dieser wird mit dem Ergebnis von TLD verglichen, der ebenfalls eine BoundingBox $BB_{TLD}$ bei erfolgreicher Detection beziehnungsweise erfolgreichem Tracking liefert. Zwischen beiden Boxen wird die Überlappung bestimmt und geprüft, ob sie größer oder kleiner eines Thresholds $\omega$ ist. Daraus ergeben sich vier Fälle:
+
+	\begin{description}
+	\item [True-Positive $t_p$] Die Überlappung ist größer als $\omega$.
+	\item [True-Negative $t_n$] Es wurde kein Objekt gefunden und es wurde auch keines erwartet.
+	\item [False-Positive $f_p$] Der Algorithmus findet ein Objekt, obwohl keines erwartet wurde, oder die Überlappung ist kleiner als $\omega$.
+	\item [False-Negative $f_n$] Der Algorithmus findet kein Objekt, obwohl eines erwartet wurde, oder die Überlappung ist kleiner als $\omega$.
+	\end{description}
+
+	In jedem Testdurchlauf werden die Anzahl $t_p$, $t_n$, $f_p$ und $f_n$ gezählt und mittels statistischer Gütekriterien ausgewertet. 
+
+  Wie auch bei \cite{TLD} sind diese Kriterien Genauigkeit (Precision) $P$, Trefferquote(Recall) $R$ und das gewichtet harmonische Mittel $F$.
+  
+  HIER WEITER!!!
+	
+	$P$ ist hierbei die Anzahl wahr-positiver Detections geteilt durch die Anzahl aller Detections, $R$ ist die Anzahl wahr-positiver Detections geteilt durch die Anzahl der Detections, die erwartet waren und $F$ kombiniert die beiden Messungen in der Form $F=2\times PR/(P+R)$ (Was heißt das eigentlich?).
+
+
+
+
 TLD beeindruckt durch sehr gute Ergebnisse beim Tracken von sehr unterschiedlichen Objekten, wie Fußgänger, Autos und Gesichtern.
 
 Der Ansatz ist nur bedingt geeignet. Probleme:
