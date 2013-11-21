@@ -3,7 +3,7 @@
 Object Detection ist eines der herausfordernsten Forschungsfelder in Computer Vision. Obwohl die Entwicklung von robusten und gut funktionierenden Ansätzen in den letzten Jahren stark zugenommen hat und unter kontrollierten Bedingungen auch sehr gute Ergebnisse liefert, ist das Problem des Suchen und Finden von einem oder mehreren Objekten in der ``realen'' Welt weiterhin ungelöst \cite{ODS}.
 
 \subsection{Evaluation}
-	Die Evaluierung von TLD erfolgt mit Hilfe eine Standardverfahrens zur Beurteilung von Klassifikatoren und findet auch in \cite{TLD}. Hierbei dienen die quantitativen Ergebnisse des Klassifizierers in jedem Testszenario als Maß. Da TLD ein binärer Klassifizier ist, gibt es zwei Arten von Fehlern die auftreten können. Entweder wird das Objekt in die Klasse $A$ eingeordnet, obwohl es zu $B$ gehört, oder es wird als Teil von $B$ bestimmt, gehört allerdings zur Klasse $A$. $A$ und $B$ sind in Falle von TLD ``gefunden'' und ``nicht gefunden''.
+	Die Evaluation von TLD erfolgt mit Hilfe eine Standardverfahrens zur Beurteilung von Klassifikatoren und findet auch in \cite{TLD}. Hierbei dienen die quantitativen Ergebnisse des Klassifizierers in jedem Testszenario als Maß. Da TLD ein binärer Klassifizier ist, gibt es zwei Arten von Fehlern die auftreten können. Entweder wird das Objekt in die Klasse $A$ eingeordnet, obwohl es zu $B$ gehört, oder es wird als Teil von $B$ bestimmt, gehört allerdings zur Klasse $A$. $A$ und $B$ sind in Falle von TLD ``gefunden'' und ``nicht gefunden''.
 	
 	Als Vergleichsbasis dient der Ground Truth. Das ist der Bereich, der die genaue Position des gesuchten Kopters im Bild markiert, gegeben durch eine BoundingBox $BB_{GT}$. Dieser wird mit dem Ergebnis von TLD verglichen, der ebenfalls eine BoundingBox $BB_{TLD}$ bei erfolgreicher Detection beziehnungsweise erfolgreichem Tracking liefert. Zwischen beiden Boxen wird die Überlappung bestimmt und geprüft, ob sie größer oder kleiner eines Thresholds $\omega$ ist. Daraus ergeben sich vier Fälle:
 
@@ -15,35 +15,57 @@ Object Detection ist eines der herausfordernsten Forschungsfelder in Computer Vi
 	\end{description}
 
 	In jedem Testdurchlauf werden die Anzahl $t_p$, $t_n$, $f_p$ und $f_n$ gezählt und mittels statistischer Gütekriterien ausgewertet. 
+  Wie auch bei \cite{TLD} sind diese Kriterien Genauigkeit (Precision) \begin{equation} P=\frac{t_p}{(t_p + f_p)},\end{equation}
+  Trefferquote (Recall) \begin{equation} R=\frac{t_p}{(t_p + f_n)} \end{equation}
+  und das gewichtete harmonische Mittel \begin{equation} F=\frac{2 \times (P \times R)}{(P + R)}.\end{equation}
 
-  Wie auch bei \cite{TLD} sind diese Kriterien Genauigkeit (Precision) $P$, Trefferquote(Recall) $R$ und das gewichtet harmonische Mittel $F$.
-  
   HIER WEITER!!!
-	
-	$P$ ist hierbei die Anzahl wahr-positiver Detections geteilt durch die Anzahl aller Detections, $R$ ist die Anzahl wahr-positiver Detections geteilt durch die Anzahl der Detections, die erwartet waren und $F$ kombiniert die beiden Messungen in der Form $F=2\times PR/(P+R)$ (Was heißt das eigentlich?).
+
+\subsection{Resultate}
+	Hier kommen die Resultate der Testreihen 
+
+\subsection{Auswertungen und Beobachtungen}
+TLD beeindruckt durch sehr gute Ergebnisse beim Tracken von sehr unterschiedlichen Objekten, wie Fußgänger, Autos und Gesichtern. Als Detectionstrategie ist dieser semi-supervised-learning-Ansatze für eine Vielzahl von Fällen geeignet. Wie die Resultate verdeutlichen, ist TLD für die Koptererkennung nur bedingt geeignet. Die Gründe werden im Folgenden analysiert.
+
+\paragraph{Einfluss des Detectors}
+Die letzte Komponente der Detectorkaskade, der Nearest-Neighbour-Classifier, speichert Patches des Objekts in der Größe $15\times15 px$. Bestimmt durch die BoundingBox wird meist auch ein Teil des Hintergrundes gespeichert und gelernt. Somit ist nicht nur das Objekt selbst, sondern auch seine Umgebung Teil der Repräsentation. Der Einfluss ist hierbei stark von Größe und Beschaffenheit des Objekts sowie der Menge an ``Hintergrund'', der gespeichert wird, abhängig.
+
+Ein Kopter wird durch einen anderen Kopter meist von der Seite wahrgenommen. Aufgrund der dünnen/kompakten/filigranen Struktur wird unweigerlich immer eine Menge Hintergrundinformationen im Patch gespeichert (HIER EIN BILD). Der Einfluss auf die Genauigkeit und die Trefferquote des Detectors ist damit sehr groß. Probleme treten vor allem dann auf, wenn der Hintergrund einen hohen Informationsgehalt hat, wie zum Beispiel Bäume oder Häuser, da der Kopter selbst strukturell eher einfach aufgebaut ist. Aber auch Hintergründe mit unterschiedlichen Farbstärke sind problematisch. So kann es vorkommen, dass ein Kopter, dessen Model vor einem hellen Hintergrund ``erlernt'' wurde, vor einem dunklen nicht mehr erkannt wird. 
+
+Um den Einfluss des Hintergrundes zu minimieren, ist es möglich nur einen Teil des Kopters initial zu markieren, wie zum Beispiel den Corpus ohne die Rotoren (HIER EIN BILD). Das führt allerdings dazu, dass der Kopter ausschlielich anhand dieses Teilbereichs erkannt wird, also nur von einer Seite. Das macht es unmöglich eine vollständiges Model des Objekts zu generieren.
+
+(BILD MIT KOPTER UND BOUNDINGBOX UND VIEL HINTERGRUND)
+(BILD MIT KOPTER UND BOUNDINGBOX UND KEINEM HINTERGRUND)
+
+\paragraph{Einfluss des Trackers}
+Die Struktur des Kopters bedingt nicht nur den Erfolg des Detectors, sondern beeinflusst ebenfalls die Leistung des Trackers. Dieser schätzt anhand einer regelmäßigen Anordnung von Punkte innerhalb einer BoundingBox in einem Frame, die Position der Punkte im Folgebild. Diese regelmäige Anordnung ist gleichförmig, wodurch viele Punkte, die zum Hintergrund gehören, die LKT-Schätzung beeinflussen (HIER EIN BILD). Auch hier stellen vor allem detailreiche Hintergründe ein Problem dar, weil durch die willkürliche Wahl der Punkte die Wahrscheinlichkeit erhöht wird, eine ungenaue Schätzung zu erhalten.
+
+(BILD MIT KOPTER UND GRID)
+
+Ein zusätzlicher Nachteil des Trackers ist, dass er keine Lernkomponente besitzt. Jede Verarbeitung ist unabhängig und verarbeitet keine zusätzlichen Informationen aus vergangenen Schätzungen, was bedeutet, dass der Tracker immer wieder die gleichen Fehler macht - im Gegensatz zum Detector, der aus seinen Fehlern ``lernt''.
+
+% Der Ansatz ist nur bedingt geeignet. Probleme:
+% \begin{itemize}
+% \item Speichern der Beispiele in Form von $15\times15$ patches, weil zu viel Hintergrund gespeichert wird,
+% \item Objekt (Kopter) hat filigrane Struktur,
+% \item ``Veschmelzung'' des Objekts mit dem Hintergrund
+% \end{itemize}
+% Weiteres...
+% \begin{itemize}
+% \item Ein paar Worte zur Umsetzung (openCV)
+% \item Erweiterungsmöglichkeiten - z.B. Verfolgung mehrerer Kopter gleichzeitig, Optimierungsvorschläge, weitere Einsatzmöglichkeiten (da TLD an sich ``alles'' tracken kann)
+% \item Zusammenfassung
+% \item ohne zusätzlich Detectionsverfahren (eventuell Tiefenbilder oder andere nicht-visuelle Ansätze) kaum möglich
+% \item Umwelteinflüsse in der Natur sind zu stark
+% \item Einfluss der unterschiedlichen Beleuchtungen der Szene
+% \item Hintergrund (Bäume etc)
+% \item Problem bei zusätzlichen Verfahren: Rechenleistung des Roboters(?)
+% \end{itemize}
+
+\subsection{Verbesserungen}
+Um mit TLD die Kopter besser erkennen zu können, sollten eine Reihe von Modifikationen am Algorithmus vorgenommen werden. Zum einen könnte die Tracker-Komponente mit einem anderen Verfahren die Punkte für die Schätzung wählen. Eventuell würde eine nicht gleichförmige Verteilung der Punkte innerhalb der BoundingBox die Genauigkeit erhöhen. Vom Zentrum zu den Rändern der Box könnte die Punktedichte abnehmen, wodurch der Einfluss des Hintergrunds auf das Ergebnis verringert werden kann.
 
 
-
-
-TLD beeindruckt durch sehr gute Ergebnisse beim Tracken von sehr unterschiedlichen Objekten, wie Fußgänger, Autos und Gesichtern.
-
-Der Ansatz ist nur bedingt geeignet. Probleme:
-\begin{itemize}
-\item Speichern der Beispiele in Form von $15\times15$ patches, weil zu viel Hintergrund gespeichert wird,
-\item Objekt (Kopter) hat filigrane Struktur,
-\item ``Veschmelzung'' des Objekts mit dem Hintergrund
-\end{itemize}
-Weiteres...
-\begin{itemize}
-\item Ein paar Worte zur Umsetzung (openCV)
-\item Erweiterungsmöglichkeiten - z.B. Verfolgung mehrerer Kopter gleichzeitig, Optimierungsvorschläge, weitere Einsatzmöglichkeiten (da TLD an sich ``alles'' tracken kann)
-\item Zusammenfassung
-\item ohne zusätzlich Detectionsverfahren (eventuell Tiefenbilder oder andere nicht-visuelle Ansätze) kaum möglich
-\item Umwelteinflüsse in der Natur sind zu stark
-\item Einfluss der unterschiedlichen Beleuchtungen der Szene
-\item Hintergrund (Bäume etc)
-\item Problem bei zusätzlichen Verfahren: Rechenleistung des Roboters(?)
-\end{itemize}
 Verbesserungen/Ansätze
 \begin{itemize}
 \item eventuell stärke Orientierung an natürlich Seh-prozessen bzw. Sensoren in der Natur (Auge der Fliege)
