@@ -24,10 +24,11 @@ Object Detection ist eines der herausfordernsten Forschungsfelder in Computer Vi
 \subsection{Resultate}
 	Hier kommen die Resultate der Testreihen 
 
-\subsection{Auswertungen und Beobachtungen}
-TLD beeindruckt durch sehr gute Ergebnisse beim Tracken von sehr unterschiedlichen Objekten, wie Fußgänger, Autos und Gesichtern. Als Detectionstrategie ist dieser semi-supervised-learning-Ansatze für eine Vielzahl von Fällen geeignet. Wie die Resultate verdeutlichen, ist TLD für die Koptererkennung nur bedingt geeignet. Die Gründe werden im Folgenden analysiert.
+\subsection{Auswertungen und Beobachtungen} 
+\label{subsec:conclusion}
+TLD beeindruckt durch sehr gute Ergebnisse beim Tracken von unterschiedlichen Objekten, wie Fußgänger, Autos und Gesichtern \cite{TLD}. Als Detectionstrategie ist dieser semi-supervised-learning-Ansatz für eine Vielzahl von Fällen geeignet. Die natürlich gegebenen Umwelteinflüsse wie zum Beispiel unterschiedliche Beleuchtungen der Szenerie durch Licht-Schatten-Wechsel werden durch die Detectorkaskade gut verarbeitet. Wie die Resultate jedoch verdeutlichen, ist TLD trotz der vielen Stärken für die Koptererkennung nur bedingt leistungsfähig. Die Gründe werden im Folgenden vorgestellt und analysiert.
 
-\paragraph{Einfluss des Detectors}
+\paragraph{Detectorkaskade}
 Die letzte Komponente der Detectorkaskade, der Nearest-Neighbour-Classifier, speichert Patches des Objekts in der Größe $15\times15 px$. Bestimmt durch die BoundingBox wird meist auch ein Teil des Hintergrundes gespeichert und gelernt. Somit ist nicht nur das Objekt selbst, sondern auch seine Umgebung Teil der Repräsentation. Der Einfluss ist hierbei stark von Größe und Beschaffenheit des Objekts sowie der Menge an ``Hintergrund'', der gespeichert wird, abhängig.
 
 Ein Kopter wird durch einen anderen Kopter meist von der Seite wahrgenommen. Aufgrund der dünnen/kompakten/filigranen Struktur wird unweigerlich immer eine Menge Hintergrundinformationen im Patch gespeichert (HIER EIN BILD). Der Einfluss auf die Genauigkeit und die Trefferquote des Detectors ist damit sehr groß. Probleme treten vor allem dann auf, wenn der Hintergrund einen hohen Informationsgehalt hat, wie zum Beispiel Bäume oder Häuser, da der Kopter selbst strukturell eher einfach aufgebaut ist. Aber auch Hintergründe mit unterschiedlichen Farbstärke sind problematisch. So kann es vorkommen, dass ein Kopter, dessen Model vor einem hellen Hintergrund ``erlernt'' wurde, vor einem dunklen nicht mehr erkannt wird. 
@@ -37,12 +38,12 @@ Um den Einfluss des Hintergrundes zu minimieren, ist es möglich nur einen Teil 
 (BILD MIT KOPTER UND BOUNDINGBOX UND VIEL HINTERGRUND)
 (BILD MIT KOPTER UND BOUNDINGBOX UND KEINEM HINTERGRUND)
 
-\paragraph{Einfluss des Trackers}
+\paragraph{MedianFlow Tracker}
 Die Struktur des Kopters bedingt nicht nur den Erfolg des Detectors, sondern beeinflusst ebenfalls die Leistung des Trackers. Dieser schätzt anhand einer regelmäßigen Anordnung von Punkte innerhalb einer BoundingBox in einem Frame, die Position der Punkte im Folgebild. Diese regelmäige Anordnung ist gleichförmig, wodurch viele Punkte, die zum Hintergrund gehören, die LKT-Schätzung beeinflussen (HIER EIN BILD). Auch hier stellen vor allem detailreiche Hintergründe ein Problem dar, weil durch die willkürliche Wahl der Punkte die Wahrscheinlichkeit erhöht wird, eine ungenaue Schätzung zu erhalten.
 
 (BILD MIT KOPTER UND GRID)
 
-Ein zusätzlicher Nachteil des Trackers ist, dass er keine Lernkomponente besitzt. Jede Verarbeitung ist unabhängig und verarbeitet keine zusätzlichen Informationen aus vergangenen Schätzungen, was bedeutet, dass der Tracker immer wieder die gleichen Fehler macht - im Gegensatz zum Detector, der aus seinen Fehlern ``lernt''.
+Ein zusätzlicher Nachteil des Trackers ist, dass er keine Lernkomponente besitzt. Jede Verarbeitung ist unabhängig und integriert keine zusätzlichen Informationen aus vergangenen Schätzungen, was bedeutet, dass der Tracker immer wieder die gleichen Fehler macht - im Gegensatz zum Detector, der aus seinen Fehlern ``lernt''. 
 
 % Der Ansatz ist nur bedingt geeignet. Probleme:
 % \begin{itemize}
@@ -62,14 +63,32 @@ Ein zusätzlicher Nachteil des Trackers ist, dass er keine Lernkomponente besitz
 % \item Problem bei zusätzlichen Verfahren: Rechenleistung des Roboters(?)
 % \end{itemize}
 
-\subsection{Verbesserungen}
-Um mit TLD die Kopter besser erkennen zu können, sollten eine Reihe von Modifikationen am Algorithmus vorgenommen werden. Zum einen könnte die Tracker-Komponente mit einem anderen Verfahren die Punkte für die Schätzung wählen. Eventuell würde eine nicht gleichförmige Verteilung der Punkte innerhalb der BoundingBox die Genauigkeit erhöhen. Vom Zentrum zu den Rändern der Box könnte die Punktedichte abnehmen, wodurch der Einfluss des Hintergrunds auf das Ergebnis verringert werden kann.
+\subsection{Modikfikationen und Verbesserungsvorschläge}
+Die strickte Trennung der einzelnen Komponenten in TLD bietet die Möglichkeit eine Reihe von Änderungen vorzunehmen, ohne die prinzipielle Arbeitsweise zu verändern. Das ist eine zusätzliche Stärke des Algorithmus. Im folgenden Abschnitt werden Modifikationen diskutiert, die TLD für die Koptererkennung leistungsfähiger machen können.
+
+\paragraph{Detectorkaskade}
+Neben der in \cite{TLD} diskutierten Vorschläge, wie zum Beispiel einen Forground Filter, der allerdings in dieser Arbeit sicherlich keine signifikanten Verbesserungen nach sich ziehen würde, gibt es zusätzliche Änderungen, die getestet werden könnten.
+
+Wie in \ref{subsec:conclusion} erläutert, ist die Datenbasis des Nearest-Neigbour-Classifier für die Koptererkennung nicht gut geignet. Die Struktur des Objekts bedingt das Speichern von zu vielen Hintergrundinformationen, was die Berechnung des $conf$-Wertes und damit die Klassifikation stark negativ beeinflusst.  
+
+\paragraph{MedianFlow Tracker}
+Zum einen könnte die Tracker-Komponente mit einem anderen Verfahren die Punkte für die Schätzung wählen. Eventuell würde eine nicht gleichförmige Verteilung der Punkte innerhalb der BoundingBox die Genauigkeit erhöhen. Vom Zentrum zu den Rändern der Box könnte die Punktedichte abnehmen, wodurch der Einfluss des Hintergrunds auf das Ergebnis verringert werden kann.
+
+KalmanFilter
+ParticleFilter
+
+\paragraph{Allgemein}
+Der Kopter soll selbst sein bestes Modell darstellen, weshalb als Vorgabe gilt, dass keine Modifikationen an ihm vorgenommen werden dürfen. Dazu gehören Markierungen jeglicher Art, wie zum Beispiel Farb- oder Musterapplikationen. Deshalb wurde TLD für die Implementation gewählt, weil die Verarbeitung grundsätzlich mit jedem Objekttyp funktioniert und keine speziellen Modifikationen am Objekt nötig sind. Wie die Resultate und die Auswertung zeigen, ist diese Restriktion jedoch zu stark, denn der Kopter selbst ist nicht signifikant genug, um sich von seiner Umgebung ausreichend abzuheben. Die Verarbeitung zusätzlicher Informationen ist somit unumgänglich.
+
+Neben den genannten Änderungen an TLD selbst, können eventuelle Änderungen am Kopter selbst erfolgversprechend. Da TLD prinzipiell auf farbunabhängig arbeitet, die Berechnung erfolgt einzig auf Grauwertbildern, könnten spezielle Markierungen auf den Flugrobotern die Ergebnisse verbessern, wie zum Beispiel eine signifkante Kombination eines horizontalen Streifenmusters, ähnlich wie beim Robocup, mit die Spielfeldbegrenzungen dargestellt werden.
+
+Eine Implementierung zur Verarbeitung von Farbbildern wäre ebenfalls eine Möglichkeit die Leistungsfähigkeit zu verbessern. Dazu müssen allerdings ebenfalls die im Allgemeinen uniformen Kopter farblich markiert werden. 
 
 
-Verbesserungen/Ansätze
-\begin{itemize}
-\item eventuell stärke Orientierung an natürlich Seh-prozessen bzw. Sensoren in der Natur (Auge der Fliege)
-\item Eventuell ein anderer Ansatz: Vielleicht sollte man eine 3-D Repräsentation des Objekts während des Trackens erzeugen? Der Mensch macht es sicher auch nicht anders. Schließlich weiß man ja oft, wonach man suchen muss, auch wenn das Erscheinungsbild des Objekts nicht mit dem bereits ``Erlernten'' übereinstimmt...
-\item Articulated shape models > hierbei werden Teile des Objekts einzeln repräsentiert und zu einem ganzen Zusammengesetzt. 
-\item Eventuell nicht so allgemeine Ansätze, sondern vorher viel mehr Wissen über das Objekt, den Kopter, als Grundlage nehmen. Eventuell ein 3- -Modell erzeugen und aus dem ermittelten Bild alle entsprechende Objekte auf dieses ``mappen''. 
-\end{itemize}
+% Verbesserungen/Ansätze
+% \begin{itemize}
+% \item eventuell stärke Orientierung an natürlich Seh-prozessen bzw. Sensoren in der Natur (Auge der Fliege)
+% \item Eventuell ein anderer Ansatz: Vielleicht sollte man eine 3-D Repräsentation des Objekts während des Trackens erzeugen? Der Mensch macht es sicher auch nicht anders. Schließlich weiß man ja oft, wonach man suchen muss, auch wenn das Erscheinungsbild des Objekts nicht mit dem bereits ``Erlernten'' übereinstimmt...
+% \item Articulated shape models > hierbei werden Teile des Objekts einzeln repräsentiert und zu einem ganzen Zusammengesetzt. 
+% \item Eventuell nicht so allgemeine Ansätze, sondern vorher viel mehr Wissen über das Objekt, den Kopter, als Grundlage nehmen. Eventuell ein 3- -Modell erzeugen und aus dem ermittelten Bild alle entsprechende Objekte auf dieses ``mappen''. 
+% \end{itemize}
