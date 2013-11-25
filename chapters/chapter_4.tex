@@ -43,7 +43,8 @@ Diese Klasse liefert eine Reihe Klassenmethoden für unterschiedliche Berechnung
 \paragraph{Zusätzliche Angaben}
 In den ersten Versionen des Programms wurde ein streng objektorientierter Ansatz verfolgt. Das bedeutet, dass das Objekt-Modell auch als eine solche Klasse definiert war. Und alle Objekte bildeten wiederum eine Grid, das als Vector-Variable hinterlegt war. Wie sich allerdings gezeigt hat, war die Abarbeitungsgeschwindigkeit bei einem großen Grid und damit einer Menge von Objekten nicht zufriedenstellend. Trotz Übergabe des Grids als call-of-reference-Zeigervariable war nur mit einer kleinen Gridgröße von maximal 4000 Objekten eine passable Abarbeitung möglich. Dies entsprach allerdings bei weitem nicht der in der originalen Matlab-Implementierung beschriebenen ca. 50.000 Boxen. Indexierungen über Zeigervariablen sind um ein Vielfaches schneller und deshalb wurde ein Refactoring durchgeführt, in dem alle laufzeitkritischen Vector-Variablen durch Zeiger ersetzt wurden. Die Herausforderung bestand im Anschluss darin, eine möglichst geschickte Indezierung zu erzeugen, das zum Teil mehrdimensionale Werte in einer eindimensionalen Variable hinterlegt werden müssen.
 
-\subsection{Tests}
+\subsection{Lern- und Testphasen}
+\label{subsection:learning_and_testing}
 Die Ergebnisse der originalen Implementation von TLD mittels Matlab sind beeindruckend...(HIER NOCH ETWAS ZU DEN ERGEBNISSEN). Aus diesem Grund viel die Wahl auf TLD.
 
 Nach der Implementation sollte die Eignung von TLD auf das Koptertracking getestet werden. Dazu wurden verschiedene Testszenarien erstellt und durchgespielt, die nun kurz vorgestellt werden.

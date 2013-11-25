@@ -1,8 +1,13 @@
-\documentclass[11pt,twoside,ngerman]{article}
+\documentclass[12pt,twoside,ngerman]{article}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{algorithm2e}
 \usepackage{mathpazo}
+%\usepackage[T1]{fontenc} % Computer Modern font
+%\renewcommand*\familydefault{\sfdefault}
+\usepackage[lining,scaled=.95]{ebgaramond} % The default is oldstyle numbers. 
+%% I have set the numbers to be lining to display lining numbers as well as
+%% oldstyle numbers
 \usepackage[T1]{fontenc}
 \usepackage[utf8x]{inputenc}
 \usepackage[a4paper]{geometry}
@@ -18,17 +23,18 @@
 %\usepackage[options]{package}
 
 \begin{document}
-%\begin{onehalfspace}
-\include{firstpage}
-\include{abstract}
-\begin{singlespace} \newpage{}\tableofcontents{} \end{singlespace}
+\begin{onehalfspace}
+\include{firstpage} % Deckblatt
+\include{abstract} 	% Abstract
+\newpage{}
+\begin{singlespace} \newpage{}\tableofcontents{} \end{singlespace} % Inhaltsverzeichnis
 \include{chapter_1} % Einleitung
 \include{chapter_2} % Verwandte Themen
 \include{chapter_3} % Tracking-Learning-Detection TLD
 \include{chapter_4} % Implementierung und Testszenarien
 \include{chapter_5} % Auswertung Ausblick
 \include{chapter_6} % Anhang
-\include{bibliography}
+\include{bibliography} 
 \include{declaration}
-%\end{onehalfspace}
+\end{onehalfspace}
 \end{document}

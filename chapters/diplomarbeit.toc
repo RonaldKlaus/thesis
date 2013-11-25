@@ -1,77 +1,78 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Einleitung}{6}
 \contentsline {subsection}{\numberline {1.1}Zielsetzung dieser Arbeit}{7}
-\contentsline {subsection}{\numberline {1.2}Aufbau der Arbeit}{8}
-\contentsline {paragraph}{Kapitel 1}{8}
-\contentsline {paragraph}{Kapitel 2}{8}
-\contentsline {paragraph}{Kapitel 3 }{8}
-\contentsline {paragraph}{Kapitel 4}{8}
+\contentsline {subsection}{\numberline {1.2}Aufbau der Arbeit}{9}
+\contentsline {paragraph}{Kapitel 1}{9}
+\contentsline {paragraph}{Kapitel 2}{9}
+\contentsline {paragraph}{Kapitel 3 }{9}
+\contentsline {paragraph}{Kapitel 4}{9}
 \contentsline {paragraph}{Kapitel 5}{9}
-\contentsline {section}{\numberline {2}Verwandte Themen (Verwandte Arbeiten?) }{10}
+\contentsline {paragraph}{Anhang}{9}
+\contentsline {section}{\numberline {2}Verwandte Themen }{10}
 \contentsline {subsection}{\numberline {2.1}Object Tracking}{10}
 \contentsline {paragraph}{Point-Tracking}{11}
 \contentsline {paragraph}{Kernel-Tracking}{12}
-\contentsline {paragraph}{Silhouette-Tracking}{12}
-\contentsline {subsection}{\numberline {2.2}Object Detection}{13}
-\contentsline {paragraph}{Point-Detectors}{13}
-\contentsline {paragraph}{Background Substraction}{13}
+\contentsline {paragraph}{Silhouette-Tracking}{13}
+\contentsline {subsection}{\numberline {2.2}Object Detection}{14}
+\contentsline {paragraph}{Point-Detectors}{14}
+\contentsline {paragraph}{Background Substraction}{14}
 \contentsline {paragraph}{Image Segmentation}{14}
-\contentsline {subsection}{\numberline {2.3}Maschinelles Lernen}{14}
-\contentsline {subsubsection}{\numberline {2.3.1}Methoden}{14}
-\contentsline {paragraph}{Supervised Learning}{15}
-\contentsline {paragraph}{Unsuperviced Learning}{15}
-\contentsline {subsection}{\numberline {2.4}Beispiele f\IeC {\"u}r Tracking-Implementationen}{15}
-\contentsline {paragraph}{Gesichtserkennung}{15}
-\contentsline {paragraph}{Fu\IeC {\ss }g\IeC {\"a}nger}{15}
-\contentsline {paragraph}{Stra\IeC {\ss }enschilder}{15}
-\contentsline {paragraph}{Schrift}{15}
-\contentsline {paragraph}{Autos}{16}
-\contentsline {section}{\numberline {3}Tracking Learning Detection - TLD}{17}
-\contentsline {subsection}{\numberline {3.1}Tracking}{17}
-\contentsline {subsubsection}{\numberline {3.1.1}Der optischen Flusses und der Lucas-Kanade-Algorithmus}{17}
-\contentsline {subsubsection}{\numberline {3.1.2}FB, NCC und Median Flow Tracker}{18}
-\contentsline {subsection}{\numberline {3.2}Detection}{21}
-\contentsline {subsubsection}{\numberline {3.2.1}Objekt-Modell}{21}
-\contentsline {subsubsection}{\numberline {3.2.2}Sliding-Window}{22}
-\contentsline {subsubsection}{\numberline {3.2.3}Varianzfilter}{22}
-\contentsline {subsubsection}{\numberline {3.2.4}Ensemble-Classifier}{24}
-\contentsline {paragraph}{Random Ferns}{24}
-\contentsline {subsubsection}{\numberline {3.2.5}Template-Matching und Nearest-Neighbour-Classifier}{25}
-\contentsline {paragraph}{Template-Matching}{25}
-\contentsline {paragraph}{Nearest-Neighbour-Classifier}{26}
-\contentsline {subsubsection}{\numberline {3.2.6}Cluster-Verfahren}{27}
-\contentsline {subsection}{\numberline {3.3}Maschinelles Lernen}{27}
-\contentsline {subsubsection}{\numberline {3.3.1}P-N Learning}{27}
-\contentsline {paragraph}{Bootstrapping}{28}
-\contentsline {paragraph}{Constraints}{28}
-\contentsline {subsection}{\numberline {3.4}Zusammenspiel der Komponenten}{29}
-\contentsline {paragraph}{$T.conf\geq D.conf$}{30}
-\contentsline {paragraph}{$T.conf<D.conf$ }{30}
-\contentsline {subsection}{\numberline {3.5}Initialisierung}{31}
-\contentsline {section}{\numberline {4}Implementierung und Testszenarien}{32}
-\contentsline {subsection}{\numberline {4.1}Programmierung}{32}
-\contentsline {subsubsection}{\numberline {4.1.1}Klassenstruktur}{32}
-\contentsline {paragraph}{Klasse \textit {CopterTracking}}{32}
-\contentsline {paragraph}{Klasse \textit {TLD}}{33}
-\contentsline {paragraph}{Klasse \textit {Tracker}}{33}
-\contentsline {paragraph}{Klasse \textit {Detector}}{33}
-\contentsline {paragraph}{Klasse \textit {VarianceClassifier}}{33}
-\contentsline {paragraph}{Klasse \textit {EnsembleClassifier}}{33}
-\contentsline {paragraph}{Klasse \textit {NearestNeigbourClassifier}}{33}
-\contentsline {paragraph}{Klasse \textit {Result}}{34}
-\contentsline {paragraph}{Klasse \textit {Utility}}{34}
-\contentsline {paragraph}{Zus\IeC {\"a}tzliche Angaben}{34}
-\contentsline {subsection}{\numberline {4.2}Tests}{34}
-\contentsline {subsubsection}{\numberline {4.2.1}Videosequenzen}{35}
-\contentsline {subsubsection}{\numberline {4.2.2}Kamerasequenzen}{35}
-\contentsline {section}{\numberline {5}Auswertung und Ausblick}{36}
-\contentsline {subsection}{\numberline {5.1}Evaluation}{36}
-\contentsline {subsection}{\numberline {5.2}Resultate}{37}
-\contentsline {subsection}{\numberline {5.3}Auswertungen und Beobachtungen}{37}
-\contentsline {paragraph}{Detectorkaskade}{37}
-\contentsline {paragraph}{MedianFlow Tracker}{38}
-\contentsline {subsection}{\numberline {5.4}Modikfikationen und Verbesserungsvorschl\IeC {\"a}ge}{38}
-\contentsline {paragraph}{Detectorkaskade}{38}
-\contentsline {paragraph}{MedianFlow Tracker}{38}
-\contentsline {paragraph}{Allgemein}{39}
-\contentsline {section}{\numberline {6}Anhang}{40}
+\contentsline {subsection}{\numberline {2.3}Maschinelles Lernen}{15}
+\contentsline {subsubsection}{\numberline {2.3.1}Methoden}{15}
+\contentsline {paragraph}{Supervised Learning}{16}
+\contentsline {paragraph}{Unsuperviced Learning}{16}
+\contentsline {subsection}{\numberline {2.4}Beispiele f\IeC {\"u}r Tracking-Implementationen}{16}
+\contentsline {paragraph}{Gesichtserkennung}{17}
+\contentsline {paragraph}{Fu\IeC {\ss }g\IeC {\"a}nger}{17}
+\contentsline {paragraph}{Stra\IeC {\ss }enschilder}{17}
+\contentsline {paragraph}{Schrift}{17}
+\contentsline {paragraph}{Autos}{17}
+\contentsline {section}{\numberline {3}Tracking Learning Detection - TLD}{18}
+\contentsline {subsection}{\numberline {3.1}Tracking}{18}
+\contentsline {subsubsection}{\numberline {3.1.1}Der optischen Flusses und der Lucas-Kanade-Algorithmus}{18}
+\contentsline {subsubsection}{\numberline {3.1.2}FB, NCC und Median Flow Tracker}{20}
+\contentsline {subsection}{\numberline {3.2}Detection}{22}
+\contentsline {subsubsection}{\numberline {3.2.1}Objekt-Modell}{24}
+\contentsline {subsubsection}{\numberline {3.2.2}Sliding-Window}{24}
+\contentsline {subsubsection}{\numberline {3.2.3}Varianzfilter}{24}
+\contentsline {subsubsection}{\numberline {3.2.4}Ensemble-Classifier}{26}
+\contentsline {paragraph}{Random Ferns}{26}
+\contentsline {subsubsection}{\numberline {3.2.5}Template-Matching und Nearest-Neighbour-Classifier}{28}
+\contentsline {paragraph}{Template-Matching}{28}
+\contentsline {paragraph}{Nearest-Neighbour-Classifier}{29}
+\contentsline {subsubsection}{\numberline {3.2.6}Cluster-Verfahren}{29}
+\contentsline {subsection}{\numberline {3.3}Maschinelles Lernen}{30}
+\contentsline {subsubsection}{\numberline {3.3.1}P-N Learning}{30}
+\contentsline {paragraph}{Bootstrapping}{31}
+\contentsline {paragraph}{Constraints}{31}
+\contentsline {subsection}{\numberline {3.4}Zusammenspiel der Komponenten}{32}
+\contentsline {paragraph}{$T.conf\geq D.conf$}{33}
+\contentsline {paragraph}{$T.conf<D.conf$ }{34}
+\contentsline {subsection}{\numberline {3.5}Initialisierung}{34}
+\contentsline {section}{\numberline {4}Implementierung und Testszenarien}{35}
+\contentsline {subsection}{\numberline {4.1}Programmierung}{35}
+\contentsline {subsubsection}{\numberline {4.1.1}Klassenstruktur}{36}
+\contentsline {paragraph}{Klasse \textit {CopterTracking}}{36}
+\contentsline {paragraph}{Klasse \textit {TLD}}{36}
+\contentsline {paragraph}{Klasse \textit {Tracker}}{36}
+\contentsline {paragraph}{Klasse \textit {Detector}}{36}
+\contentsline {paragraph}{Klasse \textit {VarianceClassifier}}{36}
+\contentsline {paragraph}{Klasse \textit {EnsembleClassifier}}{36}
+\contentsline {paragraph}{Klasse \textit {NearestNeigbourClassifier}}{37}
+\contentsline {paragraph}{Klasse \textit {Result}}{37}
+\contentsline {paragraph}{Klasse \textit {Utility}}{37}
+\contentsline {paragraph}{Zus\IeC {\"a}tzliche Angaben}{37}
+\contentsline {subsection}{\numberline {4.2}Lern- und Testphasen}{38}
+\contentsline {subsubsection}{\numberline {4.2.1}Videosequenzen}{38}
+\contentsline {subsubsection}{\numberline {4.2.2}Kamerasequenzen}{38}
+\contentsline {section}{\numberline {5}Auswertung und Ausblick}{39}
+\contentsline {subsection}{\numberline {5.1}Evaluation}{39}
+\contentsline {subsection}{\numberline {5.2}Resultate}{40}
+\contentsline {subsection}{\numberline {5.3}Auswertungen und Beobachtungen}{40}
+\contentsline {paragraph}{Detectorkaskade}{40}
+\contentsline {paragraph}{MedianFlow Tracker}{41}
+\contentsline {subsection}{\numberline {5.4}Modikfikationen und Verbesserungsvorschl\IeC {\"a}ge}{42}
+\contentsline {paragraph}{Detectorkaskade}{42}
+\contentsline {paragraph}{MedianFlow Tracker}{42}
+\contentsline {paragraph}{Allgemein}{42}
+\contentsline {section}{\numberline {6}Anhang}{44}
