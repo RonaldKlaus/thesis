@@ -1,11 +1,11 @@
 % -*- root: diplomarbeit.tex -*-
 \section{Tracking Learning Detection - TLD}
-	Die originale Implementation von TLD erfolgte in Matlab. Teil dieser Arbeit ist eine Adaption in C++. Zum Verständnis der einzelnen Komponenten und für die Darstellung der Arbeitsweise wird in diesem Kapitel der Algorithmus im Detail vorgestellt.
+	Die originale Implementation von TLD erfolgte in Matlab. Teil dieser Arbeit ist eine Adaption in C++. Zum Verständnis der einzelnen Komponenten und für die Darstellung der Arbeitsweise wird in diesem Kapitel der Algorithmus im Detail vorgestellt und theoretisch betrachtet.
 
 	\subsection{Tracking}
 	Die Tracker-Komponente hat im Wesentlichen die Aufgabe die Bewegung eines Objekts $o$ zu schätzen, wobei typischerweise die Annahme besteht, dass das Objekt in einer Bildsequenz sichtbar ist. Es gibt in der Praxis eine Reihe von Ansätzen, die sich hinsichtlich der Repräsentation des Objekts, zum Beispiel als Punkte, Kontouren, Modelle oder optischer Fluss, als auch der algorithmischen Verarbeitung unterscheiden.
 
-	In dieser Arbeit wird, wie im grundlegenden TLD-Ansatz, der Media Flow Tracker\cite{MFT} implentiert. Der Grundgedanken basiert auf der\textit{ forward-backward consistency assumption}, die besagt, dass erfolgreiches Verfolgen unabhängig von der Richtung des Zeitflusses sein sollte. Als erstes wird eine Menge von gleichverteilten Punkten, definiert durch die BoundingBox, in einem Bild $t$ erzeugt. Im nächsten Schritt erfolgt die \textit{forward} Bestimmung des optischen Flusses mittels Lucas-Kanade-Algorithmus\cite{OPT} im Bild $t+1$. Die Punktemenge, die dadurch ermittelt wurde, wird nun \textit{backward} für die Bestimmung des optischen Flusses im Bild $t$ genutzt. Die Informationen aus beiden Lucas-Kanade-Berechnungen werden zur Bestimmung es \textit{Forward-Backward Errors (FB)} um fehlerhafte Punkte zu filtern. Die verbliebenen Punkte bestimmen die Transformation der BoundingBox. Abbildung \ref{fig:MFT} verdeutlicht das Prinzip.
+	In dieser Arbeit wird, wie im grundlegenden TLD-Ansatz, der MediaFlow- Tracker \cite{MFT} implentiert. Der Grundgedanken basiert auf der\textit{ forward-backward consistency assumption}, die besagt, dass erfolgreiches Verfolgen unabhängig von der Richtung des Zeitflusses sein sollte. Als erstes wird eine Menge von gleichverteilten Punkten, definiert durch die BoundingBox, in einem Bild $t$ erzeugt. Im nächsten Schritt erfolgt die \textit{forward} Bestimmung des optischen Flusses mittels Lucas-Kanade-Algorithmus \cite{OPT} im Bild $t+1$. Die Punktemenge, die dadurch ermittelt wurde, wird nun \textit{backward} für die Bestimmung des optischen Flusses im Bild $t$ genutzt. Die Informationen aus beiden Lucas-Kanade-Berechnungen werden zur Bestimmung es \textit{Forward-Backward Errors (FB)} um fehlerhafte Punkte zu filtern. Die verbliebenen Punkte bestimmen die Transformation der BoundingBox. Abbildung \ref{fig:MFT} verdeutlicht das Prinzip.
 
 	\begin{figure}
 	\centering{}\includegraphics[scale=0.7]{../pictures/MediaFlow_0.png}\caption[Arbeitsweise des Median Flow Trackers]{Arbeitsprinzip des Median Flow Trackers. Alle Punkte, die sowohl in $t$ als auch in $t+1$ vorhanden sind, werden als Grundlage für die Berechnung der BoundingBox gentutzt. (Quelle: \cite{MFT})\label{fig:MFT} }
@@ -46,10 +46,10 @@
 	I_{t}(p_{25})
 	\end{array}\right].
 	\end{equation}
-	Mittels Methode der kleines Quadrate kann die Lösung des Gleichungssystems minimiert. Für weitere Details zur Implementierung in \textit{OpenCV}
-	siehe\cite{OCV}.
 	\end{enumerate}
-
+	Mittels Methode der kleines Quadrate kann die Lösung des Gleichungssystems minimiert werden. Für weitere Details zur Implementierung in \textit{OpenCV}
+	siehe \cite{OCV}.
+	
 	\subsubsection{FB, NCC und Median Flow Tracker}
 	Sei $S=(I_{t},I_{t+1},..,I_{t+k})$ eine Bildsequenz und sei $x_{t}$ ein Punkt zur Zeit $t$. Unter Verwendung eines beliebigen Trackers wird $x$ in $k$ Bildern aus $S$ verfolgt. Die erzeugte Trajektorie ist $T_{f}^{k}=(x_{t},x_{t+1},...,x_{t+k})$, mit $f$ für \textit{forward} der Länge $k$. Ziel ist es nun die Gültigkeit von $T_{f}^{k}$zu bestimmen. Hierzu wird der Punkt $x_{t+k}$\textit{backward} zum ersten Bild $I_{t}$ verfolgt. Der resultierende Trajektorie ist $T_{b}^{k}=(\hat{x}_{t},\hat{x}_{t+1},...,\hat{x}_{t+k})$, mit $b$ für \textit{backward} und $\hat{x}_{t+1}=x_{t+1}$. Der Fehler zwischen beiden Trajektorien ist definiert als $FB=distance(T_{f}^{k},T_{b}^{k})$, mit dem euklidischen Abstand zwischen dem initialen Punkt $x_{t}$ von $T_{f}^{k}$ und dem letzten Punkt $\hat{x}_{t}$ von $T_{b}^{k}$, also $distance(T_{f}^{k},T_{b}^{k})=||x_{t}-\hat{x}_{t}||$.
 
@@ -101,22 +101,31 @@
 
 	Die Kaskade des Detectors besteht aus drei Teilen, dem Varianzfilter, dem \textit{Ensemble-Classifier} und als letzte Instanz der \textit{NearestNeigbour-Classifier}, die im folgenden einzeln vorgestellt werden. Dabei ist der Grundgedanke, dass ein gesuchtes Objekt komplexer als der Bildhintergrund ist. Jeder Teil hat die Aufgabe, die \textit{windows} zu Klassifizieren und entweder zu verwerfen, da sie nicht dem gesuchten Objekt entsprechen können, oder an den nächsten Klassifizierer weiterzureichen, wenn keine eindeutig negative Aussage getroffen werden kann. Nach einer kompletten Abarbeitung des Gitters werden die übrig gebliebenen Kandidaten mittels Cluster-Verfahren gruppiert. Als Kriterium dient der Grad der Überlappung der einzelnen \textit{windows.} Aus jedem Cluster wird abschließend eine gemittelte BoundingBox berechnet, die ein mögliches gefundenes Objekt repräsentiert. Im Gegensatz zu vielen anderen Detector-Ansätzen, benötigen diese Implementation keine offline-Trainingsdaten. Die Lernkomponente, bestehend aus Ensemble-Classifier und Nearest-Neighbour-Classifier, wird mit der ersten BoundingBox initialisiert. Alle weiteren Trainingsbeispiele werden mit Hilfe des Trackers und der P-N Learning-Komponente erzeugt. Genaueres folgt im Punkt Maschinelles Lernen.
 
-\begin{algorithm}[H]
-\KwData{this text}
-\KwResult{how to write algorithm with \LaTeX2e }
+	\begin{algorithm}[H]
+	\vspace{0.5cm}
+	% Anpassen der Darstellung für c-style
+	\SetStartEndCondition{ (}{)}{)}\SetAlgoBlockMarkers{}{\}}%
+	\SetKwProg{Fn}{}{\{}{}\SetKwFunction{FRecurs}{void FnRecursive}%
+	\SetKwFor{For}{for}{\{}{}%
+	\SetKwIF{If}{ElseIf}{Else}{if}{\{}{elif}{else\{}{}%
+	\SetKwFor{While}{while}{\{}{}%
+	\SetKwRepeat{Repeat}{repeat\{}{until}%
+	\AlgoDisplayBlockMarkers\SetAlgoNoLine%
 
-initialization\;
-\While{not at end of this document}{
+	\KwData{Input}
+	\KwResult{OUTPUT }
+	initialization\;
+	\While{not at end of this document}{
 	read current\;
 	\eIf{understand}{
-		go to next section\;
-		current section becomes this one\;
-		}{
-		go back to the beginning of current section\;
+	go to next section\;
+	current section becomes this one\;
+	}{
+	go back to the beginning of current section\;
 	}
-}
-\caption{How to write algorithms}
-\end{algorithm}
+	}
+	\caption{Detection}
+	\end{algorithm}
 
 	\subsubsection{Objekt-Modell}
 	Die Modellierung des Objekts und dessen Umgebung erfolgt in einer speziellen Datenstruktur

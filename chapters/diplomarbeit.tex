@@ -1,4 +1,4 @@
-\documentclass[12pt,twoside,ngerman,a4paper]{article}
+\documentclass[11pt,twoside,ngerman,a4paper]{article}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[T1]{fontenc}
@@ -7,11 +7,11 @@
 \usepackage{verbatim} %Comments
 \usepackage{amsmath}
 \usepackage{setspace}
-\usepackage[lining,scaled=.95]{ebgaramond} % The default is oldstyle numbers. 
+%\usepackage[lining,scaled=.95]{ebgaramond} % The default is oldstyle numbers. 
 %% I have set the numbers to be lining to display lining numbers as well as
 %% oldstyle numbers
 \usepackage[utf8x]{inputenc}
-\usepackage[a4paper]{geometry}
+\usepackage[]{geometry}
 \geometry{verbose,tmargin=3.3cm,bmargin=6.6cm,lmargin=4.6cm,rmargin=2.3cm,headheight=2cm,footskip=3cm}
 \usepackage{fancyhdr} % für eigene Kopf- und Fußzeilen
 \pagestyle{fancy} %eigener Seitenstil
@@ -31,7 +31,10 @@
 %\PassOptionsToPackage{normalem}{ulem}
 %\usepackage{microtype}
 %\usepackage[english, ngerman]{babel}
-\usepackage{algorithm2e}
+\usepackage[ruled,vlined]{algorithm2e}
+% \usepackage{algorithm}
+% \usepackage{algorithmic}
+% \usepackage{algpseudocode}
 % Ändern der automatischen Überschriften
 \renewcommand{\listfigurename}{Liste der Abbildung} 
 \renewcommand{\contentsname}{Inhaltsverzeichnis}

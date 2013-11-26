@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  26 NOV 2013 12:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  26 NOV 2013 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -121,116 +121,10 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/ebgaramond/ebgaramond.sty
-Package: ebgaramond 2013/05/22 (Bob Tennent and autoinst) Style file for EB Gar
-amond fonts.
-(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
-(/usr/local/texlive/2013/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks24
-\XKV@tempa@toks=\toks25
-\XKV@depth=\count101
-File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
-)) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
-Package textcomp Info: Sub-encoding information:
-(textcomp)               5 = only ISO-Adobe without \textcurrency
-(textcomp)               4 = 5 + \texteuro
-(textcomp)               3 = 4 + \textohm
-(textcomp)               2 = 3 + \textestimated + \textcurrency
-(textcomp)               1 = TS1 - \textcircled - \t
-(textcomp)               0 = TS1 (full)
-(textcomp)             Font families with sub-encoding setting implement
-(textcomp)             only a restricted character set as indicated.
-(textcomp)             Family '?' is the default used for unknown fonts.
-(textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
-LaTeX Info: Redefining \oldstylenums on input line 266.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
-
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/fontaxes/fontaxes.sty
-Package: fontaxes 2011/12/16 v1.0c Font selection axes
-LaTeX Info: Redefining \upshape on input line 29.
-LaTeX Info: Redefining \itshape on input line 31.
-LaTeX Info: Redefining \slshape on input line 33.
-LaTeX Info: Redefining \scshape on input line 37.
-)
-LaTeX Info: Redefining \swshape on input line 127.
-LaTeX Info: Redefining \oldstylenums on input line 138.
-LaTeX Info: Redefining \textsw on input line 145.
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks26
-\inpenc@posthook=\toks27
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )) (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucs.sty
@@ -238,10 +132,10 @@ Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count102
-\uc@combtoks=\toks28
-\uc@combtoksb=\toks29
-\uc@temptokena=\toks30
+\uc@secondtry=\count101
+\uc@combtoks=\toks26
+\uc@combtoksb=\toks27
+\uc@temptokena=\toks28
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
@@ -250,10 +144,12 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count103
-\Gm@cntv=\count104
-\c@Gm@tempcnt=\count105
+\Gm@cnth=\count102
+\Gm@cntv=\count103
+\c@Gm@tempcnt=\count104
 \Gm@bindingoffset=\dimen114
 \Gm@wd@mp=\dimen115
 \Gm@odd@mp=\dimen116
@@ -262,7 +158,7 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutheight=\dimen119
 \Gm@layouthoffset=\dimen120
 \Gm@layoutvoffset=\dimen121
-\Gm@dimlist=\toks31
+\Gm@dimlist=\toks29
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip46
 \f@ncyO@elh=\skip47
@@ -275,7 +171,7 @@ Package ifvtex Info: VTeX not detected.
 \f@ncyO@orf=\skip54
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count106
+\c@AlgoLine=\count105
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty
@@ -318,9 +214,9 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \algoheightrule=\skip68
 \algotitleheightruledefault=\skip69
 \algotitleheightrule=\skip70
-\c@algocfline=\count107
-\c@algocfproc=\count108
-\c@algocf=\count109
+\c@algocfline=\count106
+\c@algocfproc=\count107
+\c@algocf=\count108
 \algocf@algoframe=\box36
 \algocf@algobox=\box37
 ) (/Users/ronald/Documents/thesis/chapters/diplomarbeit.aux (/Users/ronald/Docu
@@ -333,47 +229,40 @@ s/thesis/chapters/chapter_6.aux) (/Users/ronald/Documents/thesis/chapters/bibli
 ography.aux) (/Users/ronald/Documents/thesis/chapters/declaration.aux))
 \openout1 = `diplomarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Try loading font information for T1+EBGaramond-LF on input 
-line 42.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/ebgaramond/T1EBGaramond-LF.fd
-File: T1EBGaramond-LF.fd 2013/02/13 (autoinst) Font definitions for T1/EBGaramo
-nd-LF.
-)
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 42.
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 45.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+) (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
+\scratchcounter=\count109
 \scratchdimen=\dimen128
 \scratchbox=\box38
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count113
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count112
 \MPscratchDim=\dimen129
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks33
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -403,17 +292,14 @@ G,.JBIG2,.JB2,.eps]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-))
-\c@mv@tabular=\count116
-\c@mv@boldtabular=\count117
-(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucsencs.def
+)) (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 
 Package geometry Warning: The marginal notes overrun the paper.
-     Add 29.55858pt and more to the right margin.
+     Add 47.55858pt and more to the right margin.
 
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
@@ -432,12 +318,12 @@ Package geometry Warning: The marginal notes overrun the paper.
 * \topmargin=-60.28131pt
 * \headheight=56.9055pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=85.35826pt
-* \marginparwidth=85.0pt
+* \marginparwidth=103.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -450,7 +336,7 @@ Package geometry Warning: The marginal notes overrun the paper.
 \openout2 = `firstpage.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/firstpage.tex
-Overfull \hbox (187.01593pt too wide) in paragraph at lines 3--5
+Overfull \hbox (186.95201pt too wide) in paragraph at lines 3--5
 []   
  []
 
@@ -460,36 +346,16 @@ File: ../pictures/HU_Logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../pictures/HU_Logo.jpg used on input line 7.
 (pdftex.def)             Requested size: 91.04872pt x 91.05112pt.
 
-Overfull \hbox (4.36502pt too wide) in paragraph at lines 6--8
+Overfull \hbox (4.92592pt too wide) in paragraph at lines 6--8
 []  [] 
  []
 
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 12.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <24.88> not avai
-lable
-(Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
-ne 12.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 12.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 14.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 17.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 20.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <14.4> not avail
-able
-(Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
-ne 21.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 21.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/sc' in size <14.4> not avai
-lable
-(Font)              Font shape `T1/EBGaramond-LF/m/sc' tried instead on input l
-ine 22.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/sc' will be
-(Font)              scaled to size 13.67995pt on input line 22.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 12.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 21.
+LaTeX Font Info:    Font shape `T1/ppl/bx/sc' in size <12> not available
+(Font)              Font shape `T1/ppl/b/sc' tried instead on input line 22.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 33.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
@@ -525,56 +391,43 @@ ures/HU_Logo.jpg>] [2
 \openout2 = `abstract.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/abstract.tex
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 2.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <10.95> not avai
-lable
-(Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
-ne 2.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 2.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 2.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-Overfull \hbox (17.43192pt too wide) in paragraph at lines 8--9
-\T1/EBGaramond-LF/m/n/10.95 sind je-doch, be-zo-gen auf die Möglichkeiten zur O
-p-ti-mierung, gegen-sät-zlich. Die Genauigkeit
+Overfull \hbox (2.86197pt too wide) in paragraph at lines 4--5
+[]\T1/ppl/m/n/10 In dieser Ar-beit wird ein Tracking-Detection-Algorithmus hin-
+sichtlich seiner
  []
 
 
-Overfull \hbox (15.0476pt too wide) in paragraph at lines 8--9
-\T1/EBGaramond-LF/m/n/10.95 wird vor allem dadurch er-re-icht wird, dass der Su
-chra-dius des Ob-jekts im Fol-ge-bild möglichst
+Overfull \hbox (15.40175pt too wide) in paragraph at lines 6--7
+\T1/ppl/m/n/10 automated-Tracking ein eine Nutzereingabe für die er-ste Ob-jek-
+t-def-i-ni-tion benötigt. 
  []
 
 
-Overfull \hbox (4.69463pt too wide) in paragraph at lines 10--11
-[]\T1/EBGaramond-LF/m/n/10.95 Typischerweise ist das Finden und Ver-fol-gen von
- Ob-jek-ten mit einer nicht-statitischen
+Overfull \hbox (1.66237pt too wide) in paragraph at lines 8--9
+\T1/ppl/m/n/10 theit [[]]. Beide sind je-doch, be-zo-gen auf die Möglichkeiten 
+zur Op-ti-mierung,
  []
 
-
-Overfull \hbox (5.83212pt too wide) in paragraph at lines 10--11
-\T1/EBGaramond-LF/m/n/10.95 lichkeit zum gesuchten Ob-jekt haben, kom-plexe und
- nicht-statis-che Struk-turen wie Bäume
- []
-
-)
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/it' will be
-(Font)              scaled to size 11.39996pt on input line 44.
-[3
+) [3
 
 ] [4
 
 
 ]
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <17.28> not avai
-lable
-(Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
-ne 46.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 46.
-(/Users/ronald/Documents/thesis/chapters/diplomarbeit.lof)
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 49.
+(/Users/ronald/Documents/thesis/chapters/diplomarbeit.lof
+Overfull \hbox (5.11153pt too wide) in paragraph at lines 9--9
+ [][] []\T1/ppl/m/n/10.95 Klassendiagramm zur Im-ple-men-ta-tion mit den wichti
+g-sten At-tributen 
+ []
+
+)
 \tf@lof=\write3
 \openout3 = `diplomarbeit.lof'.
 
@@ -587,12 +440,8 @@ LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
 [7] [8
 
 ] (/Users/ronald/Documents/thesis/chapters/diplomarbeit.toc
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <12> not availab
-le
-(Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
-ne 1.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 1.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 1.
 )
 \tf@toc=\write5
 \openout5 = `diplomarbeit.toc'.
@@ -603,121 +452,80 @@ LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
 \openout2 = `chapter_1.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_1.tex
-Overfull \hbox (5.21272pt too wide) in paragraph at lines 3--4
-\T1/EBGaramond-LF/m/n/12 Computer Vi-sion, das ma-chinelle Se-hen, ist eine gro
-ÿe Her-aus-forderung in der Bild-ver-ar-beitung
+Overfull \hbox (10.27896pt too wide) in paragraph at lines 3--4
+\T1/ppl/m/n/10.95 Bild-ver-ar-beitung und Feld in-ten-siver Forschung. Die zune
+hmende Leis-tungs-fähigkeit
  []
 
 
-Overfull \hbox (9.69043pt too wide) in paragraph at lines 3--4
-\T1/EBGaramond-LF/m/n/12 und Feld in-ten-siver Forschung. Die zunehmende Leis-t
-ungs-fähigkeit der Rech-ner und verbesserte
+Overfull \hbox (8.3084pt too wide) in paragraph at lines 3--4
+\T1/ppl/m/n/10.95 zten Jahren in-ten-sivieren die Be-stre-bun-gen auf diesem Ge
+-biet zusät-zlich. Die dadurch
  []
 
-
-Overfull \hbox (27.46265pt too wide) in paragraph at lines 3--4
-\T1/EBGaramond-LF/m/n/12 Straÿen-schildern, Erken-nen von Fahrbah-n-markierun-g
-en sowie Fuÿgängern oder an-dere Verkehrsteil-
- []
-
-
-Overfull \hbox (21.01755pt too wide) in paragraph at lines 3--4
-\T1/EBGaramond-LF/m/n/12 Di-ag-nos-tik [[]]. Und nicht zuletzt bildet die Auswe
-r-tung von Kam-er-a-daten auch im Forschungs-
- []
-
-
-Overfull \hbox (9.62073pt too wide) in paragraph at lines 5--6
-\T1/EBGaramond-LF/m/n/12 nung von ``gel-ern-ten'' Ob-jek-ten ve-r-ar-beitet, is
-t eine Adap-tion auf Com-put-erebene nicht möglich.
- []
-
-LaTeX Font Info:    Try loading font information for TS1+EBGaramond-LF on input
- line 10.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/ebgaramond/TS1EBGaramond-LF.fd
-File: TS1EBGaramond-LF.fd 2013/02/13 (autoinst) Font definitions for TS1/EBGara
-mond-LF.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 10.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
 )
-LaTeX Font Info:    Font shape `TS1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 10.
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
 [11
 
 
 ]
-Overfull \hbox (3.94833pt too wide) in paragraph at lines 24--25
-\T1/EBGaramond-LF/m/n/12 Tauglichkeit für das Erken-nen von Flu-grobotern wie Q
-uadro- oder Hex-akoptern getestet. Diese
+Overfull \hbox (3.83542pt too wide) in paragraph at lines 19--20
+[]\T1/ppl/m/n/10.95 Umwelteinflüsse und tech-nis-che Ein-schränkun-gen spie-len
+ somit eine groÿe Rolle
  []
 
 
-Overfull \hbox (3.87166pt too wide) in paragraph at lines 24--25
-\T1/EBGaramond-LF/m/n/12 sollen sich gegen-seitig mit-tels eines Kam-er-abild e
-rken-nen kön-nen, um entsprechende au-tonome
+Overfull \hbox (65.63116pt too wide) in paragraph at lines 21--22
+\T1/ppl/m/n/10.95 Zusät-zlich hat es auch Ein-fluss auf die Kom-plex-ität der L
+ö-sung. Ein statis-che Überwachungskam-
  []
 
 
-Overfull \hbox (3.57187pt too wide) in paragraph at lines 26--27
-[]\T1/EBGaramond-LF/m/n/12 Die Kopter er-hal-ten keine zusätlichen Kom-po-nen-t
-en wie Leucht-dio-den oder spezielle Farb-
- []
-
-
-Overfull \hbox (13.35028pt too wide) in paragraph at lines 28--29
-\T1/EBGaramond-LF/m/n/12 flüsse, Verän-derun-gen der Lichtver-hält-nisse etc. m
-üssen de-mentsprechend be-han-delt und gefiltert
- []
-
-
-Overfull \hbox (2.01805pt too wide) in paragraph at lines 30--31
-[]\T1/EBGaramond-LF/m/n/12 Diese Vor-gaben schränken die Wahl der Meth-o-den st
-ark ein. Al-go-rith-men, die zum Beispiel
+Overfull \hbox (6.35393pt too wide) in paragraph at lines 28--29
+[]\T1/ppl/m/n/10.95 Das De-tek-tieren der Kopter soll unter realen Be-din-gun-g
+en funk-tion-ieren. Umwel-
  []
 
 [12]
-Overfull \hbox (20.5556pt too wide) in paragraph at lines 32--33
-[]\T1/EBGaramond-LF/m/n/12 Deshalb wurde zur Um-set-zung der online-tracking-de
-tection-Algorithmus \T1/EBGaramond-LF/m/it/12 Tracking-Learning-
+Overfull \hbox (18.67252pt too wide) in paragraph at lines 32--33
+[]\T1/ppl/m/n/10.95 Deshalb wurde zur Um-set-zung der online-tracking-detection
+-Algorithmus \T1/ppl/m/it/10.95 Tracking-
  []
 
-<../pictures/TLD-Framework.jpg, id=48, 514.3215pt x 200.4288pt>
+<../pictures/TLD-Framework.jpg, id=45, 514.3215pt x 200.4288pt>
 File: ../pictures/TLD-Framework.jpg Graphic file (type jpg)
 <use ../pictures/TLD-Framework.jpg>
 Package pdftex.def Info: ../pictures/TLD-Framework.jpg used on input line 35.
 (pdftex.def)             Requested size: 385.74019pt x 150.32121pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (10.87651pt too wide) in paragraph at lines 39--40
+[]\T1/ppl/m/n/10.95 Als Im-ple-men-ta-tion-ssprache wird C++ gewählt, weil sie 
+auf-grund der Möglichkeit
+ []
 
 [13 <../pictures/TLD-Framework.jpg>]
-Overfull \hbox (3.31256pt too wide) in paragraph at lines 51--52
- \T1/EBGaramond-LF/m/n/12 Kapi-tel 2[] Dieses Kapi-tel gibt einen kurzen Überbl
-ick zu ver-wandten Ar-beiten und ver-schiede-
+Overfull \hbox (10.32309pt too wide) in paragraph at lines 57--58
+ \T1/ppl/b/n/10.95 Kapi-tel 4[] \T1/ppl/m/n/10.95 Im vierten Kapi-tel wir kurz 
+die C++-Implementierung beschrieben. Zusät-
  []
 
 
-Overfull \hbox (12.71411pt too wide) in paragraph at lines 54--55
-\T1/EBGaramond-LF/m/n/12 retis-chen und math-e-ma-tis-chen Hin-ter-gründe er-lä
-utert und der Al-go-rith-mus im De-tail vorgestellt. 
+Overfull \hbox (7.57468pt too wide) in paragraph at lines 60--61
+\T1/ppl/m/n/10.95 Anal-yse er Testergeb-nisse sowie eine Reihe von Vorschlä-gen
+ für et-waige Verbesserun-
  []
 
-)
-Overfull \hbox (0.27925pt too wide) in paragraph at lines 63--53
- \T1/EBGaramond-LF/m/n/12 An-hang[] Im An-hang wer-den kurz OpenCV und OpenTLD 
-vorgestellt, die zur Ver-voll-ständi-
- []
-
-[14]
+) [14]
 \openout2 = `chapter_2.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_2.tex
-Overfull \hbox (16.49222pt too wide) in paragraph at lines 8--9
-\T1/EBGaramond-LF/m/n/12 dern. Es gibt auch An-sätze, die eine Mis-chung aus be
-i-dem im-ple-men-tieren [[]][[]][[]]
- []
-
-
-Overfull \hbox (40.8104pt too wide) in paragraph at lines 10--11
-\T1/EBGaramond-LF/m/n/12 Diese Mod-elle wer-den en-tweder of-fline [[]] oder on
--line während des Track-ens erzeugt [[]][[]].
+Overfull \hbox (20.69264pt too wide) in paragraph at lines 3--4
+\T1/ppl/m/n/10.95 ist in je-dem Ansatz auch eine Ob-jek-trepräsen-ta-tion vorha
+n-den, die mit-tels maschinellem
  []
 
 [15
@@ -725,167 +533,111 @@ Overfull \hbox (40.8104pt too wide) in paragraph at lines 10--11
 
 
 ]
-Overfull \hbox (5.30077pt too wide) in paragraph at lines 15--16
- \T1/EBGaramond-LF/m/n/12 Point-Tracking[] All-ge-mein ges-r-pochen wird das zu
- ver-fol-gende Ob-jekt durch Punkte repräsen-
- []
-
-
-Overfull \hbox (44.20934pt too wide) in paragraph at lines 15--16
-\T1/EBGaramond-LF/m/n/12 tio-nen, auf. Un-ter-schiedliche An-sätze und Strate-g
-ien wer-den de-shalb genutzt, um diesen Schwierigkeiten
- []
-
-LaTeX Font Info:    Font shape `TS1/EBGaramond-LF/bx/n' in size <12> not availa
-ble
-(Font)              Font shape `TS1/EBGaramond-LF/m/n' tried instead on input l
-ine 20.
-LaTeX Font Info:    Font shape `TS1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 20.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/it' in size <12> not availa
-ble
-(Font)              Font shape `T1/EBGaramond-LF/m/it' tried instead on input l
-ine 28.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/it' will be
-(Font)              scaled to size 11.39996pt on input line 28.
-
-Overfull \hbox (3.13986pt too wide) in paragraph at lines 28--29
-[]\T1/EBGaramond-LF/m/n/12 Statistische Meth-o-den mod-el-lieren Zu-s-tan-dräum
-e zu bes-timmten Ob-jek-teigen-schaften wie
+Overfull \hbox (12.53546pt too wide) in paragraph at lines 15--16
+ \T1/ppl/b/n/10.95 Point-Tracking[] \T1/ppl/m/n/10.95 All-ge-mein ges-r-pochen 
+wird das zu ver-fol-gende Ob-jekt durch Punkte
  []
 
 [16]
-Overfull \hbox (0.77841pt too wide) in paragraph at lines 31--32
- \T1/EBGaramond-LF/m/n/12 Kernel-Tracking[] An-ders als beim Point Track-ing di
--ent hier eine Repräsen-ta-tion des gesamten
- []
-
-
-Overfull \hbox (16.11928pt too wide) in paragraph at lines 31--32
-\T1/EBGaramond-LF/m/n/12 als Ob-jekt markiert, die dem Tem-plate am ähn-lich-st
-en ist. Der Nachteil dieses \T1/EBGaramond-LF/m/it/12 Template-Matching\T1/EBGa
-ramond-LF/m/n/12 -
- []
-
-
-Overfull \hbox (4.1239pt too wide) in paragraph at lines 31--32
-\T1/EBGaramond-LF/m/n/12 eigentliche Berech-nungsaufwand erzeugt wird. Verbesse
-run-gen in der Laufzeit kön-nen beispiel-
+Overfull \hbox (1.85948pt too wide) in paragraph at lines 33--34
+\T1/ppl/m/n/10.95 herange-zo-gen. Im An-schluss wird die Qual-ität der Berech-n
+ung mit-tels affiner Trans-
  []
 
 [17]
-Overfull \hbox (0.46306pt too wide) in paragraph at lines 38--39
-\T1/EBGaramond-LF/m/n/12 tels Silhoutte-Tracking ver-sucht, solche kom-plexen O
-b-jekte an-hand ihrer Kon-tour zu repräsen-
+Overfull \hbox (13.90117pt too wide) in paragraph at lines 38--39
+\T1/ppl/m/n/10.95 ständigkeit er-wähnt (ODER SOLLTE ICH DOCH NOCH MEHR DAZU SCH
+REIBEN?) 
  []
 
 
-Overfull \hbox (1.94897pt too wide) in paragraph at lines 40--41
-[]\T1/EBGaramond-LF/m/n/12 Welche Meth-ode let-zendlich genutzt wird, hängt von
- dem späteren Ein-satzge-biet des Track-
+Overfull \hbox (38.99019pt too wide) in paragraph at lines 42--43
+\T1/ppl/m/n/10.95 Be-we-gung des Ob-jekts aus, also ohne plöt-zliche Be-we-gung
+sän-derung. Die Geschwindigkeit
  []
-
-
-Overfull \hbox (11.85695pt too wide) in paragraph at lines 42--43
-\T1/EBGaramond-LF/m/n/12 des Ob-jekts aus, also ohne plöt-zliche Be-we-gungsän-
-derung. Die Geschwindigkeit beziehungsweise
- []
-
-
-Overfull \hbox (0.12434pt too wide) in paragraph at lines 44--45
-[]\T1/EBGaramond-LF/m/n/12 Allerdings haben die meis-ten Tracker eins gemein: S
-ie ver-sagen, wenn das Ob-jekt kurzzeitig
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [18]
-Overfull \hbox (5.79684pt too wide) in paragraph at lines 54--55
-[]\T1/EBGaramond-LF/m/n/12 bilden Teile eines zusam-men-hän-gen-den Ob-jekts. D
-ie Verbindun-gen kön-
+Overfull \hbox (19.44534pt too wide) in paragraph at lines 54--55
+[]\T1/ppl/m/n/10.95 bilden Teile eines zusam-men-hän-gen-den Ob-jekts. Die Verb
+indun-
+ []
+
+[19]
+Overfull \hbox (3.91783pt too wide) in paragraph at lines 80--81
+\T1/ppl/m/n/10.95 deliegen-den Beispiele, also die Daten, die das Ob-jekt besch
+reiben, sind die Er-fahrung
  []
 
 
-Overfull \hbox (5.26732pt too wide) in paragraph at lines 57--58
-\T1/EBGaramond-LF/m/n/12 Praxis und je nach An-wen-dungs-ge-biert kom-biniert w
-er-den. Die groÿe Her-aus-forderung besteht
+Overfull \hbox (40.12347pt too wide) in paragraph at lines 91--92
+[]\T1/ppl/m/n/10.95 Ohne im De-tail Maschinelles Ler-nen vorzustellen, besteht 
+jede Meth-ode im Wesentlichen
  []
 
-[19] [20]
-Overfull \hbox (1.20691pt too wide) in paragraph at lines 94--95
-\T1/EBGaramond-LF/m/n/12 w-ertet wer-den muss (also en-tweder wird ein Wert bes
--timmt oder eine Klas-sifzierung vorgenom-
+
+Overfull \hbox (22.25896pt too wide) in paragraph at lines 94--95
+ \T1/ppl/b/n/10.95 Su-per-vised Learn-ing[] \T1/ppl/m/n/10.95 Überwachtes Ler-n
+en. Man gibt Beispiele mit einem entsprechen-
  []
 
-[21]
-Overfull \hbox (6.20352pt too wide) in paragraph at lines 121--122
- \T1/EBGaramond-LF/m/n/12 Fuÿgänger[] back-ground seper-a-tion, foreground-silh
-uette-extraction kopf-detection, template-
+[20]
+Overfull \hbox (5.96501pt too wide) in paragraph at lines 101--102
+\T1/ppl/m/n/10.95 Regession wird ver-wen-det, wenn zu einer bes-timmten Eingabe
+ ein konkreter (reeller)
  []
 
-) [22]
+
+Overfull \hbox (10.02722pt too wide) in paragraph at lines 115--116
+\T1/ppl/m/n/10.95 Das Feld der Ob-jek-terken-nung ist weit und es gibt eine Vie
+lzahl von un-ter-schiedlichen
+ []
+
+
+Overfull \hbox (6.78615pt too wide) in paragraph at lines 121--122
+ \T1/ppl/b/n/10.95 Fuÿgänger[] \T1/ppl/m/n/10.95 back-ground seper-a-tion, fore
+ground-silhuette-extraction kopf-detection,
+ []
+
+[21]) [22]
 \openout2 = `chapter_3.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_3.tex
-Overfull \hbox (8.13472pt too wide) in paragraph at lines 8--9
-\T1/EBGaramond-LF/m/n/12 Flusses mit-tels Lucas-Kanade-Algorithmus[[]] im Bild 
-$\OML/zplm/m/it/12 t \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 1$\T1/EBGaramond-LF/m/n
-/12 . Die Punk-te-menge, die dadurch
+Overfull \hbox (11.52312pt too wide) in paragraph at lines 8--9
+[]\T1/ppl/m/n/10.95 In dieser Ar-beit wird, wie im grundle-gen-den TLD-Ansatz, 
+der MediaFlow- Tracker
  []
 
-
-Overfull \hbox (6.31163pt too wide) in paragraph at lines 8--9
-\T1/EBGaramond-LF/m/n/12 er-mit-telt wurde, wird nun \T1/EBGaramond-LF/m/it/12 
-back-ward \T1/EBGaramond-LF/m/n/12 für die Bes-tim-mung des op-tis-chen Flusses
- im Bild $\OML/zplm/m/it/12 t$ \T1/EBGaramond-LF/m/n/12 genutzt.
- []
-
-
-Overfull \hbox (13.85081pt too wide) in paragraph at lines 8--9
-\T1/EBGaramond-LF/m/n/12 Die In-for-ma-tio-nen aus bei-den Lucas-Kanade-Berechn
-ungen wer-den zur Bes-tim-mung es \T1/EBGaramond-LF/m/it/12 Forward-
- []
-
-<../pictures/MediaFlow_0.png, id=82, 478.78876pt x 132.495pt>
+<../pictures/MediaFlow_0.png, id=79, 478.78876pt x 132.495pt>
 File: ../pictures/MediaFlow_0.png Graphic file (type png)
 <use ../pictures/MediaFlow_0.png>
 Package pdftex.def Info: ../pictures/MediaFlow_0.png used on input line 11.
 (pdftex.def)             Requested size: 335.14984pt x 92.74585pt.
-
-Overfull \hbox (4.09953pt too wide) in paragraph at lines 15--16
-\T1/EBGaramond-LF/m/n/12 Finde den Punkt $\OML/zplm/m/it/12 x$ \T1/EBGaramond-L
-F/m/n/12 aus Bild $\OML/zplm/m/it/12 I[]$ \T1/EBGaramond-LF/m/n/12 im Bild $\OM
-L/zplm/m/it/12 I[]$ \T1/EBGaramond-LF/m/n/12 beziehnugsweise in einer Se-quenz 
-von Bildern $\OML/zplm/m/it/12 I[]\OT1/ppl/m/n/12 , .., \OML/zplm/m/it/12 I[]$\
-T1/EBGaramond-LF/m/n/12 .
- []
-
 [23
 
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (8.07845pt too wide) in paragraph at lines 29--32
+\T1/ppl/m/n/10.95 Pixel groÿen Auss-chnitts. Mit Hilfe der Nach-barpunkte, dere
+n Geschwindigkeit
+ []
 
-[24 <../pictures/MediaFlow_0.png>] <../pictures/MediaFlow.png, id=89, 497.60907
+[24 <../pictures/MediaFlow_0.png>] <../pictures/MediaFlow.png, id=86, 497.60907
 pt x 133.24782pt>
 File: ../pictures/MediaFlow.png Graphic file (type png)
 <use ../pictures/MediaFlow.png>
 Package pdftex.def Info: ../pictures/MediaFlow.png used on input line 60.
 (pdftex.def)             Requested size: 348.32397pt x 93.27283pt.
 
-Overfull \hbox (15.47408pt too wide) in paragraph at lines 66--68
-\T1/EBGaramond-LF/m/n/12 Mit-tel hi-er-für ist der \T1/EBGaramond-LF/m/it/12 No
-r-mal-ized Cror-re-la-tion Cef-fi-cient (NCC)\T1/EBGaramond-LF/m/n/12 . Es wer-
-den nicht nur die gesuchten
+Overfull \hbox (24.9737pt too wide) in paragraph at lines 66--68
+\T1/ppl/m/n/10.95 Punkt, gener-iert und mit einem ebenso erzeugten Patch des mö
+glicher-weise entsprechen-
  []
 
 
-Overfull \hbox (6.66829pt too wide) in paragraph at lines 69--71
-\T1/EBGaramond-LF/m/n/12 das Fol-ge-bild $\OML/zplm/m/it/12 J$\T1/EBGaramond-LF
-/m/n/12 . Zur Berech-nung der gülti-gen Punkte wer-den die Me-di-ane des FB $\O
-ML/zplm/m/it/12 median[]$\T1/EBGaramond-LF/m/n/12 und
+Overfull \hbox (2.9884pt too wide) in paragraph at lines 69--71
+\T1/ppl/m/n/10.95 den die Punkte ver-wor-fen, deren FB gröÿer als $\OML/zplm/m/
+it/10.95 median[]$ \T1/ppl/m/n/10.95 und deren Ähn-lichkeitswert
  []
 
 [25]
@@ -893,129 +645,149 @@ ML/zplm/m/it/12 median[]$\T1/EBGaramond-LF/m/n/12 und
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [26 <../pictures/MediaFlow.png>]
-Overfull \hbox (9.28293pt too wide) in paragraph at lines 102--103
-[]\T1/EBGaramond-LF/m/n/12 Die Kaskade des De-tec-tors besteht aus drei Teilen,
- dem Var-i-anz-fil-ter, dem \T1/EBGaramond-LF/m/it/12 Ensemble-Classifier
+Overfull \hbox (0.62126pt too wide) in paragraph at lines 98--99
+\T1/ppl/m/n/10.95 Berech-nung der Tra-jek-to-rie fehlt. Aus diesem Grund ist ei
+ne Detection-Komponente
  []
 
 
-Underfull \vbox (badness 2409) has occurred while \output is active []
+Overfull \hbox (13.40608pt too wide) in paragraph at lines 102--103
+[]\T1/ppl/m/n/10.95 Die Kaskade des De-tec-tors besteht aus drei Teilen, dem Va
+r-i-anz-fil-ter, dem \T1/ppl/m/it/10.95 Ensemble-
+ []
+
+
+Overfull \hbox (6.7304pt too wide) in paragraph at lines 102--103
+\T1/ppl/m/it/10.95 Classifier \T1/ppl/m/n/10.95 und als let-zte In-stanz der \T
+1/ppl/m/it/10.95 NearestNeigbour-Classifier\T1/ppl/m/n/10.95 , die im fol-gen-d
+en einzeln
+ []
+
+
+Overfull \hbox (10.36693pt too wide) in paragraph at lines 102--103
+\T1/ppl/m/n/10.95 mögliches ge-fun-denes Ob-jekt repräsen-tiert. Im Gegen-satz 
+zu vie-len an-deren Detector-
+ []
+
+
+Overfull \hbox (15.00977pt too wide) in paragraph at lines 102--103
+\T1/ppl/m/n/10.95 Ansätzen, benöti-gen diese Im-ple-men-ta-tion keine offline-T
+rainingsdaten. Die Lernkom-
+ []
+
+
+Overfull \hbox (2.94324pt too wide) in paragraph at lines 102--103
+\T1/ppl/m/n/10.95 po-nente, beste-hend aus Ensemble-Classifier und Nearest-Neig
+hbour-Classifier, wird
+ []
 
 [27]
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <9> not availabl
-e
-(Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
-ne 106.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 106.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [28]
-Overfull \hbox (9.8681pt too wide) in paragraph at lines 132--133
-\T1/EBGaramond-LF/m/n/12 Die er-ste Stufe des kaskadieren-den Clas-si-fier bild
-et der Var-i-anz-fil-ter. Dieser ver-gle-icht alle Patches,
+Overfull \hbox (5.81189pt too wide) in paragraph at lines 138--139
+\T1/ppl/m/n/10.95 Aus der ini-tialen \T1/ppl/m/it/10.95 Bound-ing-Box \T1/ppl/m
+/n/10.95 wer-den alle möglichen Skalierun-gen und Ver-schiebun-
  []
 
 
-Overfull \hbox (10.26447pt too wide) in paragraph at lines 132--133
-\T1/EBGaramond-LF/m/n/12 gesuchten Ob-jekts ist. Dadurch kön-nen uni-forme Re-g
-io-nen wie Hin-ter-gründe (Him-mel, Wände
+Overfull \hbox (21.67816pt too wide) in paragraph at lines 138--139
+\T1/ppl/m/n/10.95 gung des so entste-hen-den Git-ters wer-den die fol-gen-den P
+a-ram-e-ter genutzt: Skalierungs-
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[29] <../pictures/IntegralImage.png, id=109, 541.02126pt x 237.88875pt>
+[29] <../pictures/IntegralImage.png, id=106, 541.02126pt x 237.88875pt>
 File: ../pictures/IntegralImage.png Graphic file (type png)
 <use ../pictures/IntegralImage.png>
-Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 176.
+Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 185.
 (pdftex.def)             Requested size: 378.7123pt x 166.52098pt.
 
-Overfull \hbox (3.81938pt too wide) in paragraph at lines 180--181
-\T1/EBGaramond-LF/m/n/12 getan, um die Var-i-anz durch $\OML/zplm/m/it/12 var\O
-T1/zplm/m/n/12 (\OML/zplm/m/it/12 p\OT1/zplm/m/n/12 ) = \OML/zplm/m/it/12 ii[]\
-OT1/zplm/m/n/12 (\OML/zplm/m/it/12 p\OT1/zplm/m/n/12 ) \OMS/zplm/m/n/12 ^^@ \OM
-L/zplm/m/it/12 i\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 p\OT1/zplm/m/n/12 )[]$ \T1/
-EBGaramond-LF/m/n/12 zu berech-nen. WELCHE VORTEILE
+Overfull \hbox (7.22491pt too wide) in paragraph at lines 191--192
+\T1/ppl/m/n/10.95 Ob-jekte, die durch das Grid definiert sind, mit dem Var-i-an
+zw-ert des ak-tuellen Bound-
+ []
+
+[30] [31 <../pictures/IntegralImage.png>] <../pictures/EnsembleBeispiel.jpg, id
+=116, 498.37392pt x 574.40196pt>
+File: ../pictures/EnsembleBeispiel.jpg Graphic file (type jpg)
+<use ../pictures/EnsembleBeispiel.jpg>
+Package pdftex.def Info: ../pictures/EnsembleBeispiel.jpg used on input line 21
+2.
+(pdftex.def)             Requested size: 249.18634pt x 287.20027pt.
+
+Underfull \vbox (badness 1845) has occurred while \output is active []
+
+[32 <../pictures/EnsembleBeispiel.jpg>]
+Overfull \hbox (30.865pt too wide) in paragraph at lines 235--236
+\T1/ppl/m/n/10.95 dieser Im-ple-men-ta-tion durch Berech-nung des (nor-mal-isie
+rten) Korrelations-Koeffizienten,
+ []
+
+[33]
+Overfull \hbox (1.49776pt too wide) in paragraph at lines 281--290
+\T1/ppl/m/n/10.95 den, bilden die Aus-gabe der Detektor-Komponente. Typ-is-cher
+-weise sind es mehrere
+ []
+
+[34]
+Overfull \hbox (8.92677pt too wide) in paragraph at lines 323--330
+[]\T1/ppl/m/n/10.95 Abbildung 7[] gibt einen Überblick der beteiligten Kom-po-n
+en-ten und deren Zusam-
+ []
+
+<../pictures/PN_LEARNING.png, id=126, 818.30719pt x 496.10344pt>
+File: ../pictures/PN_LEARNING.png Graphic file (type png)
+<use ../pictures/PN_LEARNING.png>
+Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 333.
+(pdftex.def)             Requested size: 327.31708pt x 198.43785pt.
+
+Overfull \hbox (15.48697pt too wide) in paragraph at lines 344--345
+\T1/ppl/m/n/10.95 ein La-bel-raum und $\OML/zplm/m/it/10.95 y \OMS/zplm/m/n/10.
+95 2 \OML/zplm/m/it/10.95 Y$ \T1/ppl/m/n/10.95 ein La-bel. Eine Menge von Beisp
+ie-len $\OML/zplm/m/it/10.95 X$ \T1/ppl/m/n/10.95 und mit entsprechen-
+ []
+
+
+Overfull \hbox (2.56989pt too wide) in paragraph at lines 347--348
+\T1/ppl/m/n/10.95 wer-den. Ini-tial-isierung durch bere-its gela-belte (also po
+s-i-tive und neg-a-tive Beispiele).
+ []
+
+[35]
+Overfull \hbox (4.18367pt too wide) in paragraph at lines 349--350
+[]\T1/ppl/m/n/10.95 In Schritt $\OML/zplm/m/it/10.95 k$ \T1/ppl/m/n/10.95 hat d
+er Klas-si-fizierer bere-its $\OML/zplm/m/it/10.95 k \OMS/zplm/m/n/10.95 ^^@ \O
+T1/ppl/m/n/10.95 1$ \T1/ppl/m/n/10.95 mal La-bels zu un-markierten Beispie-
+ []
+
+[36 <../pictures/PN_LEARNING.png>] <../pictures/PAP.png, id=133, 742.775pt x 36
+5.365pt>
+File: ../pictures/PAP.png Graphic file (type png)
+<use ../pictures/PAP.png>
+Package pdftex.def Info: ../pictures/PAP.png used on input line 368.
+(pdftex.def)             Requested size: 371.38658pt x 182.68205pt.
+[37]
+Overfull \hbox (21.9294pt too wide) in paragraph at lines 378--379
+\T1/ppl/m/n/10.95 die syn-thetis-chen pos-i-tiven Beispiele wer-den gener-iert 
+und der Lern-funk-tion übergeben.
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[30]
-Overfull \hbox (12.04765pt too wide) in paragraph at lines 199--200
-[]\T1/EBGaramond-LF/m/n/12 Die zufäl-lig gewählten Fea-tures wer-den bei der In
-i-tial-isierung des \T1/EBGaramond-LF/m/it/12 Ensemble-Classifiers \T1/EBGaramo
-nd-LF/m/n/12 berech-
- []
-
-
-Overfull \hbox (41.40839pt too wide) in paragraph at lines 199--200
-\T1/EBGaramond-LF/m/n/12 für je-den Fern erzeugt wer-den. An-ders aus-ge-drückt
- sollte das Feld der A-Posteriori-Wahrscheinlichkeiten
- []
-
-[31 <../pictures/IntegralImage.png>] <../pictures/EnsembleBeispiel.jpg, id=119,
- 498.37392pt x 574.40196pt>
-File: ../pictures/EnsembleBeispiel.jpg Graphic file (type jpg)
-<use ../pictures/EnsembleBeispiel.jpg>
-Package pdftex.def Info: ../pictures/EnsembleBeispiel.jpg used on input line 20
-3.
-(pdftex.def)             Requested size: 249.18634pt x 287.20027pt.
-[32 <../pictures/EnsembleBeispiel.jpg>]
-Underfull \vbox (badness 4699) has occurred while \output is active []
-
-[33]
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 270.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 270.
-
-Underfull \vbox (badness 4819) has occurred while \output is active []
-
-[34]
-Overfull \hbox (5.7689pt too wide) in paragraph at lines 301--313
-\T1/EBGaramond-LF/m/n/12 strik-tio-nen (Con-straints) für das Markieren (la-bel
--ing) des un-markierten Daten-satzes. Im Gegen-
- []
-
-
-Overfull \hbox (9.80017pt too wide) in paragraph at lines 301--313
-\T1/EBGaramond-LF/m/n/12 Daten-satzes, im Fol-gen-den \T1/EBGaramond-LF/m/it/12
- Struk-tur \T1/EBGaramond-LF/m/n/12 genannt, als zusam-men-hän-gend beziehungsw
-eise von einan-
- []
-
-<../pictures/PN_LEARNING.png, id=129, 818.30719pt x 496.10344pt>
-File: ../pictures/PN_LEARNING.png Graphic file (type png)
-<use ../pictures/PN_LEARNING.png>
-Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 324.
-(pdftex.def)             Requested size: 327.31708pt x 198.43785pt.
-
-Underfull \vbox (badness 3098) has occurred while \output is active []
-
-[35] [36 <../pictures/PN_LEARNING.png>]
-Overfull \hbox (1.3598pt too wide) in paragraph at lines 351--352
-\T1/EBGaramond-LF/m/n/12 deren La-bel geän-dert wur-den, als Ergeb-nis liefert.
- Die An-zahl dieser Con-straints kann in diesem
- []
-
-<../pictures/PAP.png, id=136, 742.775pt x 365.365pt>
-File: ../pictures/PAP.png Graphic file (type png)
-<use ../pictures/PAP.png>
-Package pdftex.def Info: ../pictures/PAP.png used on input line 359.
-(pdftex.def)             Requested size: 371.38658pt x 182.68205pt.
-[37] [38 <../pictures/PAP.png>]) [39] [40
+[38 <../pictures/PAP.png>]) [39] [40
 
 
 ]
 \openout2 = `chapter_4.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_4.tex
-Overfull \hbox (1.17401pt too wide) in paragraph at lines 5--6
-\T1/EBGaramond-LF/m/n/12 Die Im-ple-men-tierung er-fol-gte in C++. Zusät-zlich 
-wur-den OpenCV als un-ter-stützen-des Frame-
+Overfull \hbox (0.98216pt too wide) in paragraph at lines 5--6
+\T1/ppl/m/n/10.95 Die Im-ple-men-tierung er-fol-gte in C++. Zusät-zlich wur-den
+ OpenCV als un-ter-stützen-
  []
 
-<../pictures/Klassendiagrammvsd.jpg, id=150, 419.31656pt x 309.40594pt>
+<../pictures/Klassendiagrammvsd.jpg, id=147, 419.31656pt x 309.40594pt>
 File: ../pictures/Klassendiagrammvsd.jpg Graphic file (type jpg)
 <use ../pictures/Klassendiagrammvsd.jpg>
 Package pdftex.def Info: ../pictures/Klassendiagrammvsd.jpg used on input line 
@@ -1026,176 +798,180 @@ Overfull \hbox (18.13191pt too wide) in paragraph at lines 9--10
  [][] 
  []
 
+LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 17.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (0.97253pt too wide) in paragraph at lines 17--18
+\T1/ppl/m/n/10.95 wird das Kamera- beziehnungsweise Video-bild Frame für Frame 
+ein-ge-le-sen. Auÿer-
+ []
+
+
+Overfull \hbox (28.34694pt too wide) in paragraph at lines 17--18
+\T1/ppl/m/n/10.95 dem er-folgt hier die Def-i-ni-tion des Ob-jekts und die Über
+-gabe des näch-sten zu analysieren-
+ []
 
 [41
 
  <../pictures/Klassendiagrammvsd.jpg>]
-Overfull \hbox (2.92493pt too wide) in paragraph at lines 20--21
- \T1/EBGaramond-LF/m/n/12 Klasse \T1/EBGaramond-LF/m/it/12 TLD[] \T1/EBGaramond
--LF/m/n/12 Diese Klasse bildet das Kern-stück des Al-go-rith-mus und im-ple-men
--tiert alle Meth-
+Overfull \hbox (1.51979pt too wide) in paragraph at lines 23--24
+ \T1/ppl/b/n/10.95 Klasse \T1/ppl/b/it/10.95 Tracker[] \T1/ppl/m/n/10.95 Die Im
+-ple-men-tierung des MedianFlow-Trackers ist in dieser Klasse
  []
 
 
-Overfull \hbox (16.04337pt too wide) in paragraph at lines 26--27
-\T1/EBGaramond-LF/m/n/12 gezeigt, dass eine In-dex-ierung auf einer Zeiger-vari
--able die Abar-beitungs-geschwindigkeit gegenüber
- []
-
-
-Overfull \hbox (0.32234pt too wide) in paragraph at lines 29--30
- \T1/EBGaramond-LF/m/n/12 Klasse \T1/EBGaramond-LF/m/it/12 Vari-ance-Clas-si-fi
-er[] \T1/EBGaramond-LF/m/n/12 In einer Schleife wer-den nacheinan-der alle durc
-h das \T1/EBGaramond-LF/m/it/12 Grid \T1/EBGaramond-LF/m/n/12 gegebene
- []
-
-
-Overfull \hbox (19.40585pt too wide) in paragraph at lines 32--33
- \T1/EBGaramond-LF/m/n/12 Klasse \T1/EBGaramond-LF/m/it/12 En-sem-ble-Clas-si-f
-ier[] \T1/EBGaramond-LF/m/n/12 Stufe zwei der Kaskade ist durch die Klasse \T1/
-EBGaramond-LF/m/it/12 En-sem-ble-Clas-si-fier \T1/EBGaramond-LF/m/n/12 definier
-t,
- []
-
-
-Overfull \hbox (14.25378pt too wide) in paragraph at lines 32--33
-\T1/EBGaramond-LF/m/n/12 die im De-tail den vorgestell-ten \T1/EBGaramond-LF/m/
-it/12 Fer-n-Clas-si-fier \T1/EBGaramond-LF/m/n/12 repräsen-tiert. Auch diese ha
-t eine \T1/EBGaramond-LF/m/it/12 clas-sify()\T1/EBGaramond-LF/m/n/12 -Methode,
+Overfull \hbox (1.55168pt too wide) in paragraph at lines 32--33
+\T1/ppl/m/n/10.95 diese hat eine \T1/ppl/m/it/10.95 clas-sify()\T1/ppl/m/n/10.9
+5 -Methode, ve-fügt je-doch zusät-zlich über eine \T1/ppl/m/it/10.95 learn()\T1
+/ppl/m/n/10.95 -Methode,
  []
 
 [42]
-Overfull \hbox (6.3114pt too wide) in paragraph at lines 38--39
-\T1/EBGaramond-LF/m/n/12 gespe-ichert. Vor allem er-stere bi-eten einen sehr sc
-hnellen Spe-icherzu-griff und damit eine laufzeit-
- []
-
-
-Overfull \hbox (26.46169pt too wide) in paragraph at lines 48--49
-\T1/EBGaramond-LF/m/n/12 Die Ergeb-nisse der orig-i-nalen Im-ple-men-ta-tion vo
-n TLD mit-tels Mat-lab sind beein-druck-end...(HIER
+Overfull \hbox (8.26418pt too wide) in paragraph at lines 41--42
+ \T1/ppl/b/n/10.95 Klasse \T1/ppl/b/it/10.95 Util-ity[] \T1/ppl/m/n/10.95 Diese
+ Klasse liefert eine Reihe Klassen-meth-o-den für un-ter-schiedliche
  []
 
 [43]
-Overfull \hbox (10.81395pt too wide) in paragraph at lines 62--63
-[]\T1/EBGaramond-LF/m/n/12 Da TLD bere-its durch ver-schiedene, zum Down-load z
-ur Ver-fü-gung ste-hende Evaluierungsse-
+Overfull \hbox (0.51207pt too wide) in paragraph at lines 60--61
+\T1/ppl/m/n/10.95 wie Än-derun-gen der Lichtver-hält-nisse, wech-sel-nde Be-we-
+gungs-geschwindi-gekeiten
  []
 
-) [44]
-\openout2 = `chapter_5.aux'.
 
-(/Users/ronald/Documents/thesis/chapters/chapter_5.tex
-Overfull \hbox (0.67924pt too wide) in paragraph at lines 3--4
-\T1/EBGaramond-LF/m/n/12 stark zugenom-men hat und unter kon-trol-lierten Be-di
-n-gun-gen auch sehr gute Ergeb-nisse liefert,
+Overfull \hbox (8.95433pt too wide) in paragraph at lines 62--63
+\T1/ppl/m/n/10.95 Evaluierungsse-quen-zen getestet wor-den ist, und es für den 
+speziellen Fall des Kopter-
  []
 
-[45
-
+) [44] [45] [46
 
 
 ]
-Overfull \hbox (3.93738pt too wide) in paragraph at lines 29--30
-\T1/EBGaramond-LF/m/n/12 wie Fuÿgänger, Au-tos und Gesichtern [[]]. Als De-tec-
-tion-strate-gie ist dieser semi-supervised-
+\openout2 = `chapter_5.aux'.
+
+(/Users/ronald/Documents/thesis/chapters/chapter_5.tex
+Overfull \hbox (4.55731pt too wide) in paragraph at lines 13--14
+[]\T1/ppl/m/n/10.95 Der Al-go-rith-mus findet ein Ob-jekt, ob-wohl keines er-wa
+rtet wurde,
  []
 
 
-Overfull \hbox (20.42207pt too wide) in paragraph at lines 32--33
- \T1/EBGaramond-LF/m/n/12 De-tec-torkaskade[] Die let-zte Kom-po-nente der De-t
-ec-torkaskade, der Nearest-Neighbour-Classifier,
+Overfull \hbox (9.43822pt too wide) in paragraph at lines 14--15
+[]\T1/ppl/m/n/10.95 Der Al-go-rith-mus findet kein Ob-jekt, ob-wohl eines er-wa
+rtet wurde,
  []
 
-[46]
-Overfull \hbox (14.08412pt too wide) in paragraph at lines 34--35
-\T1/EBGaramond-LF/m/n/12 ter-grund-in-for-ma-tio-nen im Patch gespe-ichert (HIE
-R EIN BILD). Der Ein-fluss auf die Genauigkeit
- []
+[47
 
-
-Overfull \hbox (5.07138pt too wide) in paragraph at lines 36--37
-[]\T1/EBGaramond-LF/m/n/12 Um den Ein-fluss des Hin-ter-grun-des zu min-imieren
-, ist es möglich nur einen Teil des Kopters
+]
+Overfull \hbox (9.72134pt too wide) in paragraph at lines 29--30
+\T1/ppl/m/n/10.95 tun-gen der Szenerie durch Licht-Schatten-Wechsel wer-den dur
+ch die De-tec-torkaskade
  []
 
 
-Overfull \hbox (3.2857pt too wide) in paragraph at lines 38--40
-[]\T1/EBGaramond-LF/m/n/12 (BILD MIT KOPTER UND BOUND-ING-BOX UND VIEL HIN-TER-
-GRUND) (BILD
+Overfull \hbox (26.15724pt too wide) in paragraph at lines 32--33
+ \T1/ppl/b/n/10.95 De-tec-torkaskade[] \T1/ppl/m/n/10.95 Die let-zte Kom-po-nen
+te der De-tec-torkaskade, der Nearest-Neighbour-
  []
 
 
-Underfull \vbox (badness 2772) has occurred while \output is active []
-
-[47]
-Overfull \hbox (8.68272pt too wide) in paragraph at lines 75--76
-\T1/EBGaramond-LF/m/n/12 fahren die Punkte für die Schätzung wählen. Eventuell 
-würde eine nicht gle-ich-för-mige Verteilung
+Overfull \hbox (10.94644pt too wide) in paragraph at lines 34--35
+\T1/ppl/m/n/10.95 im-mer eine Menge Hin-ter-grund-in-for-ma-tio-nen im Patch ge
+spe-ichert (HIER EIN BILD).
  []
 
 
-Overfull \hbox (11.7835pt too wide) in paragraph at lines 75--76
-\T1/EBGaramond-LF/m/n/12 ver-ringern. Eine Ver-ringerung der Punk-te-dichte vom
- Zen-trum aus zu den Rän-dern der Boxwürde
+Overfull \hbox (6.09575pt too wide) in paragraph at lines 34--35
+\T1/ppl/m/n/10.95 struk-turell eher ein-fach aufge-baut ist. Aber auch Hin-ter-
+gründe mit un-ter-schiedlichen
  []
 
 [48]
-Overfull \hbox (1.42932pt too wide) in paragraph at lines 82--83
-\T1/EBGaramond-LF/m/n/12 bildern, kön-nten spezielle Markierun-gen auf den Flu-
-grobotern die Ergeb-nisse verbessern. Ähn-
+Overfull \hbox (5.81438pt too wide) in paragraph at lines 38--40
+[]\T1/ppl/m/n/10.95 (BILD MIT KOPTER UND BOUND-ING-BOX UND VIEL HIN-TER-GRUND) 
+(BILD
  []
 
-
-Overfull \hbox (20.8837pt too wide) in paragraph at lines 82--83
-\T1/EBGaramond-LF/m/n/12 zum Beispiel die Spiel-be-gren-zung markiert, wären ei
-ne ähn-liche Vorge-hensweise bei der Markierung
+[49]
+Overfull \hbox (13.94647pt too wide) in paragraph at lines 77--78
+\T1/ppl/m/n/10.95 eben-falls möglich. Trackingim-ple-men-ta-tio-nen mit-tels \T
+1/ppl/m/it/10.95 Kalman-Filter [[]] oder \T1/ppl/m/n/10.95 Particle-
  []
 
-) [49] [50
+[50]
+Overfull \hbox (12.01419pt too wide) in paragraph at lines 82--83
+[]\T1/ppl/m/n/10.95 TLD ar-beitet prinzip-iell far-bun-ab-hängig, die Berech-nu
+ng er-folgt einzig auf Grauw-
+ []
+
+) [51] [52
 
 
 ]
 \openout2 = `chapter_6.aux'.
 
-(/Users/ronald/Documents/thesis/chapters/chapter_6.tex <../pictures/GPU_Perform
-ance.png, id=185, 691.08188pt x 338.01282pt>
+(/Users/ronald/Documents/thesis/chapters/chapter_6.tex
+Overfull \hbox (5.5697pt too wide) in paragraph at lines 4--5
+\T1/ppl/m/n/10.95 Die \T1/ppl/m/it/10.95 Open Source Com-puter Vi-sion Li-brary
+ \T1/ppl/m/n/10.95 OpenCV ist einen Bib-lio-thek mit einer Samm-
+ []
+
+
+Overfull \hbox (5.47208pt too wide) in paragraph at lines 4--5
+\T1/ppl/m/n/10.95 Bild-ver-ar-beitung und des maschinellen Ler-nens im-ple-men-
+tiert und zur (meist) freien
+ []
+
+<../pictures/GPU_Performance.png, id=189, 691.08188pt x 338.01282pt>
 File: ../pictures/GPU_Performance.png Graphic file (type png)
 <use ../pictures/GPU_Performance.png>
 Package pdftex.def Info: ../pictures/GPU_Performance.png used on input line 9.
 (pdftex.def)             Requested size: 345.54008pt x 169.00598pt.
-[51
-
- <../pictures/GPU_Performance.png>]) [52]
-\openout2 = `bibliography.aux'.
-
-(/Users/ronald/Documents/thesis/chapters/bibliography.tex
-Underfull \hbox (badness 2717) in paragraph at lines 19--20
-[]\T1/EBGaramond-LF/m/n/12 Jean-Yves Bouguet. Pyra-mi-dal Im-ple-men-ta-tion of
- the Lu-cas Kanade Fea-ture
- []
-
 [53
 
-
-
-] [54] [55]
-Underfull \hbox (badness 1708) in paragraph at lines 74--75
-[]\T1/EBGaramond-LF/m/n/12 Carlo Tomasi and Takeo Kanade. De-tec-tion and Track
--ing of Point Fea-tures.
+ <../pictures/GPU_Performance.png>]
+Overfull \hbox (34.70328pt too wide) in paragraph at lines 16--17
+[]\T1/ppl/m/n/10.95 Mit Hilfe eines Forground-Filters kann ein sich be-we-gen-d
+es Ob-jekt mit-tels Background-
  []
 
-) [56]
+) [54]
+\openout2 = `bibliography.aux'.
+
+(/Users/ronald/Documents/thesis/chapters/bibliography.tex [55
+
+
+
+]
+Underfull \hbox (badness 1389) in paragraph at lines 38--39
+[]\T1/ppl/m/n/10.95 N. Dow-son and R. Bow-den, ^^PSi-mul-ta-ne-ous Mod-el-ing a
+nd Track-ing
+ []
+
+[56] [57]
+Underfull \hbox (badness 2790) in paragraph at lines 70--71
+[]\T1/ppl/m/n/10.95 Gordon N.J., Salmond D.J. and Smith A.F.M., Novel ap-proach
+ to
+ []
+
+) [58]
 \openout2 = `declaration.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/declaration.tex
+Overfull \hbox (2.17613pt too wide) in paragraph at lines 7--8
+\T1/ppl/m/n/10.95 unter Ver-wen-dung der angegebe-nen Quellen und Hil-f-s-mit-t
+el ange-fer-tigt habe. Weit-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) [57
+) [59
 
 
 
@@ -1208,34 +984,30 @@ hapters/chapter_3.aux) (/Users/ronald/Documents/thesis/chapters/chapter_4.aux)
 s/thesis/chapters/chapter_6.aux) (/Users/ronald/Documents/thesis/chapters/bibli
 ography.aux) (/Users/ronald/Documents/thesis/chapters/declaration.aux)) ) 
 Here is how much of TeX's memory you used:
- 6544 strings out of 493315
- 96679 string characters out of 6137903
- 184865 words of memory out of 5000000
- 9737 multiletter control sequences out of 15000+600000
- 49739 words of font info for 119 fonts, out of 8000000 for 9000
+ 5657 strings out of 493315
+ 80210 string characters out of 6137903
+ 174484 words of memory out of 5000000
+ 8880 multiletter control sequences out of 15000+600000
+ 58116 words of font info for 124 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,43p,1461b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,43p,1453b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/
-local/texlive/2013/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_i7zvqf.enc}{/usr/
-local/texlive/2013/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_euh4o4.enc}{/usr/
-local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2
-013/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_evsh4b.enc}{/usr/local/texlive/2
-013/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_fhfxmf.enc}</usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond12-Italic.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond12-Regular.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (57 
-pages, 2571954 bytes).
+local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/
+type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+urw/palatino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/pal
+atino/uplri8a.pfb>
+Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (59 
+pages, 2351769 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
+ 248 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
