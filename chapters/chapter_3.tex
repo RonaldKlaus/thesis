@@ -101,28 +101,22 @@
 
 	Die Kaskade des Detectors besteht aus drei Teilen, dem Varianzfilter, dem \textit{Ensemble-Classifier} und als letzte Instanz der \textit{NearestNeigbour-Classifier}, die im folgenden einzeln vorgestellt werden. Dabei ist der Grundgedanke, dass ein gesuchtes Objekt komplexer als der Bildhintergrund ist. Jeder Teil hat die Aufgabe, die \textit{windows} zu Klassifizieren und entweder zu verwerfen, da sie nicht dem gesuchten Objekt entsprechen können, oder an den nächsten Klassifizierer weiterzureichen, wenn keine eindeutig negative Aussage getroffen werden kann. Nach einer kompletten Abarbeitung des Gitters werden die übrig gebliebenen Kandidaten mittels Cluster-Verfahren gruppiert. Als Kriterium dient der Grad der Überlappung der einzelnen \textit{windows.} Aus jedem Cluster wird abschließend eine gemittelte BoundingBox berechnet, die ein mögliches gefundenes Objekt repräsentiert. Im Gegensatz zu vielen anderen Detector-Ansätzen, benötigen diese Implementation keine offline-Trainingsdaten. Die Lernkomponente, bestehend aus Ensemble-Classifier und Nearest-Neighbour-Classifier, wird mit der ersten BoundingBox initialisiert. Alle weiteren Trainingsbeispiele werden mit Hilfe des Trackers und der P-N Learning-Komponente erzeugt. Genaueres folgt im Punkt Maschinelles Lernen.
 
-	\begin{algorithm}[h]
-	\KwData {$I,J,B_{I}$} 
-	\KwResult {$B_{J}$}
-	Generiere Punkte $p_{1},\ldots,p_{n}$ mittels $B_{I}$\\
-	\textbf{for all} $p_{i}$\\
-	\textbf{do}\\
-	\ \ $p'_{i}=LK(p_{i})$\\
-	\ \ $p''_{i}=LK(p'_{i})$\\
-	\ \ $fb_{i}=|p_{i}-p''_{i}|$\\
-	\ \ $ncc_{i}=NCC(p_{i},p'_{i})$\\
-	\textbf{end}\\
-	\ \ $median_{fb}=median(fb_{1}\ldots fb_{n})$\\
-	\textbf{if} $median_{fb}>th{}_{fb}$ \textbf{then}\\
-	\ \ $B_{J}=\emptyset$\\
-	\textbf{else}\\
-	\ \ $median_{ncc}=median(ncc_{1}\dots ncc_{n})$\\
-	\ \ $q=validePoints(p,median_{fb},median_{ncc})$\\
-	\ \ $B_{J}=calcBoundingBox(q,B_{I})$\\
-	\textbf{end}
-	\caption{Detection - NOCH NICHT FERTIG!!!! }
-	\label{alg:detection}
-	\end{algorithm}
+\begin{algorithm}[H]
+\KwData{this text}
+\KwResult{how to write algorithm with \LaTeX2e }
+
+initialization\;
+\While{not at end of this document}{
+	read current\;
+	\eIf{understand}{
+		go to next section\;
+		current section becomes this one\;
+		}{
+		go back to the beginning of current section\;
+	}
+}
+\caption{How to write algorithms}
+\end{algorithm}
 
 	\subsubsection{Objekt-Modell}
 	Die Modellierung des Objekts und dessen Umgebung erfolgt in einer speziellen Datenstruktur

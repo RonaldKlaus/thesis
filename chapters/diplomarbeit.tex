@@ -1,40 +1,62 @@
-\documentclass[12pt,twoside,ngerman]{article}
+\documentclass[12pt,twoside,ngerman,a4paper]{article}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{algorithm2e}
-\usepackage{mathpazo}
-%\usepackage[T1]{fontenc} % Computer Modern font
-%\renewcommand*\familydefault{\sfdefault}
-\usepackage[lining,scaled=.95]{ebgaramond} % The default is oldstyle numbers. 
-%% I have set the numbers to be lining to display lining numbers as well as
-%% oldstyle numbers
 \usepackage[T1]{fontenc}
-\usepackage[utf8x]{inputenc}
-\usepackage[a4paper]{geometry}
-\geometry{verbose,tmargin=3.3cm,bmargin=6.6cm,lmargin=4.6cm,rmargin=2.3cm,headheight=2cm,footskip=3cm}
-\pagestyle{headings}
-\usepackage{xcolor}
+\usepackage{mathpazo}
+%\usepackage{xcolor}
 \usepackage{verbatim} %Comments
 \usepackage{amsmath}
 \usepackage{setspace}
+\usepackage[lining,scaled=.95]{ebgaramond} % The default is oldstyle numbers. 
+%% I have set the numbers to be lining to display lining numbers as well as
+%% oldstyle numbers
+\usepackage[utf8x]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=3.3cm,bmargin=6.6cm,lmargin=4.6cm,rmargin=2.3cm,headheight=2cm,footskip=3cm}
+\usepackage{fancyhdr} % für eigene Kopf- und Fußzeilen
+\pagestyle{fancy} %eigener Seitenstil
+\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+%linke Seite (gerade Seitenzahl)
+\fancyhead[ERL]{Koptertracking mittels TLD} % links
+\fancyhead[ERC]{} % zentriert
+\fancyhead[ERR]{} % rechts
+%rechte Seite (ungerade Seitenzahl)
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % Vorbereitung der Kapitelausgabe
+\fancyhead[ORL]{} % links
+\fancyhead[ORC]{} % zentriert
+\fancyhead[ORR]{ \textit{\leftmark}} % rechts - Ausgabe des Kapitels
+%\renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
+\fancyfoot[C]{\thepage} %Seitennummer
+\renewcommand{\footrulewidth}{0.4pt} %untere Trennlinie
 %\PassOptionsToPackage{normalem}{ulem}
-\usepackage{microtype}
-\usepackage[english, ngerman]{babel}
+%\usepackage{microtype}
+%\usepackage[english, ngerman]{babel}
+\usepackage{algorithm2e}
+% Ändern der automatischen Überschriften
+\renewcommand{\listfigurename}{Liste der Abbildung} 
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\renewcommand{\abstractname}{Abstrakt}
+
 %\usepackage[options]{package}
 
 \begin{document}
-\begin{onehalfspace}
-\include{firstpage} % Deckblatt
-\include{abstract} 	% Abstract
-\newpage{}
-\begin{singlespace} \newpage{}\tableofcontents{} \end{singlespace} % Inhaltsverzeichnis
-\include{chapter_1} % Einleitung
-\include{chapter_2} % Verwandte Themen
-\include{chapter_3} % Tracking-Learning-Detection TLD
-\include{chapter_4} % Implementierung und Testszenarien
-\include{chapter_5} % Auswertung Ausblick
-\include{chapter_6} % Anhang
-\include{bibliography} 
-\include{declaration}
-\end{onehalfspace}
+	\cleardoublepage \include{firstpage} % Deckblatt
+	\cleardoublepage \include{abstract} 	% Abstract
+	\begin{singlespace} 
+		\cleardoublepage \listoffigures % Abbildungsverzeichnis
+		\cleardoublepage \listofalgorithms % Algorithmenverzeichnis
+		\setcounter{tocdepth}{2}
+		\cleardoublepage \tableofcontents  % Inhaltsverzeichnis
+		\cleardoublepage 
+	\end{singlespace}
+	\begin{onehalfspace}
+		\cleardoublepage \include{chapter_1} % Einleitung
+		\cleardoublepage \include{chapter_2} % Verwandte Themen
+		\cleardoublepage \include{chapter_3} % Tracking-Learning-Detection TLD
+		\cleardoublepage \include{chapter_4} % Implementierung und Testszenarien
+		\cleardoublepage \include{chapter_5} % Auswertung Ausblick
+		\cleardoublepage \include{chapter_6} % Anhang
+		\cleardoublepage \include{bibliography} % Bibliographie
+		\cleardoublepage \include{declaration} % Eigenständigkeitserklärung
+	\end{onehalfspace}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  25 NOV 2013 18:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  26 NOV 2013 12:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -53,59 +53,74 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box26
 \@float@everytoks=\toks16
 \@floatcapt=\box27
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count89
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/relsize/relsize.sty
-Package: relsize 2013/03/29 ver 4.1
-)
-********************************************************
-Package `algorithm2e' Release 5.0 -- january 06 2013 --
-- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
-- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
-subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
-- Author: Christophe Fiorio (cfiorio@um2.fr)
-********************************************************
-\skiptotal=\skip43
-\skiplinenumber=\skip44
-\skiprule=\skip45
-\skiphlne=\skip46
-\skiptext=\skip47
-\skiplength=\skip48
-\algomargin=\skip49
-\skipalgocfslide=\skip50
-\algowidth=\dimen105
-\inoutsize=\dimen106
-\inoutindent=\dimen107
-\interspacetitleruled=\dimen108
-\interspacealgoruled=\dimen109
-\interspacetitleboxruled=\dimen110
-\algocf@inoutbox=\box28
-\algocf@inputbox=\box29
-\AlCapSkip=\skip51
-\AlCapHSkip=\skip52
-\algoskipindent=\skip53
-\algocf@nlbox=\box30
-\algocf@hangingbox=\box31
-\algocf@untilbox=\box32
-\algocf@skipuntil=\skip54
-\algocf@capbox=\box33
-\algoheightruledefault=\skip55
-\algoheightrule=\skip56
-\algotitleheightruledefault=\skip57
-\algotitleheightrule=\skip58
-\c@algocfline=\count90
-\c@algocfproc=\count91
-\c@algocf=\count92
-\algocf@algoframe=\box34
-\algocf@algobox=\box35
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/mathpazo.sty
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)) (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks17
+\verbatim@line=\toks18
+\verbatim@in@stream=\read1
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen105
+)) (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks20
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks21
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks22
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/ebgaramond/ebgaramond.sty
 Package: ebgaramond 2013/05/22 (Bob Tennent and autoinst) Style file for EB Gar
 amond fonts.
@@ -117,9 +132,9 @@ Package ifluatex Info: LuaTeX not detected.
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks17
-\XKV@tempa@toks=\toks18
-\XKV@depth=\count93
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+\XKV@depth=\count101
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 )) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -212,15 +227,10 @@ LaTeX Info: Redefining \scshape on input line 37.
 LaTeX Info: Redefining \swshape on input line 127.
 LaTeX Info: Redefining \oldstylenums on input line 138.
 LaTeX Info: Redefining \textsw on input line 145.
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-)) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks19
-\inpenc@posthook=\toks20
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )) (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucs.sty
@@ -228,10 +238,10 @@ Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count94
-\uc@combtoks=\toks21
-\uc@combtoksb=\toks22
-\uc@temptokena=\toks23
+\uc@secondtry=\count102
+\uc@combtoks=\toks28
+\uc@combtoksb=\toks29
+\uc@temptokena=\toks30
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
@@ -241,135 +251,78 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count95
-\Gm@cntv=\count96
-\c@Gm@tempcnt=\count97
-\Gm@bindingoffset=\dimen111
-\Gm@wd@mp=\dimen112
-\Gm@odd@mp=\dimen113
-\Gm@even@mp=\dimen114
-\Gm@layoutwidth=\dimen115
-\Gm@layoutheight=\dimen116
-\Gm@layouthoffset=\dimen117
-\Gm@layoutvoffset=\dimen118
-\Gm@dimlist=\toks24
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks31
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip46
+\f@ncyO@elh=\skip47
+\f@ncyO@erh=\skip48
+\f@ncyO@olh=\skip49
+\f@ncyO@orh=\skip50
+\f@ncyO@elf=\skip51
+\f@ncyO@erf=\skip52
+\f@ncyO@olf=\skip53
+\f@ncyO@orf=\skip54
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count106
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks25
-\verbatim@line=\toks26
-\verbatim@in@stream=\read1
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip59
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks27
-\ex@=\dimen119
-)) (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen120
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
-)
-\inf@bad=\count98
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count99
-\leftroot@=\count100
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count101
-\DOTSCASE@=\count102
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box36
-\strutbox@=\box37
-\big@size=\dimen121
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count103
-\c@MaxMatrixCols=\count104
-\dotsspace@=\muskip10
-\c@parentequation=\count105
-\dspbrk@lvl=\count106
-\tag@help=\toks28
-\row@=\count107
-\column@=\count108
-\maxfields@=\count109
-\andhelp@=\toks29
-\eqnshift@=\dimen122
-\alignsep@=\dimen123
-\tagshift@=\dimen124
-\tagwidth@=\dimen125
-\totwidth@=\dimen126
-\lineht@=\dimen127
-\@envbody=\toks30
-\multlinegap=\skip60
-\multlinetaggap=\skip61
-\mathdisplay@stack=\toks31
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks32
-\MT@count=\count110
-LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen128
-LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count111
-(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 915.
-LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip62
-)
-Package microtype Info: Loading configuration file microtype.cfg.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
-)) (/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/05/16 v3.9f The Babel package
-(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-german/ngermanb.ldf
-Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
-(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2013/05/16 v3.9f Babel common definitions
-\babel@savecnt=\count112
-\U@D=\dimen129
-)
-\l@naustrian = a dialect from \language\l@ngerman 
-Package babel Info: Making " an active character on input line 92.
-) (/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
-)
-
-Package babel Warning: Last declared language option is `ngerman,
-(babel)                but the last processed one was `english'.
-(babel)                The main language cannot be set as both a global
-(babel)                and a package option. Use `main=ngerman' as
-(babel)                option. Reported on input line 308.
-
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip55
+\skiplinenumber=\skip56
+\skiprule=\skip57
+\skiphlne=\skip58
+\skiptext=\skip59
+\skiplength=\skip60
+\algomargin=\skip61
+\skipalgocfslide=\skip62
+\algowidth=\dimen122
+\inoutsize=\dimen123
+\inoutindent=\dimen124
+\interspacetitleruled=\dimen125
+\interspacealgoruled=\dimen126
+\interspacetitleboxruled=\dimen127
+\algocf@inoutbox=\box30
+\algocf@inputbox=\box31
+\AlCapSkip=\skip63
+\AlCapHSkip=\skip64
+\algoskipindent=\skip65
+\algocf@nlbox=\box32
+\algocf@hangingbox=\box33
+\algocf@untilbox=\box34
+\algocf@skipuntil=\skip66
+\algocf@capbox=\box35
+\algoheightruledefault=\skip67
+\algoheightrule=\skip68
+\algotitleheightruledefault=\skip69
+\algotitleheightrule=\skip70
+\c@algocfline=\count107
+\c@algocfproc=\count108
+\c@algocf=\count109
+\algocf@algoframe=\box36
+\algocf@algobox=\box37
 ) (/Users/ronald/Documents/thesis/chapters/diplomarbeit.aux (/Users/ronald/Docu
 ments/thesis/chapters/firstpage.aux) (/Users/ronald/Documents/thesis/chapters/a
 bstract.aux) (/Users/ronald/Documents/thesis/chapters/chapter_1.aux) (/Users/ro
@@ -380,45 +333,45 @@ s/thesis/chapters/chapter_6.aux) (/Users/ronald/Documents/thesis/chapters/bibli
 ography.aux) (/Users/ronald/Documents/thesis/chapters/declaration.aux))
 \openout1 = `diplomarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Try loading font information for T1+EBGaramond-LF on input 
-line 25.
+line 42.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ebgaramond/T1EBGaramond-LF.fd
 File: T1EBGaramond-LF.fd 2013/02/13 (autoinst) Font definitions for T1/EBGaramo
 nd-LF.
 )
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 25.
+(Font)              scaled to size 11.39996pt on input line 42.
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen130
+\scratchcounter=\count110
+\scratchdimen=\dimen128
 \scratchbox=\box38
-\nofMPsegments=\count114
-\nofMParguments=\count115
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen131
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
-\everyMPtoPDFconversion=\toks34
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen129
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -451,8 +404,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@mv@tabular=\count119
-\c@mv@boldtabular=\count120
+\c@mv@tabular=\count116
+\c@mv@boldtabular=\count117
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -460,7 +413,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 *geometry* detected driver: pdftex
 
 Package geometry Warning: The marginal notes overrun the paper.
-     Add 39.55858pt and more to the right margin.
+     Add 29.55858pt and more to the right margin.
 
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
@@ -481,7 +434,7 @@ Package geometry Warning: The marginal notes overrun the paper.
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=85.35826pt
-* \marginparwidth=95.0pt
+* \marginparwidth=85.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -494,107 +447,81 @@ Package geometry Warning: The marginal notes overrun the paper.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 25.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `basictext'.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/ebgaramond/mt-EBGaramond.cfg
-File: mt-EBGaramond.cfg 2013/05/22 v1.1 microtype config. file: EB Garamond
-)
 \openout2 = `firstpage.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/firstpage.tex
-Overfull \hbox (187.01593pt too wide) in paragraph at lines 4--6
+Overfull \hbox (187.01593pt too wide) in paragraph at lines 3--5
 []   
  []
 
 <../pictures/HU_Logo.jpg, id=1, 86.36266pt x 86.36266pt>
 File: ../pictures/HU_Logo.jpg Graphic file (type jpg)
 <use ../pictures/HU_Logo.jpg>
-Package pdftex.def Info: ../pictures/HU_Logo.jpg used on input line 9.
+Package pdftex.def Info: ../pictures/HU_Logo.jpg used on input line 7.
 (pdftex.def)             Requested size: 91.04872pt x 91.05112pt.
 
-Overfull \hbox (4.36502pt too wide) in paragraph at lines 8--10
+Overfull \hbox (4.36502pt too wide) in paragraph at lines 6--8
 []  [] 
  []
 
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 14.
+(Font)              scaled to size 23.63593pt on input line 12.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <24.88> not avai
 lable
 (Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
-ne 14.
+ne 12.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 14.
+(Font)              scaled to size 23.63593pt on input line 12.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 16.
+(Font)              scaled to size 19.70294pt on input line 14.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 19.
+(Font)              scaled to size 16.41594pt on input line 17.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 22.
+(Font)              scaled to size 13.67995pt on input line 20.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <14.4> not avail
 able
 (Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
-ne 23.
+ne 21.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 23.
+(Font)              scaled to size 13.67995pt on input line 21.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/sc' in size <14.4> not avai
 lable
 (Font)              Font shape `T1/EBGaramond-LF/m/sc' tried instead on input l
-ine 24.
+ine 22.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/sc' will be
-(Font)              scaled to size 13.67995pt on input line 24.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 35.
+(Font)              scaled to size 13.67995pt on input line 22.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 33.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/microtype/mt-ppl.cfg
-File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 35.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 33.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 33.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 35.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 33.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 35.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 33.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `zplm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+)) [1
 
-[1
 
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../pict
-ures/HU_Logo.jpg>]
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/sl' in size <12> not availab
-le
-(Font)              Font shape `T1/EBGaramond-LF/m/it' tried instead on input l
-ine 27.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/it' will be
-(Font)              scaled to size 11.39996pt on input line 27.
-[2]
+ures/HU_Logo.jpg>] [2
+
+
+]
 \openout2 = `abstract.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/abstract.tex
@@ -632,33 +559,79 @@ Overfull \hbox (5.83212pt too wide) in paragraph at lines 10--11
  nicht-statis-che Struk-turen wie Bäume
  []
 
-) [3
+)
+LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/it' will be
+(Font)              scaled to size 11.39996pt on input line 44.
+[3
+
+] [4
 
 
 ]
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <17.28> not avai
 lable
 (Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
-ne 30.
+ne 46.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 30.
-(/Users/ronald/Documents/thesis/chapters/diplomarbeit.toc
+(Font)              scaled to size 16.41594pt on input line 46.
+(/Users/ronald/Documents/thesis/chapters/diplomarbeit.lof)
+\tf@lof=\write3
+\openout3 = `diplomarbeit.lof'.
+
+[5] [6
+
+] (/Users/ronald/Documents/thesis/chapters/diplomarbeit.loa)
+\tf@loa=\write4
+\openout4 = `diplomarbeit.loa'.
+
+[7] [8
+
+] (/Users/ronald/Documents/thesis/chapters/diplomarbeit.toc
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <12> not availab
 le
 (Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
-ne 2.
+ne 1.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 2.
-[4
+(Font)              scaled to size 11.39996pt on input line 1.
+)
+\tf@toc=\write5
+\openout5 = `diplomarbeit.toc'.
 
-])
-\tf@toc=\write3
-\openout3 = `diplomarbeit.toc'.
+[9] [10
 
-[5]
+]
 \openout2 = `chapter_1.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_1.tex
+Overfull \hbox (5.21272pt too wide) in paragraph at lines 3--4
+\T1/EBGaramond-LF/m/n/12 Computer Vi-sion, das ma-chinelle Se-hen, ist eine gro
+ÿe Her-aus-forderung in der Bild-ver-ar-beitung
+ []
+
+
+Overfull \hbox (9.69043pt too wide) in paragraph at lines 3--4
+\T1/EBGaramond-LF/m/n/12 und Feld in-ten-siver Forschung. Die zunehmende Leis-t
+ungs-fähigkeit der Rech-ner und verbesserte
+ []
+
+
+Overfull \hbox (27.46265pt too wide) in paragraph at lines 3--4
+\T1/EBGaramond-LF/m/n/12 Straÿen-schildern, Erken-nen von Fahrbah-n-markierun-g
+en sowie Fuÿgängern oder an-dere Verkehrsteil-
+ []
+
+
+Overfull \hbox (21.01755pt too wide) in paragraph at lines 3--4
+\T1/EBGaramond-LF/m/n/12 Di-ag-nos-tik [[]]. Und nicht zuletzt bildet die Auswe
+r-tung von Kam-er-a-daten auch im Forschungs-
+ []
+
+
+Overfull \hbox (9.62073pt too wide) in paragraph at lines 5--6
+\T1/EBGaramond-LF/m/n/12 nung von ``gel-ern-ten'' Ob-jek-ten ve-r-ar-beitet, is
+t eine Adap-tion auf Com-put-erebene nicht möglich.
+ []
+
 LaTeX Font Info:    Try loading font information for TS1+EBGaramond-LF on input
  line 10.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ebgaramond/TS1EBGaramond-LF.fd
@@ -667,24 +640,46 @@ mond-LF.
 )
 LaTeX Font Info:    Font shape `TS1/EBGaramond-LF/m/n' will be
 (Font)              scaled to size 11.39996pt on input line 10.
-Package microtype Info: Character `textthreeoldstyle ' is missing
-(microtype)             in font `TS1/EBGaramond-LF/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textfouroldstyle ' is missing
-(microtype)             in font `TS1/EBGaramond-LF/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textsevenoldstyle ' is missing
-(microtype)             in font `TS1/EBGaramond-LF/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-[6
+[11
 
-] [7]
-Overfull \hbox (11.40155pt too wide) in paragraph at lines 32--33
-[]\T1/EBGaramond-LF/m/n/12 (-20) Deshalb wurde zur Um-set-zung der online-track
-ing-detection-Algorithmus \T1/EBGaramond-LF/m/it/12 (-20) Tracking-Learning-
+
+]
+Overfull \hbox (3.94833pt too wide) in paragraph at lines 24--25
+\T1/EBGaramond-LF/m/n/12 Tauglichkeit für das Erken-nen von Flu-grobotern wie Q
+uadro- oder Hex-akoptern getestet. Diese
  []
 
-<../pictures/TLD-Framework.jpg, id=32, 514.3215pt x 200.4288pt>
+
+Overfull \hbox (3.87166pt too wide) in paragraph at lines 24--25
+\T1/EBGaramond-LF/m/n/12 sollen sich gegen-seitig mit-tels eines Kam-er-abild e
+rken-nen kön-nen, um entsprechende au-tonome
+ []
+
+
+Overfull \hbox (3.57187pt too wide) in paragraph at lines 26--27
+[]\T1/EBGaramond-LF/m/n/12 Die Kopter er-hal-ten keine zusätlichen Kom-po-nen-t
+en wie Leucht-dio-den oder spezielle Farb-
+ []
+
+
+Overfull \hbox (13.35028pt too wide) in paragraph at lines 28--29
+\T1/EBGaramond-LF/m/n/12 flüsse, Verän-derun-gen der Lichtver-hält-nisse etc. m
+üssen de-mentsprechend be-han-delt und gefiltert
+ []
+
+
+Overfull \hbox (2.01805pt too wide) in paragraph at lines 30--31
+[]\T1/EBGaramond-LF/m/n/12 Diese Vor-gaben schränken die Wahl der Meth-o-den st
+ark ein. Al-go-rith-men, die zum Beispiel
+ []
+
+[12]
+Overfull \hbox (20.5556pt too wide) in paragraph at lines 32--33
+[]\T1/EBGaramond-LF/m/n/12 Deshalb wurde zur Um-set-zung der online-tracking-de
+tection-Algorithmus \T1/EBGaramond-LF/m/it/12 Tracking-Learning-
+ []
+
+<../pictures/TLD-Framework.jpg, id=48, 514.3215pt x 200.4288pt>
 File: ../pictures/TLD-Framework.jpg Graphic file (type jpg)
 <use ../pictures/TLD-Framework.jpg>
 Package pdftex.def Info: ../pictures/TLD-Framework.jpg used on input line 35.
@@ -692,13 +687,55 @@ Package pdftex.def Info: ../pictures/TLD-Framework.jpg used on input line 35.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[8 <../pictures/TLD-Framework.jpg>]) [9]
+[13 <../pictures/TLD-Framework.jpg>]
+Overfull \hbox (3.31256pt too wide) in paragraph at lines 51--52
+ \T1/EBGaramond-LF/m/n/12 Kapi-tel 2[] Dieses Kapi-tel gibt einen kurzen Überbl
+ick zu ver-wandten Ar-beiten und ver-schiede-
+ []
+
+
+Overfull \hbox (12.71411pt too wide) in paragraph at lines 54--55
+\T1/EBGaramond-LF/m/n/12 retis-chen und math-e-ma-tis-chen Hin-ter-gründe er-lä
+utert und der Al-go-rith-mus im De-tail vorgestellt. 
+ []
+
+)
+Overfull \hbox (0.27925pt too wide) in paragraph at lines 63--53
+ \T1/EBGaramond-LF/m/n/12 An-hang[] Im An-hang wer-den kurz OpenCV und OpenTLD 
+vorgestellt, die zur Ver-voll-ständi-
+ []
+
+[14]
 \openout2 = `chapter_2.aux'.
 
-(/Users/ronald/Documents/thesis/chapters/chapter_2.tex [10
+(/Users/ronald/Documents/thesis/chapters/chapter_2.tex
+Overfull \hbox (16.49222pt too wide) in paragraph at lines 8--9
+\T1/EBGaramond-LF/m/n/12 dern. Es gibt auch An-sätze, die eine Mis-chung aus be
+i-dem im-ple-men-tieren [[]][[]][[]]
+ []
+
+
+Overfull \hbox (40.8104pt too wide) in paragraph at lines 10--11
+\T1/EBGaramond-LF/m/n/12 Diese Mod-elle wer-den en-tweder of-fline [[]] oder on
+-line während des Track-ens erzeugt [[]][[]].
+ []
+
+[15
+
 
 
 ]
+Overfull \hbox (5.30077pt too wide) in paragraph at lines 15--16
+ \T1/EBGaramond-LF/m/n/12 Point-Tracking[] All-ge-mein ges-r-pochen wird das zu
+ ver-fol-gende Ob-jekt durch Punkte repräsen-
+ []
+
+
+Overfull \hbox (44.20934pt too wide) in paragraph at lines 15--16
+\T1/EBGaramond-LF/m/n/12 tio-nen, auf. Un-ter-schiedliche An-sätze und Strate-g
+ien wer-den de-shalb genutzt, um diesen Schwierigkeiten
+ []
+
 LaTeX Font Info:    Font shape `TS1/EBGaramond-LF/bx/n' in size <12> not availa
 ble
 (Font)              Font shape `TS1/EBGaramond-LF/m/n' tried instead on input l
@@ -717,7 +754,7 @@ Overfull \hbox (3.13986pt too wide) in paragraph at lines 28--29
 e zu bes-timmten Ob-jek-teigen-schaften wie
  []
 
-[11]
+[16]
 Overfull \hbox (0.77841pt too wide) in paragraph at lines 31--32
  \T1/EBGaramond-LF/m/n/12 Kernel-Tracking[] An-ders als beim Point Track-ing di
 -ent hier eine Repräsen-ta-tion des gesamten
@@ -736,7 +773,7 @@ Overfull \hbox (4.1239pt too wide) in paragraph at lines 31--32
 run-gen in der Laufzeit kön-nen beispiel-
  []
 
-[12]
+[17]
 Overfull \hbox (0.46306pt too wide) in paragraph at lines 38--39
 \T1/EBGaramond-LF/m/n/12 tels Silhoutte-Tracking ver-sucht, solche kom-plexen O
 b-jekte an-hand ihrer Kon-tour zu repräsen-
@@ -763,7 +800,7 @@ ie ver-sagen, wenn das Ob-jekt kurzzeitig
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[13]
+[18]
 Overfull \hbox (5.79684pt too wide) in paragraph at lines 54--55
 []\T1/EBGaramond-LF/m/n/12 bilden Teile eines zusam-men-hän-gen-den Ob-jekts. D
 ie Verbindun-gen kön-
@@ -775,19 +812,19 @@ Overfull \hbox (5.26732pt too wide) in paragraph at lines 57--58
 er-den. Die groÿe Her-aus-forderung besteht
  []
 
-[14] [15]
+[19] [20]
 Overfull \hbox (1.20691pt too wide) in paragraph at lines 94--95
 \T1/EBGaramond-LF/m/n/12 w-ertet wer-den muss (also en-tweder wird ein Wert bes
 -timmt oder eine Klas-sifzierung vorgenom-
  []
 
-[16]
+[21]
 Overfull \hbox (6.20352pt too wide) in paragraph at lines 121--122
  \T1/EBGaramond-LF/m/n/12 Fuÿgänger[] back-ground seper-a-tion, foreground-silh
 uette-extraction kopf-detection, template-
  []
 
-) [17]
+) [22]
 \openout2 = `chapter_3.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_3.tex
@@ -810,7 +847,7 @@ Overfull \hbox (13.85081pt too wide) in paragraph at lines 8--9
 ungen wer-den zur Bes-tim-mung es \T1/EBGaramond-LF/m/it/12 Forward-
  []
 
-<../pictures/MediaFlow_0.png, id=66, 478.78876pt x 132.495pt>
+<../pictures/MediaFlow_0.png, id=82, 478.78876pt x 132.495pt>
 File: ../pictures/MediaFlow_0.png Graphic file (type png)
 <use ../pictures/MediaFlow_0.png>
 Package pdftex.def Info: ../pictures/MediaFlow_0.png used on input line 11.
@@ -824,13 +861,14 @@ von Bildern $\OML/zplm/m/it/12 I[]\OT1/ppl/m/n/12 , .., \OML/zplm/m/it/12 I[]$\
 T1/EBGaramond-LF/m/n/12 .
  []
 
-[18
+[23
+
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[19 <../pictures/MediaFlow_0.png>] <../pictures/MediaFlow.png, id=74, 497.60907
+[24 <../pictures/MediaFlow_0.png>] <../pictures/MediaFlow.png, id=89, 497.60907
 pt x 133.24782pt>
 File: ../pictures/MediaFlow.png Graphic file (type png)
 <use ../pictures/MediaFlow.png>
@@ -850,11 +888,11 @@ Overfull \hbox (6.66829pt too wide) in paragraph at lines 69--71
 ML/zplm/m/it/12 median[]$\T1/EBGaramond-LF/m/n/12 und
  []
 
-[20]
+[25]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21 <../pictures/MediaFlow.png>]
+[26 <../pictures/MediaFlow.png>]
 Overfull \hbox (9.28293pt too wide) in paragraph at lines 102--103
 []\T1/EBGaramond-LF/m/n/12 Die Kaskade des De-tec-tors besteht aus drei Teilen,
  dem Var-i-anz-fil-ter, dem \T1/EBGaramond-LF/m/it/12 Ensemble-Classifier
@@ -863,28 +901,35 @@ Overfull \hbox (9.28293pt too wide) in paragraph at lines 102--103
 
 Underfull \vbox (badness 2409) has occurred while \output is active []
 
-[22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[23]
-Overfull \hbox (9.8681pt too wide) in paragraph at lines 138--139
+[27]
+LaTeX Font Info:    Font shape `T1/EBGaramond-LF/bx/n' in size <9> not availabl
+e
+(Font)              Font shape `T1/EBGaramond-LF/m/n' tried instead on input li
+ne 106.
+LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 106.
+[28]
+Overfull \hbox (9.8681pt too wide) in paragraph at lines 132--133
 \T1/EBGaramond-LF/m/n/12 Die er-ste Stufe des kaskadieren-den Clas-si-fier bild
 et der Var-i-anz-fil-ter. Dieser ver-gle-icht alle Patches,
  []
 
 
-Overfull \hbox (10.26447pt too wide) in paragraph at lines 138--139
+Overfull \hbox (10.26447pt too wide) in paragraph at lines 132--133
 \T1/EBGaramond-LF/m/n/12 gesuchten Ob-jekts ist. Dadurch kön-nen uni-forme Re-g
 io-nen wie Hin-ter-gründe (Him-mel, Wände
  []
 
-[24] <../pictures/IntegralImage.png, id=93, 541.02126pt x 237.88875pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29] <../pictures/IntegralImage.png, id=109, 541.02126pt x 237.88875pt>
 File: ../pictures/IntegralImage.png Graphic file (type png)
 <use ../pictures/IntegralImage.png>
-Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 182.
+Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 176.
 (pdftex.def)             Requested size: 378.7123pt x 166.52098pt.
 
-Overfull \hbox (3.81938pt too wide) in paragraph at lines 186--187
+Overfull \hbox (3.81938pt too wide) in paragraph at lines 180--181
 \T1/EBGaramond-LF/m/n/12 getan, um die Var-i-anz durch $\OML/zplm/m/it/12 var\O
 T1/zplm/m/n/12 (\OML/zplm/m/it/12 p\OT1/zplm/m/n/12 ) = \OML/zplm/m/it/12 ii[]\
 OT1/zplm/m/n/12 (\OML/zplm/m/it/12 p\OT1/zplm/m/n/12 ) \OMS/zplm/m/n/12 ^^@ \OM
@@ -892,65 +937,76 @@ L/zplm/m/it/12 i\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 p\OT1/zplm/m/n/12 )[]$ \T1/
 EBGaramond-LF/m/n/12 zu berech-nen. WELCHE VORTEILE
  []
 
-[25] [26 <../pictures/IntegralImage.png>]
-Overfull \hbox (12.04765pt too wide) in paragraph at lines 205--206
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[30]
+Overfull \hbox (12.04765pt too wide) in paragraph at lines 199--200
 []\T1/EBGaramond-LF/m/n/12 Die zufäl-lig gewählten Fea-tures wer-den bei der In
 i-tial-isierung des \T1/EBGaramond-LF/m/it/12 Ensemble-Classifiers \T1/EBGaramo
 nd-LF/m/n/12 berech-
  []
 
 
-Overfull \hbox (41.40839pt too wide) in paragraph at lines 205--206
+Overfull \hbox (41.40839pt too wide) in paragraph at lines 199--200
 \T1/EBGaramond-LF/m/n/12 für je-den Fern erzeugt wer-den. An-ders aus-ge-drückt
  sollte das Feld der A-Posteriori-Wahrscheinlichkeiten
  []
 
-<../pictures/EnsembleBeispiel.jpg, id=103, 498.37392pt x 574.40196pt>
+[31 <../pictures/IntegralImage.png>] <../pictures/EnsembleBeispiel.jpg, id=119,
+ 498.37392pt x 574.40196pt>
 File: ../pictures/EnsembleBeispiel.jpg Graphic file (type jpg)
 <use ../pictures/EnsembleBeispiel.jpg>
 Package pdftex.def Info: ../pictures/EnsembleBeispiel.jpg used on input line 20
-9.
+3.
 (pdftex.def)             Requested size: 249.18634pt x 287.20027pt.
-[27 <../pictures/EnsembleBeispiel.jpg>] [28]
+[32 <../pictures/EnsembleBeispiel.jpg>]
+Underfull \vbox (badness 4699) has occurred while \output is active []
+
+[33]
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 274.
+(Font)              scaled to size 9.49997pt on input line 270.
 LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 276.
-LaTeX Font Info:    Font shape `T1/EBGaramond-LF/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 276.
-[29]
-Overfull \hbox (5.7689pt too wide) in paragraph at lines 307--319
+(Font)              scaled to size 7.21997pt on input line 270.
+
+Underfull \vbox (badness 4819) has occurred while \output is active []
+
+[34]
+Overfull \hbox (5.7689pt too wide) in paragraph at lines 301--313
 \T1/EBGaramond-LF/m/n/12 strik-tio-nen (Con-straints) für das Markieren (la-bel
 -ing) des un-markierten Daten-satzes. Im Gegen-
  []
 
 
-Overfull \hbox (9.80017pt too wide) in paragraph at lines 307--319
+Overfull \hbox (9.80017pt too wide) in paragraph at lines 301--313
 \T1/EBGaramond-LF/m/n/12 Daten-satzes, im Fol-gen-den \T1/EBGaramond-LF/m/it/12
  Struk-tur \T1/EBGaramond-LF/m/n/12 genannt, als zusam-men-hän-gend beziehungsw
 eise von einan-
  []
 
-<../pictures/PN_LEARNING.png, id=113, 818.30719pt x 496.10344pt>
+<../pictures/PN_LEARNING.png, id=129, 818.30719pt x 496.10344pt>
 File: ../pictures/PN_LEARNING.png Graphic file (type png)
 <use ../pictures/PN_LEARNING.png>
-Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 330.
+Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 324.
 (pdftex.def)             Requested size: 327.31708pt x 198.43785pt.
 
 Underfull \vbox (badness 3098) has occurred while \output is active []
 
-[30] [31 <../pictures/PN_LEARNING.png>]
-Overfull \hbox (1.3598pt too wide) in paragraph at lines 357--358
+[35] [36 <../pictures/PN_LEARNING.png>]
+Overfull \hbox (1.3598pt too wide) in paragraph at lines 351--352
 \T1/EBGaramond-LF/m/n/12 deren La-bel geän-dert wur-den, als Ergeb-nis liefert.
  Die An-zahl dieser Con-straints kann in diesem
  []
 
-<../pictures/PAP.png, id=121, 742.775pt x 365.365pt>
+<../pictures/PAP.png, id=136, 742.775pt x 365.365pt>
 File: ../pictures/PAP.png Graphic file (type png)
 <use ../pictures/PAP.png>
-Package pdftex.def Info: ../pictures/PAP.png used on input line 365.
+Package pdftex.def Info: ../pictures/PAP.png used on input line 359.
 (pdftex.def)             Requested size: 371.38658pt x 182.68205pt.
-[32] [33 <../pictures/PAP.png>]) [34]
+[37] [38 <../pictures/PAP.png>]) [39] [40
+
+
+]
 \openout2 = `chapter_4.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_4.tex
@@ -959,7 +1015,7 @@ Overfull \hbox (1.17401pt too wide) in paragraph at lines 5--6
 wur-den OpenCV als un-ter-stützen-des Frame-
  []
 
-<../pictures/Klassendiagrammvsd.jpg, id=131, 419.31656pt x 309.40594pt>
+<../pictures/Klassendiagrammvsd.jpg, id=150, 419.31656pt x 309.40594pt>
 File: ../pictures/Klassendiagrammvsd.jpg Graphic file (type jpg)
 <use ../pictures/Klassendiagrammvsd.jpg>
 Package pdftex.def Info: ../pictures/Klassendiagrammvsd.jpg used on input line 
@@ -973,8 +1029,7 @@ Overfull \hbox (18.13191pt too wide) in paragraph at lines 9--10
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[35
-
+[41
 
  <../pictures/Klassendiagrammvsd.jpg>]
 Overfull \hbox (2.92493pt too wide) in paragraph at lines 20--21
@@ -1011,7 +1066,7 @@ it/12 Fer-n-Clas-si-fier \T1/EBGaramond-LF/m/n/12 repräsen-tiert. Auch diese ha
 t eine \T1/EBGaramond-LF/m/it/12 clas-sify()\T1/EBGaramond-LF/m/n/12 -Methode,
  []
 
-[36]
+[42]
 Overfull \hbox (6.3114pt too wide) in paragraph at lines 38--39
 \T1/EBGaramond-LF/m/n/12 gespe-ichert. Vor allem er-stere bi-eten einen sehr sc
 hnellen Spe-icherzu-griff und damit eine laufzeit-
@@ -1023,13 +1078,13 @@ Overfull \hbox (26.46169pt too wide) in paragraph at lines 48--49
 n TLD mit-tels Mat-lab sind beein-druck-end...(HIER
  []
 
-[37]
+[43]
 Overfull \hbox (10.81395pt too wide) in paragraph at lines 62--63
 []\T1/EBGaramond-LF/m/n/12 Da TLD bere-its durch ver-schiedene, zum Down-load z
 ur Ver-fü-gung ste-hende Evaluierungsse-
  []
 
-) [38]
+) [44]
 \openout2 = `chapter_5.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_5.tex
@@ -1038,7 +1093,8 @@ Overfull \hbox (0.67924pt too wide) in paragraph at lines 3--4
 n-gun-gen auch sehr gute Ergeb-nisse liefert,
  []
 
-[39
+[45
+
 
 
 ]
@@ -1053,7 +1109,7 @@ Overfull \hbox (20.42207pt too wide) in paragraph at lines 32--33
 ec-torkaskade, der Nearest-Neighbour-Classifier,
  []
 
-[40]
+[46]
 Overfull \hbox (14.08412pt too wide) in paragraph at lines 34--35
 \T1/EBGaramond-LF/m/n/12 ter-grund-in-for-ma-tio-nen im Patch gespe-ichert (HIE
 R EIN BILD). Der Ein-fluss auf die Genauigkeit
@@ -1074,7 +1130,7 @@ GRUND) (BILD
 
 Underfull \vbox (badness 2772) has occurred while \output is active []
 
-[41]
+[47]
 Overfull \hbox (8.68272pt too wide) in paragraph at lines 75--76
 \T1/EBGaramond-LF/m/n/12 fahren die Punkte für die Schätzung wählen. Eventuell 
 würde eine nicht gle-ich-för-mige Verteilung
@@ -1086,7 +1142,7 @@ Overfull \hbox (11.7835pt too wide) in paragraph at lines 75--76
  Zen-trum aus zu den Rän-dern der Boxwürde
  []
 
-[42]
+[48]
 Overfull \hbox (1.42932pt too wide) in paragraph at lines 82--83
 \T1/EBGaramond-LF/m/n/12 bildern, kön-nten spezielle Markierun-gen auf den Flu-
 grobotern die Ergeb-nisse verbessern. Ähn-
@@ -1098,42 +1154,40 @@ Overfull \hbox (20.8837pt too wide) in paragraph at lines 82--83
 ne ähn-liche Vorge-hensweise bei der Markierung
  []
 
-) [43]
+) [49] [50
+
+
+]
 \openout2 = `chapter_6.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_6.tex <../pictures/GPU_Perform
-ance.png, id=162, 691.08188pt x 338.01282pt>
+ance.png, id=185, 691.08188pt x 338.01282pt>
 File: ../pictures/GPU_Performance.png Graphic file (type png)
 <use ../pictures/GPU_Performance.png>
 Package pdftex.def Info: ../pictures/GPU_Performance.png used on input line 9.
 (pdftex.def)             Requested size: 345.54008pt x 169.00598pt.
-[44
+[51
 
-
- <../pictures/GPU_Performance.png>]) [45]
+ <../pictures/GPU_Performance.png>]) [52]
 \openout2 = `bibliography.aux'.
 
-(/Users/ronald/Documents/thesis/chapters/bibliography.tex (/Users/ronald/Docume
-nts/thesis/chapters/diplomarbeit.lof)
-\tf@lof=\write4
-\openout4 = `diplomarbeit.lof'.
-
-[46
-
-
-]
-Underfull \hbox (badness 2717) in paragraph at lines 21--22
+(/Users/ronald/Documents/thesis/chapters/bibliography.tex
+Underfull \hbox (badness 2717) in paragraph at lines 19--20
 []\T1/EBGaramond-LF/m/n/12 Jean-Yves Bouguet. Pyra-mi-dal Im-ple-men-ta-tion of
  the Lu-cas Kanade Fea-ture
  []
 
-[47] [48] [49]
-Underfull \hbox (badness 1708) in paragraph at lines 76--77
+[53
+
+
+
+] [54] [55]
+Underfull \hbox (badness 1708) in paragraph at lines 74--75
 []\T1/EBGaramond-LF/m/n/12 Carlo Tomasi and Takeo Kanade. De-tec-tion and Track
 -ing of Point Fea-tures.
  []
 
-) [50]
+) [56]
 \openout2 = `declaration.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/declaration.tex
@@ -1141,7 +1195,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) [51
+) [57
+
 
 
 ] (/Users/ronald/Documents/thesis/chapters/diplomarbeit.aux (/Users/ronald/Docu
@@ -1153,13 +1208,13 @@ hapters/chapter_3.aux) (/Users/ronald/Documents/thesis/chapters/chapter_4.aux)
 s/thesis/chapters/chapter_6.aux) (/Users/ronald/Documents/thesis/chapters/bibli
 ography.aux) (/Users/ronald/Documents/thesis/chapters/declaration.aux)) ) 
 Here is how much of TeX's memory you used:
- 8955 strings out of 493315
- 139941 string characters out of 6137903
- 279703 words of memory out of 5000000
- 11983 multiletter control sequences out of 15000+600000
- 64393 words of font info for 205 fonts, out of 8000000 for 9000
+ 6544 strings out of 493315
+ 96679 string characters out of 6137903
+ 184865 words of memory out of 5000000
+ 9737 multiletter control sequences out of 15000+600000
+ 49739 words of font info for 119 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,8n,51p,1446b,683s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,43p,1461b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/
 local/texlive/2013/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_i7zvqf.enc}{/usr/
 local/texlive/2013/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_euh4o4.enc}{/usr/
@@ -1176,11 +1231,11 @@ sr/local/texlive/2013/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/lo
 cal/texlive/2013/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (51 
-pages, 2571327 bytes).
+Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (57 
+pages, 2571954 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 250 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 32819 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
