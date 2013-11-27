@@ -2,6 +2,33 @@
 \section{Tracking Learning Detection - TLD}
 	Die originale Implementation von TLD erfolgte in Matlab. Teil dieser Arbeit ist eine Adaption in C++. Zum Verständnis der einzelnen Komponenten und für die Darstellung der Arbeitsweise wird in diesem Kapitel der Algorithmus im Detail vorgestellt und theoretisch betrachtet.
 
+	\subsection{TLD}
+	Die Gesamtheit des Algorithmus wird in \ref{alg:TLD} dargestellt. 
+
+	\begin{algorithm}[H]
+		\vspace{0.2cm}
+		\KwData{$I,J,B_{I}$} 
+		\KwResult{$B_{J}$}
+		Generiere Punkte $P = p_{1},\ldots,p_{n}$ mittels $B_{I}$\;
+		\For{ $p_{i} \in P$ } {
+			$p'_{i}=LK(p_{i})$\;
+			$p''_{i}=LK(p'_{i})$\;
+			$fb_{i}=|p_{i}-p''_{i}|$\;
+			$ncc_{i}=NCC(p_{i},p'_{i})$\;
+		}
+		$median_{fb}=median(fb_{1}\ldots fb_{n})$\;
+		\eIf{$median_{fb}>th{}_{fb}$} { 
+			$B_{J}=\emptyset$\;
+		} {
+			$median_{ncc}=median(ncc_{1}\dots ncc_{n})$\;
+			$q=validePoints(p,median_{fb},median_{ncc})$\;
+			$B_{J}=calcBoundingBox(q,B_{I})$\;
+		}
+		\caption{Tracking-Learning-Detection}
+		\label{alg:TLD}
+		\vspace{0.2cm}
+	\end{algorithm}
+
 	\subsection{Tracking}
 	Die Tracker-Komponente hat im Wesentlichen die Aufgabe die Bewegung eines Objekts $o$ zu schätzen, wobei typischerweise die Annahme besteht, dass das Objekt in einer Bildsequenz sichtbar ist. Es gibt in der Praxis eine Reihe von Ansätzen, die sich hinsichtlich der Repräsentation des Objekts, zum Beispiel als Punkte, Kontouren, Modelle oder optischer Fluss, als auch der algorithmischen Verarbeitung unterscheiden.
 
@@ -69,30 +96,29 @@
 	Der implentierte \textit{Median Flow Tracker} wendet das \textit{Forward-BackwardError}-Prinzip in Verbindung mit der Berechnung des \textit{NCC} entsprechend \cite{key-5} an. In Alg.\ref{alg:tracking} ist der Algorithmus skizziert. Als Eingabe dienen das letzte Bild $I$ mit der dazugehörige BoundingBox$B_{I}$ sowie das Folgebild $J$. Zur Berechnung der gültigen Punkte werden die Mediane des FB $median_{fb}$und des \textit{NCC} $median_{ncc}$genutzt. Hierbei werden die Punkte verworfen, deren FB größer als $median_{fb}$ und deren Ähnlichkeitswert kleiner als $median_{ncc}$ ist. Falls $median_{fb}$ größer als ein Treshold $th_{fb}$ ist, wird das Ergebnis durch LK als falsch interprätiert und verworfen. Die restlichen Punkte und $B_{I}$ dienen zur Berechnug der nächsten BoundingBox $B_{J}$. Hierzu wird der Median der Abstände aller Punkte in $I$ und in $J$ berechnet die Änderungen als Grundlage für die Verschiebnung in x- und y-Richtung genutzt. Die Skalierung von $B_{J}$ ist die relative
 	Änderung der Abstände.
 
-	\begin{algorithm}[h]
-	\textbf{Input} $I,J,B_{I}$ \\
-	\textbf{Output} $B_{J}$\\
-	Generiere Punkte $p_{1},\ldots,p_{n}$ mittels $B_{I}$\\
-	\textbf{for all} $p_{i}$\\
-	\textbf{do}\\
-	\ \ $p'_{i}=LK(p_{i})$\\
-	\ \ $p''_{i}=LK(p'_{i})$\\
-	\ \ $fb_{i}=|p_{i}-p''_{i}|$\\
-	\ \ $ncc_{i}=NCC(p_{i},p'_{i})$\\
-	\textbf{end}\\
-	\ \ $median_{fb}=median(fb_{1}\ldots fb_{n})$\\
-	\textbf{if} $median_{fb}>th{}_{fb}$ \textbf{then}\\
-	\ \ $B_{J}=\emptyset$\\
-	\textbf{else}\\
-	\ \ $median_{ncc}=median(ncc_{1}\dots ncc_{n})$\\
-	\ \ $q=validePoints(p,median_{fb},median_{ncc})$\\
-	\ \ $B_{J}=calcBoundingBox(q,B_{I})$\\
-	\textbf{end}
+	\begin{algorithm}[H]
+	\vspace{0.2cm}
+	\KwData{$I,J,B_{I}$} 
+	\KwResult{$B_{J}$}
+	Generiere Punkte $P = p_{1},\ldots,p_{n}$ mittels $B_{I}$\;
+	\For{ $p_{i} \in P$ } {
+		$p'_{i}=LK(p_{i})$\;
+		$p''_{i}=LK(p'_{i})$\;
+		$fb_{i}=|p_{i}-p''_{i}|$\;
+		$ncc_{i}=NCC(p_{i},p'_{i})$\;
+	}
+	$median_{fb}=median(fb_{1}\ldots fb_{n})$\;
+	\eIf{$median_{fb}>th{}_{fb}$} { 
+		$B_{J}=\emptyset$\;
+	} {
+		$median_{ncc}=median(ncc_{1}\dots ncc_{n})$\;
+		$q=validePoints(p,median_{fb},median_{ncc})$\;
+		$B_{J}=calcBoundingBox(q,B_{I})$\;
+	}
 	\caption{Tracking}
 	\label{alg:tracking}
+	\vspace{0.2cm}
 	\end{algorithm}
-
-	\newpage{}
 
 	\subsection{Detection}
 	Wenn das verfolgte Objekt den Bildbereich verlässt oder durch andere Objekte verborgen wird, kann die Tracker-Komponente nicht weiterarbeiten. Das Model zur Berechnung der Trajektorie fehlt. Aus diesem Grund ist eine Detection-Komponente erforderlich, die versucht das Objekt im Bild zu finden. Typischerweise ist diese Aufgabe recht aufwendig und die Umsetzung stark von der Art der Repräsentation des Ojekt-Modells abhängig.
@@ -101,30 +127,32 @@
 
 	Die Kaskade des Detectors besteht aus drei Teilen, dem Varianzfilter, dem \textit{Ensemble-Classifier} und als letzte Instanz der \textit{NearestNeigbour-Classifier}, die im folgenden einzeln vorgestellt werden. Dabei ist der Grundgedanke, dass ein gesuchtes Objekt komplexer als der Bildhintergrund ist. Jeder Teil hat die Aufgabe, die \textit{windows} zu Klassifizieren und entweder zu verwerfen, da sie nicht dem gesuchten Objekt entsprechen können, oder an den nächsten Klassifizierer weiterzureichen, wenn keine eindeutig negative Aussage getroffen werden kann. Nach einer kompletten Abarbeitung des Gitters werden die übrig gebliebenen Kandidaten mittels Cluster-Verfahren gruppiert. Als Kriterium dient der Grad der Überlappung der einzelnen \textit{windows.} Aus jedem Cluster wird abschließend eine gemittelte BoundingBox berechnet, die ein mögliches gefundenes Objekt repräsentiert. Im Gegensatz zu vielen anderen Detector-Ansätzen, benötigen diese Implementation keine offline-Trainingsdaten. Die Lernkomponente, bestehend aus Ensemble-Classifier und Nearest-Neighbour-Classifier, wird mit der ersten BoundingBox initialisiert. Alle weiteren Trainingsbeispiele werden mit Hilfe des Trackers und der P-N Learning-Komponente erzeugt. Genaueres folgt im Punkt Maschinelles Lernen.
 
-	\begin{algorithm}[H]
-	\vspace{0.5cm}
+	\begin{algorithm}
+	\vspace{0.2cm}
 	% Anpassen der Darstellung für c-style
-	\SetStartEndCondition{ (}{)}{)}\SetAlgoBlockMarkers{}{\}}%
-	\SetKwProg{Fn}{}{\{}{}\SetKwFunction{FRecurs}{void FnRecursive}%
-	\SetKwFor{For}{for}{\{}{}%
-	\SetKwIF{If}{ElseIf}{Else}{if}{\{}{elif}{else\{}{}%
-	\SetKwFor{While}{while}{\{}{}%
-	\SetKwRepeat{Repeat}{repeat\{}{until}%
-	\AlgoDisplayBlockMarkers\SetAlgoNoLine%
+	% \SetStartEndCondition{ (}{)}{)}\SetAlgoBlockMarkers{}{\}}%
+	% \SetKwProg{Fn}{}{\{}{}\SetKwFunction{FRecurs}{void FnRecursive}%
+	% \SetKwFor{For}{for}{\{}{}%
+	% \SetKwIF{If}{ElseIf}{Else}{if}{\{}{elif}{else\{}{}%
+	% \SetKwFor{While}{while}{\{}{}%
+	% \SetKwRepeat{Repeat}{repeat\{}{until}%
+	% \AlgoDisplayBlockMarkers\SetAlgoNoLine%
 
-	\KwData{Input}
-	\KwResult{OUTPUT }
+	\KwData{Input} 
+	\KwResult{Output}
 	initialization\;
 	\While{not at end of this document}{
 	read current\;
 	\eIf{understand}{
-	go to next section\;
-	current section becomes this one\;
+		go to next section\;
+		current section becomes this one\;
 	}{
-	go back to the beginning of current section\;
+		go back to the beginning of current section\;
 	}
 	}
 	\caption{Detection}
+	\label{alg:detection}
+	\vspace{0.2cm}
 	\end{algorithm}
 
 	\subsubsection{Objekt-Modell}
@@ -306,6 +334,25 @@
 	müssen. Dies geschieht durch P/N-Learning \cite{PNL}. Gleichzeitig
 	bildet dieser Ansatz die Grundlage des Lernens und damit des Trainierens
 	des Fern- und des NearestNeighbour-Classifiers. 
+
+	\begin{algorithm}
+	\vspace{0.2cm}
+	\KwData{Input} 
+	\KwResult{Output}
+	initialization\;
+	\While{not at end of this document}{
+	read current\;
+	\eIf{understand}{
+		go to next section\;
+		current section becomes this one\;
+	}{
+		go back to the beginning of current section\;
+	}
+	}
+	\caption{P/N-Learning}
+	\label{alg:learning}
+	\vspace{0.2cm}
+	\end{algorithm}
 
 	Hintergrund des semi-supervised learning-Prozesses sind postive (P)
 	und negative (N) Restriktionen (Constraints) für das Markieren (labeling)

@@ -279,9 +279,6 @@ INPUT /Users/ronald/Documents/thesis/chapters/chapter_3.tex
 INPUT /Users/ronald/Documents/thesis/chapters/../pictures/MediaFlow_0.png
 INPUT ../pictures/MediaFlow_0.png
 INPUT ../pictures/MediaFlow_0.png
-INPUT /Users/ronald/Documents/thesis/chapters/../pictures/MediaFlow.png
-INPUT ../pictures/MediaFlow.png
-INPUT ../pictures/MediaFlow.png
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/vf/public/mathpazo/zplmr7v.vf
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -289,6 +286,9 @@ INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /Users/ronald/Documents/thesis/chapters/../pictures/MediaFlow.png
+INPUT ../pictures/MediaFlow.png
+INPUT ../pictures/MediaFlow.png
 INPUT /Users/ronald/Documents/thesis/chapters/../pictures/IntegralImage.png
 INPUT ../pictures/IntegralImage.png
 INPUT ../pictures/IntegralImage.png

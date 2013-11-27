@@ -27,27 +27,28 @@
 \contentsline {paragraph}{Schrift}{22}
 \contentsline {paragraph}{Autos}{22}
 \contentsline {section}{\numberline {3}Tracking Learning Detection - TLD}{23}
-\contentsline {subsection}{\numberline {3.1}Tracking}{23}
-\contentsline {subsubsection}{\numberline {3.1.1}Der optischen Flusses und der Lucas-Kanade-Algorithmus}{23}
-\contentsline {subsubsection}{\numberline {3.1.2}FB, NCC und Median Flow Tracker}{25}
-\contentsline {subsection}{\numberline {3.2}Detection}{27}
-\contentsline {subsubsection}{\numberline {3.2.1}Objekt-Modell}{29}
-\contentsline {subsubsection}{\numberline {3.2.2}Sliding-Window}{29}
-\contentsline {subsubsection}{\numberline {3.2.3}Varianzfilter}{29}
-\contentsline {subsubsection}{\numberline {3.2.4}Ensemble-Classifier}{31}
+\contentsline {subsection}{\numberline {3.1}TLD}{23}
+\contentsline {subsection}{\numberline {3.2}Tracking}{23}
+\contentsline {subsubsection}{\numberline {3.2.1}Der optischen Flusses und der Lucas-Kanade-Algorithmus}{24}
+\contentsline {subsubsection}{\numberline {3.2.2}FB, NCC und Median Flow Tracker}{25}
+\contentsline {subsection}{\numberline {3.3}Detection}{27}
+\contentsline {subsubsection}{\numberline {3.3.1}Objekt-Modell}{28}
+\contentsline {subsubsection}{\numberline {3.3.2}Sliding-Window}{29}
+\contentsline {subsubsection}{\numberline {3.3.3}Varianzfilter}{29}
+\contentsline {subsubsection}{\numberline {3.3.4}Ensemble-Classifier}{31}
 \contentsline {paragraph}{Random Ferns}{31}
-\contentsline {subsubsection}{\numberline {3.2.5}Template-Matching und Nearest-Neighbour-Classifier}{33}
+\contentsline {subsubsection}{\numberline {3.3.5}Template-Matching und Nearest-Neighbour-Classifier}{33}
 \contentsline {paragraph}{Template-Matching}{33}
 \contentsline {paragraph}{Nearest-Neighbour-Classifier}{34}
-\contentsline {subsubsection}{\numberline {3.2.6}Cluster-Verfahren}{34}
-\contentsline {subsection}{\numberline {3.3}Maschinelles Lernen}{35}
-\contentsline {subsubsection}{\numberline {3.3.1}P-N Learning}{35}
+\contentsline {subsubsection}{\numberline {3.3.6}Cluster-Verfahren}{35}
+\contentsline {subsection}{\numberline {3.4}Maschinelles Lernen}{35}
+\contentsline {subsubsection}{\numberline {3.4.1}P-N Learning}{36}
 \contentsline {paragraph}{Bootstrapping}{36}
-\contentsline {paragraph}{Constraints}{36}
-\contentsline {subsection}{\numberline {3.4}Zusammenspiel der Komponenten}{37}
+\contentsline {paragraph}{Constraints}{37}
+\contentsline {subsection}{\numberline {3.5}Zusammenspiel der Komponenten}{38}
 \contentsline {paragraph}{$T.conf\geq D.conf$}{39}
-\contentsline {paragraph}{$T.conf<D.conf$ }{39}
-\contentsline {subsection}{\numberline {3.5}Initialisierung}{39}
+\contentsline {paragraph}{$T.conf<D.conf$ }{40}
+\contentsline {subsection}{\numberline {3.6}Initialisierung}{40}
 \contentsline {section}{\numberline {4}Implementierung und Testszenarien}{41}
 \contentsline {subsection}{\numberline {4.1}Programmierung}{41}
 \contentsline {subsubsection}{\numberline {4.1.1}Klassenstruktur}{42}
@@ -75,3 +76,7 @@
 \contentsline {paragraph}{MedianFlow Tracker}{50}
 \contentsline {paragraph}{Allgemein}{50}
 \contentsline {section}{\numberline {6}Anhang}{53}
+\contentsline {paragraph}{Varianz-Classifier}{54}
+\contentsline {paragraph}{Ensemble-Classifier}{54}
+\contentsline {paragraph}{NearestNeighbour-Classifier}{54}
+\contentsline {paragraph}{Cluster-Verfahren}{55}

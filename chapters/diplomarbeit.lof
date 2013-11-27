@@ -3,8 +3,8 @@
 \contentsline {figure}{\numberline {3}{\ignorespaces Erkennen von Tracking-Fehlern}}{26}
 \contentsline {figure}{\numberline {4}{\ignorespaces Darstellung der Pixelwerte eines $3\times 3$ Bildes (links) und des dazugeh\IeC {\"o}rigen integralen $4\times 4$ Bildes (rechts).}}{30}
 \contentsline {figure}{\numberline {5}{\ignorespaces Teilbild $ABCD$}}{31}
-\contentsline {figure}{\numberline {6}{\ignorespaces Prinzipielle Arbeitsweise der \textit {Base-Classifier}.}}{32}
-\contentsline {figure}{\numberline {7}{\ignorespaces Arbeitsweise P-N Learning (Quelle: \cite {PNL})}}{36}
-\contentsline {figure}{\numberline {8}{\ignorespaces Zusammenspiel der Komponenten im Programmablaufplan}}{38}
+\contentsline {figure}{\numberline {6}{\ignorespaces Prinzipielle Arbeitsweise der \textit {Base-Classifier}.}}{33}
+\contentsline {figure}{\numberline {7}{\ignorespaces Arbeitsweise P-N Learning (Quelle: \cite {PNL})}}{37}
+\contentsline {figure}{\numberline {8}{\ignorespaces Zusammenspiel der Komponenten im Programmablaufplan}}{39}
 \contentsline {figure}{\numberline {9}{\ignorespaces Klassendiagramm zur Implementation mit den wichtigsten Attributen und Methoden}}{41}
 \contentsline {figure}{\numberline {10}{\ignorespaces Tesla C2050 versus Core i5-760 2.8Ghz, SSE, TBB \cite {OCW}}}{53}
