@@ -1,8 +1,8 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces TLD-Schema}}{13}
-\contentsline {figure}{\numberline {2}{\ignorespaces Arbeitsweise des Median Flow Trackers}}{24}
-\contentsline {figure}{\numberline {3}{\ignorespaces Erkennen von Tracking-Fehlern}}{26}
-\contentsline {figure}{\numberline {4}{\ignorespaces Darstellung der Pixelwerte eines $3\times 3$ Bildes (links) und des dazugeh\IeC {\"o}rigen integralen $4\times 4$ Bildes (rechts).}}{30}
-\contentsline {figure}{\numberline {5}{\ignorespaces Teilbild $ABCD$}}{31}
+\contentsline {figure}{\numberline {2}{\ignorespaces Arbeitsweise des Median Flow Trackers}}{25}
+\contentsline {figure}{\numberline {3}{\ignorespaces Erkennen von Tracking-Fehlern}}{27}
+\contentsline {figure}{\numberline {4}{\ignorespaces Darstellung der Pixelwerte eines $3\times 3$ Bildes (links) und des dazugeh\IeC {\"o}rigen integralen $4\times 4$ Bildes (rechts).}}{31}
+\contentsline {figure}{\numberline {5}{\ignorespaces Teilbild $ABCD$}}{32}
 \contentsline {figure}{\numberline {6}{\ignorespaces Prinzipielle Arbeitsweise der \textit {Base-Classifier}.}}{33}
 \contentsline {figure}{\numberline {7}{\ignorespaces Arbeitsweise P-N Learning (Quelle: \cite {PNL})}}{37}
 \contentsline {figure}{\numberline {8}{\ignorespaces Zusammenspiel der Komponenten im Programmablaufplan}}{39}

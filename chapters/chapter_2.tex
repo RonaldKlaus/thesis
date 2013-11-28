@@ -11,7 +11,7 @@ Um dem Nachteil der eingeschränkten Modellierung durch Templates zu begegnen, w
 
 Neben der Modellierung lässt sich auch die Methodik spezifizieren. Hierbei wird von drei Grundformen ausgegangen: Point-Tracking, Kernel-Tracking und Silhouette-Tracking. Jede hat ihre spezifischen Eigenschaften und werden je nach unterschiedlichem Einsatz der späteren Applikation genutzt.
 
-\paragraph{Point-Tracking}
+\subsubsection{Point-Tracking}
 Allgemein gesrpochen wird das zu verfolgende Objekt durch Punkte repräsentiert, die von einem Bild $t-1$ im Folgebild $t$ gesucht werden. Dieses Verfahren weisen eine Reihe von Schwierigkeiten, wie das Handhaben von Verdeckungen oder falsche Punktdetektionen, auf. Unterschiedliche Ansätze und Strategien werden deshalb genutzt, um diesen Schwierigkeiten entgegenzuwirken und Lösungen zu finden. Diese Ideen können in \textit{deterministische} und \textit{statitische} Methoden eingeteilt werden. 
 
 {\bf Deterministische Ansätze } definieren eine Kostenfunktion $f$ für jedes Objekt in $t-1$ und versuchen durch Minimierung dieser Kosten und einer Reihe Bedingungen (Constraints) das korrespondierende Objekt in $t$ zu finden. Constraints können hierbei sein:
@@ -27,14 +27,14 @@ Diese Bedingung sind nicht auf die deterministischen Methoden beschränkt, sonde
 
 {\bf Statistische Methoden} modellieren Zustandräume zu bestimmten Objekteigenschaften wie zum Beispiel Geschwindigkeit oder Position im Bild. Der Tracking-Verlauf wird dann als eine Sequenz von Zuständen $X^{t}:t=1,2,\dots$ aufgefasst, wobei, und das ist der Unterschied, das Bildrauschen $W^{t}:t=1,2,\dots$, das unweigerlich auftritt, in die Berechnung einfließt. So wird die Statusänderung über die Zeit für ein sich durch eine Sequenz von Bildern bewegendes Objekt beispielsweise durch die Formel $X^{t}=f^{t}(X^{t-1})+W^{t}$ berechnet. Um solche Zustandsräume für das Objekttracking, also für das Schätzen der Positionsänderung des Objekts von einem Bild zum Folgebild, gibt es wiederum verschiedene Ansätze, die hier jedoch nicht näher vorgestellt werden. Zu nennen sind in diesem Zusammenhang allerdings der \textit{Kalman}-Filter\cite{KAF} für lineare Systeme und der \textit{Particle}-Filter \cite{PAF} für nichtlineare Systeme, die mit großem Erfolg in Tracking-Algorithmen verwendet wurden.
 
-\paragraph{Kernel-Tracking}
+\subsubsection{Kernel-Tracking}
 Anders als beim Point Tracking dient hier eine Repräsentation des gesamten Objekts beziehungsweise einer Objektregion als Vorlage, und nicht nur einzelne Punkte. Auch hier unterscheiden sich einzelne Systeme und Ansätze hinsichtlich der Objektdarstellung, der Methodik und auch der Anzahl der zu verfolgenden Objekte. Zum Beispiel wird das Objekt mittels Template, oftmals bestimmte Color Features oder Histogramme, repräsentiert, das dann im aktuellen Bild gesucht wird. Die Postition wird dann mittels Ähnlichkeitsberechnung, beispielsweise durch Kreuzkorrelation, ermittelt. Am Ende wird die Region des Bildes als Objekt markiert, die dem Template am ähnlichsten ist. Der Nachteil dieses \textit{Template-Matching}-Verfahrens liegt vor allem in der rechenintensiven Methodik, da sie im Ansatz brute-force ist - es wird das gesamte Bild nach dem Template abgesucht. Dabei werden auch unterschiedliche Skalierungen, Orientierungen oder Transformationen des Templates gesucht, wodurch der eigentliche Berechnungsaufwand erzeugt wird. Verbesserungen in der Laufzeit können beispielsweise durch die Einschränkung des Suchraums oder die Arbeit mit integralen Bildern\cite{INT} erreicht werden.
 
 Ein weiteres Verfahren, das auch in TLD Verwendung findet, ist das Tracken mittels \textit{optischem Fluss}, die es durch Lucas und Kanade\cite{OPT} vorgeschlagen und später durch Tomasi und Kanade\cite{LKT} erstmals zum Tracken implementiert wurde. Die Grundidee ist die Berechnung eines Vectorfeldes, unter Annahme konstanter Helligkeit, das für jeden Pixel im Bild die Bewegungsrichtung und -geschwindigkeit von einem Bild zum nächsten enthält. Für das Tracken wird nun ein ROI im Bild (das Objekt) ausgewählt. Dann werden aus dieser Region bestimmte Pixel für die Berechnung der Position des Objekts mittels des optischen Flusses im Folgebild herangezogen. Im Anschluss wird die Qualität der Berechnung mittels affiner Transformation zwischen dem gesuchten und dem gefundenen Patch evaluiert. Wenn die mittlere quadratische Abweichung aller Pixel zu hoch ist, wird das Ergebnis verworfen, ansonsten wird das Tracken forgesetzt.
 
 Die genannten Verfahren eignen sich vor allem zum Single-Object-Tracking. Für das gleichzeitige Verfolgen von mehreren Objekten gibt es andere Kernel-Tracking-Algorithmen, die hier allerdings nicht näher vorgestellt werden.
 
-\paragraph{Silhouette-Tracking}
+\subsubsection{Silhouette-Tracking}
 Nicht jedes Objekt, das getrackt werden soll, kann durch eine einfache geometrische Figur wie ein Rechteck oder ein Elypse repräsentiert werden. Deshalb wird mittels Silhoutte-Tracking versucht, solche komplexen Objekte anhand ihrer Kontour zu repräsentieren. Außerdem motiviert zu diesem Ansatz die Tatsache, dass auch der Mensch Objekte nur anhand ihrer Silhouette erkennen kann. Da in dieser Arbeit dieses Verfahren keine Rolle spielt, sei es nur zur Vollständigkeit erwähnt (ODER SOLLTE ICH DOCH NOCH MEHR DAZU SCHREIBEN?)
 
 Welche Methode letzendlich genutzt wird, hängt von dem späteren Einsatzgebiet des Trackers ab.
@@ -56,13 +56,13 @@ Object Detection ist das Finden eines Objekts in einem Bild beziehungsweise eine
 
 Alle genannten und ungenannte Repräsentationsverfahren können und werden in der Praxis und je nach Anwendungsgebiert kombiniert werden. Die große Herausforderung besteht nun vor allem im Segmentieren der gewählten Repräsentationen. Je nach Anwendungsfall ist eine solche Berechnung technisch leicht oder kompliziert zu realisieren. Einige Verfahren werden nun kurz vorgestellt.
 
-\paragraph{Point-Detectors}
+\subsubsection{Point-Detectors}
 bla
 
-\paragraph{Background Substraction}
+\subsubsection{Background Substraction}
 bla
 
-\paragraph{Image Segmentation}
+\subsubsection{Image Segmentation}
 bla
 
 \subsection{Maschinelles Lernen}
@@ -114,17 +114,17 @@ Die Initialisierung des Algorithmus erfolgt über die Definition der BoundingBox
 \subsection{Beispiele für Tracking-Implementationen}
 Das Feld der Objekterkennung ist weit und es gibt eine Vielzahl von unterschiedlichen Anwendungsszenarien. Im Folgenden wird eine kleine Auswahl solcher Szenarien vorgestellt, welche die oben genannten algorithmischen Ansätze implementieren.
 
-\paragraph{Gesichtserkennung}
+\subsubsection{Gesichtserkennung}
 durch Farbe, Bewegung, Kombination aus beiden (alles eher schlecht), Besser: Neuronal Netze, Modelbasiert und das allerbester: Weak Classifier von viola and jones,
 
-\paragraph{Fußgänger}
+\subsubsection{Fußgänger}
 background seperation, foreground-silhuette-extraction kopf-detection, template-models
 
-\paragraph{Straßenschilder}
+\subsubsection{Straßenschilder}
 bla
 
-\paragraph{Schrift}
+\subsubsection{Schrift}
 bla
 
-\paragraph{Autos}
+\subsubsection{Autos}
 bla

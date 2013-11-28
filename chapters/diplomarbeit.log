@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  27 NOV 2013 09:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  28 NOV 2013 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -402,8 +402,8 @@ sichtlich seiner
  []
 
 
-Overfull \hbox (15.40175pt too wide) in paragraph at lines 6--7
-\T1/ppl/m/n/10 automated-Tracking ein eine Nutzereingabe für die er-ste Ob-jek-
+Overfull \hbox (17.68176pt too wide) in paragraph at lines 6--7
+\T1/ppl/m/n/10 automated-Tracking nur eine Nutzereingabe für die er-ste Ob-jek-
 t-def-i-ni-tion benötigt. 
  []
 
@@ -533,28 +533,31 @@ n-den, die mit-tels maschinellem
 
 
 ]
-Overfull \hbox (12.53546pt too wide) in paragraph at lines 15--16
- \T1/ppl/b/n/10.95 Point-Tracking[] \T1/ppl/m/n/10.95 All-ge-mein ges-r-pochen 
-wird das zu ver-fol-gende Ob-jekt durch Punkte
+Overfull \hbox (1.67311pt too wide) in paragraph at lines 15--16
+\T1/ppl/m/n/10.95 eine Reihe von Schwierigkeiten, wie das Hand-haben von Verdec
+k-un-gen oder falsche
  []
 
 [16]
+Overfull \hbox (4.0157pt too wide) in paragraph at lines 31--32
+\T1/ppl/m/n/10.95 jekts beziehungsweise einer Ob-jek-tre-gion als Vor-lage, und
+ nicht nur einzelne Punkte.
+ []
+
+
 Overfull \hbox (1.85948pt too wide) in paragraph at lines 33--34
 \T1/ppl/m/n/10.95 herange-zo-gen. Im An-schluss wird die Qual-ität der Berech-n
 ung mit-tels affiner Trans-
  []
 
 [17]
-Overfull \hbox (13.90117pt too wide) in paragraph at lines 38--39
-\T1/ppl/m/n/10.95 ständigkeit er-wähnt (ODER SOLLTE ICH DOCH NOCH MEHR DAZU SCH
-REIBEN?) 
- []
-
-
 Overfull \hbox (38.99019pt too wide) in paragraph at lines 42--43
 \T1/ppl/m/n/10.95 Be-we-gung des Ob-jekts aus, also ohne plöt-zliche Be-we-gung
 sän-derung. Die Geschwindigkeit
  []
+
+
+Underfull \vbox (badness 6758) has occurred while \output is active []
 
 [18]
 Overfull \hbox (19.44534pt too wide) in paragraph at lines 54--55
@@ -568,7 +571,7 @@ Overfull \hbox (3.91783pt too wide) in paragraph at lines 80--81
 reiben, sind die Er-fahrung
  []
 
-
+[20]
 Overfull \hbox (40.12347pt too wide) in paragraph at lines 91--92
 []\T1/ppl/m/n/10.95 Ohne im De-tail Maschinelles Ler-nen vorzustellen, besteht 
 jede Meth-ode im Wesentlichen
@@ -580,7 +583,7 @@ Overfull \hbox (22.25896pt too wide) in paragraph at lines 94--95
 en. Man gibt Beispiele mit einem entsprechen-
  []
 
-[20]
+
 Overfull \hbox (5.96501pt too wide) in paragraph at lines 101--102
 \T1/ppl/m/n/10.95 Regession wird ver-wen-det, wenn zu einer bes-timmten Eingabe
  ein konkreter (reeller)
@@ -592,185 +595,191 @@ Overfull \hbox (10.02722pt too wide) in paragraph at lines 115--116
 lzahl von un-ter-schiedlichen
  []
 
-
-Overfull \hbox (6.78615pt too wide) in paragraph at lines 121--122
- \T1/ppl/b/n/10.95 Fuÿgänger[] \T1/ppl/m/n/10.95 back-ground seper-a-tion, fore
-ground-silhuette-extraction kopf-detection,
- []
-
 [21]) [22]
 \openout2 = `chapter_3.aux'.
 
-(/Users/ronald/Documents/thesis/chapters/chapter_3.tex [23
+(/Users/ronald/Documents/thesis/chapters/chapter_3.tex
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
+[23
 
 
 
 ]
-Overfull \hbox (11.52312pt too wide) in paragraph at lines 35--36
+Overfull \hbox (11.52312pt too wide) in paragraph at lines 37--38
 []\T1/ppl/m/n/10.95 In dieser Ar-beit wird, wie im grundle-gen-den TLD-Ansatz, 
 der MediaFlow- Tracker
  []
 
-<../pictures/MediaFlow_0.png, id=84, 478.78876pt x 132.495pt>
+<../pictures/MediaFlow_0.png, id=82, 478.78876pt x 132.495pt>
 File: ../pictures/MediaFlow_0.png Graphic file (type png)
 <use ../pictures/MediaFlow_0.png>
-Package pdftex.def Info: ../pictures/MediaFlow_0.png used on input line 38.
+Package pdftex.def Info: ../pictures/MediaFlow_0.png used on input line 40.
 (pdftex.def)             Requested size: 335.14984pt x 92.74585pt.
-[24 <../pictures/MediaFlow_0.png>]
-Overfull \hbox (8.07845pt too wide) in paragraph at lines 56--59
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[24] [25 <../pictures/MediaFlow_0.png>]
+Overfull \hbox (8.07845pt too wide) in paragraph at lines 58--61
 \T1/ppl/m/n/10.95 Pixel groÿen Auss-chnitts. Mit Hilfe der Nach-barpunkte, dere
 n Geschwindigkeit
  []
 
 
-Overfull \hbox (5.04468pt too wide) in paragraph at lines 77--79
+Overfull \hbox (5.04468pt too wide) in paragraph at lines 79--81
 \T1/ppl/m/n/10.95 min-imiert wer-den. Für weit-ere De-tails zur Im-ple-men-tier
 ung in \T1/ppl/m/it/10.95 OpenCV \T1/ppl/m/n/10.95 siehe [[]]. 
  []
 
-[25] <../pictures/MediaFlow.png, id=93, 497.60907pt x 133.24782pt>
+<../pictures/MediaFlow.png, id=90, 497.60907pt x 133.24782pt>
 File: ../pictures/MediaFlow.png Graphic file (type png)
 <use ../pictures/MediaFlow.png>
-Package pdftex.def Info: ../pictures/MediaFlow.png used on input line 87.
+Package pdftex.def Info: ../pictures/MediaFlow.png used on input line 89.
 (pdftex.def)             Requested size: 348.32397pt x 93.27283pt.
 
-Overfull \hbox (24.9737pt too wide) in paragraph at lines 93--95
+Overfull \hbox (24.9737pt too wide) in paragraph at lines 95--97
 \T1/ppl/m/n/10.95 Punkt, gener-iert und mit einem ebenso erzeugten Patch des mö
 glicher-weise entsprechen-
  []
 
-
-Overfull \hbox (2.9884pt too wide) in paragraph at lines 96--98
+[26]
+Overfull \hbox (2.9884pt too wide) in paragraph at lines 98--100
 \T1/ppl/m/n/10.95 den die Punkte ver-wor-fen, deren FB gröÿer als $\OML/zplm/m/
 it/10.95 median[]$ \T1/ppl/m/n/10.95 und deren Ähn-lichkeitswert
  []
 
-[26 <../pictures/MediaFlow.png>]
-Overfull \hbox (0.62126pt too wide) in paragraph at lines 124--125
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[27 <../pictures/MediaFlow.png>]
+Overfull \hbox (0.62126pt too wide) in paragraph at lines 126--127
 \T1/ppl/m/n/10.95 Berech-nung der Tra-jek-to-rie fehlt. Aus diesem Grund ist ei
 ne Detection-Komponente
  []
 
-[27]
-Overfull \hbox (13.40608pt too wide) in paragraph at lines 128--129
+
+Overfull \hbox (13.40608pt too wide) in paragraph at lines 130--131
 []\T1/ppl/m/n/10.95 Die Kaskade des De-tec-tors besteht aus drei Teilen, dem Va
 r-i-anz-fil-ter, dem \T1/ppl/m/it/10.95 Ensemble-
  []
 
 
-Overfull \hbox (6.7304pt too wide) in paragraph at lines 128--129
+Overfull \hbox (6.7304pt too wide) in paragraph at lines 130--131
 \T1/ppl/m/it/10.95 Classifier \T1/ppl/m/n/10.95 und als let-zte In-stanz der \T
 1/ppl/m/it/10.95 NearestNeigbour-Classifier\T1/ppl/m/n/10.95 , die im fol-gen-d
 en einzeln
  []
 
 
-Overfull \hbox (10.36693pt too wide) in paragraph at lines 128--129
+Overfull \hbox (10.36693pt too wide) in paragraph at lines 130--131
 \T1/ppl/m/n/10.95 mögliches ge-fun-denes Ob-jekt repräsen-tiert. Im Gegen-satz 
 zu vie-len an-deren Detector-
  []
 
 
-Overfull \hbox (15.00977pt too wide) in paragraph at lines 128--129
+Overfull \hbox (15.00977pt too wide) in paragraph at lines 130--131
 \T1/ppl/m/n/10.95 Ansätzen, benöti-gen diese Im-ple-men-ta-tion keine offline-T
 rainingsdaten. Die Lernkom-
  []
 
 
-Overfull \hbox (2.94324pt too wide) in paragraph at lines 128--129
+Overfull \hbox (2.94324pt too wide) in paragraph at lines 130--131
 \T1/ppl/m/n/10.95 po-nente, beste-hend aus Ensemble-Classifier und Nearest-Neig
 hbour-Classifier, wird
  []
 
-[28]
-Overfull \hbox (5.81189pt too wide) in paragraph at lines 166--167
+[28] [29]
+Overfull \hbox (5.81189pt too wide) in paragraph at lines 168--169
 \T1/ppl/m/n/10.95 Aus der ini-tialen \T1/ppl/m/it/10.95 Bound-ing-Box \T1/ppl/m
 /n/10.95 wer-den alle möglichen Skalierun-gen und Ver-schiebun-
  []
 
 
-Overfull \hbox (21.67816pt too wide) in paragraph at lines 166--167
+Overfull \hbox (21.67816pt too wide) in paragraph at lines 168--169
 \T1/ppl/m/n/10.95 gung des so entste-hen-den Git-ters wer-den die fol-gen-den P
 a-ram-e-ter genutzt: Skalierungs-
  []
 
-[29] <../pictures/IntegralImage.png, id=106, 541.02126pt x 237.88875pt>
+[30] <../pictures/IntegralImage.png, id=109, 541.02126pt x 237.88875pt>
 File: ../pictures/IntegralImage.png Graphic file (type png)
 <use ../pictures/IntegralImage.png>
-Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 213.
+Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 215.
 (pdftex.def)             Requested size: 378.7123pt x 166.52098pt.
-[30]
-Overfull \hbox (7.22491pt too wide) in paragraph at lines 219--220
+
+Overfull \hbox (7.22491pt too wide) in paragraph at lines 221--222
 \T1/ppl/m/n/10.95 Ob-jekte, die durch das Grid definiert sind, mit dem Var-i-an
 zw-ert des ak-tuellen Bound-
  []
 
-[31 <../pictures/IntegralImage.png>] <../pictures/EnsembleBeispiel.jpg, id=116,
- 498.37392pt x 574.40196pt>
+[31] [32 <../pictures/IntegralImage.png>] <../pictures/EnsembleBeispiel.jpg, id
+=119, 498.37392pt x 574.40196pt>
 File: ../pictures/EnsembleBeispiel.jpg Graphic file (type jpg)
 <use ../pictures/EnsembleBeispiel.jpg>
 Package pdftex.def Info: ../pictures/EnsembleBeispiel.jpg used on input line 24
-0.
+2.
 (pdftex.def)             Requested size: 249.18634pt x 287.20027pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1533) has occurred while \output is active []
 
-[32]
-Overfull \hbox (30.865pt too wide) in paragraph at lines 263--264
+[33 <../pictures/EnsembleBeispiel.jpg>]
+Overfull \hbox (30.865pt too wide) in paragraph at lines 267--268
 \T1/ppl/m/n/10.95 dieser Im-ple-men-ta-tion durch Berech-nung des (nor-mal-isie
 rten) Korrelations-Koeffizienten,
  []
 
-[33 <../pictures/EnsembleBeispiel.jpg>] [34]
-Overfull \hbox (1.49776pt too wide) in paragraph at lines 309--318
+[34]
+Overfull \hbox (1.49776pt too wide) in paragraph at lines 313--322
 \T1/ppl/m/n/10.95 den, bilden die Aus-gabe der Detektor-Komponente. Typ-is-cher
 -weise sind es mehrere
  []
 
+
+Underfull \vbox (badness 1796) has occurred while \output is active []
+
 [35]
-Overfull \hbox (8.92677pt too wide) in paragraph at lines 370--377
+Overfull \hbox (8.92677pt too wide) in paragraph at lines 375--382
 []\T1/ppl/m/n/10.95 Abbildung 7[] gibt einen Überblick der beteiligten Kom-po-n
 en-ten und deren Zusam-
  []
 
-<../pictures/PN_LEARNING.png, id=129, 818.30719pt x 496.10344pt>
+[36] <../pictures/PN_LEARNING.png, id=132, 818.30719pt x 496.10344pt>
 File: ../pictures/PN_LEARNING.png Graphic file (type png)
 <use ../pictures/PN_LEARNING.png>
-Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 380.
+Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 385.
 (pdftex.def)             Requested size: 327.31708pt x 198.43785pt.
 
-Overfull \hbox (15.48697pt too wide) in paragraph at lines 391--392
+Overfull \hbox (15.48697pt too wide) in paragraph at lines 396--397
 \T1/ppl/m/n/10.95 ein La-bel-raum und $\OML/zplm/m/it/10.95 y \OMS/zplm/m/n/10.
 95 2 \OML/zplm/m/it/10.95 Y$ \T1/ppl/m/n/10.95 ein La-bel. Eine Menge von Beisp
 ie-len $\OML/zplm/m/it/10.95 X$ \T1/ppl/m/n/10.95 und mit entsprechen-
  []
 
 
-Overfull \hbox (2.56989pt too wide) in paragraph at lines 394--395
+Overfull \hbox (2.56989pt too wide) in paragraph at lines 399--400
 \T1/ppl/m/n/10.95 wer-den. Ini-tial-isierung durch bere-its gela-belte (also po
 s-i-tive und neg-a-tive Beispiele).
  []
 
-[36]
-Overfull \hbox (4.18367pt too wide) in paragraph at lines 396--397
+
+Overfull \hbox (4.18367pt too wide) in paragraph at lines 401--402
 []\T1/ppl/m/n/10.95 In Schritt $\OML/zplm/m/it/10.95 k$ \T1/ppl/m/n/10.95 hat d
 er Klas-si-fizierer bere-its $\OML/zplm/m/it/10.95 k \OMS/zplm/m/n/10.95 ^^@ \O
 T1/ppl/m/n/10.95 1$ \T1/ppl/m/n/10.95 mal La-bels zu un-markierten Beispie-
  []
 
-[37 <../pictures/PN_LEARNING.png>] <../pictures/PAP.png, id=137, 742.775pt x 36
-5.365pt>
+[37 <../pictures/PN_LEARNING.png>] [38] <../pictures/PAP.png, id=140, 742.775pt
+ x 365.365pt>
 File: ../pictures/PAP.png Graphic file (type png)
 <use ../pictures/PAP.png>
-Package pdftex.def Info: ../pictures/PAP.png used on input line 415.
+Package pdftex.def Info: ../pictures/PAP.png used on input line 420.
 (pdftex.def)             Requested size: 371.38658pt x 182.68205pt.
-[38]
-Overfull \hbox (21.9294pt too wide) in paragraph at lines 425--426
+[39 <../pictures/PAP.png>]
+Overfull \hbox (21.9294pt too wide) in paragraph at lines 430--431
 \T1/ppl/m/n/10.95 die syn-thetis-chen pos-i-tiven Beispiele wer-den gener-iert 
 und der Lern-funk-tion übergeben.
  []
 
-[39 <../pictures/PAP.png>]) [40]
+) [40]
 \openout2 = `chapter_4.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_4.tex
@@ -979,13 +988,13 @@ hapters/chapter_3.aux) (/Users/ronald/Documents/thesis/chapters/chapter_4.aux)
 s/thesis/chapters/chapter_6.aux) (/Users/ronald/Documents/thesis/chapters/bibli
 ography.aux) (/Users/ronald/Documents/thesis/chapters/declaration.aux)) ) 
 Here is how much of TeX's memory you used:
- 5656 strings out of 493315
- 80235 string characters out of 6137903
- 173547 words of memory out of 5000000
- 8879 multiletter control sequences out of 15000+600000
- 58116 words of font info for 124 fonts, out of 8000000 for 9000
+ 5662 strings out of 493315
+ 80337 string characters out of 6137903
+ 173598 words of memory out of 5000000
+ 8884 multiletter control sequences out of 15000+600000
+ 59565 words of font info for 126 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,43p,1453b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,14n,43p,1453b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/
 local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2
 013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/20
@@ -999,7 +1008,7 @@ type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
 urw/palatino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/pal
 atino/uplri8a.pfb>
 Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (61 
-pages, 2355130 bytes).
+pages, 2357645 bytes).
 PDF statistics:
  255 PDF objects out of 1000 (max. 8388607)
  169 compressed objects within 2 object streams

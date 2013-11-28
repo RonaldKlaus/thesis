@@ -2,34 +2,36 @@
 \section{Tracking Learning Detection - TLD}
 	Die originale Implementation von TLD erfolgte in Matlab. Teil dieser Arbeit ist eine Adaption in C++. Zum Verständnis der einzelnen Komponenten und für die Darstellung der Arbeitsweise wird in diesem Kapitel der Algorithmus im Detail vorgestellt und theoretisch betrachtet.
 
-	\subsection{TLD}
-	Die Gesamtheit des Algorithmus wird in \ref{alg:TLD} dargestellt. 
+	\subsection{Algorithmus}
+	Die Gesamtheit des Algorithmus wird in {\em Algorithmus \ref{alg:TLD}} dargestellt. Die Initialisierung zu Beginn kann auf unterschiedlich Weisen erfolgen \ref{subsection:tld_init} und wird in dieser Darstellung nicht näher beschrieben. Es wird davon ausgegangen, dass als Eingabe eine BoundingBox $B_I$ definiert ist. Die zusätzlich benötigte Datenquelle ist eine Sequenz $Seq = \{I_1, I_2, \dots \}$ von Video- oder Kamerabilder. TLD verarbeitet dann nur ein Bild $J \in Seq$ zum Zeitpunkt $t$.
 
 	\begin{algorithm}[H]
 		\vspace{0.2cm}
-		\KwData{$I,J,B_{I}$} 
-		\KwResult{$B_{J}$}
-		Generiere Punkte $P = p_{1},\ldots,p_{n}$ mittels $B_{I}$\;
-		\For{ $p_{i} \in P$ } {
-			$p'_{i}=LK(p_{i})$\;
-			$p''_{i}=LK(p'_{i})$\;
-			$fb_{i}=|p_{i}-p''_{i}|$\;
-			$ncc_{i}=NCC(p_{i},p'_{i})$\;
+		\KwData{$B_I, J$}
+		\KwResult{$B_J$}
+		\If{$B_I$ is not $NULL$} {
+			$B_J^T \leftarrow track(I,J,B_I)$\;
 		}
-		$median_{fb}=median(fb_{1}\ldots fb_{n})$\;
-		\eIf{$median_{fb}>th{}_{fb}$} { 
-			$B_{J}=\emptyset$\;
-		} {
-			$median_{ncc}=median(ncc_{1}\dots ncc_{n})$\;
-			$q=validePoints(p,median_{fb},median_{ncc})$\;
-			$B_{J}=calcBoundingBox(q,B_{I})$\;
+		$B_J^D \leftarrow detect(J)$\;
+		$B_J \leftarrow compare(B_J^T,B_J^D)$\;
+		\If{$isValid$ \& $doLearn $} { 
+			$train(J,B_J)$\;
 		}
+		$I \leftarrow J$\;		
 		\caption{Tracking-Learning-Detection}
 		\label{alg:TLD}
 		\vspace{0.2cm}
 	\end{algorithm}
+	Die Tracking-Komponente in Zeile 2 ist ein Frame-to-Frame Tracker (\ref{subsection:tracking}). Somit muss als Eingabe eine definierte BoundingBox übergeben werden. Ist diese jedoch nicht definiert, weil beispielsweise in der vorigen Iteration im Bild $I$ das gesuchte Objekt nicht gefunden werden konnte, wird der Tracker übergangen. Ist $B_I$ jedoch eine valide BoundingBox, wird zusätzlich $I$ übergeben und der Tracker schätzt im aktuellen Bild $J$ die Position des gesuchten Objekts. Das Ergebnis ist eine BoundingBox $B_J^T$. 
+	
+	Der Detector in Zeile 4 wird vor dem ersten Aufruf von TLD initialisiert (\ref{subsection:tld_init}). Dadurch sind die Classifier und das Sliding-Window Grid verfügbar, die als Basis dienen. Wissen über den vorherigen ``Erfolg'' einer Detection in Form von $B_I$ ist nicht notwendig. Die Rückgabe des Detectors wird in einem Array von BoundingBoxes $B_J^D$ gespeichert.
+
+	Im Anschluss werden die Ergebnisse beider Komponenten bewertet und die BoundingBox $B_J$ im aktuellen Bild $J$ wird, sofern vorhanden, gesetzt. Falls die Bewertung für $B_J^T$ am höchsten ist, wird eine Trainingsphase der Classifier initialisiert (\ref{subsection:machine_learning}), da $B_J^T$ eine unbekannte Repräsentation des gesuchten Objekts darstellt.
+
+	Zum Abschluss wird das aktuelle Bild für die nächste Iteration und als Tracking-Datum in $I$ gespeichert. Die Verarbeitung von $B_J$, wie die Ausgabe, erfolgt außerhalb von TLD.  
 
 	\subsection{Tracking}
+	\label{subsection:tracking}
 	Die Tracker-Komponente hat im Wesentlichen die Aufgabe die Bewegung eines Objekts $o$ zu schätzen, wobei typischerweise die Annahme besteht, dass das Objekt in einer Bildsequenz sichtbar ist. Es gibt in der Praxis eine Reihe von Ansätzen, die sich hinsichtlich der Repräsentation des Objekts, zum Beispiel als Punkte, Kontouren, Modelle oder optischer Fluss, als auch der algorithmischen Verarbeitung unterscheiden.
 
 	In dieser Arbeit wird, wie im grundlegenden TLD-Ansatz, der MediaFlow- Tracker \cite{MFT} implentiert. Der Grundgedanken basiert auf der\textit{ forward-backward consistency assumption}, die besagt, dass erfolgreiches Verfolgen unabhängig von der Richtung des Zeitflusses sein sollte. Als erstes wird eine Menge von gleichverteilten Punkten, definiert durch die BoundingBox, in einem Bild $t$ erzeugt. Im nächsten Schritt erfolgt die \textit{forward} Bestimmung des optischen Flusses mittels Lucas-Kanade-Algorithmus \cite{OPT} im Bild $t+1$. Die Punktemenge, die dadurch ermittelt wurde, wird nun \textit{backward} für die Bestimmung des optischen Flusses im Bild $t$ genutzt. Die Informationen aus beiden Lucas-Kanade-Berechnungen werden zur Bestimmung es \textit{Forward-Backward Errors (FB)} um fehlerhafte Punkte zu filtern. Die verbliebenen Punkte bestimmen die Transformation der BoundingBox. Abbildung \ref{fig:MFT} verdeutlicht das Prinzip.
@@ -99,21 +101,21 @@
 	\begin{algorithm}[H]
 	\vspace{0.2cm}
 	\KwData{$I,J,B_{I}$} 
-	\KwResult{$B_{J}$}
+	\KwResult{$B_{J}^T$}
 	Generiere Punkte $P = p_{1},\ldots,p_{n}$ mittels $B_{I}$\;
 	\For{ $p_{i} \in P$ } {
-		$p'_{i}=LK(p_{i})$\;
-		$p''_{i}=LK(p'_{i})$\;
-		$fb_{i}=|p_{i}-p''_{i}|$\;
-		$ncc_{i}=NCC(p_{i},p'_{i})$\;
+		$p'_{i} \leftarrow LK(p_{i})$\;
+		$p''_{i} \leftarrow LK(p'_{i})$\;
+		$fb_{i} \leftarrow |p_{i}-p''_{i}|$\;
+		$ncc_{i} \leftarrow NCC(p_{i},p'_{i})$\;
 	}
-	$median_{fb}=median(fb_{1}\ldots fb_{n})$\;
+	$median_{fb}\leftarrow median(fb_{1}\ldots fb_{n})$\;
 	\eIf{$median_{fb}>th{}_{fb}$} { 
-		$B_{J}=\emptyset$\;
+		$B_{J}^T \leftarrow \emptyset$\;
 	} {
-		$median_{ncc}=median(ncc_{1}\dots ncc_{n})$\;
-		$q=validePoints(p,median_{fb},median_{ncc})$\;
-		$B_{J}=calcBoundingBox(q,B_{I})$\;
+		$median_{ncc} \leftarrow median(ncc_{1}\dots ncc_{n})$\;
+		$q \leftarrow validePoints(p,median_{fb},median_{ncc})$\;
+		$B_{J}^T \leftarrow calcBoundingBox(q,B_{I})$\;
 	}
 	\caption{Tracking}
 	\label{alg:tracking}
@@ -259,6 +261,8 @@
 	% \end{comment}
 	\subsubsection{Template-Matching und Nearest-Neighbour-Classifier}
 
+	HIER NOCH WAS HIN!
+
 	\paragraph{Template-Matching}
 	Die letzte Stufe des Klassifizierers ist ein Nearest-Neighbour-Classifier, der mittels Template-Matching die verbliebenen Patches klassifiziert. Bei diesem Verfahren wird der gesuchte Patch (das Template) $T$ direkt in einem Bild $I$ gesucht, indem es über dieses geschoben und mittels einer Matching-Methode, in dieser Implementation durch Berechnung des (normalisierten) Korrelations-Koeffizienten, verglichen wird. Dabei wird der relative Mittelwert von $T$ mit dem relativen Mittelwert von $I$ verglichen. Das Ergebnis ist ein Wert zwischen $1$(perfekter Match) und $-1$(perfekter Missmatch). $0$ bedeutet, dass zwischen $T$ und $I$ keine Korrelation exisitert. Da es sich hierbei um eine sehr konservative und rechenintensive Vergleichsmethode handelt, bildet sie den Abschluss der Kaskade.
 
@@ -329,6 +333,7 @@
 	Detektion befinden, siehe Abbildung {[}{]}.
 
 	\subsection{Maschinelles Lernen}
+	\label{subsection:machine_learning}
 	Die Tracking- und die Detection-Komponenten arbeiten unabhängig von
 	einander, weshalb deren Ergebnisse zusammengeführt und bewertet werden
 	müssen. Dies geschieht durch P/N-Learning \cite{PNL}. Gleichzeitig
@@ -428,4 +433,5 @@
 	Der Detector liefert das bessere Ergebnis, was wiederum bedeutet,	dass der Tracker das Objekt nicht finden konnte, weil es verdeckt oder teilweise nicht sichtbar war, oder der Tracker gedrifftet ist. In jedem Fall wird der Tracker mit der Detector-Box reinitalisiert. Ein Training findet in diesem Fall nicht statt.
 
 	\subsection{Initialisierung}
+	\label{subsection:tld_init}
 	Wie bereits in bei \ref{subsection:working_components} erwähnt, gibt es verschiedene Möglichkeiten TLD zu initialisieren. Einzig die Repräsentation des Objekts mittels BoundingBox mit gewährleistet sein. Da die Kopter sich automatische gegenseitig erkennen sollen und kein weiterer Objekt-Detector als TLD implementiert werden soll, wird initial ein bereits erzeugtes und trainiertes Modell eine Kopters geladen. Der Ablauf des Trainings wird in \ref{subsection:learning_and_testing} näher erläutert.
