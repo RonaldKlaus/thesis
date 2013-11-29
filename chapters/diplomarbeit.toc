@@ -32,7 +32,7 @@
 \contentsline {subsubsection}{\numberline {3.2.1}Der optischen Flusses und der Lucas-Kanade-Algorithmus}{25}
 \contentsline {subsubsection}{\numberline {3.2.2}FB, NCC und Median Flow Tracker}{26}
 \contentsline {subsection}{\numberline {3.3}Detection}{28}
-\contentsline {subsubsection}{\numberline {3.3.1}Objekt-Modell}{29}
+\contentsline {subsubsection}{\numberline {3.3.1}Objekt-Modell}{30}
 \contentsline {subsubsection}{\numberline {3.3.2}Sliding-Window}{30}
 \contentsline {subsubsection}{\numberline {3.3.3}Varianzfilter}{30}
 \contentsline {subsubsection}{\numberline {3.3.4}Ensemble-Classifier}{32}
@@ -42,41 +42,41 @@
 \contentsline {paragraph}{Nearest-Neighbour-Classifier}{35}
 \contentsline {subsubsection}{\numberline {3.3.6}Cluster-Verfahren}{35}
 \contentsline {subsection}{\numberline {3.4}Maschinelles Lernen}{36}
-\contentsline {subsubsection}{\numberline {3.4.1}P-N Learning}{37}
-\contentsline {paragraph}{Bootstrapping}{37}
+\contentsline {subsubsection}{\numberline {3.4.1}P-N Learning}{38}
+\contentsline {paragraph}{Bootstrapping}{38}
 \contentsline {paragraph}{Constraints}{38}
 \contentsline {subsection}{\numberline {3.5}Zusammenspiel der Komponenten}{39}
 \contentsline {paragraph}{$T.conf\geq D.conf$}{40}
-\contentsline {paragraph}{$T.conf<D.conf$ }{40}
-\contentsline {subsection}{\numberline {3.6}Initialisierung}{40}
-\contentsline {section}{\numberline {4}Implementierung und Testszenarien}{41}
-\contentsline {subsection}{\numberline {4.1}Programmierung}{41}
-\contentsline {subsubsection}{\numberline {4.1.1}Klassenstruktur}{42}
-\contentsline {paragraph}{Klasse \textit {CopterTracking}}{42}
-\contentsline {paragraph}{Klasse \textit {TLD}}{42}
-\contentsline {paragraph}{Klasse \textit {Tracker}}{42}
-\contentsline {paragraph}{Klasse \textit {Detector}}{42}
-\contentsline {paragraph}{Klasse \textit {VarianceClassifier}}{42}
-\contentsline {paragraph}{Klasse \textit {EnsembleClassifier}}{43}
-\contentsline {paragraph}{Klasse \textit {NearestNeigbourClassifier}}{43}
-\contentsline {paragraph}{Klasse \textit {Result}}{43}
-\contentsline {paragraph}{Klasse \textit {Utility}}{43}
-\contentsline {paragraph}{Zus\IeC {\"a}tzliche Angaben}{43}
-\contentsline {subsection}{\numberline {4.2}Lern- und Testphasen}{44}
-\contentsline {subsubsection}{\numberline {4.2.1}Videosequenzen}{44}
-\contentsline {subsubsection}{\numberline {4.2.2}Kamerasequenzen}{45}
-\contentsline {section}{\numberline {5}Auswertung und Ausblick}{47}
-\contentsline {subsection}{\numberline {5.1}Evaluation}{47}
-\contentsline {subsection}{\numberline {5.2}Resultate}{48}
-\contentsline {subsection}{\numberline {5.3}Auswertungen und Beobachtungen}{48}
-\contentsline {paragraph}{Detectorkaskade}{48}
-\contentsline {paragraph}{MedianFlow Tracker}{49}
-\contentsline {subsection}{\numberline {5.4}Modikfikationen und Verbesserungsvorschl\IeC {\"a}ge}{49}
+\contentsline {paragraph}{$T.conf<D.conf$ }{41}
+\contentsline {subsection}{\numberline {3.6}Initialisierung}{41}
+\contentsline {section}{\numberline {4}Implementierung und Testszenarien}{43}
+\contentsline {subsection}{\numberline {4.1}Programmierung}{43}
+\contentsline {subsubsection}{\numberline {4.1.1}Klassenstruktur}{44}
+\contentsline {paragraph}{Klasse \textit {CopterTracking}}{44}
+\contentsline {paragraph}{Klasse \textit {TLD}}{44}
+\contentsline {paragraph}{Klasse \textit {Tracker}}{44}
+\contentsline {paragraph}{Klasse \textit {Detector}}{44}
+\contentsline {paragraph}{Klasse \textit {VarianceClassifier}}{44}
+\contentsline {paragraph}{Klasse \textit {EnsembleClassifier}}{45}
+\contentsline {paragraph}{Klasse \textit {NearestNeigbourClassifier}}{45}
+\contentsline {paragraph}{Klasse \textit {Result}}{45}
+\contentsline {paragraph}{Klasse \textit {Utility}}{45}
+\contentsline {paragraph}{Zus\IeC {\"a}tzliche Angaben}{45}
+\contentsline {subsection}{\numberline {4.2}Lern- und Testphasen}{46}
+\contentsline {subsubsection}{\numberline {4.2.1}Videosequenzen}{46}
+\contentsline {subsubsection}{\numberline {4.2.2}Kamerasequenzen}{47}
+\contentsline {section}{\numberline {5}Auswertung und Ausblick}{49}
+\contentsline {subsection}{\numberline {5.1}Evaluation}{49}
+\contentsline {subsection}{\numberline {5.2}Resultate}{50}
+\contentsline {subsection}{\numberline {5.3}Auswertungen und Beobachtungen}{50}
 \contentsline {paragraph}{Detectorkaskade}{50}
-\contentsline {paragraph}{MedianFlow Tracker}{50}
-\contentsline {paragraph}{Allgemein}{50}
-\contentsline {section}{\numberline {6}Anhang}{53}
-\contentsline {paragraph}{Varianz-Classifier}{54}
-\contentsline {paragraph}{Ensemble-Classifier}{54}
-\contentsline {paragraph}{NearestNeighbour-Classifier}{54}
-\contentsline {paragraph}{Cluster-Verfahren}{55}
+\contentsline {paragraph}{MedianFlow Tracker}{51}
+\contentsline {subsection}{\numberline {5.4}Modikfikationen und Verbesserungsvorschl\IeC {\"a}ge}{52}
+\contentsline {paragraph}{Detectorkaskade}{52}
+\contentsline {paragraph}{MedianFlow Tracker}{52}
+\contentsline {paragraph}{Allgemein}{53}
+\contentsline {section}{\numberline {6}Anhang}{55}
+\contentsline {paragraph}{Varianz-Classifier}{56}
+\contentsline {paragraph}{Ensemble-Classifier}{56}
+\contentsline {paragraph}{NearestNeighbour-Classifier}{56}
+\contentsline {paragraph}{Cluster-Verfahren}{57}

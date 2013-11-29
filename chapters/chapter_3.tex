@@ -131,26 +131,20 @@
 
 	\begin{algorithm}
 	\vspace{0.2cm}
-	% Anpassen der Darstellung für c-style
-	% \SetStartEndCondition{ (}{)}{)}\SetAlgoBlockMarkers{}{\}}%
-	% \SetKwProg{Fn}{}{\{}{}\SetKwFunction{FRecurs}{void FnRecursive}%
-	% \SetKwFor{For}{for}{\{}{}%
-	% \SetKwIF{If}{ElseIf}{Else}{if}{\{}{elif}{else\{}{}%
-	% \SetKwFor{While}{while}{\{}{}%
-	% \SetKwRepeat{Repeat}{repeat\{}{until}%
-	% \AlgoDisplayBlockMarkers\SetAlgoNoLine%
-
-	\KwData{Input} 
-	\KwResult{Output}
-	initialization\;
-	\While{not at end of this document}{
-	read current\;
-	\eIf{understand}{
-		go to next section\;
-		current section becomes this one\;
-	}{
-		go back to the beginning of current section\;
+	\KwData{$I$} 
+	\KwResult{$B_J^D$}
+	$result = \{\}$\;
+	\For{$g \in G$}{
+		\If{$VarianceClassifier(I, g) == true$}{
+			\If{$EnsembleClassifier(I, g) == true$}{
+				\If{$NearestNeighbourClassifier(I, g ) == true$}{
+					$result \leftarrow result + g$\;
+				}
+			}	
+		}
 	}
+	\If{$result.size > 0$}{
+			$B_J^D \leftarrow cluster(result)$\;
 	}
 	\caption{Detection}
 	\label{alg:detection}
@@ -282,12 +276,7 @@
 	I'(x+x',y+y')=I(x+x',y+y')-\frac{1}{(w\times h)\underset{x'',y''}{\sum}I(x+x'',y+y'')}
 	\end{equation}
 
-
-	Um Fehler zu reduzieren, die durch eine unterschiedliche Beleutung
-	des Templates $T$ und des Bildes $I$ entstehen können und damit
-	das Ergebnis verfälschen, wir der Koeffizient normalisiert. Zusätzlich
-	wird das Ergebnis umgerechnet, das Ergebnis im Intervall $[0..1]$
-	liegt.
+	Um Fehler zu reduzieren, die durch eine unterschiedliche Beleutung des Templates $T$ und des Bildes $I$ entstehen können und damit	das Ergebnis verfälschen, wir der Koeffizient normalisiert. Zusätzlich wird das Ergebnis umgerechnet, das Ergebnis im Intervall $[0..1]$	liegt.
 
 	\begin{equation}
 	S(x,y)=0.5(NCC(x,y)+1)
@@ -298,39 +287,25 @@
 	\end{equation}
 
 	\paragraph{Nearest-Neighbour-Classifier}
-	Positive und negative Beispiele, die dem Klassifizierer für den Vergleich
-	dienen, sind genormte $15\times15$ Pixel große Patches und werden
-	durch das Objekt-Modell $M$ repräsentiert. Der zu überprüfende Patch
-	wird mit allen positiven und negativen Beispielen verglichen und es
-	wird jeweils der größte Korrelations-Koeffizient berechnet. Diese
-	dienen wiederum als Grundlage für die Ähnlichkeitsberechnung des Patches
-	zur positiven Klasse. Es wird hierbei die relative Ähnlichkeit $S^{r}(p,M)=\frac{S^{+}}{S^{+}+S^{-}}$
-	berechnet und mit einem Threshold-Wert $\Theta$ verglichen, mit $\Theta=0.65$%
-	\footnote{Werte für $\Theta$ zwischen $0.5-0.7$ sind ebenfalls zulässig und
-	bringen ähnliche Resultate \cite{TLD}.%
-	}. Gilt $S^{r}(p,M)>\Theta$, wird der Patch als positiv klassifiziert.
+	Positive und negative Beispiele, die dem Klassifizierer für den Vergleich dienen, sind genormte $15\times15$ Pixel große Patches und werden	durch das Objekt-Modell $M$ repräsentiert. Der zu überprüfende Patch wird mit allen positiven und negativen Beispielen verglichen und es wird jeweils der größte Korrelations-Koeffizient berechnet. Diese dienen wiederum als Grundlage für die Ähnlichkeitsberechnung des Patches zur positiven Klasse. Es wird hierbei die relative Ähnlichkeit $S^{r}(p,M)=\frac{S^{+}}{S^{+}+S^{-}}$	berechnet und mit einem Threshold-Wert $\Theta$ verglichen, mit $\Theta=0.65$	\footnote{Werte für $\Theta$ zwischen $0.5-0.7$ sind ebenfalls zulässig und	bringen ähnliche Resultate \cite{TLD}. }. Gilt $S^{r}(p,M)>\Theta$, wird der Patch als positiv klassifiziert.
 
-	Alle Patches, die zu diesem Zeitpunkt nicht durch die Kaskade verworfen
-	wurden, bilden die Ausgabe der Detektor-Komponente. Typischerweise
-	sind es mehrere Patches, die sich sehr ähneln und stark überlappen,
-	und im Allgemeinen Teile des gesuchten Objekts repräsentieren. Das
-	ist $\Theta$ geschuldet, denn die Patches werden nicht mit einem
-	klaren Label für ``ist Objekt/ist kein Objekt'' versehen. Aus diesem
-	Grund werden mittels Cluster-Verfahren Gruppierungen gebildet, aus
-	denen abschließend die BoundingBox für das mögliche Objekt generiert
-	wird. 
+	Alle Patches, die zu diesem Zeitpunkt nicht durch die Kaskade verworfen wurden, bilden die Ausgabe der Detektor-Komponente. Typischerweise sind es mehrere Patches, die sich sehr ähneln und stark überlappen, und im Allgemeinen Teile des gesuchten Objekts repräsentieren. Das ist $\Theta$ geschuldet, denn die Patches werden nicht mit einem klaren Label für ``ist Objekt/ist kein Objekt'' versehen. Aus diesem Grund werden mittels Cluster-Verfahren Gruppierungen gebildet, aus denen abschließend die BoundingBox für das mögliche Objekt generiert wird. 
 
 
 	\subsubsection{Cluster-Verfahren}
-	Nachdem der Detector eine Reihe von Patchen klassifiziert und mit
-	$p^{+}$ gelabelt hat, ergibt sich ein Problem. Im Idealfall sollten
-	alle Patches, die postitiv sind, also als Objekt erkannt wurden, mit
-	$1$ und alle anderen mit $0$ bewertet werden \cite{BAB}. Dies ist
-	in diesem Verfahren jedoch nicht möglich, da die Bewertung des Nearest-Neighbours
-	Werte zwischen $[\Theta..1]$ generiert und eine eindeutige Klassifizierung
-	nicht möglich ist. Wegen des Sliding-Window-Ansatzes wird der Detector
-	fast immer Kandidaten finden, die sich sehr nahe an der eigentlichen
-	Detektion befinden, siehe Abbildung {[}{]}.
+	Nachdem der Detector eine Reihe von Patchen klassifiziert und mit	$p^{+}$ gelabelt hat, ergibt sich ein Problem. Im Idealfall sollten	alle Patches, die postitiv sind, also als Objekt erkannt wurden, mit $1$ und alle anderen mit $0$ bewertet werden \cite{BAB}. Dies ist in diesem Verfahren jedoch nicht möglich, da die Bewertung des Nearest-Neighbours	Werte zwischen $[\Theta..1]$ generiert und eine eindeutige Klassifizierung nicht möglich ist. Wegen des Sliding-Window-Ansatzes wird der Detector	fast immer Kandidaten finden, die sich sehr nahe an der eigentlichen Detektion befinden, siehe Abbildung \ref{abb:cluster}.
+
+	\begin{figure}
+		\begin{centering}
+			% \includegraphics[scale=0.4]{../pictures/PN_LEARNING.png}
+			ABBILDUNG! ÜBERLAPPENDE WINDOWS
+			\caption{Clusterbildung}
+			\label{abb:cluster}
+			\par
+		\end{centering}
+	\end{figure}
+
+	Das heißt, dass im Normalfall ein einzelnes Window keine Objektpräsentation darstellt und dass es mehrere Kandidaten gibt, die nach der Kaskade als potentiell positive Objekte identifiziert werden. Die Behandlung dieses Problems erfolgt durch einen Cluster-Algorithmus. Kandidaten gehören zu einem Cluster, wenn sie sich mehr als $60\%$ überlappen und beispielsweise auch komplett ineinander liegen. Zur anschließenden Berechnung werden die Positions- und Größenwerte über diese Kandidaten gemittelt. Auf diese Weise werden eine oder mehrere Objektrepräsentation in Form von BoundingBoxen $B_J^D = \{B_1^D, B_2D, \dots\}$ erzeugt. An dieser Stelle wird als Ergebnis allerdings nur eine BoundingBox erwartet, da das Objekt zur Zeit $t$ nur einmal vorkommen kann. Der Algorithmus wird in Algorithmus \ref{alg:cluster} skizziert.
 
 	\subsection{Maschinelles Lernen}
 	\label{subsection:machine_learning}
@@ -342,8 +317,8 @@
 
 	\begin{algorithm}
 	\vspace{0.2cm}
-	\KwData{Input} 
-	\KwResult{Output}
+	\KwData{$B_J, J$} 
+	% \KwResult{}
 	initialization\;
 	\While{not at end of this document}{
 	read current\;
@@ -372,7 +347,7 @@
 	werden die Patches in diesem Bereich eine ähnliche postiven Markierung
 	erhalten, Patches, die weiter weg vom Objekt sind, eine negative.
 
-	Abbildung \ref{PNL_Pic} gibt einen Überblick der beteiligten Komponenten
+	Abbildung \ref{abb:pnl} gibt einen Überblick der beteiligten Komponenten
 	und deren Zusammenhang von P-N Learning. Im Klassifizierer (i) (im
 	TLD-Ansatz sind das Fern- und NearstNeigbour Classifier) werden die
 	unbestimmten Daten aus $X_{u}$ gelabelt. (ii) bilden die Constraints
@@ -383,7 +358,7 @@
 	\begin{figure}
 	\begin{centering}
 	\includegraphics[scale=0.4]{../pictures/PN_LEARNING.png}\caption{Arbeitsweise P-N Learning (Quelle: \cite{PNL})}
-	\label{PNL_Pic}
+	\label{abb:pnl}
 	\par\end{centering}
 	\end{figure}
 
@@ -418,8 +393,8 @@
 
 	\begin{figure}
 	\includegraphics[scale=0.5]{../pictures/PAP.png}
-
 	\caption{Zusammenspiel der Komponenten im Programmablaufplan}
+	\label{abb:pap}
 	\end{figure}
 
 	Prinzipiell ist für die Initalisierung von TLD eine Nutzereingabe erforderlich. Diese Dient einzig der Markierung des gesuchten Objekts. \label{subsection:working_components} Entweder wird in einem Ausgabebild das Objekt durch ein Rechteck markiert, oder ein bereits erzeugtes Model wird geladen, wordurch die Classifier mit den entsprechenden Datenbasen initialisiert werden. Ein dritte Möglichkeit biete eine vorgeschaltete Komponente, wie zum Beispiel ein alternativer Klassifizierer, der für die Erkennung eines bestimmten Objekts trainiert wird und die initialie BoundingBox liefert. Nachdem die Initialisierung durchgeführt wurde, arbeitet TLD selbständig und ohne weitere Eingaben von Außen. Die Tracking- sowie die Detection-Komponente arbeiten vollkommen unabhängig und parallel. Beide liefern nach der Abarbeitung ein Ergebnis in Form einer Box, die Kandidaten für das gesuchte Objekt sind. Aufgrund des Sliding-Window-Ansatzes und des abschließenden Clusterings ist es möglich, dass der Detector mehr als eine mögliche Box als Ausgabe bestimmt, also kein eindeutiges Ergebnis liefert. In diesem Fall wird für die folgende Bewertung nur die Box des Trackers berücksichtigt, und die Ergebnismenge des Detectors wird verworfen.

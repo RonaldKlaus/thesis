@@ -31,17 +31,44 @@
 	\paragraph{Detectorkaskade}
 	Die letzte Komponente der Detectorkaskade, der Nearest-Neighbour-Classifier, speichert Patches des Objekts in der Größe $15\times15 px$. Bestimmt durch die BoundingBox wird meist auch ein Teil des Hintergrundes gespeichert und gelernt. Somit ist nicht nur das Objekt selbst, sondern auch seine Umgebung Teil der Repräsentation. Der Einfluss ist hierbei stark von Größe und Beschaffenheit des Objekts sowie der Menge an ``Hintergrund'', der gespeichert wird, abhängig.
 
-	Ein Kopter wird durch einen anderen Kopter meist von der Seite wahrgenommen. Aufgrund der dünnen/kompakten/filigranen Struktur wird unweigerlich immer eine Menge Hintergrundinformationen im Patch gespeichert (HIER EIN BILD). Der Einfluss auf die Genauigkeit und die Trefferquote des Detectors ist damit sehr groß. Probleme treten vor allem dann auf, wenn der Hintergrund einen hohen Informationsgehalt hat, wie zum Beispiel Bäume oder Häuser, da der Kopter selbst strukturell eher einfach aufgebaut ist. Aber auch Hintergründe mit unterschiedlichen Farbstärke sind problematisch. So kann es vorkommen, dass ein Kopter, dessen Model vor einem hellen Hintergrund ``erlernt'' wurde, vor einem dunklen nicht mehr erkannt wird. 
+	Ein Kopter wird durch einen anderen Kopter meist von der Seite wahrgenommen. Aufgrund der dünnen/kompakten/filigranen Struktur wird unweigerlich immer eine Menge Hintergrundinformationen im Patch gespeichert (Abbildung \ref{abb:problem_background_1}). Der Einfluss auf die Genauigkeit und die Trefferquote des Detectors ist damit sehr groß. Probleme treten vor allem dann auf, wenn der Hintergrund einen hohen Informationsgehalt hat, wie zum Beispiel Bäume oder Häuser, da der Kopter selbst strukturell eher einfach aufgebaut ist. Aber auch Hintergründe mit unterschiedlichen Farbstärke sind problematisch. So kann es vorkommen, dass ein Kopter, dessen Model vor einem hellen Hintergrund ``erlernt'' wurde, vor einem dunklen nicht mehr erkannt wird. 
 
-	Um den Einfluss des Hintergrundes zu minimieren, ist es möglich nur einen Teil des Kopters initial zu markieren, wie zum Beispiel den Corpus ohne die Rotoren (HIER EIN BILD). Das führt allerdings dazu, dass der Kopter ausschlielich anhand dieses Teilbereichs erkannt wird, also nur von einer Seite. Das macht es unmöglich eine vollständiges Model des Objekts zu generieren.
+	Um den Einfluss des Hintergrundes zu minimieren, ist es möglich nur einen Teil des Kopters initial zu markieren, wie zum Beispiel den Corpus ohne die Rotoren (Abbildung \ref{abb:problem_background_2}). Das führt allerdings dazu, dass der Kopter ausschlielich anhand dieses Teilbereichs erkannt wird, also nur von einer Seite. Das macht es unmöglich eine vollständiges Model des Objekts zu generieren.
 
-	(BILD MIT KOPTER UND BOUNDINGBOX UND VIEL HINTERGRUND)
-	(BILD MIT KOPTER UND BOUNDINGBOX UND KEINEM HINTERGRUND)
+	\begin{figure}
+		\begin{centering}
+			% \includegraphics[scale=0.4]{../pictures/PN_LEARNING.png}
+			(BILD MIT KOPTER UND BOUNDINGBOX UND VIEL HINTERGRUND)
+			\caption{Problem: Detector 1}
+			\label{abb:problem_background_1}
+			\par
+		\end{centering}
+	\end{figure}
+
+	\begin{figure}
+		\begin{centering}
+			% \includegraphics[scale=0.4]{../pictures/PN_LEARNING.png}
+			(BILD MIT KOPTER UND BOUNDINGBOX UND KEINEM HINTERGRUND)
+			\caption{Problem: Detector 2}
+			\label{abb:problem_background_2}
+			\par
+		\end{centering}
+	\end{figure}
+	
+	
 
 	\paragraph{MedianFlow Tracker}
-	Die Struktur des Kopters bedingt nicht nur den Erfolg des Detectors, sondern beeinflusst ebenfalls die Leistung des Trackers. Dieser schätzt anhand einer regelmäßigen Anordnung von Punkte innerhalb einer BoundingBox in einem Frame, die Position der Punkte im Folgebild. Diese regelmäige Anordnung ist gleichförmig, wodurch viele Punkte, die zum Hintergrund gehören, die LKT-Schätzung beeinflussen (HIER EIN BILD). Auch hier stellen vor allem detailreiche Hintergründe ein Problem dar, weil durch die willkürliche Wahl der Punkte die Wahrscheinlichkeit erhöht wird, eine ungenaue Schätzung zu erhalten.
+	Die Struktur des Kopters bedingt nicht nur den Erfolg des Detectors, sondern beeinflusst ebenfalls die Leistung des Trackers. Dieser schätzt anhand einer regelmäßigen Anordnung von Punkte innerhalb einer BoundingBox in einem Frame, die Position der Punkte im Folgebild. Diese regelmäige Anordnung ist gleichförmig, wodurch viele Punkte, die zum Hintergrund gehören, die LKT-Schätzung beeinflussen (Abbildung \ref{abb:problem_tracker}). Auch hier stellen vor allem detailreiche Hintergründe ein Problem dar, weil durch die willkürliche Wahl der Punkte die Wahrscheinlichkeit erhöht wird, eine ungenaue Schätzung zu erhalten.
 
-	(BILD MIT KOPTER UND GRID)
+	\begin{figure}
+		\begin{centering}
+			% \includegraphics[scale=0.4]{../pictures/PN_LEARNING.png}
+			(BILD MIT PUNKTEN UND HINTERGRUND FÜR TRACKER)
+			\caption{Problem: Tracker}
+			\label{abb:problem_tracker}
+			\par
+		\end{centering}
+	\end{figure}
 
 	Ein zusätzlicher Nachteil des Trackers ist, dass er keine Lernkomponente besitzt. Jede Verarbeitung ist unabhängig und integriert keine zusätzlichen Informationen aus vergangenen Schätzungen, was bedeutet, dass der Tracker immer wieder die gleichen Fehler macht - im Gegensatz zum Detector, der aus seinen Fehlern ``lernt''. 
 
