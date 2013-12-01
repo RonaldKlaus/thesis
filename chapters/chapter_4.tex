@@ -1,3 +1,4 @@
+% -*- root: diplomarbeit.tex -*-
 \section{Implementierung und Testszenarien}
 Das folgende Kapitel behandelt den praktischen Teil der Diplomarbeit. Es werden die Implementierung in C++ beschrieben, die erzeugten Klassen vorgestellt sowie auf eventuelle Probleme und Besonderheiten während der Entwicklung eingegangen. Im Anschluss folgte die Beschreibung der verwendeten Testszenarien sowie die Erläuterung der durchgeführten Lernphasen. 
 
@@ -47,9 +48,18 @@ In den ersten Versionen des Programms wurde ein streng objektorientierter Ansatz
 \label{subsection:learning_and_testing}
 Die Ergebnisse der originalen Implementation von TLD mittels Matlab sind beeindruckend...(HIER NOCH ETWAS ZU DEN ERGEBNISSEN). Aus diesem Grund viel die Wahl auf TLD.
 
+\begin{figure}[H]
+	\begin{centering}
+		\includegraphics[scale=0.6]{../pictures/kopter}
+		\caption{Das repräsentative Koptermodell MINI-QUADROCOPTER QG 550 XS für die Durchführung aller Tests.}
+		\label{abb:kopter}
+		\par
+	\end{centering}
+\end{figure}
+
 Nach der Implementation sollte die Eignung von TLD auf das Koptertracking getestet werden. Dazu wurden verschiedene Testszenarien erstellt und durchgespielt, die nun kurz vorgestellt werden.
 
-Als Datenquelle dienten in erster Linie Video- und Kamerasequenzen, die mittels einer handelsüblichen SRL in einer Auflösung von $640\times480$ Pixel aufgenommen wurden. Als Modell wurde der \textit{MINI-QUADROCOPTER QG 550 XS} gewählt (BILD). Es sollten vor allem zwei wesentliche Dinge überprüft werden:
+Als Datenquelle dienten in erster Linie Video- und Kamerasequenzen, die mittels einer handelsüblichen SRL in einer Auflösung von $640\times480$ Pixel aufgenommen wurden. Als Modell wurde der \textit{MINI-QUADROCOPTER QG 550 XS} gewählt (Abbildung \ref{abb:Kopter}). Es sollten vor allem zwei wesentliche Dinge überprüft werden:
 
 \begin{enumerate}
 \item Unter welchen Umständen bezwiehungsweise welche Kriterien müssen erfüllt werden, damit ein Kopter erfolgreich gefunden und verfolgt werden kann.

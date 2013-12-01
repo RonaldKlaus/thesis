@@ -31,46 +31,37 @@
 	\paragraph{Detectorkaskade}
 	Die letzte Komponente der Detectorkaskade, der Nearest-Neighbour-Classifier, speichert Patches des Objekts in der Größe $15\times15 px$. Bestimmt durch die BoundingBox wird meist auch ein Teil des Hintergrundes gespeichert und gelernt. Somit ist nicht nur das Objekt selbst, sondern auch seine Umgebung Teil der Repräsentation. Der Einfluss ist hierbei stark von Größe und Beschaffenheit des Objekts sowie der Menge an ``Hintergrund'', der gespeichert wird, abhängig.
 
-	Ein Kopter wird durch einen anderen Kopter meist von der Seite wahrgenommen. Aufgrund der dünnen/kompakten/filigranen Struktur wird unweigerlich immer eine Menge Hintergrundinformationen im Patch gespeichert (Abbildung \ref{abb:problem_background_1}). Der Einfluss auf die Genauigkeit und die Trefferquote des Detectors ist damit sehr groß. Probleme treten vor allem dann auf, wenn der Hintergrund einen hohen Informationsgehalt hat, wie zum Beispiel Bäume oder Häuser, da der Kopter selbst strukturell eher einfach aufgebaut ist. Aber auch Hintergründe mit unterschiedlichen Farbstärke sind problematisch. So kann es vorkommen, dass ein Kopter, dessen Model vor einem hellen Hintergrund ``erlernt'' wurde, vor einem dunklen nicht mehr erkannt wird. 
+	Ein Kopter wird durch einen anderen Kopter meist von der Seite wahrgenommen. Aufgrund der dünnen/kompakten/filigranen Struktur wird unweigerlich immer eine Menge Hintergrundinformationen im Patch gespeichert. Der Einfluss auf die Genauigkeit und die Trefferquote des Detectors ist damit sehr groß. Probleme treten vor allem dann auf, wenn der Hintergrund einen hohen Informationsgehalt hat, wie zum Beispiel Bäume oder Häuser, da der Kopter selbst strukturell eher einfach aufgebaut ist. Aber auch Hintergründe mit unterschiedlichen Farbstärke sind problematisch. So kann es vorkommen, dass ein Kopter, dessen Model vor einem hellen Hintergrund ``erlernt'' wurde, vor einem dunklen nicht mehr erkannt wird. 
 
-	Um den Einfluss des Hintergrundes zu minimieren, ist es möglich nur einen Teil des Kopters initial zu markieren, wie zum Beispiel den Corpus ohne die Rotoren (Abbildung \ref{abb:problem_background_2}). Das führt allerdings dazu, dass der Kopter ausschlielich anhand dieses Teilbereichs erkannt wird, also nur von einer Seite. Das macht es unmöglich eine vollständiges Model des Objekts zu generieren.
+	
+	\paragraph{MedianFlow Tracker}
+	Die Struktur des Kopters bedingt nicht nur den Erfolg des Detectors, sondern beeinflusst ebenfalls die Leistung des Trackers. Dieser schätzt anhand einer regelmäßigen Anordnung von Punkte innerhalb einer BoundingBox in einem Frame, die Position der Punkte im Folgebild. Diese regelmäige Anordnung ist gleichförmig, wodurch viele Punkte, die zum Hintergrund gehören, die LKT-Schätzung beeinflussen (Abbildung \ref{abb:problem_tracker}). Auch hier stellen vor allem detailreiche Hintergründe ein Problem dar, weil durch die willkürliche Wahl der Punkte die Wahrscheinlichkeit erhöht wird, eine ungenaue Schätzung zu erhalten.
 
-	\begin{figure}
+	Ein zusätzlicher Nachteil des Trackers ist, dass er keine Lernkomponente besitzt. Jede Verarbeitung ist unabhängig und integriert keine zusätzlichen Informationen aus vergangenen Schätzungen, was bedeutet, dass der Tracker immer wieder die gleichen Fehler macht - im Gegensatz zum Detector, der aus seinen Fehlern ``lernt''. 
+
+	Abbildung \ref{abb:problem_background_1} verdeutlich die angesprochenen Fehler. Während in (a) die Berechnung der Trajektorie noch fehlerfrei funktioniert, wird in (b) deutlich, dass der Hintergrund fälschlicherweise als Teil des Objekts erkannt wird. An dieser Stelle sollte der Tracker reinitialisiert werden, weil die Bewertung der Tracker-Box einen schlechten $conf-$Wert ergibt. Problematisch wird es jedoch, wenn das Model des Objekts zu diesem Zeitpunkt unzureichend gelernt wurde. Damit kann es vorkommen, dass Bewertung der Detector-Box immernoch schlechter ist, als die des Trackingergebnisses. In (c) wird dadurch das Objekt nicht mehr fokusiert und die Trajektorie falsch geschätzt. Zusätzlich werden fäschlicherweise neue Objektrepräsentationen generiert, weil TLD den eigenen Fehler nicht erkennt. Als Folge wird das Model verfälscht.
+
+	\begin{figure}[H]
 		\begin{centering}
-			% \includegraphics[scale=0.4]{../pictures/PN_LEARNING.png}
-			(BILD MIT KOPTER UND BOUNDINGBOX UND VIEL HINTERGRUND)
-			\caption{Problem: Detector 1}
+			\includegraphics[scale=0.5]{../pictures/problem_background_1.jpg}
+			\caption{Trackingprobleme bei zu hoher Informationsdichte des Hintergrunds.}
 			\label{abb:problem_background_1}
 			\par
 		\end{centering}
 	\end{figure}
 
-	\begin{figure}
+	Um den Einfluss des Hintergrundes zu minimieren, ist es möglich nur einen Teil des Kopters initial zu markieren, wie zum Beispiel den Corpus ohne die Rotoren, wie in Abbildung \ref{abb:problem_background_2} dargestellt. Das führt allerdings dazu, dass der Kopter in (a) ausschließlich anhand dieses Teilbereichs erkannt wird. In (b), wenn sich die Positionen von Kamera und Kopter ändern, wird der markierte Bereich vom Kopter selbst verdeckt. In (c) ist der Teilbereich nicht mehr zu sehen und der Kopter wird nicht mehr erkannt. Das macht es unmöglich ein vollständiges Model des Objekts zu generieren.
+
+	\begin{figure}[H]
 		\begin{centering}
-			% \includegraphics[scale=0.4]{../pictures/PN_LEARNING.png}
-			(BILD MIT KOPTER UND BOUNDINGBOX UND KEINEM HINTERGRUND)
-			\caption{Problem: Detector 2}
+			\includegraphics[scale=0.5]{../pictures/problem_background_2.jpg}
+			\caption{Trackingprobleme bei Teilmarkierung des gesuchten Objekts.}
 			\label{abb:problem_background_2}
 			\par
 		\end{centering}
 	\end{figure}
 	
 	
-
-	\paragraph{MedianFlow Tracker}
-	Die Struktur des Kopters bedingt nicht nur den Erfolg des Detectors, sondern beeinflusst ebenfalls die Leistung des Trackers. Dieser schätzt anhand einer regelmäßigen Anordnung von Punkte innerhalb einer BoundingBox in einem Frame, die Position der Punkte im Folgebild. Diese regelmäige Anordnung ist gleichförmig, wodurch viele Punkte, die zum Hintergrund gehören, die LKT-Schätzung beeinflussen (Abbildung \ref{abb:problem_tracker}). Auch hier stellen vor allem detailreiche Hintergründe ein Problem dar, weil durch die willkürliche Wahl der Punkte die Wahrscheinlichkeit erhöht wird, eine ungenaue Schätzung zu erhalten.
-
-	\begin{figure}
-		\begin{centering}
-			% \includegraphics[scale=0.4]{../pictures/PN_LEARNING.png}
-			(BILD MIT PUNKTEN UND HINTERGRUND FÜR TRACKER)
-			\caption{Problem: Tracker}
-			\label{abb:problem_tracker}
-			\par
-		\end{centering}
-	\end{figure}
-
-	Ein zusätzlicher Nachteil des Trackers ist, dass er keine Lernkomponente besitzt. Jede Verarbeitung ist unabhängig und integriert keine zusätzlichen Informationen aus vergangenen Schätzungen, was bedeutet, dass der Tracker immer wieder die gleichen Fehler macht - im Gegensatz zum Detector, der aus seinen Fehlern ``lernt''. 
 
 	% Der Ansatz ist nur bedingt geeignet. Probleme:
 	% \begin{itemize}
@@ -101,7 +92,9 @@
 	\paragraph{MedianFlow Tracker}
 		Zum einen könnte die Tracker-Komponente mit einem anderen Verfahren die Punkte für die Schätzung wählen. Eventuell würde eine nicht gleichförmige Verteilung der Punkte innerhalb der BoundingBox die Genauigkeit erhöhen und die Fehleranfälligkeit verringern. Eine Verringerung der Punktedichte vom Zentrum aus zu den Rändern der Boxwürde den Einfluss Hintergrunds auf das Ergebnis verringert.
 
-		Das Ersetzen der MedianFlow Trackers durch eine andere Komponente wäre ebenfalls möglich. Trackingimplementationen mittels \em{Kalman-Filter} \cite{KAF} oder \em{Particle-Filter} \cite{PAF} liefern sehr gute Ergebnisse [Quelle]. Anstelle der Punktrepräsentation wären eine Objektdefinition anhand der Form oder segnifikanter Linien denkbar und wurden auch bereits erfolgreich eingesetzt \cite{AVT}. 
+		Das Ersetzen der MedianFlow Trackers durch eine andere Komponente wäre ebenfalls möglich. Trackingimplementationen mittels {\em Kalman-Filter} \cite{KAF} oder {\em Particle-Filter} \cite{PAF} liefern sehr gute Ergebnisse [Quelle]. Anstelle der Punktrepräsentation wären eine Objektdefinition anhand der Form oder segnifikanter Linien denkbar und wurden auch bereits erfolgreich eingesetzt \cite{AVT}. 
+
+		Neben dem Ersetzen des MedianFlow Trackers könnte auch ein vollkommener Verzicht in Frage kommen, da er die fehleranfälligste Komponente in TLD ist. Das bedeutet allerdings, dass das Model des Objekts in vorherige Lernphasen offline gelernt werden muss. Die Strategie wäre somit die Classifier in verschiedenen Szenarien intensiv zu trainieren und das Koptermodel in möglichst vielen Situationen zu lernen. Dies kann mittels TLD geschehen und wurde auch während der Testphasen in \ref{subsection:learning_and_testing} entsprechend durchgeführt. Im Anschluss wird der MedianFlow Tracker und damit auch die Lernkomponente deaktiviert. Also positive Folge kann das erlernte Model durch fehlerhafte Beispiele nicht länger verfälscht werden. Negativ ist, dass die Reaktion auf neue Situation, was eine der Stärken von TLD ist, nicht mehr möglich ist.
 
 	\paragraph{Allgemein}
 		Der Kopter soll selbst sein bestes Modell darstellen, weshalb als Vorgabe gilt, dass keine Modifikationen an ihm vorgenommen werden dürfen. Dazu gehören Markierungen jeglicher Art, wie zum Beispiel Farb- oder Musterapplikationen. Deshalb wurde TLD für die Implementation gewählt, weil die Verarbeitung grundsätzlich mit jedem Objekttyp funktioniert und keine speziellen Modifikationen am Objekt nötig sind. Wie die Resultate und die Auswertung zeigen, ist diese Restriktion jedoch zu stark, denn der Kopter selbst ist nicht signifikant genug, um sich von seiner Umgebung ausreichend abzuheben. Die Verarbeitung zusätzlicher Informationen zur Verbesserung der Lösung ist anzuraten und wird kurz präsentiert.

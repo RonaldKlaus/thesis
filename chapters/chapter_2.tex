@@ -35,13 +35,11 @@ Ein weiteres Verfahren, das auch in TLD Verwendung findet, ist das Tracken mitte
 Die genannten Verfahren eignen sich vor allem zum Single-Object-Tracking. Für das gleichzeitige Verfolgen von mehreren Objekten gibt es andere Kernel-Tracking-Algorithmen, die hier allerdings nicht näher vorgestellt werden.
 
 \subsubsection{Silhouette-Tracking}
-Nicht jedes Objekt, das getrackt werden soll, kann durch eine einfache geometrische Figur wie ein Rechteck oder ein Elypse repräsentiert werden. Deshalb wird mittels Silhoutte-Tracking versucht, solche komplexen Objekte anhand ihrer Kontour zu repräsentieren. Außerdem motiviert zu diesem Ansatz die Tatsache, dass auch der Mensch Objekte nur anhand ihrer Silhouette erkennen kann. Da in dieser Arbeit dieses Verfahren keine Rolle spielt, sei es nur zur Vollständigkeit erwähnt (ODER SOLLTE ICH DOCH NOCH MEHR DAZU SCHREIBEN?)
+Nicht jedes Objekt, das getrackt werden soll, kann durch eine einfache geometrische Figur wie ein Rechteck oder ein Elypse repräsentiert werden. Deshalb wird mittels Silhoutte-Tracking versucht, solche komplexen Objekte anhand ihrer Kontour zu repräsentieren. Außerdem motiviert zu diesem Ansatz die Tatsache, dass auch der Mensch Objekte nur anhand ihrer Silhouette erkennen kann (). Da in dieser Arbeit dieses Verfahren jedoch keine Rolle spielt, sei es nur zur Vollständigkeit erwähnt.
 
-Welche Methode letzendlich genutzt wird, hängt von dem späteren Einsatzgebiet des Trackers ab.
+Letzendlich entscheidet das Einsatzgebiet, die Art der zu verfolgenden Objekten und die verwendete Hardware über die Wahl der Repräsentationsmethode. Zusätzlich nutzen einige Trackingansätze Bewegungsinformationen des Objekts aus beziehnungsweise Arbeiten mit implizieten Annahmen, wie beispielsweise die gleichförmige Bewegung. Die Geschwindigkeit beziehungsweise die Beschleunigung bleiben konstant, wodurch vorherige Informationen über das Objekt, wie Position und Größe, für das Tracken genutzt werden können und somit das Problem vereinfachen \cite{OTS}.
 
-Dabei gehen die meisten Tracking-Algorithmen z.B. von einer gleichförmigen Bewegung des Objekts aus, also ohne plötzliche Bewegungsänderung. Die Geschwindigkeit beziehungsweise die Beschleunigung bleiben konstant, wodurch vorherige Informationen über das Objekt, wie Position und Größe, für das Tracken genutzt werden können und somit das Problem vereinfachen \cite{OTS}.
-
-Allerdings haben die meisten Tracker eins gemein: Sie versagen, wenn das Objekt kurzzeitig nicht mehr sichtbar ist, entweder wenn es den Bildbereich verlässt oder zu stark durch ein anderes Objekt verdeckt wird. Zusätzlich neigen sie meist zum Drift. Sie verlieren im Laufe der Abarbeitungszeit ihren Fokus und müssen dann reinitialisiert werden.
+Allerdings haben die meisten Tracker eines gemein: Sie versagen, wenn das Objekt kurzzeitig nicht mehr sichtbar ist, also entweder den Bildbereich verlässt oder zu stark durch ein anderes Objekt verdeckt wird. Tracker, die Informationen aus der bereits erzeugten Trajektorie für die Berechnung verarbeiten, wie beispielsweise Kalman-Filter \cite{KAF} oder Particle-Filter\cite{PAF}, können solche kurzzeitigen Informationsverluste kompensieren, der in TLD verwendete LKT jedoch nicht. Zusätzlich neigen sie meist zum Drift. Sie verlieren im Laufe der Abarbeitungszeit ihren Fokus und müssen reinitialisiert werden.
 
 \subsection{Object Detection}
 Object Detection ist das Finden eines Objekts in einem Bild beziehungsweise einer Bildsequenz. Grundlage bildet hier vor allem die Repräsentation des Objekts im Speicher und die damit verbundene Suchlogik. Im Laufe der letzten Jahre wurden auch hier unterschiedliche Repräsentationen entwickelt und untersucht \cite{OTS}:
@@ -56,8 +54,12 @@ Object Detection ist das Finden eines Objekts in einem Bild beziehungsweise eine
 
 Alle genannten und ungenannte Repräsentationsverfahren können und werden in der Praxis und je nach Anwendungsgebiert kombiniert werden. Die große Herausforderung besteht nun vor allem im Segmentieren der gewählten Repräsentationen. Je nach Anwendungsfall ist eine solche Berechnung technisch leicht oder kompliziert zu realisieren. Einige Verfahren werden nun kurz vorgestellt.
 
-\subsubsection{Point-Detectors}
-bla
+\subsubsection{Interes Points Detectors}
+Für die Detection von Punkten kommen nur solche in Frage, die zum Einen hoch repräsentativ für das Objekt und zum Anderen signifikant unterschiedlich zu anderen Punkten im Bild sind. Dazu gehören beispielsweise Eckpunkte. Wegweisend auf diesem Gebiet ist Moravecs Arbeit von 1977 \cite{OAN}. Die Idee bei Moravec ist die Berechnung der Gradienten in einem Vectorfeld, genauer die quadratischen Gradientensumme für einen Pixelwert innerhalb eines Bereichs $\Omega$ um diesen Pixel.
+
+Elf Jahre später verbesserten Harris und Stephens diesen Ansatz und entwickelten den Harris Corner Detector-Algorithmus \cite{HCD}. Um die Genauigkeit der Berechnungen zu erhöhen schlugen sie vor die mittlere quadratische Abweichung als Gütkriterium in die Berechnung einfließen zu lassen. Dadurch ist es möglich die Abhängigkeiten des Corner-Scores eines Bildbereiches und seiner Verschiebung direkt zu berechnen, wodurch die Güte der Berechnung erhöht wird. 
+
+Förstner \cite{FOD} wiederum entwickelte ein weiteres Verfahren zur Berechnung von Ecken mittels Tangenten der Kanten, die diese bilden. Dadurch sind sogar Subpixel genaue Lösungen berechenbar. In den letzten Jahren wurden weitere Ansätze und Algorithmen erforscht, weshalb es eine Vielzahl unterschiedlicher Lösungen für das ``Interest Points Detector''-Problem gibt.
 
 \subsubsection{Background Substraction}
 bla
@@ -109,20 +111,20 @@ Hier versucht der Algorithmus für eine Anfangsmenge an Beispielen eigene Labels
 	Die Initialisierung des Algorithmus erfolgt über die Definition der BoundingBox. Dies kann auf unterschiedliche Weise, wie z.B. das Markieren eines Objekts in einem Kamera- oder Videobild, oder durch vorgeschaltete Programmteile, die auf das Erkennen eines bestimmten Objekts trainiert wurden, geschehen. Ausgehende von diesem ersten Bild werden die einzelnen Komponenten initialisiert. )
 \end{comment}
 
-\subsection{Beispiele für Tracking-Implementationen}
-Das Feld der Objekterkennung ist weit und es gibt eine Vielzahl von unterschiedlichen Anwendungsszenarien. Im Folgenden wird eine kleine Auswahl solcher Szenarien vorgestellt, welche die oben genannten algorithmischen Ansätze implementieren.
+% \subsection{Beispiele für Tracking-Implementationen}
+% Das Feld der Objekterkennung ist weit und es gibt eine Vielzahl von unterschiedlichen Anwendungsszenarien. Im Folgenden wird eine kleine Auswahl solcher Szenarien vorgestellt, welche die oben genannten algorithmischen Ansätze implementieren.
 
-\subsubsection{Gesichtserkennung}
-durch Farbe, Bewegung, Kombination aus beiden (alles eher schlecht), Besser: Neuronal Netze, Modelbasiert und das allerbester: Weak Classifier von viola and jones,
+% \subsubsection{Gesichtserkennung}
+% durch Farbe, Bewegung, Kombination aus beiden (alles eher schlecht), Besser: Neuronal Netze, Modelbasiert und das allerbester: Weak Classifier von viola and jones,
 
-\subsubsection{Fußgänger}
-background seperation, foreground-silhuette-extraction kopf-detection, template-models
+% \subsubsection{Fußgänger}
+% background seperation, foreground-silhuette-extraction kopf-detection, template-models
 
-\subsubsection{Straßenschilder}
-bla
+% \subsubsection{Straßenschilder}
+% bla
 
-\subsubsection{Schrift}
-bla
+% \subsubsection{Schrift}
+% bla
 
-\subsubsection{Autos}
-bla
+% \subsubsection{Autos}
+% bla

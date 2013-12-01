@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  29 NOV 2013 15:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  1 DEC 2013 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -121,6 +121,21 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+\c@ContinuedFloat=\count101
+Package caption Info: float package is loaded.
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks24
@@ -132,7 +147,7 @@ Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count101
+\uc@secondtry=\count102
 \uc@combtoks=\toks26
 \uc@combtoksb=\toks27
 \uc@temptokena=\toks28
@@ -147,17 +162,17 @@ Package ifvtex Info: VTeX not detected.
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count102
-\Gm@cntv=\count103
-\c@Gm@tempcnt=\count104
-\Gm@bindingoffset=\dimen114
-\Gm@wd@mp=\dimen115
-\Gm@odd@mp=\dimen116
-\Gm@even@mp=\dimen117
-\Gm@layoutwidth=\dimen118
-\Gm@layoutheight=\dimen119
-\Gm@layouthoffset=\dimen120
-\Gm@layoutvoffset=\dimen121
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
+\Gm@bindingoffset=\dimen121
+\Gm@wd@mp=\dimen122
+\Gm@odd@mp=\dimen123
+\Gm@even@mp=\dimen124
+\Gm@layoutwidth=\dimen125
+\Gm@layoutheight=\dimen126
+\Gm@layouthoffset=\dimen127
+\Gm@layoutvoffset=\dimen128
 \Gm@dimlist=\toks29
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip46
@@ -171,7 +186,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \f@ncyO@orf=\skip54
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count105
+\c@AlgoLine=\count106
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/xspace.sty
@@ -194,12 +209,12 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \skiplength=\skip60
 \algomargin=\skip61
 \skipalgocfslide=\skip62
-\algowidth=\dimen122
-\inoutsize=\dimen123
-\inoutindent=\dimen124
-\interspacetitleruled=\dimen125
-\interspacealgoruled=\dimen126
-\interspacetitleboxruled=\dimen127
+\algowidth=\dimen129
+\inoutsize=\dimen130
+\inoutindent=\dimen131
+\interspacetitleruled=\dimen132
+\interspacealgoruled=\dimen133
+\interspacetitleboxruled=\dimen134
 \algocf@inoutbox=\box30
 \algocf@inputbox=\box31
 \AlCapSkip=\skip63
@@ -214,9 +229,9 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \algoheightrule=\skip68
 \algotitleheightruledefault=\skip69
 \algotitleheightrule=\skip70
-\c@algocfline=\count106
-\c@algocfproc=\count107
-\c@algocf=\count108
+\c@algocfline=\count107
+\c@algocfproc=\count108
+\c@algocf=\count109
 \algocf@algoframe=\box36
 \algocf@algobox=\box37
 ) (/Users/ronald/Documents/thesis/chapters/diplomarbeit.aux (/Users/ronald/Docu
@@ -229,33 +244,33 @@ s/thesis/chapters/chapter_6.aux) (/Users/ronald/Documents/thesis/chapters/bibli
 ography.aux) (/Users/ronald/Documents/thesis/chapters/declaration.aux))
 \openout1 = `diplomarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 46.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen128
+\scratchcounter=\count110
+\scratchdimen=\dimen135
 \scratchbox=\box38
-\nofMPsegments=\count110
-\nofMParguments=\count111
+\nofMPsegments=\count111
+\nofMParguments=\count112
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen129
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen136
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
 \everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -292,7 +307,10 @@ G,.JBIG2,.JB2,.eps]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)) (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucsencs.def
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 *geometry* driver: auto-detecting
@@ -420,7 +438,7 @@ zur Op-ti-mierung,
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 50.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 51.
 (/Users/ronald/Documents/thesis/chapters/diplomarbeit.lof
 Overfull \hbox (5.11153pt too wide) in paragraph at lines 10--10
  [][] []\T1/ppl/m/n/10.95 Klassendiagramm zur Im-ple-men-ta-tion mit den wichti
@@ -545,48 +563,39 @@ ung mit-tels affiner Trans-
  []
 
 [17]
-Overfull \hbox (38.99019pt too wide) in paragraph at lines 42--43
-\T1/ppl/m/n/10.95 Be-we-gung des Ob-jekts aus, also ohne plöt-zliche Be-we-gung
-sän-derung. Die Geschwindigkeit
+Overfull \hbox (64.54704pt too wide) in paragraph at lines 40--41
+\T1/ppl/m/n/10.95 zlich nutzen einige Trackingan-sätze Be-we-gungsin-for-ma-tio
+-nen des Ob-jekts aus beziehnungsweise
  []
 
-
-Underfull \vbox (badness 6758) has occurred while \output is active []
-
 [18]
-Overfull \hbox (19.44534pt too wide) in paragraph at lines 54--55
+Overfull \hbox (19.44534pt too wide) in paragraph at lines 52--53
 []\T1/ppl/m/n/10.95 bilden Teile eines zusam-men-hän-gen-den Ob-jekts. Die Verb
 indun-
  []
 
-[19]
-Overfull \hbox (3.91783pt too wide) in paragraph at lines 80--81
+[19] [20]
+Overfull \hbox (3.91783pt too wide) in paragraph at lines 82--83
 \T1/ppl/m/n/10.95 deliegen-den Beispiele, also die Daten, die das Ob-jekt besch
 reiben, sind die Er-fahrung
  []
 
-[20]
-Overfull \hbox (40.12347pt too wide) in paragraph at lines 91--92
+
+Overfull \hbox (40.12347pt too wide) in paragraph at lines 93--94
 []\T1/ppl/m/n/10.95 Ohne im De-tail Maschinelles Ler-nen vorzustellen, besteht 
 jede Meth-ode im Wesentlichen
  []
 
 
-Overfull \hbox (22.25896pt too wide) in paragraph at lines 94--95
+Overfull \hbox (22.25896pt too wide) in paragraph at lines 96--97
  \T1/ppl/b/n/10.95 Su-per-vised Learn-ing[] \T1/ppl/m/n/10.95 Überwachtes Ler-n
 en. Man gibt Beispiele mit einem entsprechen-
  []
 
 
-Overfull \hbox (5.96501pt too wide) in paragraph at lines 101--102
+Overfull \hbox (5.96501pt too wide) in paragraph at lines 103--104
 \T1/ppl/m/n/10.95 Regession wird ver-wen-det, wenn zu einer bes-timmten Eingabe
  ein konkreter (reeller)
- []
-
-
-Overfull \hbox (10.02722pt too wide) in paragraph at lines 113--114
-\T1/ppl/m/n/10.95 Das Feld der Ob-jek-terken-nung ist weit und es gibt eine Vie
-lzahl von un-ter-schiedlichen
  []
 
 [21]) [22]
@@ -605,7 +614,7 @@ Overfull \hbox (11.52312pt too wide) in paragraph at lines 37--38
 der MediaFlow- Tracker
  []
 
-<../pictures/MediaFlow_0.png, id=82, 478.78876pt x 132.495pt>
+<../pictures/MediaFlow_0.png, id=83, 478.78876pt x 132.495pt>
 File: ../pictures/MediaFlow_0.png Graphic file (type png)
 <use ../pictures/MediaFlow_0.png>
 Package pdftex.def Info: ../pictures/MediaFlow_0.png used on input line 40.
@@ -625,7 +634,7 @@ Overfull \hbox (5.04468pt too wide) in paragraph at lines 79--81
 ung in \T1/ppl/m/it/10.95 OpenCV \T1/ppl/m/n/10.95 siehe [[]]. 
  []
 
-<../pictures/MediaFlow.png, id=90, 497.60907pt x 133.24782pt>
+<../pictures/MediaFlow.png, id=91, 497.60907pt x 133.24782pt>
 File: ../pictures/MediaFlow.png Graphic file (type png)
 <use ../pictures/MediaFlow.png>
 Package pdftex.def Info: ../pictures/MediaFlow.png used on input line 89.
@@ -716,7 +725,7 @@ Package pdftex.def Info: ../pictures/EnsembleBeispiel.jpg used on input line 23
 6.
 (pdftex.def)             Requested size: 249.18634pt x 287.20027pt.
 
-Underfull \vbox (badness 1845) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 [33 <../pictures/EnsembleBeispiel.jpg>]
 Overfull \hbox (30.865pt too wide) in paragraph at lines 261--262
@@ -782,7 +791,7 @@ und der Lern-funk-tion übergeben.
 \openout2 = `chapter_4.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_4.tex
-Overfull \hbox (0.98216pt too wide) in paragraph at lines 5--6
+Overfull \hbox (0.98216pt too wide) in paragraph at lines 6--7
 \T1/ppl/m/n/10.95 Die Im-ple-men-tierung er-fol-gte in C++. Zusät-zlich wur-den
  OpenCV als un-ter-stützen-
  []
@@ -791,23 +800,23 @@ Overfull \hbox (0.98216pt too wide) in paragraph at lines 5--6
 File: ../pictures/Klassendiagrammvsd.jpg Graphic file (type jpg)
 <use ../pictures/Klassendiagrammvsd.jpg>
 Package pdftex.def Info: ../pictures/Klassendiagrammvsd.jpg used on input line 
-9.
+10.
 (pdftex.def)             Requested size: 419.31552pt x 309.40518pt.
 
-Overfull \hbox (18.13191pt too wide) in paragraph at lines 9--10
+Overfull \hbox (18.13191pt too wide) in paragraph at lines 10--11
  [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 17.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 18.
 
-Overfull \hbox (0.97253pt too wide) in paragraph at lines 17--18
+Overfull \hbox (0.97253pt too wide) in paragraph at lines 18--19
 \T1/ppl/m/n/10.95 wird das Kamera- beziehnungsweise Video-bild Frame für Frame 
 ein-ge-le-sen. Auÿer-
  []
 
 
-Overfull \hbox (28.34694pt too wide) in paragraph at lines 17--18
+Overfull \hbox (28.34694pt too wide) in paragraph at lines 18--19
 \T1/ppl/m/n/10.95 dem er-folgt hier die Def-i-ni-tion des Ob-jekts und die Über
 -gabe des näch-sten zu analysieren-
  []
@@ -815,37 +824,45 @@ Overfull \hbox (28.34694pt too wide) in paragraph at lines 17--18
 [43
 
  <../pictures/Klassendiagrammvsd.jpg>]
-Overfull \hbox (1.51979pt too wide) in paragraph at lines 23--24
+Overfull \hbox (1.51979pt too wide) in paragraph at lines 24--25
  \T1/ppl/b/n/10.95 Klasse \T1/ppl/b/it/10.95 Tracker[] \T1/ppl/m/n/10.95 Die Im
 -ple-men-tierung des MedianFlow-Trackers ist in dieser Klasse
  []
 
 
-Overfull \hbox (1.55168pt too wide) in paragraph at lines 32--33
+Overfull \hbox (1.55168pt too wide) in paragraph at lines 33--34
 \T1/ppl/m/n/10.95 diese hat eine \T1/ppl/m/it/10.95 clas-sify()\T1/ppl/m/n/10.9
 5 -Methode, ve-fügt je-doch zusät-zlich über eine \T1/ppl/m/it/10.95 learn()\T1
 /ppl/m/n/10.95 -Methode,
  []
 
 [44]
-Overfull \hbox (8.26418pt too wide) in paragraph at lines 41--42
+Overfull \hbox (8.26418pt too wide) in paragraph at lines 42--43
  \T1/ppl/b/n/10.95 Klasse \T1/ppl/b/it/10.95 Util-ity[] \T1/ppl/m/n/10.95 Diese
  Klasse liefert eine Reihe Klassen-meth-o-den für un-ter-schiedliche
  []
 
-[45]
-Overfull \hbox (0.51207pt too wide) in paragraph at lines 60--61
+[45] <../pictures/kopter.jpg, id=165, 641.39626pt x 241.90375pt>
+File: ../pictures/kopter.jpg Graphic file (type jpg)
+<use ../pictures/kopter.jpg>
+Package pdftex.def Info: ../pictures/kopter.jpg used on input line 53.
+(pdftex.def)             Requested size: 384.84071pt x 145.14336pt.
+
+LaTeX Warning: Reference `abb:Kopter' on page 46 undefined on input line 62.
+
+
+Overfull \hbox (0.51207pt too wide) in paragraph at lines 70--71
 \T1/ppl/m/n/10.95 wie Än-derun-gen der Lichtver-hält-nisse, wech-sel-nde Be-we-
 gungs-geschwindi-gekeiten
  []
 
-
-Overfull \hbox (8.95433pt too wide) in paragraph at lines 62--63
+[46 <../pictures/kopter.jpg>]
+Overfull \hbox (8.95433pt too wide) in paragraph at lines 72--73
 \T1/ppl/m/n/10.95 Evaluierungsse-quen-zen getestet wor-den ist, und es für den 
 speziellen Fall des Kopter-
  []
 
-) [46] [47] [48
+) [47] [48
 
 
 ]
@@ -877,28 +894,56 @@ Overfull \hbox (26.15724pt too wide) in paragraph at lines 32--33
 te der De-tec-torkaskade, der Nearest-Neighbour-
  []
 
+[50]
 
-Overfull \hbox (4.9471pt too wide) in paragraph at lines 34--35
-\T1/ppl/m/n/10.95 schiedlichen Farb-stärke sind prob-lema-tisch. So kann es vor
-kom-men, dass ein Kopter,
+LaTeX Warning: Reference `abb:problem_tracker' on page 51 undefined on input li
+ne 38.
+
+
+Overfull \hbox (2.06215pt too wide) in paragraph at lines 42--43
+[]\T1/ppl/m/n/10.95 Abbildung 12[] verdeut-lich die ange-sproch-enen Fehler. Wä
+hrend in (a) die Berech-
  []
 
-[50] [51]
-Overfull \hbox (13.94647pt too wide) in paragraph at lines 104--105
+
+Overfull \hbox (36.0448pt too wide) in paragraph at lines 42--43
+\T1/ppl/m/n/10.95 men, dass Be-w-er-tung der Detector-Box im-mer-noch schlechte
+r ist, als die des Trackingergeb-
+ []
+
+<../pictures/problem_background_1.jpg, id=184, 796.4154pt x 213.9192pt>
+File: ../pictures/problem_background_1.jpg Graphic file (type jpg)
+<use ../pictures/problem_background_1.jpg>
+Package pdftex.def Info: ../pictures/problem_background_1.jpg used on input lin
+e 46.
+(pdftex.def)             Requested size: 398.20673pt x 106.95934pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[51] <../pictures/problem_background_2.jpg, id=188, 796.4154pt x 213.9192pt>
+File: ../pictures/problem_background_2.jpg Graphic file (type jpg)
+<use ../pictures/problem_background_2.jpg>
+Package pdftex.def Info: ../pictures/problem_background_2.jpg used on input lin
+e 57.
+(pdftex.def)             Requested size: 398.20673pt x 106.95934pt.
+[52 <../pictures/problem_background_1.jpg> <../pictures/problem_background_2.jp
+g>]
+Overfull \hbox (16.38832pt too wide) in paragraph at lines 95--96
 \T1/ppl/m/n/10.95 eben-falls möglich. Trackingim-ple-men-ta-tio-nen mit-tels \T
-1/ppl/m/it/10.95 Kalman-Filter [[]] oder \T1/ppl/m/n/10.95 Particle-
+1/ppl/m/it/10.95 Kalman-Filter \T1/ppl/m/n/10.95 [[]] oder \T1/ppl/m/it/10.95 P
+article-
  []
 
-[52]
-Overfull \hbox (12.01419pt too wide) in paragraph at lines 109--110
+
+Underfull \vbox (badness 1874) has occurred while \output is active []
+
+[53]
+Overfull \hbox (12.01419pt too wide) in paragraph at lines 102--103
 []\T1/ppl/m/n/10.95 TLD ar-beitet prinzip-iell far-bun-ab-hängig, die Berech-nu
 ng er-folgt einzig auf Grauw-
  []
 
-) [53] [54
-
-
-]
+) [54]
 \openout2 = `chapter_6.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_6.tex
@@ -913,12 +958,14 @@ Overfull \hbox (5.47208pt too wide) in paragraph at lines 4--5
 tiert und zur (meist) freien
  []
 
-<../pictures/GPU_Performance.png, id=195, 691.08188pt x 338.01282pt>
+<../pictures/GPU_Performance.png, id=198, 691.08188pt x 338.01282pt>
 File: ../pictures/GPU_Performance.png Graphic file (type png)
 <use ../pictures/GPU_Performance.png>
 Package pdftex.def Info: ../pictures/GPU_Performance.png used on input line 9.
 (pdftex.def)             Requested size: 345.54008pt x 169.00598pt.
 [55
+
+
 
  <../pictures/GPU_Performance.png>]
 Overfull \hbox (34.70328pt too wide) in paragraph at lines 16--17
@@ -946,7 +993,9 @@ Underfull \hbox (badness 2790) in paragraph at lines 70--71
  to
  []
 
-) [62]
+(/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)) [62]
 \openout2 = `declaration.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/declaration.tex
@@ -971,32 +1020,35 @@ nald/Documents/thesis/chapters/chapter_2.aux) (/Users/ronald/Documents/thesis/c
 hapters/chapter_3.aux) (/Users/ronald/Documents/thesis/chapters/chapter_4.aux) 
 (/Users/ronald/Documents/thesis/chapters/chapter_5.aux) (/Users/ronald/Document
 s/thesis/chapters/chapter_6.aux) (/Users/ronald/Documents/thesis/chapters/bibli
-ography.aux) (/Users/ronald/Documents/thesis/chapters/declaration.aux)) ) 
+ography.aux) (/Users/ronald/Documents/thesis/chapters/declaration.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5667 strings out of 493315
- 80432 string characters out of 6137903
- 173649 words of memory out of 5000000
- 8889 multiletter control sequences out of 15000+600000
- 59565 words of font info for 126 fonts, out of 8000000 for 9000
+ 6971 strings out of 493315
+ 102637 string characters out of 6137903
+ 190338 words of memory out of 5000000
+ 10178 multiletter control sequences out of 15000+600000
+ 61260 words of font info for 130 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,20n,43p,1453b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/
-local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2013/texmf-dist
-/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/
-type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
-urw/palatino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/pal
-atino/uplri8a.pfb>
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/urw/palatino/uplri8a.pfb>
 Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (63 
-pages, 2359973 bytes).
+pages, 3460156 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
+ 264 PDF objects out of 1000 (max. 8388607)
  173 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
