@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  1 DEC 2013 14:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  1 DEC 2013 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,7 +574,31 @@ Overfull \hbox (19.44534pt too wide) in paragraph at lines 52--53
 indun-
  []
 
-[19] [20]
+
+LaTeX Warning: Citation `HCD' on page 19 undefined on input line 60.
+
+
+Overfull \hbox (10.49806pt too wide) in paragraph at lines 60--61
+\T1/ppl/m/n/10.95 nun-gen zu er-höhen schlu-gen sie vor die mit-tlere quadratis
+-che Ab-we-ichung als Gütkri-
+ []
+
+[19]
+Overfull \hbox (5.91045pt too wide) in paragraph at lines 65--66
+\T1/ppl/m/n/10.95 Diese Un-ter-schiede bilden die De-tek-tio-nen. Der Ein-satz 
+dieses Ver-fahrens beschränkt
+ []
+
+
+Overfull \hbox (0.29308pt too wide) in paragraph at lines 65--66
+\T1/ppl/m/n/10.95 hensweisen, die hin-sichtlich ihrer Kom-plex-ität, Speicher- 
+und Prozes-so-ran-forderun-
+ []
+
+
+Underfull \vbox (badness 4048) has occurred while \output is active []
+
+[20]
 Overfull \hbox (3.91783pt too wide) in paragraph at lines 82--83
 \T1/ppl/m/n/10.95 deliegen-den Beispiele, also die Daten, die das Ob-jekt besch
 reiben, sind die Er-fahrung
@@ -592,13 +616,13 @@ Overfull \hbox (22.25896pt too wide) in paragraph at lines 96--97
 en. Man gibt Beispiele mit einem entsprechen-
  []
 
-
+[21]
 Overfull \hbox (5.96501pt too wide) in paragraph at lines 103--104
 \T1/ppl/m/n/10.95 Regession wird ver-wen-det, wenn zu einer bes-timmten Eingabe
  ein konkreter (reeller)
  []
 
-[21]) [22]
+) [22]
 \openout2 = `chapter_3.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_3.tex
@@ -1026,10 +1050,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6971 strings out of 493315
- 102637 string characters out of 6137903
+ 6972 strings out of 493315
+ 102642 string characters out of 6137903
  190338 words of memory out of 5000000
- 10178 multiletter control sequences out of 15000+600000
+ 10179 multiletter control sequences out of 15000+600000
  61260 words of font info for 130 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,20n,43p,1453b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1045,7 +1069,7 @@ t/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb>
 Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (63 
-pages, 3460156 bytes).
+pages, 3460703 bytes).
 PDF statistics:
  264 PDF objects out of 1000 (max. 8388607)
  173 compressed objects within 2 object streams

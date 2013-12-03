@@ -17,8 +17,8 @@
 \contentsline {subsubsection}{\numberline {2.2.2}Background Substraction}{20}
 \contentsline {subsubsection}{\numberline {2.2.3}Image Segmentation}{20}
 \contentsline {subsection}{\numberline {2.3}Maschinelles Lernen}{20}
-\contentsline {subsubsection}{\numberline {2.3.1}Methoden}{20}
-\contentsline {paragraph}{Supervised Learning}{21}
+\contentsline {subsubsection}{\numberline {2.3.1}Methoden}{21}
+\contentsline {paragraph}{Supervised Learning}{22}
 \contentsline {paragraph}{Unsuperviced Learning}{22}
 \contentsline {section}{\numberline {3}Tracking Learning Detection - TLD}{23}
 \contentsline {subsection}{\numberline {3.1}Algorithmus}{23}
