@@ -14,21 +14,21 @@
 		}
 		$B_J^D \leftarrow detect(J)$\;
 		$B_J \leftarrow compare(B_J^T,B_J^D)$\;
-		\If{$isValid$ \& $doLearn $} { 
+		\If{$isValid$ \& $doLearn $} {
 			$train(J,B_J)$\;
 		}
-		$I \leftarrow J$\;		
+		$I \leftarrow J$\;
 		\caption{Tracking-Learning-Detection}
 		\label{alg:TLD}
 		\vspace{0.2cm}
 	\end{algorithm}
-	Die Tracking-Komponente in Zeile 2 ist ein Frame-to-Frame Tracker (\ref{subsection:tracking}). Somit muss als Eingabe eine definierte BoundingBox übergeben werden. Ist diese jedoch nicht definiert, weil beispielsweise in der vorigen Iteration im Bild $I$ das gesuchte Objekt nicht gefunden werden konnte, wird der Tracker übergangen. Ist $B_I$ jedoch eine valide BoundingBox, wird zusätzlich $I$ übergeben und der Tracker schätzt im aktuellen Bild $J$ die Position des gesuchten Objekts. Das Ergebnis ist eine BoundingBox $B_J^T$. 
-	
+	Die Tracking-Komponente in Zeile 2 ist ein Frame-to-Frame Tracker (\ref{subsection:tracking}). Somit muss als Eingabe eine definierte BoundingBox übergeben werden. Ist diese jedoch nicht definiert, weil beispielsweise in der vorigen Iteration im Bild $I$ das gesuchte Objekt nicht gefunden werden konnte, wird der Tracker übergangen. Ist $B_I$ jedoch eine valide BoundingBox, wird zusätzlich $I$ übergeben und der Tracker schätzt im aktuellen Bild $J$ die Position des gesuchten Objekts. Das Ergebnis ist eine BoundingBox $B_J^T$.
+
 	Der Detector in Zeile 4 wird vor dem ersten Aufruf von TLD initialisiert (\ref{subsection:tld_init}). Dadurch sind die Classifier und das Sliding-Window Grid verfügbar, die als Basis dienen. Wissen über den vorherigen ``Erfolg'' einer Detection in Form von $B_I$ ist nicht notwendig. Die Rückgabe des Detectors wird in einem Array von BoundingBoxes $B_J^D$ gespeichert.
 
 	Im Anschluss werden die Ergebnisse beider Komponenten bewertet und die BoundingBox $B_J$ im aktuellen Bild $J$ wird, sofern vorhanden, gesetzt. Falls die Bewertung für $B_J^T$ am höchsten ist, wird eine Trainingsphase der Classifier initialisiert (\ref{subsection:machine_learning}), da $B_J^T$ eine unbekannte Repräsentation des gesuchten Objekts darstellt.
 
-	Zum Abschluss wird das aktuelle Bild für die nächste Iteration und als Tracking-Datum in $I$ gespeichert. Die Verarbeitung von $B_J$, wie die Ausgabe, erfolgt außerhalb von TLD.  
+	Zum Abschluss wird das aktuelle Bild für die nächste Iteration und als Tracking-Datum in $I$ gespeichert. Die Verarbeitung von $B_J$, wie die Ausgabe, erfolgt außerhalb von TLD.
 
 	\subsection{Tracking}
 	\label{subsection:tracking}
@@ -45,18 +45,18 @@
 
 	\begin{enumerate}
 	\item \textit{Brightness constancy.} Das Erscheinungsbild eines Pixel eines Objekts in einer Sequenz bleibt unverändert. Für Grauwertbilder bedeutet das, dass die Helligkeit (\textit{brightness}) eines Pixels Konstant bleibt, wenn dieser von Bild zu Bild verfolgt wird.
-	
+
 	\begin{equation}
 	I_{0}(x)=I_{1}(x+d)
 	\end{equation}
 
 	\item \textit{Temporal persistence. }Die Positionsänderung eines Objekts in einer Bildsequenz ist gering. Das bedeutet, dass die Geschwindigkeitsvectoren klein sind. Diese können im zweidimensionalen Fall mit der folgenden partiellen Ableitung berechnet werden:
-	
+
 	\begin{equation} I_{x}u+I_{y}v+I_{t}=0, \end{equation}
 	mit $u,v$ als die gesuchten Geschwindigkeitsvectoren für die Koordinatenänderung für $x$ und $y$ im Bild $I$ und $I_{t}$ als zeitliche Änderung zwischen den Bildern. Allerdings ist diese Gleichung für einzelne Pixel nicht eindeutig lösbar, da durch die gesuchten Vectoren $u,v$ zwei Unbekannte existieren. Der Ergebnisraum wäre somit ein Linie und kein einzelner Punkt. Dieses Problem wird durch die dritte Annahme behandelt.
 
 	\item \textit{Spatial coherence.} Punkte in einer Nachbarschaft gehören zur einer Oberfläche und verhalten sich gleich. Der gesuchte Punkt bildet das Zentrum eines $5\times5$ Pixel großen Ausschnitts.
-	%\footnote{Auch andere Größen, wie $3\times3$ oder $7\times7$, sind denkbar. Allerdings wird die dritte Annahme mit steigender Ausschnittsgrößen nich mehr erfüllt%}. 
+	%\footnote{Auch andere Größen, wie $3\times3$ oder $7\times7$, sind denkbar. Allerdings wird die dritte Annahme mit steigender Ausschnittsgrößen nich mehr erfüllt%}.
 	Mit Hilfe der Nachbarpunkte, deren Geschwindigkeit nach Annahme gleich ist, kann das folgende Gleichungssystem mit 25 Gleichungen erzeugt werden:
 
 	\begin{equation}
@@ -78,7 +78,7 @@
 	\end{enumerate}
 	Mittels Methode der kleines Quadrate kann die Lösung des Gleichungssystems minimiert werden. Für weitere Details zur Implementierung in \textit{OpenCV}
 	siehe \cite{OCV}.
-	
+
 	\subsubsection{FB, NCC und Median Flow Tracker}
 	Sei $S=(I_{t},I_{t+1},..,I_{t+k})$ eine Bildsequenz und sei $x_{t}$ ein Punkt zur Zeit $t$. Unter Verwendung eines beliebigen Trackers wird $x$ in $k$ Bildern aus $S$ verfolgt. Die erzeugte Trajektorie ist $T_{f}^{k}=(x_{t},x_{t+1},...,x_{t+k})$, mit $f$ für \textit{forward} der Länge $k$. Ziel ist es nun die Gültigkeit von $T_{f}^{k}$zu bestimmen. Hierzu wird der Punkt $x_{t+k}$\textit{backward} zum ersten Bild $I_{t}$ verfolgt. Der resultierende Trajektorie ist $T_{b}^{k}=(\hat{x}_{t},\hat{x}_{t+1},...,\hat{x}_{t+k})$, mit $b$ für \textit{backward} und $\hat{x}_{t+1}=x_{t+1}$. Der Fehler zwischen beiden Trajektorien ist definiert als $FB=distance(T_{f}^{k},T_{b}^{k})$, mit dem euklidischen Abstand zwischen dem initialen Punkt $x_{t}$ von $T_{f}^{k}$ und dem letzten Punkt $\hat{x}_{t}$ von $T_{b}^{k}$, also $distance(T_{f}^{k},T_{b}^{k})=||x_{t}-\hat{x}_{t}||$.
 
@@ -100,7 +100,7 @@
 
 	\begin{algorithm}[H]
 	\vspace{0.2cm}
-	\KwData{$I,J,B_{I}$} 
+	\KwData{$I,J,B_{I}$}
 	\KwResult{$B_{J}^T$}
 	Generiere Punkte $P = p_{1},\ldots,p_{n}$ mittels $B_{I}$\;
 	\For{ $p_{i} \in P$ } {
@@ -110,7 +110,7 @@
 		$ncc_{i} \leftarrow NCC(p_{i},p'_{i})$\;
 	}
 	$median_{fb}\leftarrow median(fb_{1}\ldots fb_{n})$\;
-	\eIf{$median_{fb}>th{}_{fb}$} { 
+	\eIf{$median_{fb}>th{}_{fb}$} {
 		$B_{J}^T \leftarrow \emptyset$\;
 	} {
 		$median_{ncc} \leftarrow median(ncc_{1}\dots ncc_{n})$\;
@@ -123,15 +123,16 @@
 	\end{algorithm}
 
 	\subsection{Detection}
+	\label{subsection:detection}
 	Wenn das verfolgte Objekt den Bildbereich verlässt oder durch andere Objekte verborgen wird, kann die Tracker-Komponente nicht weiterarbeiten. Das Model zur Berechnung der Trajektorie fehlt. Aus diesem Grund ist eine Detection-Komponente erforderlich, die versucht das Objekt im Bild zu finden. Typischerweise ist diese Aufgabe recht aufwendig und die Umsetzung stark von der Art der Repräsentation des Ojekt-Modells abhängig.
 
-	In dieser Arbeit wird wie in \cite{TLD} beschrieben, ein kaskadierender Detector implementiert. Grundlage für das Durchsuchen eines Bildes ist die \textit{Sliding-Window}-Methode \cite{key-6}. Hierbei wird ein Gitter definiert, das über das Bild gelegt wird. Jedes Feld des Gitters ist ein Ausschnitt (\textit{window}) des Bildes und wird einzeln durch mehrere Klassifizierer bewertet. Sollte ein solches Teilbild am Ende der Kaskade nicht verworfen worden sein, ist es ein Kandidat für das gesuchte Objekt. Die Größe des Gitters wird durchdie initiale BoundingBox bestimmt, da die einzelnen Felder Skalierungen dieser sind. 
+	In dieser Arbeit wird wie in \cite{TLD} beschrieben, ein kaskadierender Detector implementiert. Grundlage für das Durchsuchen eines Bildes ist die \textit{Sliding-Window}-Methode \cite{key-6}. Hierbei wird ein Gitter definiert, das über das Bild gelegt wird. Jedes Feld des Gitters ist ein Ausschnitt (\textit{window}) des Bildes und wird einzeln durch mehrere Klassifizierer bewertet. Sollte ein solches Teilbild am Ende der Kaskade nicht verworfen worden sein, ist es ein Kandidat für das gesuchte Objekt. Die Größe des Gitters wird durchdie initiale BoundingBox bestimmt, da die einzelnen Felder Skalierungen dieser sind.
 
 	Die Kaskade des Detectors besteht aus drei Teilen, dem Varianzfilter, dem \textit{Ensemble-Classifier} und als letzte Instanz der \textit{NearestNeigbour-Classifier}, die im folgenden einzeln vorgestellt werden. Dabei ist der Grundgedanke, dass ein gesuchtes Objekt komplexer als der Bildhintergrund ist. Jeder Teil hat die Aufgabe, die \textit{windows} zu Klassifizieren und entweder zu verwerfen, da sie nicht dem gesuchten Objekt entsprechen können, oder an den nächsten Klassifizierer weiterzureichen, wenn keine eindeutig negative Aussage getroffen werden kann. Nach einer kompletten Abarbeitung des Gitters werden die übrig gebliebenen Kandidaten mittels Cluster-Verfahren gruppiert. Als Kriterium dient der Grad der Überlappung der einzelnen \textit{windows.} Aus jedem Cluster wird abschließend eine gemittelte BoundingBox berechnet, die ein mögliches gefundenes Objekt repräsentiert. Im Gegensatz zu vielen anderen Detector-Ansätzen, benötigen diese Implementation keine offline-Trainingsdaten. Die Lernkomponente, bestehend aus Ensemble-Classifier und Nearest-Neighbour-Classifier, wird mit der ersten BoundingBox initialisiert. Alle weiteren Trainingsbeispiele werden mit Hilfe des Trackers und der P-N Learning-Komponente erzeugt. Genaueres folgt im Punkt Maschinelles Lernen.
 
 	\begin{algorithm}
 	\vspace{0.2cm}
-	\KwData{$I$} 
+	\KwData{$I$}
 	\KwResult{$B_J^D$}
 	$result = \{\}$\;
 	\For{$g \in G$}{
@@ -140,7 +141,7 @@
 				\If{$NearestNeighbourClassifier(I, g ) == true$}{
 					$result \leftarrow result + g$\;
 				}
-			}	
+			}
 		}
 	}
 	\If{$result.size > 0$}{
@@ -210,7 +211,7 @@
 	\label{Subwindow}
 	\end{figure}
 
-	Neben dem integralen Bild können auch weitere Strukturen, wie das quadratische integrale Bild $ii^{2}$ auf ähnliche Weise berechnet werden. In der Implementierung wird das auch getan, um die Varianz durch $var(p)=ii^{2}(p)-i(p)^{2}$ zu berechnen. WELCHE VORTEILE HAT DAS GENAU??? HIER MUSS NOCH WAS ZUR ERKLÄRUNG HIN!!! 
+	Neben dem integralen Bild können auch weitere Strukturen, wie das quadratische integrale Bild $ii^{2}$ auf ähnliche Weise berechnet werden. In der Implementierung wird das auch getan, um die Varianz durch $var(p)=ii^{2}(p)-i(p)^{2}$ zu berechnen. WELCHE VORTEILE HAT DAS GENAU??? HIER MUSS NOCH WAS ZUR ERKLÄRUNG HIN!!!
 
 	Auf die beschriebene Weise werden nun die Varianzen der einzelnen möglichen Objekte, die durch das Grid definiert sind, mit dem Varianzwert des aktuellen BoundingBox verglichen, und bei einem geringeren Wert verworfen. Alle übrig gebliebenen Boxen werden im folgendenen \textit{Essemble Classifier} verarbeitet.
 
@@ -255,7 +256,7 @@
 	% \end{comment}
 	\subsubsection{Template-Matching und Nearest-Neighbour-Classifier}
 
-	HIER NOCH WAS HIN!
+	Die vorherigen Stufen der Kaskade dienten vor allem zur Aussortierung falscher Kandidaten und damit die Verkleinerung des Suchraums. Das im Folgenden beschriebene Verfahren ist ein direkter Vergleich zwischen Patches und gespeicherten Repräsentationen von Bildern und damit die eigentliche Detektion.
 
 	\paragraph{Template-Matching}
 	Die letzte Stufe des Klassifizierers ist ein Nearest-Neighbour-Classifier, der mittels Template-Matching die verbliebenen Patches klassifiziert. Bei diesem Verfahren wird der gesuchte Patch (das Template) $T$ direkt in einem Bild $I$ gesucht, indem es über dieses geschoben und mittels einer Matching-Methode, in dieser Implementation durch Berechnung des (normalisierten) Korrelations-Koeffizienten, verglichen wird. Dabei wird der relative Mittelwert von $T$ mit dem relativen Mittelwert von $I$ verglichen. Das Ergebnis ist ein Wert zwischen $1$(perfekter Match) und $-1$(perfekter Missmatch). $0$ bedeutet, dass zwischen $T$ und $I$ keine Korrelation exisitert. Da es sich hierbei um eine sehr konservative und rechenintensive Vergleichsmethode handelt, bildet sie den Abschluss der Kaskade.
@@ -276,7 +277,7 @@
 	I'(x+x',y+y')=I(x+x',y+y')-\frac{1}{(w\times h)\underset{x'',y''}{\sum}I(x+x'',y+y'')}
 	\end{equation}
 
-	Um Fehler zu reduzieren, die durch eine unterschiedliche Beleutung des Templates $T$ und des Bildes $I$ entstehen können und damit	das Ergebnis verfälschen, wir der Koeffizient normalisiert. Zusätzlich wird das Ergebnis umgerechnet, das Ergebnis im Intervall $[0..1]$	liegt.
+	Um Fehler zu reduzieren, die durch eine unterschiedliche Beleutung des Templates $T$ und des Bildes $I$ entstehen können und damit	das Ergebnis verfälschen, wir der Koeffizient normalisiert. Zusätzlich wird das Ergebnis umgerechnet, so dass es im Intervall $[0..1]$	liegt.
 
 	\begin{equation}
 	S(x,y)=0.5(NCC(x,y)+1)
@@ -289,7 +290,7 @@
 	\paragraph{Nearest-Neighbour-Classifier}
 	Positive und negative Beispiele, die dem Klassifizierer für den Vergleich dienen, sind genormte $15\times15$ Pixel große Patches und werden	durch das Objekt-Modell $M$ repräsentiert. Der zu überprüfende Patch wird mit allen positiven und negativen Beispielen verglichen und es wird jeweils der größte Korrelations-Koeffizient berechnet. Diese dienen wiederum als Grundlage für die Ähnlichkeitsberechnung des Patches zur positiven Klasse. Es wird hierbei die relative Ähnlichkeit $S^{r}(p,M)=\frac{S^{+}}{S^{+}+S^{-}}$	berechnet und mit einem Threshold-Wert $\Theta$ verglichen, mit $\Theta=0.65$	\footnote{Werte für $\Theta$ zwischen $0.5-0.7$ sind ebenfalls zulässig und	bringen ähnliche Resultate \cite{TLD}. }. Gilt $S^{r}(p,M)>\Theta$, wird der Patch als positiv klassifiziert.
 
-	Alle Patches, die zu diesem Zeitpunkt nicht durch die Kaskade verworfen wurden, bilden die Ausgabe der Detektor-Komponente. Typischerweise sind es mehrere Patches, die sich sehr ähneln und stark überlappen, und im Allgemeinen Teile des gesuchten Objekts repräsentieren. Das ist $\Theta$ geschuldet, denn die Patches werden nicht mit einem klaren Label für ``ist Objekt/ist kein Objekt'' versehen. Aus diesem Grund werden mittels Cluster-Verfahren Gruppierungen gebildet, aus denen abschließend die BoundingBox für das mögliche Objekt generiert wird. 
+	Alle Patches, die zu diesem Zeitpunkt nicht durch die Kaskade verworfen wurden, bilden die Ausgabe der Detektor-Komponente. Typischerweise sind es mehrere Patches, die sich sehr ähneln und stark überlappen, und im Allgemeinen Teile des gesuchten Objekts repräsentieren. Das ist $\Theta$ geschuldet, denn die Patches werden nicht mit einem klaren Label für ``ist Objekt/ist kein Objekt'' versehen. Aus diesem Grund werden mittels Cluster-Verfahren Gruppierungen gebildet, aus denen abschließend die BoundingBox für das mögliche Objekt generiert wird.
 
 
 	\subsubsection{Cluster-Verfahren}
@@ -313,11 +314,11 @@
 	einander, weshalb deren Ergebnisse zusammengeführt und bewertet werden
 	müssen. Dies geschieht durch P/N-Learning \cite{PNL}. Gleichzeitig
 	bildet dieser Ansatz die Grundlage des Lernens und damit des Trainierens
-	des Fern- und des NearestNeighbour-Classifiers. 
+	des Fern- und des NearestNeighbour-Classifiers.
 
 	\begin{algorithm}
 	\vspace{0.2cm}
-	\KwData{$B_J, J$} 
+	\KwData{$B_J, J$}
 	% \KwResult{}
 	initialization\;
 	\While{not at end of this document}{
@@ -382,11 +383,11 @@
 	\begin{enumerate}
 	\item Das Ergebnis des Trackers ist ``besser'': In diesem Fall ist die gefundene Version des Objekts noch nicht in der Datenbasis und dient als Grundlage für ein positives Beispiel in der nächsten Lernphase.
 	\item Das Ergebnis des Detectors ist ``besser'': Damit wurde das gesuchte Objekt gefunden und der Tracker hat anscheinend aus unterschiedlichen Gründen den Fokus verloren. Deshalb muss er reinitialisiert werden, und zwar auf das Objekt, das der Detector gefunden hat.
-	\end{enumerate} 
+	\end{enumerate}
 
-	Ein Constraint ist in erster Linie eine Funktion, die als Parameter eine Menge von gelabelten Beispielen des Classifiers $(X_{u},Y_{u}^{k})$ erwartet und eine Menge von Beispielen $(X_{c}^{k},Y_{c}^{k})$, deren Label geändert wurden, als Ergebnis liefert. Die Anzahl dieser Constraints kann in diesem Fall beliebig sein, allerdings werden sie in zwei Kategorien geordnet: $P$ und $N$. 
+	Ein Constraint ist in erster Linie eine Funktion, die als Parameter eine Menge von gelabelten Beispielen des Classifiers $(X_{u},Y_{u}^{k})$ erwartet und eine Menge von Beispielen $(X_{c}^{k},Y_{c}^{k})$, deren Label geändert wurden, als Ergebnis liefert. Die Anzahl dieser Constraints kann in diesem Fall beliebig sein, allerdings werden sie in zwei Kategorien geordnet: $P$ und $N$.
 
-	\textit{P-constraints} dienen zur Identifikation von Beispielen, die vom Classifier zwar als negativ bewertet, von den Constraints allerdings als positiv angesehen werden. \textit{N-constraints} hingegen identifizieren negative Beispiele, die vom Classifier fälschlicherweise als postitiv bewerten wurden. Dabei sind in der $k$-ten Itereration $n^{+}(k)$ die Anzahl der Beispiele, die ein neues postives Label und $n^{-}(k)$, die Anzahl der Beispiele, die durch die Constraints ein neues negatives Label erhalten haben. Dadurch werden zum einen neue postivie Beispiele erzeugt, die der Classifier noch nicht kennt und zusätzlich werden negative Beispiel generiert, die in der nächsten Iteration nicht fälschlicherweise als positiv bewertet werden. 
+	\textit{P-constraints} dienen zur Identifikation von Beispielen, die vom Classifier zwar als negativ bewertet, von den Constraints allerdings als positiv angesehen werden. \textit{N-constraints} hingegen identifizieren negative Beispiele, die vom Classifier fälschlicherweise als postitiv bewerten wurden. Dabei sind in der $k$-ten Itereration $n^{+}(k)$ die Anzahl der Beispiele, die ein neues postives Label und $n^{-}(k)$, die Anzahl der Beispiele, die durch die Constraints ein neues negatives Label erhalten haben. Dadurch werden zum einen neue postivie Beispiele erzeugt, die der Classifier noch nicht kennt und zusätzlich werden negative Beispiel generiert, die in der nächsten Iteration nicht fälschlicherweise als positiv bewertet werden.
 
 	\subsection{Zusammenspiel der Komponenten}
 	Nachdem die einzelnen Teile des Tracking-Detection-Learning-Systems im Detail vorgestellt und behandelt wurden, erfolgt in diesem Abschnitt eine kurze Erläutering des Zusammenspiels aller Komponenten.

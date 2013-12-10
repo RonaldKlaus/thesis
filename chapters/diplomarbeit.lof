@@ -1,14 +1,14 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces TLD-Schema\relax }}{13}
-\contentsline {figure}{\numberline {2}{\ignorespaces Arbeitsweise des Median Flow Trackers}}{25}
-\contentsline {figure}{\numberline {3}{\ignorespaces Erkennen von Tracking-Fehlern}}{27}
-\contentsline {figure}{\numberline {4}{\ignorespaces Darstellung der Pixelwerte eines $3\times 3$ Bildes (links) und des dazugeh\IeC {\"o}rigen integralen $4\times 4$ Bildes (rechts).\relax }}{31}
-\contentsline {figure}{\numberline {5}{\ignorespaces Teilbild $ABCD$\relax }}{32}
-\contentsline {figure}{\numberline {6}{\ignorespaces Prinzipielle Arbeitsweise der \textit {Base-Classifier}.\relax }}{33}
-\contentsline {figure}{\numberline {7}{\ignorespaces Clustering\relax }}{36}
-\contentsline {figure}{\numberline {8}{\ignorespaces Arbeitsweise P-N Learning (Quelle: \cite {PNL})\relax }}{37}
-\contentsline {figure}{\numberline {9}{\ignorespaces Zusammenspiel der Komponenten im Programmablaufplan\relax }}{40}
-\contentsline {figure}{\numberline {10}{\ignorespaces Klassendiagramm zur Implementation mit den wichtigsten Attributen und Methoden\relax }}{43}
-\contentsline {figure}{\numberline {11}{\ignorespaces Das repr\IeC {\"a}sentative Koptermodell MINI-QUADROCOPTER QG 550 XS f\IeC {\"u}r die Durchf\IeC {\"u}hrung aller Tests.\relax }}{46}
-\contentsline {figure}{\numberline {12}{\ignorespaces Trackingprobleme bei zu hoher Informationsdichte des Hintergrunds.\relax }}{52}
-\contentsline {figure}{\numberline {13}{\ignorespaces Trackingprobleme bei Teilmarkierung des gesuchten Objekts.\relax }}{52}
-\contentsline {figure}{\numberline {14}{\ignorespaces Tesla C2050 versus Core i5-760 2.8Ghz, SSE, TBB \cite {OCW}\relax }}{55}
+\contentsline {figure}{\numberline {2}{\ignorespaces Arbeitsweise des Median Flow Trackers}}{27}
+\contentsline {figure}{\numberline {3}{\ignorespaces Erkennen von Tracking-Fehlern}}{29}
+\contentsline {figure}{\numberline {4}{\ignorespaces Darstellung der Pixelwerte eines $3\times 3$ Bildes (links) und des dazugeh\IeC {\"o}rigen integralen $4\times 4$ Bildes (rechts).\relax }}{33}
+\contentsline {figure}{\numberline {5}{\ignorespaces Teilbild $ABCD$\relax }}{34}
+\contentsline {figure}{\numberline {6}{\ignorespaces Prinzipielle Arbeitsweise der \textit {Base-Classifier}.\relax }}{35}
+\contentsline {figure}{\numberline {7}{\ignorespaces Clustering\relax }}{38}
+\contentsline {figure}{\numberline {8}{\ignorespaces Arbeitsweise P-N Learning (Quelle: \cite {PNL})\relax }}{40}
+\contentsline {figure}{\numberline {9}{\ignorespaces Zusammenspiel der Komponenten im Programmablaufplan\relax }}{42}
+\contentsline {figure}{\numberline {10}{\ignorespaces Klassendiagramm zur Implementation mit den wichtigsten Attributen und Methoden\relax }}{45}
+\contentsline {figure}{\numberline {11}{\ignorespaces Das repr\IeC {\"a}sentative Koptermodell MINI-QUADROCOPTER QG 550 XS f\IeC {\"u}r die Durchf\IeC {\"u}hrung aller Tests.\relax }}{48}
+\contentsline {figure}{\numberline {12}{\ignorespaces Trackingprobleme bei zu hoher Informationsdichte des Hintergrunds.\relax }}{54}
+\contentsline {figure}{\numberline {13}{\ignorespaces Trackingprobleme bei Teilmarkierung des gesuchten Objekts.\relax }}{54}
+\contentsline {figure}{\numberline {14}{\ignorespaces Tesla C2050 versus Core i5-760 2.8Ghz, SSE, TBB \cite {OCW}\relax }}{57}
