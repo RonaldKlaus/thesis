@@ -64,8 +64,6 @@ Förstner \cite{FOD} wiederum entwickelte ein weiteres Verfahren zur Berechnung 
 \subsubsection{Background Substraction}
 Backgound Substraction beziehungsweise Forground Detection ist ein Verfahren, bei dem ein Bild von einem Referenzbild (Background Model) ``subtrahiert'' wird. Diese Unterschiede bilden die Detektionen. Der Einsatz dieses Verfahrens beschränkt sich meist auf statische Kameras. Für die Umsetzung gibt es eine Reihe Vorgehensweisen, die hinsichtlich ihrer Komplexität, Speicher- und Prozessoranforderungen sowie Beschränkungen variieren. In dieser Arbeit wird nicht auf die Details eingegangen sondern auf \cite{BAG} verwiesen.
 
-\subsubsection{Image Segmentation}
-
 \subsubsection{Methoden}
 Abhängig von der Objektspeicherung ist die Detektionmethodik. Dabei werden meist zwei (Synonym für)Methoden angewandt: Detektion \textit{lokaler Image-Features}\cite{IMF} oder der \textit{Sliding Window}-Ansatz \cite{IIM}.
 Bei der Arbeit mit lokalen Featuren wird im ersten Schritt das Bild nach diesen Featuren durchsucht, es folgt die Feature-Recognition(HIER WAS DEUTSCHES FINDEN) und zuletzt die Anpassung des Models. Diese Methode liefert gute Detekionserebnisse, Verarbeitet die Daten auch auf hardwareschwächeren Geräten und bietet vor allem die Möglichkeit, mehrere Objekte gleichzeitig zu suchen\cite{MTL} \cite{VAH} \cite{SLI}.
