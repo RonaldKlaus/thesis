@@ -19,13 +19,25 @@ Mit Hilfe eines Forground-Filters kann ein sich bewegendes Objekt mittels Backgr
 An dieser Stelle gibt es eine Übersicht der restlichen verwendeten Algorithmen.
 
 \paragraph{Varianz-Classifier}
-Hier die Erklärung des Algorithmus.
+Der Varianz-Classifier berechnet in den Zeilen 1 und 2 das integrale beziehnugsweise das quadratische integrale Bild. Im Anschluss werde die Werte aus den acht Ecken der beiden Rechtecke ermittelt und der Mittelwert $mean$ und $mean^2$ berechnet. Die Varianz ergibt sich aus der Differenz $var = mean^2 - (mean\times mean)$ und wird im Detector mit dem Varianz-Threshold $\Theta$ verglichen. Gilt $var < \Theta$, wird $I$ verworfen
 
 \begin{algorithm}[H]
 	\vspace{0.2cm}
-	\KwData{Input} 
-	\KwResult{Output}
-	TODO
+	\KwData{$I,x,y,w,h$}
+	\KwResult{$var$}
+	$I_{int} = calcIntegral(I)$\;
+	$I^2_{int} = calcSqrtIntegral(I)$\;
+	$br=I_{int}.at(x + w, y + h)$\;
+	$bl=I_{int}.at(x, y + h)$\;
+	$tr=I_{int}.at(x + w, y)$\;
+	$ts=I_{int}.at(x, y)$\;
+	$brs=I^2_{int}.at(x + w, y + h)$\;
+	$bls=I^2_{int}.at(x, y + h)$\;
+	$trs=I^2_{int}.at(x + w, y)$\;
+	$tss=I^2_{int}.at(x, y)$\;
+	$mean = (br + tl - tr - bl)/(w\times h)$\;
+	$mean^2 = (brs + tls - trs - bls)/(w\times h)$\;
+	$var = mean^2 - (mean\times mean)$\;
 	\caption{Varianz-Classifier}
 	\label{alg:varianz}
 	\vspace{0.2cm}
@@ -36,7 +48,7 @@ Hier die Erklärung des Algorithmus.
 
 \begin{algorithm}[H]
 	\vspace{0.2cm}
-	\KwData{Input} 
+	\KwData{Input}
 	\KwResult{Output}
 	TODO
 	\caption{Ensemble-Classifier}
@@ -49,7 +61,7 @@ Hier die Erklärung des Algorithmus.
 
 \begin{algorithm}[H]
 	\vspace{0.2cm}
-	\KwData{Input} 
+	\KwData{Input}
 	\KwResult{Output}
 	TODO
 	\caption{NearestNeigbour-Classifier}
@@ -62,7 +74,7 @@ Hier die Erklärung des Algorithmus.
 
 \begin{algorithm}[H]
 	\vspace{0.2cm}
-	\KwData{Input} 
+	\KwData{Input}
 	\KwResult{Output}
 	TODO
 	\caption{Clustering}

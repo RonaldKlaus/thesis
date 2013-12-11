@@ -310,10 +310,7 @@
 
 	\subsection{Maschinelles Lernen}
 	\label{subsection:machine_learning}
-	Die Tracking- und die Detection-Komponenten arbeiten unabhängig von
-	einander, weshalb deren Ergebnisse zusammengeführt und bewertet werden
-	müssen. Dies geschieht durch P/N-Learning \cite{PNL}. Gleichzeitig
-	bildet dieser Ansatz die Grundlage des Lernens und damit des Trainierens
+	Die Tracking- und die Detection-Komponenten arbeiten unabhängig von einander, weshalb deren Ergebnisse zusammengeführt und bewertet werden müssen. Dies geschieht durch P/N-Learning \cite{PNL}. Gleichzeitig bildet dieser Ansatz die Grundlage des Lernens und damit des Trainierens
 	des Fern- und des NearestNeighbour-Classifiers.
 
 	\begin{algorithm}
@@ -335,26 +332,9 @@
 	\vspace{0.2cm}
 	\end{algorithm}
 
-	Hintergrund des semi-supervised learning-Prozesses sind postive (P)
-	und negative (N) Restriktionen (Constraints) für das Markieren (labeling)
-	des unmarkierten Datensatzes. Im Gegensatz zu anderen Ansätzen {[}17,4
-	vom PN-L-PAPER!!!!{]} werden die Beispiele des unmarkierten Datensatzes,
-	im Folgenden \textit{Struktur} genannt, als zusammenhängend beziehungsweise
-	von einander abhängig angesehen. Im Fall der Object Detection bilden
-	alle möglichen Patches des Bildes diese Struktur und die Aufgabe besteht
-	darin jeden dieser Patches entweder als positiv, und somit dem Objekt,
-	oder als negativ, und damit dem Hintergrund, zuzuordnen. Da ein Objekt
-	in einer Videosequenz temporär nur an einem Ort sichtbar sein kann,
-	werden die Patches in diesem Bereich eine ähnliche postiven Markierung
-	erhalten, Patches, die weiter weg vom Objekt sind, eine negative.
+	Hintergrund des semi-supervised learning-Prozesses sind postive (P)	und negative (N) Restriktionen (Constraints) für das Markieren (labeling)	des unmarkierten Datensatzes. Im Gegensatz zu Ansätzen, wie in \cite{TCL} \cite{CLU}, in denen die Daten als Unabhängig angesehen sind, Bilden der unmarkierte Datensatz bei P/N-Learning eine zusammenhängende \textit{Struktur} genannt. Im Fall der Object Detection bilden alle möglichen Patches des Bildes diese Struktur und die ufgabe besteht darin jeden dieser Patches entweder als positiv, und somit dem Objekt, oder als negativ, und damit dem Hintergrund, zuzuordnen. Da ein Objekt in einer Videosequenz temporär nur an einem Ort sichtbar sein kann, werden die Patches in diesem Bereich eine ähnliche postiven Markierung erhalten, Patches, die weiter weg vom Objekt sind, eine negative.
 
-	Abbildung \ref{abb:pnl} gibt einen Überblick der beteiligten Komponenten
-	und deren Zusammenhang von P-N Learning. Im Klassifizierer (i) (im
-	TLD-Ansatz sind das Fern- und NearstNeigbour Classifier) werden die
-	unbestimmten Daten aus $X_{u}$ gelabelt. (ii) bilden die Constraints
-	zur Bewertung der gelabelten Patches, ändern gegenballs die Labels
-	und erweitern die Trainingsmenge (iii), die wiederum für das Training
-	(iv) des Klassifizierers genutzt wird. Die genaue Erläutering der Arbeitsweisen erfolgt im Anschluss.
+	Abbildung \ref{abb:pnl} gibt einen Überblick der beteiligten Komponenten und deren Zusammenhang von P-N Learning. Im Klassifizierer (i) (im	TLD-Ansatz sind das Fern- und NearstNeigbour Classifier) werden die unbestimmten Daten aus $X_{u}$ gelabelt. (ii) bilden die Constraints zur Bewertung der gelabelten Patches, ändern gegenballs die Labels und erweitern die Trainingsmenge (iii), die wiederum für das Training (iv) des Klassifizierers genutzt wird. Die genaue Erläutering der Arbeitsweisen erfolgt im Anschluss.
 
 	\begin{figure}
 	\begin{centering}
