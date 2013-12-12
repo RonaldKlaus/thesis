@@ -73,4 +73,4 @@
 \contentsline {paragraph}{Varianz-Classifier}{56}
 \contentsline {paragraph}{Ensemble-Classifier}{57}
 \contentsline {paragraph}{NearestNeighbour-Classifier}{57}
-\contentsline {paragraph}{Clustering}{57}
+\contentsline {paragraph}{Clustering}{58}

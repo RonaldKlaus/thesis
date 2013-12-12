@@ -3,6 +3,8 @@
 \contentsline {algocf}{\numberline {3}{\ignorespaces Detection\relax }}{29}
 \contentsline {algocf}{\numberline {4}{\ignorespaces P/N-Learning\relax }}{37}
 \contentsline {algocf}{\numberline {5}{\ignorespaces Varianz-Classifier\relax }}{57}
-\contentsline {algocf}{\numberline {6}{\ignorespaces Ensemble-Classifier\relax }}{57}
-\contentsline {algocf}{\numberline {7}{\ignorespaces NearestNeigbour-Classifier\relax }}{57}
-\contentsline {algocf}{\numberline {8}{\ignorespaces Clustering\relax }}{58}
+\contentsline {algocf}{\numberline {6}{\ignorespaces Ensemble-Classifier: Train Classifier\relax }}{57}
+\contentsline {algocf}{\numberline {7}{\ignorespaces Ensemble-Classifier: Classify\relax }}{57}
+\contentsline {algocf}{\numberline {8}{\ignorespaces NearestNeigbour-Classifier: Train\relax }}{58}
+\contentsline {algocf}{\numberline {9}{\ignorespaces NearestNeigbour-Classifier: Classify\relax }}{58}
+\contentsline {algocf}{\numberline {10}{\ignorespaces Clustering\relax }}{58}
