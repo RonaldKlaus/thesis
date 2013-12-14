@@ -7,8 +7,9 @@
 \usepackage{verbatim} %Comments
 \usepackage{amsmath}
 \usepackage{setspace}
+\usepackage[ngerman=ngerman-x-latest]{hyphsubst}
 \usepackage[font=small,labelfont=bf]{caption}
-%\usepackage[lining,scaled=.95]{ebgaramond} % The default is oldstyle numbers. 
+%\usepackage[lining,scaled=.95]{ebgaramond} % The default is oldstyle numbers.
 %% I have set the numbers to be lining to display lining numbers as well as
 %% oldstyle numbers
 \usepackage[utf8x]{inputenc}
@@ -37,22 +38,22 @@
 % \usepackage{algorithmic}
 % \usepackage{algpseudocode}
 % Ändern der automatischen Überschriften
-\renewcommand{\listfigurename}{Liste der Abbildung} 
+\renewcommand{\listfigurename}{Liste der Abbildung}
 \renewcommand{\contentsname}{Inhaltsverzeichnis}
 \renewcommand{\abstractname}{Abstrakt}
-
+\sloppy
 %\usepackage[options]{package}
 
 \begin{document}
 	\cleardoublepage \include{firstpage} % Deckblatt
 	\cleardoublepage \include{abstract} 	% Abstract
 	\begin{onehalfspace}
-	% \begin{singlespace} 
+	% \begin{singlespace}
 		\cleardoublepage \listoffigures % Abbildungsverzeichnis
 		\cleardoublepage \listofalgorithms % Algorithmenverzeichnis
 		\setcounter{tocdepth}{2}
 		\cleardoublepage \tableofcontents  % Inhaltsverzeichnis
-		\cleardoublepage 
+		\cleardoublepage
 	% \end{singlespace}
 	% \begin{onehalfspace}
 		\cleardoublepage \include{chapter_1} % Einleitung

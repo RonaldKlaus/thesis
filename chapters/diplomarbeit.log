@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  12 DEC 2013 07:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  14 DEC 2013 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -121,6 +121,11 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hyphsubst.sty
+Package: hyphsubst 2008/06/09 v0.2 Substitute hyphenation patterns (HO)
+Package hyphsubst Info: Redefined: \l@ngerman
+(hyphsubst)             old value: 31
+(hyphsubst)             new value: 4 on input line 223.
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
@@ -244,19 +249,19 @@ s/thesis/chapters/chapter_6.aux) (/Users/ronald/Documents/thesis/chapters/bibli
 ography.aux) (/Users/ronald/Documents/thesis/chapters/declaration.aux))
 \openout1 = `diplomarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 47.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -414,21 +419,9 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-Overfull \hbox (2.86197pt too wide) in paragraph at lines 4--5
+Underfull \hbox (badness 1442) in paragraph at lines 4--5
 []\T1/ppl/m/n/10 In dieser Ar-beit wird ein Tracking-Detection-Algorithmus hin-
-sichtlich seiner
- []
-
-
-Overfull \hbox (17.68176pt too wide) in paragraph at lines 6--7
-\T1/ppl/m/n/10 automated-Tracking nur eine Nutzereingabe für die er-ste Ob-jek-
-t-def-i-ni-tion benötigt. 
- []
-
-
-Overfull \hbox (1.66237pt too wide) in paragraph at lines 8--9
-\T1/ppl/m/n/10 theit [[]]. Beide sind je-doch, be-zo-gen auf die Möglichkeiten 
-zur Op-ti-mierung,
+sichtlich
  []
 
 ) [3
@@ -438,11 +431,11 @@ zur Op-ti-mierung,
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 51.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
 (/Users/ronald/Documents/thesis/chapters/diplomarbeit.lof
-Overfull \hbox (5.11153pt too wide) in paragraph at lines 10--10
+Underfull \hbox (badness 1881) in paragraph at lines 10--10
  [][] []\T1/ppl/m/n/10.95 Klassendiagramm zur Im-ple-men-ta-tion mit den wichti
-g-sten At-tributen 
+g-sten At- 
  []
 
 )
@@ -470,17 +463,6 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 \openout2 = `chapter_1.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_1.tex
-Overfull \hbox (10.27896pt too wide) in paragraph at lines 3--4
-\T1/ppl/m/n/10.95 Bild-ver-ar-beitung und Feld in-ten-siver Forschung. Die zune
-hmende Leis-tungs-fähigkeit
- []
-
-
-Overfull \hbox (8.3084pt too wide) in paragraph at lines 3--4
-\T1/ppl/m/n/10.95 zten Jahren in-ten-sivieren die Be-stre-bun-gen auf diesem Ge
--biet zusät-zlich. Die dadurch
- []
-
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 10.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
@@ -491,364 +473,144 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 
 
 ]
-Overfull \hbox (3.83542pt too wide) in paragraph at lines 19--20
-[]\T1/ppl/m/n/10.95 Umwelteinflüsse und tech-nis-che Ein-schränkun-gen spie-len
- somit eine groÿe Rolle
- []
-
-
-Overfull \hbox (2.1874pt too wide) in paragraph at lines 21--22
-\T1/ppl/m/n/10.95 stellen weit-er-hin eine groÿe Her-aus-forderung dar. Die im 
-An-schluss kurz vorgestell-
- []
-
-
-Overfull \hbox (6.35393pt too wide) in paragraph at lines 28--29
-[]\T1/ppl/m/n/10.95 Das De-tek-tieren der Kopter soll unter realen Be-din-gun-g
-en funk-tion-ieren. Umwel-
+Underfull \hbox (badness 4001) in paragraph at lines 26--27
+[]\T1/ppl/m/n/10.95 Die Kopter er-hal-ten keine zusätlichen Kom-po-nen-ten wie 
+Leucht-dio-den
  []
 
 [12]
-Overfull \hbox (4.06541pt too wide) in paragraph at lines 32--33
-[]\T1/ppl/m/n/10.95 Deshalb wurde zur Um-set-zung der online-tracking-detection
--Algorithmus \T1/ppl/m/it/10.95 Track-
- []
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 30.
 
 <../pictures/TLD-Framework.jpg, id=45, 514.3215pt x 200.4288pt>
 File: ../pictures/TLD-Framework.jpg Graphic file (type jpg)
 <use ../pictures/TLD-Framework.jpg>
-Package pdftex.def Info: ../pictures/TLD-Framework.jpg used on input line 35.
+Package pdftex.def Info: ../pictures/TLD-Framework.jpg used on input line 33.
 (pdftex.def)             Requested size: 385.74019pt x 150.32121pt.
-[13 <../pictures/TLD-Framework.jpg>]
-Overfull \hbox (10.32309pt too wide) in paragraph at lines 57--58
- \T1/ppl/b/n/10.95 Kapi-tel 4[] \T1/ppl/m/n/10.95 Im vierten Kapi-tel wir kurz 
-die C++-Implementierung beschrieben. Zusät-
+
+Underfull \hbox (badness 3460) in paragraph at lines 37--38
+[]\T1/ppl/m/n/10.95 Als Im-ple-men-ta-tion-ssprache wird C++ gewählt, weil sie 
+auf-grund der
  []
 
 
-Overfull \hbox (7.57468pt too wide) in paragraph at lines 60--61
-\T1/ppl/m/n/10.95 Anal-yse er Testergeb-nisse sowie eine Reihe von Vorschlä-gen
- für et-waige Verbesserun-
+Underfull \hbox (badness 1275) in paragraph at lines 37--38
+\T1/ppl/m/n/10.95 Möglichkeit rel-a-tiv hard-ware-nah zu pro-gram-mieren, schne
+lle Pro-gramme er-
  []
 
-) [14]
+
+Underfull \vbox (badness 1163) has occurred while \output is active []
+
+[13 <../pictures/TLD-Framework.jpg>]) [14]
 \openout2 = `chapter_2.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_2.tex
-Overfull \hbox (20.69264pt too wide) in paragraph at lines 3--4
-\T1/ppl/m/n/10.95 ist in je-dem Ansatz auch eine Ob-jek-trepräsen-ta-tion vorha
-n-den, die mit-tels maschinellem
+Underfull \hbox (badness 1584) in paragraph at lines 4--5
+\T1/ppl/m/n/10.95 Arbeiten, die sich speziell mit dem Tracken von Quadro- oder 
+Hex-akopter
+ []
+
+
+Underfull \hbox (badness 3019) in paragraph at lines 4--5
+\T1/ppl/m/n/10.95 beschäfti-gen, gibt es derzeit kaum. Im fol-gen-den Ab-schnit
+t wer-den de-
  []
 
 [15
 
 
 
-]
-Overfull \hbox (1.67311pt too wide) in paragraph at lines 15--16
-\T1/ppl/m/n/10.95 eine Reihe von Schwierigkeiten, wie das Hand-haben von Verdec
-k-un-gen oder falsche
- []
-
-[16]
-Overfull \hbox (4.0157pt too wide) in paragraph at lines 31--32
-\T1/ppl/m/n/10.95 jekts beziehungsweise einer Ob-jek-tre-gion als Vor-lage, und
- nicht nur einzelne Punkte.
- []
-
-
-Overfull \hbox (1.85948pt too wide) in paragraph at lines 33--34
-\T1/ppl/m/n/10.95 herange-zo-gen. Im An-schluss wird die Qual-ität der Berech-n
-ung mit-tels affiner Trans-
- []
-
-[17]
-Overfull \hbox (64.54704pt too wide) in paragraph at lines 40--41
-\T1/ppl/m/n/10.95 zlich nutzen einige Trackingan-sätze Be-we-gungsin-for-ma-tio
--nen des Ob-jekts aus beziehnungsweise
- []
-
-[18]
-Overfull \hbox (19.44534pt too wide) in paragraph at lines 52--53
-[]\T1/ppl/m/n/10.95 bilden Teile eines zusam-men-hän-gen-den Ob-jekts. Die Verb
-indun-
- []
-
-
-LaTeX Warning: Citation `HCD' on page 19 undefined on input line 60.
-
-
-Overfull \hbox (10.49806pt too wide) in paragraph at lines 60--61
-\T1/ppl/m/n/10.95 nun-gen zu er-höhen schlu-gen sie vor die mit-tlere quadratis
--che Ab-we-ichung als Gütkri-
+] [16] [17] [18]
+Underfull \hbox (badness 2809) in paragraph at lines 53--54
+[]\T1/ppl/m/n/10.95 bilden Teile eines zusam-men-hän-gen-den Ob-jekts. Die
  []
 
 [19]
-Overfull \hbox (5.91045pt too wide) in paragraph at lines 65--66
-\T1/ppl/m/n/10.95 Diese Un-ter-schiede bilden die De-tek-tio-nen. Der Ein-satz 
-dieses Ver-fahrens beschränkt
+
+LaTeX Warning: Citation `HCD' on page 20 undefined on input line 61.
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 66--67
+\T1/ppl/m/n/10.95 bei dem ein Bild von einem Ref-erenz-bild (Back-ground Model)
+ ``sub-trahiert''
  []
 
 
-Overfull \hbox (0.29308pt too wide) in paragraph at lines 65--66
-\T1/ppl/m/n/10.95 hensweisen, die hin-sichtlich ihrer Kom-plex-ität, Speicher- 
-und Prozes-so-ran-forderun-
- []
+LaTeX Warning: Citation `IIM' on page 20 undefined on input line 69.
 
-
-LaTeX Warning: Citation `IIM' on page 20 undefined on input line 68.
-
-
-Overfull \hbox (11.17708pt too wide) in paragraph at lines 68--70
-\T1/ppl/m/n/10.95 meist zwei (Syn-onym für)Methoden ange-wandt: De-tek-tion \T1
-/ppl/m/it/10.95 lokaler Image-Features\T1/ppl/m/n/10.95 [[]]
- []
-
-
-Overfull \hbox (40.57764pt too wide) in paragraph at lines 68--70
-\T1/ppl/m/n/10.95 sten Schritt das Bild nach diesen Fea-turen durch-sucht, es f
-olgt die Feature-Recognition(HIER
- []
-
-
-Overfull \hbox (27.38321pt too wide) in paragraph at lines 68--70
-\T1/ppl/m/n/10.95 ode liefert gute De-tekion-sereb-nisse, Ve-r-ar-beitet die Da
-ten auch auf hard-wareschwächeren
- []
-
-
-Overfull \hbox (36.51466pt too wide) in paragraph at lines 68--70
-\T1/ppl/m/n/10.95 Geräten und bi-etet vor allem die Möglichkeit, mehrere Ob-jek
-te gle-ichzeitig zu suchen[[]]
- []
-
-[20]
-Overfull \hbox (3.91783pt too wide) in paragraph at lines 86--87
-\T1/ppl/m/n/10.95 deliegen-den Beispiele, also die Daten, die das Ob-jekt besch
-reiben, sind die Er-fahrung
- []
-
-[21]
-Overfull \hbox (40.12347pt too wide) in paragraph at lines 97--98
-[]\T1/ppl/m/n/10.95 Ohne im De-tail Maschinelles Ler-nen vorzustellen, besteht 
-jede Meth-ode im Wesentlichen
- []
-
-
-Overfull \hbox (22.25896pt too wide) in paragraph at lines 100--101
+[20] [21]
+Underfull \hbox (badness 1688) in paragraph at lines 101--102
  \T1/ppl/b/n/10.95 Su-per-vised Learn-ing[] \T1/ppl/m/n/10.95 Überwachtes Ler-n
-en. Man gibt Beispiele mit einem entsprechen-
+en. Man gibt Beispiele mit einem
  []
 
+[22]) [23] [24
 
-Overfull \hbox (5.96501pt too wide) in paragraph at lines 107--108
-\T1/ppl/m/n/10.95 Regession wird ver-wen-det, wenn zu einer bes-timmten Eingabe
- ein konkreter (reeller)
- []
 
-) [22]
+]
 \openout2 = `chapter_3.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_3.tex
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <8> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 14.
-[23
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
+[25
 
-
-
-]
-Overfull \hbox (11.52312pt too wide) in paragraph at lines 37--38
-[]\T1/ppl/m/n/10.95 In dieser Ar-beit wird, wie im grundle-gen-den TLD-Ansatz, 
-der MediaFlow- Tracker
- []
-
-<../pictures/MediaFlow_0.png, id=83, 478.78876pt x 132.495pt>
+] <../pictures/MediaFlow_0.png, id=90, 478.78876pt x 132.495pt>
 File: ../pictures/MediaFlow_0.png Graphic file (type png)
 <use ../pictures/MediaFlow_0.png>
-Package pdftex.def Info: ../pictures/MediaFlow_0.png used on input line 40.
+Package pdftex.def Info: ../pictures/MediaFlow_0.png used on input line 41.
 (pdftex.def)             Requested size: 335.14984pt x 92.74585pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[24] [25 <../pictures/MediaFlow_0.png>]
-Overfull \hbox (8.07845pt too wide) in paragraph at lines 58--61
-\T1/ppl/m/n/10.95 Pixel groÿen Auss-chnitts. Mit Hilfe der Nach-barpunkte, dere
-n Geschwindigkeit
- []
-
-
-Overfull \hbox (5.04468pt too wide) in paragraph at lines 79--81
-\T1/ppl/m/n/10.95 min-imiert wer-den. Für weit-ere De-tails zur Im-ple-men-tier
-ung in \T1/ppl/m/it/10.95 OpenCV \T1/ppl/m/n/10.95 siehe [[]]. 
- []
-
-<../pictures/MediaFlow.png, id=91, 497.60907pt x 133.24782pt>
+[26] [27 <../pictures/MediaFlow_0.png>] <../pictures/MediaFlow.png, id=97, 497.
+60907pt x 133.24782pt>
 File: ../pictures/MediaFlow.png Graphic file (type png)
 <use ../pictures/MediaFlow.png>
-Package pdftex.def Info: ../pictures/MediaFlow.png used on input line 89.
+Package pdftex.def Info: ../pictures/MediaFlow.png used on input line 90.
 (pdftex.def)             Requested size: 348.32397pt x 93.27283pt.
-
-Overfull \hbox (24.9737pt too wide) in paragraph at lines 95--97
-\T1/ppl/m/n/10.95 Punkt, gener-iert und mit einem ebenso erzeugten Patch des mö
-glicher-weise entsprechen-
- []
-
-[26]
-Overfull \hbox (2.9884pt too wide) in paragraph at lines 98--100
-\T1/ppl/m/n/10.95 den die Punkte ver-wor-fen, deren FB gröÿer als $\OML/zplm/m/
-it/10.95 median[]$ \T1/ppl/m/n/10.95 und deren Ähn-lichkeitswert
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[27 <../pictures/MediaFlow.png>]
-Overfull \hbox (0.62126pt too wide) in paragraph at lines 127--128
-\T1/ppl/m/n/10.95 Berech-nung der Tra-jek-to-rie fehlt. Aus diesem Grund ist ei
-ne Detection-Komponente
- []
-
-
-Overfull \hbox (13.40608pt too wide) in paragraph at lines 131--132
-[]\T1/ppl/m/n/10.95 Die Kaskade des De-tec-tors besteht aus drei Teilen, dem Va
-r-i-anz-fil-ter, dem \T1/ppl/m/it/10.95 Ensemble-
- []
-
-
-Overfull \hbox (6.7304pt too wide) in paragraph at lines 131--132
-\T1/ppl/m/it/10.95 Classifier \T1/ppl/m/n/10.95 und als let-zte In-stanz der \T
-1/ppl/m/it/10.95 NearestNeigbour-Classifier\T1/ppl/m/n/10.95 , die im fol-gen-d
-en einzeln
- []
-
-
-Overfull \hbox (10.36693pt too wide) in paragraph at lines 131--132
-\T1/ppl/m/n/10.95 mögliches ge-fun-denes Ob-jekt repräsen-tiert. Im Gegen-satz 
-zu vie-len an-deren Detector-
- []
-
-
-Overfull \hbox (15.00977pt too wide) in paragraph at lines 131--132
-\T1/ppl/m/n/10.95 Ansätzen, benöti-gen diese Im-ple-men-ta-tion keine offline-T
-rainingsdaten. Die Lernkom-
- []
-
-
-Overfull \hbox (2.94324pt too wide) in paragraph at lines 131--132
-\T1/ppl/m/n/10.95 po-nente, beste-hend aus Ensemble-Classifier und Nearest-Neig
-hbour-Classifier, wird
- []
-
 [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[29]
-Overfull \hbox (5.81189pt too wide) in paragraph at lines 163--164
-\T1/ppl/m/n/10.95 Aus der ini-tialen \T1/ppl/m/it/10.95 Bound-ing-Box \T1/ppl/m
-/n/10.95 wer-den alle möglichen Skalierun-gen und Ver-schiebun-
- []
+[29 <../pictures/MediaFlow.png>] [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Overfull \hbox (21.67816pt too wide) in paragraph at lines 163--164
-\T1/ppl/m/n/10.95 gung des so entste-hen-den Git-ters wer-den die fol-gen-den P
-a-ram-e-ter genutzt: Skalierungs-
- []
-
-[30] <../pictures/IntegralImage.png, id=109, 541.02126pt x 237.88875pt>
+[31] [32] <../pictures/IntegralImage.png, id=116, 541.02126pt x 237.88875pt>
 File: ../pictures/IntegralImage.png Graphic file (type png)
 <use ../pictures/IntegralImage.png>
-Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 210.
+Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 211.
 (pdftex.def)             Requested size: 378.7123pt x 166.52098pt.
-
-Overfull \hbox (7.22491pt too wide) in paragraph at lines 216--217
-\T1/ppl/m/n/10.95 Ob-jekte, die durch das Grid definiert sind, mit dem Var-i-an
-zw-ert des ak-tuellen Bound-
- []
-
-[31] [32 <../pictures/IntegralImage.png>] <../pictures/EnsembleBeispiel.jpg, id
-=119, 498.37392pt x 574.40196pt>
+[33] [34 <../pictures/IntegralImage.png>] <../pictures/EnsembleBeispiel.jpg, id
+=125, 498.37392pt x 574.40196pt>
 File: ../pictures/EnsembleBeispiel.jpg Graphic file (type jpg)
 <use ../pictures/EnsembleBeispiel.jpg>
 Package pdftex.def Info: ../pictures/EnsembleBeispiel.jpg used on input line 23
-7.
+8.
 (pdftex.def)             Requested size: 249.18634pt x 287.20027pt.
 
 Underfull \vbox (badness 7433) has occurred while \output is active []
 
-[33 <../pictures/EnsembleBeispiel.jpg>]
-Overfull \hbox (29.19025pt too wide) in paragraph at lines 259--260
-\T1/ppl/m/n/10.95 Kan-di-daten und damit die Verkleinerung des Suchraums. Das i
-m Fol-gen-den beschriebene
- []
-
-
-Overfull \hbox (30.865pt too wide) in paragraph at lines 262--263
-\T1/ppl/m/n/10.95 dieser Im-ple-men-ta-tion durch Berech-nung des (nor-mal-isie
-rten) Korrelations-Koeffizienten,
- []
-
-[34]
-Overfull \hbox (1.49776pt too wide) in paragraph at lines 293--294
-\T1/ppl/m/n/10.95 den, bilden die Aus-gabe der Detektor-Komponente. Typ-is-cher
--weise sind es mehrere
- []
-
-[35] [36]
-Overfull \hbox (8.92677pt too wide) in paragraph at lines 337--338
-[]\T1/ppl/m/n/10.95 Abbildung 8[] gibt einen Überblick der beteiligten Kom-po-n
-en-ten und deren Zusam-
- []
-
-<../pictures/PN_LEARNING.png, id=132, 818.30719pt x 496.10344pt>
+[35 <../pictures/EnsembleBeispiel.jpg>] [36] [37] [38] <../pictures/PN_LEARNING
+.png, id=139, 818.30719pt x 496.10344pt>
 File: ../pictures/PN_LEARNING.png Graphic file (type png)
 <use ../pictures/PN_LEARNING.png>
-Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 341.
+Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 342.
 (pdftex.def)             Requested size: 327.31708pt x 198.43785pt.
-
-Overfull \hbox (15.48697pt too wide) in paragraph at lines 352--353
-\T1/ppl/m/n/10.95 ein La-bel-raum und $\OML/zplm/m/it/10.95 y \OMS/zplm/m/n/10.
-95 2 \OML/zplm/m/it/10.95 Y$ \T1/ppl/m/n/10.95 ein La-bel. Eine Menge von Beisp
-ie-len $\OML/zplm/m/it/10.95 X$ \T1/ppl/m/n/10.95 und mit entsprechen-
- []
-
-
-Overfull \hbox (2.56989pt too wide) in paragraph at lines 355--356
-\T1/ppl/m/n/10.95 wer-den. Ini-tial-isierung durch bere-its gela-belte (also po
-s-i-tive und neg-a-tive Beispiele).
- []
-
-
-Overfull \hbox (4.18367pt too wide) in paragraph at lines 357--358
-[]\T1/ppl/m/n/10.95 In Schritt $\OML/zplm/m/it/10.95 k$ \T1/ppl/m/n/10.95 hat d
-er Klas-si-fizierer bere-its $\OML/zplm/m/it/10.95 k \OMS/zplm/m/n/10.95 ^^@ \O
-T1/ppl/m/n/10.95 1$ \T1/ppl/m/n/10.95 mal La-bels zu un-markierten Beispie-
- []
-
-[37] [38 <../pictures/PN_LEARNING.png>] <../pictures/PAP.png, id=140, 742.775pt
+[39] [40 <../pictures/PN_LEARNING.png>] <../pictures/PAP.png, id=146, 742.775pt
  x 365.365pt>
 File: ../pictures/PAP.png Graphic file (type png)
 <use ../pictures/PAP.png>
-Package pdftex.def Info: ../pictures/PAP.png used on input line 376.
+Package pdftex.def Info: ../pictures/PAP.png used on input line 377.
 (pdftex.def)             Requested size: 371.38658pt x 182.68205pt.
-[39]
-Overfull \hbox (21.9294pt too wide) in paragraph at lines 386--387
-\T1/ppl/m/n/10.95 die syn-thetis-chen pos-i-tiven Beispiele wer-den gener-iert 
-und der Lern-funk-tion übergeben.
- []
-
-[40 <../pictures/PAP.png>]) [41] [42
+[41] [42 <../pictures/PAP.png>]) [43] [44
 
 
 ]
 \openout2 = `chapter_4.aux'.
 
-(/Users/ronald/Documents/thesis/chapters/chapter_4.tex
-Overfull \hbox (0.98216pt too wide) in paragraph at lines 6--7
-\T1/ppl/m/n/10.95 Die Im-ple-men-tierung er-fol-gte in C++. Zusät-zlich wur-den
- OpenCV als un-ter-stützen-
- []
-
-<../pictures/Klassendiagrammvsd.jpg, id=153, 419.31656pt x 309.40594pt>
+(/Users/ronald/Documents/thesis/chapters/chapter_4.tex <../pictures/Klassendiag
+rammvsd.jpg, id=160, 419.31656pt x 309.40594pt>
 File: ../pictures/Klassendiagrammvsd.jpg Graphic file (type jpg)
 <use ../pictures/Klassendiagrammvsd.jpg>
 Package pdftex.def Info: ../pictures/Klassendiagrammvsd.jpg used on input line 
@@ -862,179 +624,109 @@ Overfull \hbox (18.13191pt too wide) in paragraph at lines 10--11
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 18.
 
-Overfull \hbox (0.97253pt too wide) in paragraph at lines 18--19
+Underfull \hbox (badness 1331) in paragraph at lines 18--19
 \T1/ppl/m/n/10.95 wird das Kamera- beziehnungsweise Video-bild Frame für Frame 
-ein-ge-le-sen. Auÿer-
+ein-ge-le-sen.
  []
 
-
-Overfull \hbox (28.34694pt too wide) in paragraph at lines 18--19
-\T1/ppl/m/n/10.95 dem er-folgt hier die Def-i-ni-tion des Ob-jekts und die Über
--gabe des näch-sten zu analysieren-
- []
-
-[43
+[45
 
  <../pictures/Klassendiagrammvsd.jpg>]
-Overfull \hbox (1.51979pt too wide) in paragraph at lines 24--25
+Underfull \hbox (badness 1308) in paragraph at lines 24--25
  \T1/ppl/b/n/10.95 Klasse \T1/ppl/b/it/10.95 Tracker[] \T1/ppl/m/n/10.95 Die Im
--ple-men-tierung des MedianFlow-Trackers ist in dieser Klasse
+-ple-men-tierung des MedianFlow-Trackers ist in dieser
  []
 
-
-Overfull \hbox (1.55168pt too wide) in paragraph at lines 33--34
-\T1/ppl/m/n/10.95 diese hat eine \T1/ppl/m/it/10.95 clas-sify()\T1/ppl/m/n/10.9
-5 -Methode, ve-fügt je-doch zusät-zlich über eine \T1/ppl/m/it/10.95 learn()\T1
-/ppl/m/n/10.95 -Methode,
- []
-
-[44]
-Overfull \hbox (8.26418pt too wide) in paragraph at lines 42--43
+[46]
+Underfull \hbox (badness 2205) in paragraph at lines 42--43
  \T1/ppl/b/n/10.95 Klasse \T1/ppl/b/it/10.95 Util-ity[] \T1/ppl/m/n/10.95 Diese
- Klasse liefert eine Reihe Klassen-meth-o-den für un-ter-schiedliche
+ Klasse liefert eine Reihe Klassen-meth-o-den für un-ter-
  []
 
-[45] <../pictures/kopter.jpg, id=165, 641.39626pt x 241.90375pt>
+[47] <../pictures/kopter.jpg, id=171, 641.39626pt x 241.90375pt>
 File: ../pictures/kopter.jpg Graphic file (type jpg)
 <use ../pictures/kopter.jpg>
 Package pdftex.def Info: ../pictures/kopter.jpg used on input line 53.
 (pdftex.def)             Requested size: 384.84071pt x 145.14336pt.
 
-LaTeX Warning: Reference `abb:Kopter' on page 46 undefined on input line 62.
+LaTeX Warning: Reference `abb:Kopter' on page 48 undefined on input line 62.
 
-[46 <../pictures/kopter.jpg>]
-Overfull \hbox (0.51207pt too wide) in paragraph at lines 70--71
-\T1/ppl/m/n/10.95 wie Än-derun-gen der Lichtver-hält-nisse, wech-sel-nde Be-we-
-gungs-geschwindi-gekeiten
- []
-
-
-Overfull \hbox (8.95433pt too wide) in paragraph at lines 72--73
-\T1/ppl/m/n/10.95 Evaluierungsse-quen-zen getestet wor-den ist, und es für den 
-speziellen Fall des Kopter-
- []
-
-) [47] [48
+[48 <../pictures/kopter.jpg>]) [49] [50
 
 
 ]
 \openout2 = `chapter_5.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_5.tex
-Overfull \hbox (4.55731pt too wide) in paragraph at lines 13--14
+Underfull \hbox (badness 1242) in paragraph at lines 13--14
 []\T1/ppl/m/n/10.95 Der Al-go-rith-mus findet ein Ob-jekt, ob-wohl keines er-wa
-rtet wurde,
+rtet
  []
 
-
-Overfull \hbox (9.43822pt too wide) in paragraph at lines 14--15
-[]\T1/ppl/m/n/10.95 Der Al-go-rith-mus findet kein Ob-jekt, ob-wohl eines er-wa
-rtet wurde,
- []
-
-[49
+[51
 
 ]
-Overfull \hbox (9.72134pt too wide) in paragraph at lines 29--30
-\T1/ppl/m/n/10.95 tun-gen der Szenerie durch Licht-Schatten-Wechsel wer-den dur
-ch die De-tec-torkaskade
+Underfull \hbox (badness 1783) in paragraph at lines 29--30
+\T1/ppl/m/n/10.95 Die natür-lich gegebe-nen Umwel-te-in-flüsse wie zum Beispiel
+ un-ter-schiedliche
  []
 
 
-Overfull \hbox (26.15724pt too wide) in paragraph at lines 32--33
+Underfull \hbox (badness 1701) in paragraph at lines 32--33
  \T1/ppl/b/n/10.95 De-tec-torkaskade[] \T1/ppl/m/n/10.95 Die let-zte Kom-po-nen
-te der De-tec-torkaskade, der Nearest-Neighbour-
+te der De-tec-torkaskade, der Nearest-
  []
 
-[50]
+[52]
 
-LaTeX Warning: Reference `abb:problem_tracker' on page 51 undefined on input li
+LaTeX Warning: Reference `abb:problem_tracker' on page 53 undefined on input li
 ne 38.
 
-
-Overfull \hbox (2.06215pt too wide) in paragraph at lines 42--43
-[]\T1/ppl/m/n/10.95 Abbildung 12[] verdeut-lich die ange-sproch-enen Fehler. Wä
-hrend in (a) die Berech-
- []
-
-
-Overfull \hbox (36.0448pt too wide) in paragraph at lines 42--43
-\T1/ppl/m/n/10.95 men, dass Be-w-er-tung der Detector-Box im-mer-noch schlechte
-r ist, als die des Trackingergeb-
- []
-
-<../pictures/problem_background_1.jpg, id=184, 796.4154pt x 213.9192pt>
+<../pictures/problem_background_1.jpg, id=190, 796.4154pt x 213.9192pt>
 File: ../pictures/problem_background_1.jpg Graphic file (type jpg)
 <use ../pictures/problem_background_1.jpg>
 Package pdftex.def Info: ../pictures/problem_background_1.jpg used on input lin
 e 46.
 (pdftex.def)             Requested size: 398.20673pt x 106.95934pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[51] <../pictures/problem_background_2.jpg, id=188, 796.4154pt x 213.9192pt>
+[53] <../pictures/problem_background_2.jpg, id=194, 796.4154pt x 213.9192pt>
 File: ../pictures/problem_background_2.jpg Graphic file (type jpg)
 <use ../pictures/problem_background_2.jpg>
 Package pdftex.def Info: ../pictures/problem_background_2.jpg used on input lin
 e 57.
 (pdftex.def)             Requested size: 398.20673pt x 106.95934pt.
-[52 <../pictures/problem_background_1.jpg> <../pictures/problem_background_2.jp
+[54 <../pictures/problem_background_1.jpg> <../pictures/problem_background_2.jp
 g>]
-Overfull \hbox (16.38832pt too wide) in paragraph at lines 95--96
-\T1/ppl/m/n/10.95 eben-falls möglich. Trackingim-ple-men-ta-tio-nen mit-tels \T
-1/ppl/m/it/10.95 Kalman-Filter \T1/ppl/m/n/10.95 [[]] oder \T1/ppl/m/it/10.95 P
-article-
- []
-
-
 Underfull \vbox (badness 1874) has occurred while \output is active []
 
-[53]
-Overfull \hbox (12.01419pt too wide) in paragraph at lines 102--103
-[]\T1/ppl/m/n/10.95 TLD ar-beitet prinzip-iell far-bun-ab-hängig, die Berech-nu
-ng er-folgt einzig auf Grauw-
- []
-
-) [54]
+[55]) [56]
 \openout2 = `chapter_6.aux'.
 
-(/Users/ronald/Documents/thesis/chapters/chapter_6.tex
-Overfull \hbox (5.5697pt too wide) in paragraph at lines 4--5
-\T1/ppl/m/n/10.95 Die \T1/ppl/m/it/10.95 Open Source Com-puter Vi-sion Li-brary
- \T1/ppl/m/n/10.95 OpenCV ist einen Bib-lio-thek mit einer Samm-
- []
-
-
-Overfull \hbox (5.47208pt too wide) in paragraph at lines 4--5
-\T1/ppl/m/n/10.95 Bild-ver-ar-beitung und des maschinellen Ler-nens im-ple-men-
-tiert und zur (meist) freien
- []
-
-<../pictures/GPU_Performance.png, id=198, 691.08188pt x 338.01282pt>
+(/Users/ronald/Documents/thesis/chapters/chapter_6.tex <../pictures/GPU_Perform
+ance.png, id=205, 691.08188pt x 338.01282pt>
 File: ../pictures/GPU_Performance.png Graphic file (type png)
 <use ../pictures/GPU_Performance.png>
 Package pdftex.def Info: ../pictures/GPU_Performance.png used on input line 9.
 (pdftex.def)             Requested size: 345.54008pt x 169.00598pt.
-[55
+[57
 
 
 
  <../pictures/GPU_Performance.png>]
-Overfull \hbox (34.70328pt too wide) in paragraph at lines 16--17
+Underfull \hbox (badness 1577) in paragraph at lines 16--17
 []\T1/ppl/m/n/10.95 Mit Hilfe eines Forground-Filters kann ein sich be-we-gen-d
-es Ob-jekt mit-tels Background-
+es Ob-jekt mit-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[56]
+[58]
 Underfull \vbox (badness 6125) has occurred while \output is active []
 
-[57]) [58]
+[59]) [60]
 \openout2 = `bibliography.aux'.
 
-(/Users/ronald/Documents/thesis/chapters/bibliography.tex [59
+(/Users/ronald/Documents/thesis/chapters/bibliography.tex [61
 
 
 
@@ -1044,7 +736,7 @@ Underfull \hbox (badness 1389) in paragraph at lines 38--39
 nd Track-ing
  []
 
-[60] [61]
+[62] [63]
 Underfull \hbox (badness 2790) in paragraph at lines 70--71
 []\T1/ppl/m/n/10.95 Gordon N.J., Salmond D.J. and Smith A.F.M., Novel ap-proach
  to
@@ -1052,22 +744,22 @@ Underfull \hbox (badness 2790) in paragraph at lines 70--71
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [62]
+) [64]
 Underfull \hbox (badness 1184) in paragraph at lines 96--97
 []\T1/ppl/m/n/10.95 K. Nigam, A. Mc-Cal-lum, S. Thrun, and T. Mitchell. Text cl
 as-si-fi-ca-
  []
 
-) [63] [64
+) [65] [66
 
 
 ]
 \openout2 = `declaration.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/declaration.tex
-Overfull \hbox (2.17613pt too wide) in paragraph at lines 7--8
-\T1/ppl/m/n/10.95 unter Ver-wen-dung der angegebe-nen Quellen und Hil-f-s-mit-t
-el ange-fer-tigt habe. Weit-
+Underfull \hbox (badness 1178) in paragraph at lines 7--8
+\T1/ppl/m/n/10.95 nur unter Ver-wen-dung der angegebe-nen Quellen und Hil-f-s-m
+it-tel ange-fer-tigt
  []
 
 
@@ -1075,7 +767,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) [65
+) [67
 
 ] (/Users/ronald/Documents/thesis/chapters/diplomarbeit.aux (/Users/ronald/Docu
 ments/thesis/chapters/firstpage.aux) (/Users/ronald/Documents/thesis/chapters/a
@@ -1090,10 +782,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6982 strings out of 493315
- 102758 string characters out of 6137903
- 190407 words of memory out of 5000000
- 10189 multiletter control sequences out of 15000+600000
+ 7000 strings out of 493315
+ 103094 string characters out of 6137903
+ 191886 words of memory out of 5000000
+ 10204 multiletter control sequences out of 15000+600000
  61260 words of font info for 130 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,20n,43p,1453b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1108,11 +800,11 @@ xmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dis
 t/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb>
-Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (65 
-pages, 3465714 bytes).
+Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (67 
+pages, 3466960 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
+ 277 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

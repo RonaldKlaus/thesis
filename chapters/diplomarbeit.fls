@@ -50,6 +50,8 @@ INPUT /usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hyphsubst.sty
+INPUT /usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hyphsubst.sty
 INPUT /usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2013/texmf-dist/tex/latex/caption/caption3.sty
