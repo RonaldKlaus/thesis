@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  14 DEC 2013 17:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  15 DEC 2013 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -478,25 +478,15 @@ Underfull \hbox (badness 4001) in paragraph at lines 26--27
 Leucht-dio-den
  []
 
-[12]
-
-LaTeX Warning: Reference `' on page 13 undefined on input line 30.
-
-<../pictures/TLD-Framework.jpg, id=45, 514.3215pt x 200.4288pt>
+[12] <../pictures/TLD-Framework.jpg, id=45, 514.3215pt x 200.4288pt>
 File: ../pictures/TLD-Framework.jpg Graphic file (type jpg)
 <use ../pictures/TLD-Framework.jpg>
 Package pdftex.def Info: ../pictures/TLD-Framework.jpg used on input line 33.
 (pdftex.def)             Requested size: 385.74019pt x 150.32121pt.
 
-Underfull \hbox (badness 3460) in paragraph at lines 37--38
-[]\T1/ppl/m/n/10.95 Als Im-ple-men-ta-tion-ssprache wird C++ gewählt, weil sie 
-auf-grund der
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 37--38
-\T1/ppl/m/n/10.95 Möglichkeit rel-a-tiv hard-ware-nah zu pro-gram-mieren, schne
-lle Pro-gramme er-
+Underfull \hbox (badness 1466) in paragraph at lines 37--38
+\T1/ppl/m/n/10.95 a-tiven Hard-warenähe schnelle Pro-gramme er-möglicht. Zusät-
+zlich ist durch
  []
 
 
@@ -521,26 +511,32 @@ t wer-den de-
 
 
 
-] [16] [17] [18]
-Underfull \hbox (badness 2809) in paragraph at lines 53--54
+]
+Underfull \hbox (badness 1024) in paragraph at lines 15--16
+\T1/ppl/m/n/10.95 Tracking. Jede hat ihre spez-i-fis-chen Eigen-schaften und wi
+rd je nach un-ter-
+ []
+
+[16] [17] [18]
+Underfull \hbox (badness 2809) in paragraph at lines 55--56
 []\T1/ppl/m/n/10.95 bilden Teile eines zusam-men-hän-gen-den Ob-jekts. Die
  []
 
 [19]
 
-LaTeX Warning: Citation `HCD' on page 20 undefined on input line 61.
+LaTeX Warning: Citation `HCD' on page 20 undefined on input line 63.
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 66--67
+Underfull \hbox (badness 1194) in paragraph at lines 68--69
 \T1/ppl/m/n/10.95 bei dem ein Bild von einem Ref-erenz-bild (Back-ground Model)
  ``sub-trahiert''
  []
 
 
-LaTeX Warning: Citation `IIM' on page 20 undefined on input line 69.
+LaTeX Warning: Citation `IIM' on page 20 undefined on input line 71.
 
 [20] [21]
-Underfull \hbox (badness 1688) in paragraph at lines 101--102
+Underfull \hbox (badness 1688) in paragraph at lines 103--104
  \T1/ppl/b/n/10.95 Su-per-vised Learn-ing[] \T1/ppl/m/n/10.95 Überwachtes Ler-n
 en. Man gibt Beispiele mit einem
  []
@@ -730,27 +726,21 @@ Underfull \vbox (badness 6125) has occurred while \output is active []
 
 
 
-]
-Underfull \hbox (badness 1389) in paragraph at lines 38--39
-[]\T1/ppl/m/n/10.95 N. Dow-son and R. Bow-den, ^^PSi-mul-ta-ne-ous Mod-el-ing a
-nd Track-ing
+] [62] [63]
+Underfull \hbox (badness 7433) in paragraph at lines 69--70
+[]\T1/ppl/m/n/10.95 Gordon N.J., Salmond D.J., Smith A.F.M., ``Novel ap-proach 
+to
  []
 
-[62] [63]
-Underfull \hbox (badness 2790) in paragraph at lines 70--71
-[]\T1/ppl/m/n/10.95 Gordon N.J., Salmond D.J. and Smith A.F.M., Novel ap-proach
- to
+
+Underfull \hbox (badness 1389) in paragraph at lines 69--70
+\T1/ppl/m/n/10.95 nonlinear/non-Gaussian Bayesian state es-ti-ma-tion.'' \T1/pp
+l/m/it/10.95 IEE-Proceedings-F\T1/ppl/m/n/10.95 ,
  []
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [64]
-Underfull \hbox (badness 1184) in paragraph at lines 96--97
-[]\T1/ppl/m/n/10.95 K. Nigam, A. Mc-Cal-lum, S. Thrun, and T. Mitchell. Text cl
-as-si-fi-ca-
- []
-
-) [65] [66
+) [64]) [65] [66
 
 
 ]
@@ -782,10 +772,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7000 strings out of 493315
- 103094 string characters out of 6137903
- 191886 words of memory out of 5000000
- 10204 multiletter control sequences out of 15000+600000
+ 7002 strings out of 493315
+ 103107 string characters out of 6137903
+ 190901 words of memory out of 5000000
+ 10206 multiletter control sequences out of 15000+600000
  61260 words of font info for 130 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,20n,43p,1453b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -801,7 +791,7 @@ t/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb>
 Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (67 
-pages, 3466960 bytes).
+pages, 3467810 bytes).
 PDF statistics:
  277 PDF objects out of 1000 (max. 8388607)
  182 compressed objects within 2 object streams
