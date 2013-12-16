@@ -45,17 +45,17 @@ Letzendlich entscheidet das Einsatzgebiet, die Art der zu verfolgenden Objekten 
 Allerdings haben die meisten Tracker eines gemein: Sie versagen, wenn das Objekt kurzzeitig nicht mehr sichtbar ist, also entweder den Bildbereich verlässt oder zu stark durch ein anderes Objekt verdeckt wird. Tracker, die Informationen aus der bereits erzeugten Trajektorie für die Berechnung verarbeiten, wie die bereits genannten Kalman-Filter oder Particle-Filter, können solche kurzzeitigen Informationsverluste kompensieren, der in TLD verwendete LKT jedoch nicht. Zusätzlich neigen sie meist zum Drift. Sie verlieren im Laufe der Abarbeitungszeit ihren Fokus und müssen reinitialisiert werden.
 
 \subsection{Object Detection}
-Object Detection ist das Finden eines Objekts in einem Bild beziehungsweise einer Bildsequenz. Grundlage bildet hier vor allem die Repräsentation des Objekts im Speicher und die damit verbundene Suchlogik. Im Laufe der letzten Jahre sind unterschiedliche Repräsentationen entwickelt und untersucht worden \cite{OTS}:
+Object Detection ist das Finden eines Objekts in einem Bild beziehungsweise einer Bildsequenz. Grundlage bildet hier vor allem die Repräsentation des Objekts im Speicher und die damit verbundene Suchlogik. Im Laufe der letzten Jahre sind unterschiedliche Objektdarstellungen entwickelt und untersucht worden \cite{OTS}:
 
 \begin{description}
 \item [{Punkte}] oder auch nur ein Punkt, der Centroid, repräsentieren das Objekt, was besonders für kleine Objekte in einem Bild nützlich ist.
-\item [{Rechtecke}] oder Ellipsen, also zweidimensionale geometrische Figuren bilden das Objekt und bilden Grundlage vor allem für die Berechnung von Transformationen des gesuchten Objekts, um entsprechende Änderungen zu modellieren.
+\item [{Rechtecke}] oder Ellipsen, also zweidimensionale geometrische Figuren bilden das Objekt und die Grundlage vor allem für die Berechnung von Transformationen des gesuchten Objekts, um Änderungen zu modellieren.
 \item [{Silhouetten}] und Konturen bilden die Begrenzung des Objekts, und werden vor allem bei der Detektion von komplexen Objekten genutzt.
 \item [{Patches}] des Objekts, die als Templates für die Suche dienen.
 \item [{Multi-Shape-Patches}] bilden Teile eines zusammenhängenden Objekts. Die Verbindungen können durch unterschiedliche Verfahren, wie z.B. kinetic motion models, berechnet werden.
 \end{description}
 
-Alle genannten und ungenannte Repräsentationsverfahren werden in der Praxis eingesetzt, auch in Kombination untereinander. Die große Herausforderung besteht nun vor allem im Segmentieren des Objekts in der gewählten Repräsentationen. Je nach Anwendungsfall ist eine solche Berechnung technisch einfach oder kompliziert zu realisieren. Einige Verfahren werden nun kurz vorgestellt.
+Alle genannten und ungenannte Repräsentationsverfahren werden in der Praxis einzeln oder in Kombination eingesetzt. Die große Herausforderung besteht vor allem im Segmentieren des Objekts in der gewählten Repräsentationen. Je nach Anwendungsfall ist eine solche Berechnung technisch einfach oder kompliziert zu realisieren. Einige Verfahren werden nun kurz vorgestellt.
 
 \subsubsection{Interest Points Detectors}
 Für die Detection von Punkten kommen nur solche in Frage, die zum Einen hoch repräsentativ für das Objekt und zum Anderen signifikant unterschiedlich zu anderen Punkten im Bild sind. Dazu gehören beispielsweise Eckpunkte. Wegweisend auf diesem Gebiet ist Moravecs Arbeit von 1977 \cite{OAN}. Die Idee bei Moravec ist die Berechnung der Gradienten in einem Vectorfeld, genauer die quadratischen Gradientensumme für einen Pixelwert innerhalb eines Bereichs $\Omega$ um diesen Pixel.
