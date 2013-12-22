@@ -265,6 +265,12 @@ INPUT /usr/local/texlive/2013/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
 INPUT /Users/ronald/Documents/thesis/chapters/../pictures/TLD-Framework.jpg
 INPUT ../pictures/TLD-Framework.jpg
 INPUT ../pictures/TLD-Framework.jpg
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/adobe/palatino/pplro8t.tfm
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/adobe/palatino/pplbo8t.tfm
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/vf/adobe/palatino/pplbo8t.vf
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/adobe/palatino/pplbo8r.tfm
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/vf/adobe/palatino/pplro8t.vf
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/tfm/adobe/palatino/pplro8r.tfm
 OUTPUT /Users/ronald/Documents/thesis/chapters/chapter_2.aux
 INPUT /Users/ronald/Documents/thesis/chapters/chapter_2.tex
 INPUT /Users/ronald/Documents/thesis/chapters/chapter_2.tex
@@ -406,6 +412,8 @@ INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb
+INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
 INPUT /usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb

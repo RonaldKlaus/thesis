@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  15 DEC 2013 16:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  22 DEC 2013 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -249,19 +249,19 @@ s/thesis/chapters/chapter_6.aux) (/Users/ronald/Documents/thesis/chapters/bibli
 ography.aux) (/Users/ronald/Documents/thesis/chapters/declaration.aux))
 \openout1 = `diplomarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 53.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -431,7 +431,7 @@ sichtlich
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 58.
 (/Users/ronald/Documents/thesis/chapters/diplomarbeit.lof
 Underfull \hbox (badness 1881) in paragraph at lines 10--10
  [][] []\T1/ppl/m/n/10.95 Klassendiagramm zur Im-ple-men-ta-tion mit den wichti
@@ -473,9 +473,9 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 
 
 ]
-Underfull \hbox (badness 4001) in paragraph at lines 26--27
-[]\T1/ppl/m/n/10.95 Die Kopter er-hal-ten keine zusätlichen Kom-po-nen-ten wie 
-Leucht-dio-den
+Underfull \hbox (badness 2547) in paragraph at lines 26--27
+[]\T1/ppl/m/n/10.95 Die Kopter er-hal-ten keine zusät-zlichen Kom-po-nen-ten wi
+e Leucht-dio-den
  []
 
 [12] <../pictures/TLD-Framework.jpg, id=45, 514.3215pt x 200.4288pt>
@@ -483,6 +483,8 @@ File: ../pictures/TLD-Framework.jpg Graphic file (type jpg)
 <use ../pictures/TLD-Framework.jpg>
 Package pdftex.def Info: ../pictures/TLD-Framework.jpg used on input line 33.
 (pdftex.def)             Requested size: 385.74019pt x 150.32121pt.
+LaTeX Font Info:    Font shape `T1/ppl/bx/sl' in size <10> not available
+(Font)              Font shape `T1/ppl/b/sl' tried instead on input line 33.
 
 Underfull \hbox (badness 1466) in paragraph at lines 37--38
 \T1/ppl/m/n/10.95 a-tiven Hard-warenähe schnelle Pro-gramme er-möglicht. Zusät-
@@ -490,7 +492,7 @@ zlich ist durch
  []
 
 
-Underfull \vbox (badness 1163) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [13 <../pictures/TLD-Framework.jpg>]) [14]
 \openout2 = `chapter_2.aux'.
@@ -552,7 +554,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <8> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
 [25
 
-] <../pictures/MediaFlow_0.png, id=90, 478.78876pt x 132.495pt>
+] <../pictures/MediaFlow_0.png, id=92, 478.78876pt x 132.495pt>
 File: ../pictures/MediaFlow_0.png Graphic file (type png)
 <use ../pictures/MediaFlow_0.png>
 Package pdftex.def Info: ../pictures/MediaFlow_0.png used on input line 41.
@@ -560,7 +562,7 @@ Package pdftex.def Info: ../pictures/MediaFlow_0.png used on input line 41.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[26] [27 <../pictures/MediaFlow_0.png>] <../pictures/MediaFlow.png, id=97, 497.
+[26] [27 <../pictures/MediaFlow_0.png>] <../pictures/MediaFlow.png, id=99, 497.
 60907pt x 133.24782pt>
 File: ../pictures/MediaFlow.png Graphic file (type png)
 <use ../pictures/MediaFlow.png>
@@ -572,13 +574,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [29 <../pictures/MediaFlow.png>] [30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[31] [32] <../pictures/IntegralImage.png, id=116, 541.02126pt x 237.88875pt>
+[31] [32] <../pictures/IntegralImage.png, id=118, 541.02126pt x 237.88875pt>
 File: ../pictures/IntegralImage.png Graphic file (type png)
 <use ../pictures/IntegralImage.png>
 Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 211.
 (pdftex.def)             Requested size: 378.7123pt x 166.52098pt.
 [33] [34 <../pictures/IntegralImage.png>] <../pictures/EnsembleBeispiel.jpg, id
-=125, 498.37392pt x 574.40196pt>
+=127, 498.37392pt x 574.40196pt>
 File: ../pictures/EnsembleBeispiel.jpg Graphic file (type jpg)
 <use ../pictures/EnsembleBeispiel.jpg>
 Package pdftex.def Info: ../pictures/EnsembleBeispiel.jpg used on input line 23
@@ -588,12 +590,12 @@ Package pdftex.def Info: ../pictures/EnsembleBeispiel.jpg used on input line 23
 Underfull \vbox (badness 7433) has occurred while \output is active []
 
 [35 <../pictures/EnsembleBeispiel.jpg>] [36] [37] [38] <../pictures/PN_LEARNING
-.png, id=139, 818.30719pt x 496.10344pt>
+.png, id=141, 818.30719pt x 496.10344pt>
 File: ../pictures/PN_LEARNING.png Graphic file (type png)
 <use ../pictures/PN_LEARNING.png>
 Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 342.
 (pdftex.def)             Requested size: 327.31708pt x 198.43785pt.
-[39] [40 <../pictures/PN_LEARNING.png>] <../pictures/PAP.png, id=146, 742.775pt
+[39] [40 <../pictures/PN_LEARNING.png>] <../pictures/PAP.png, id=148, 742.775pt
  x 365.365pt>
 File: ../pictures/PAP.png Graphic file (type png)
 <use ../pictures/PAP.png>
@@ -606,7 +608,7 @@ Package pdftex.def Info: ../pictures/PAP.png used on input line 377.
 \openout2 = `chapter_4.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_4.tex <../pictures/Klassendiag
-rammvsd.jpg, id=160, 419.31656pt x 309.40594pt>
+rammvsd.jpg, id=162, 419.31656pt x 309.40594pt>
 File: ../pictures/Klassendiagrammvsd.jpg Graphic file (type jpg)
 <use ../pictures/Klassendiagrammvsd.jpg>
 Package pdftex.def Info: ../pictures/Klassendiagrammvsd.jpg used on input line 
@@ -639,7 +641,7 @@ Underfull \hbox (badness 2205) in paragraph at lines 42--43
  Klasse liefert eine Reihe Klassen-meth-o-den für un-ter-
  []
 
-[47] <../pictures/kopter.jpg, id=171, 641.39626pt x 241.90375pt>
+[47] <../pictures/kopter.jpg, id=173, 641.39626pt x 241.90375pt>
 File: ../pictures/kopter.jpg Graphic file (type jpg)
 <use ../pictures/kopter.jpg>
 Package pdftex.def Info: ../pictures/kopter.jpg used on input line 53.
@@ -678,13 +680,13 @@ te der De-tec-torkaskade, der Nearest-
 LaTeX Warning: Reference `abb:problem_tracker' on page 53 undefined on input li
 ne 38.
 
-<../pictures/problem_background_1.jpg, id=190, 796.4154pt x 213.9192pt>
+<../pictures/problem_background_1.jpg, id=192, 796.4154pt x 213.9192pt>
 File: ../pictures/problem_background_1.jpg Graphic file (type jpg)
 <use ../pictures/problem_background_1.jpg>
 Package pdftex.def Info: ../pictures/problem_background_1.jpg used on input lin
 e 46.
 (pdftex.def)             Requested size: 398.20673pt x 106.95934pt.
-[53] <../pictures/problem_background_2.jpg, id=194, 796.4154pt x 213.9192pt>
+[53] <../pictures/problem_background_2.jpg, id=196, 796.4154pt x 213.9192pt>
 File: ../pictures/problem_background_2.jpg Graphic file (type jpg)
 <use ../pictures/problem_background_2.jpg>
 Package pdftex.def Info: ../pictures/problem_background_2.jpg used on input lin
@@ -698,7 +700,7 @@ Underfull \vbox (badness 1874) has occurred while \output is active []
 \openout2 = `chapter_6.aux'.
 
 (/Users/ronald/Documents/thesis/chapters/chapter_6.tex <../pictures/GPU_Perform
-ance.png, id=205, 691.08188pt x 338.01282pt>
+ance.png, id=207, 691.08188pt x 338.01282pt>
 File: ../pictures/GPU_Performance.png Graphic file (type png)
 <use ../pictures/GPU_Performance.png>
 Package pdftex.def Info: ../pictures/GPU_Performance.png used on input line 9.
@@ -772,11 +774,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7002 strings out of 493315
- 103107 string characters out of 6137903
- 190901 words of memory out of 5000000
- 10206 multiletter control sequences out of 15000+600000
- 61260 words of font info for 130 fonts, out of 8000000 for 9000
+ 7009 strings out of 493315
+ 103178 string characters out of 6137903
+ 190945 words of memory out of 5000000
+ 10209 multiletter control sequences out of 15000+600000
+ 64458 words of font info for 134 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,20n,43p,1453b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -787,14 +789,16 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/201
 3/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2013/te
 xmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dis
-t/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
-/urw/palatino/uplri8a.pfb>
+t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
+/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/urw/palatino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/pa
+latino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/
+uplri8a.pfb>
 Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (67 
-pages, 3467810 bytes).
+pages, 3501299 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
+ 285 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

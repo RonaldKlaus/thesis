@@ -13,7 +13,7 @@
 \contentsline {subsubsection}{\numberline {2.1.2}Kernel-Tracking}{17}
 \contentsline {subsubsection}{\numberline {2.1.3}Silhouette-Tracking}{18}
 \contentsline {subsection}{\numberline {2.2}Object Detection}{19}
-\contentsline {subsubsection}{\numberline {2.2.1}Interest Points Detectors}{20}
+\contentsline {subsubsection}{\numberline {2.2.1}Interest Points Detectors}{19}
 \contentsline {subsubsection}{\numberline {2.2.2}Background Substraction}{20}
 \contentsline {subsubsection}{\numberline {2.2.3}Methoden}{20}
 \contentsline {subsection}{\numberline {2.3}Maschinelles Lernen}{21}
@@ -65,7 +65,7 @@
 \contentsline {subsection}{\numberline {5.3}Auswertungen und Beobachtungen}{52}
 \contentsline {paragraph}{Detectorkaskade}{52}
 \contentsline {paragraph}{MedianFlow Tracker}{53}
-\contentsline {subsection}{\numberline {5.4}Modikfikationen und Verbesserungsvorschl\IeC {\"a}ge}{54}
+\contentsline {subsection}{\numberline {5.4}Modifikationen und Verbesserungsvorschl\IeC {\"a}ge}{54}
 \contentsline {paragraph}{Detectorkaskade}{55}
 \contentsline {paragraph}{MedianFlow Tracker}{55}
 \contentsline {paragraph}{Allgemein}{56}

@@ -30,6 +30,12 @@
 %\renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
 \fancyfoot[C]{\thepage} %Seitennummer
 \renewcommand{\footrulewidth}{0.4pt} %untere Trennlinie
+%Abbildungsunterschrift ändern
+%\usepackage[bf]{caption2}
+\renewcommand{\captionfont}{\small\slshape}
+\renewcommand{\figurename}{Abb.}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\makeatletter \@addtoreset{figure}{section} \makeatother
 %\PassOptionsToPackage{normalem}{ulem}
 %\usepackage{microtype}
 %\usepackage[english, ngerman]{babel}
