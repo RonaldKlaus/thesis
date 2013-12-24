@@ -9,12 +9,12 @@
 \contentsline {paragraph}{Anhang}{14}
 \contentsline {section}{\numberline {2}Verwandte Themen }{15}
 \contentsline {subsection}{\numberline {2.1}Object Tracking}{15}
-\contentsline {subsubsection}{\numberline {2.1.1}Point Tracking}{16}
+\contentsline {subsubsection}{\numberline {2.1.1}Point-Tracking}{16}
 \contentsline {subsubsection}{\numberline {2.1.2}Kernel-Tracking}{17}
 \contentsline {subsubsection}{\numberline {2.1.3}Silhouette-Tracking}{18}
 \contentsline {subsection}{\numberline {2.2}Object Detection}{19}
-\contentsline {subsubsection}{\numberline {2.2.1}Interest Points Detectors}{19}
-\contentsline {subsubsection}{\numberline {2.2.2}Background Substraction}{20}
+\contentsline {subsubsection}{\numberline {2.2.1}Interest Points Detectors}{20}
+\contentsline {subsubsection}{\numberline {2.2.2}Background Subtraction}{20}
 \contentsline {subsubsection}{\numberline {2.2.3}Methoden}{20}
 \contentsline {subsection}{\numberline {2.3}Maschinelles Lernen}{21}
 \contentsline {subsubsection}{\numberline {2.3.1}Methoden}{21}

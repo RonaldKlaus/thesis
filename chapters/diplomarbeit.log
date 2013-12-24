@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  23 DEC 2013 07:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  24 DEC 2013 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -498,9 +498,9 @@ Hex-akopter
  []
 
 
-Underfull \hbox (badness 3019) in paragraph at lines 4--5
+Underfull \hbox (badness 2343) in paragraph at lines 4--5
 \T1/ppl/m/n/10.95 beschäfti-gen, gibt es derzeit kaum. Im fol-gen-den Ab-schnit
-t wer-den de-
+t wer-den des-
  []
 
 [15
@@ -508,31 +508,24 @@ t wer-den de-
 
 
 ]
-Underfull \hbox (badness 1024) in paragraph at lines 15--16
+Underfull \hbox (badness 1024) in paragraph at lines 13--14
 \T1/ppl/m/n/10.95 Tracking. Jede hat ihre spez-i-fis-chen Eigen-schaften und wi
 rd je nach un-ter-
  []
 
 [16] [17] [18]
-Underfull \hbox (badness 2809) in paragraph at lines 55--56
+Underfull \hbox (badness 2809) in paragraph at lines 53--54
 []\T1/ppl/m/n/10.95 bilden Teile eines zusam-men-hän-gen-den Ob-jekts. Die
  []
 
 [19]
-
-LaTeX Warning: Citation `HCD' on page 20 undefined on input line 63.
-
-
-Underfull \hbox (badness 1194) in paragraph at lines 68--69
+Underfull \hbox (badness 1194) in paragraph at lines 66--67
 \T1/ppl/m/n/10.95 bei dem ein Bild von einem Ref-erenz-bild (Back-ground Model)
  ``sub-trahiert''
  []
 
-
-LaTeX Warning: Citation `IIM' on page 20 undefined on input line 71.
-
 [20] [21]
-Underfull \hbox (badness 1688) in paragraph at lines 103--104
+Underfull \hbox (badness 1688) in paragraph at lines 101--102
  \T1/ppl/b/n/10.95 Su-per-vised Learn-ing[] \T1/ppl/m/n/10.95 Überwachtes Ler-n
 en. Man gibt Beispiele mit einem
  []
@@ -770,7 +763,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  7009 strings out of 493315
  103178 string characters out of 6137903
- 190950 words of memory out of 5000000
+ 191960 words of memory out of 5000000
  10209 multiletter control sequences out of 15000+600000
  64458 words of font info for 134 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -789,7 +782,7 @@ t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
 latino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/
 uplri8a.pfb>
 Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (67 
-pages, 3502768 bytes).
+pages, 3502935 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams
