@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  24 DEC 2013 12:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  25 DEC 2013 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,29 +564,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [31] [32] <../pictures/IntegralImage.png, id=118, 541.02126pt x 237.88875pt>
 File: ../pictures/IntegralImage.png Graphic file (type png)
 <use ../pictures/IntegralImage.png>
-Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 211.
+Package pdftex.def Info: ../pictures/IntegralImage.png used on input line 209.
 (pdftex.def)             Requested size: 378.7123pt x 166.52098pt.
 [33] [34 <../pictures/IntegralImage.png>] <../pictures/EnsembleBeispiel.jpg, id
 =127, 498.37392pt x 574.40196pt>
 File: ../pictures/EnsembleBeispiel.jpg Graphic file (type jpg)
 <use ../pictures/EnsembleBeispiel.jpg>
 Package pdftex.def Info: ../pictures/EnsembleBeispiel.jpg used on input line 23
-8.
+6.
 (pdftex.def)             Requested size: 249.18634pt x 287.20027pt.
+[35 <../pictures/EnsembleBeispiel.jpg>]
+Underfull \hbox (badness 1418) in paragraph at lines 258--259
+\T1/ppl/m/n/10.95 Kan-di-daten und damit der Verkleinerung des Suchraums. Das i
+m Fol-gen-
+ []
 
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-[35 <../pictures/EnsembleBeispiel.jpg>] [36] [37] [38] <../pictures/PN_LEARNING
-.png, id=141, 818.30719pt x 496.10344pt>
+[36] [37] [38] <../pictures/PN_LEARNING.png, id=141, 818.30719pt x 496.10344pt>
 File: ../pictures/PN_LEARNING.png Graphic file (type png)
 <use ../pictures/PN_LEARNING.png>
-Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 342.
+Package pdftex.def Info: ../pictures/PN_LEARNING.png used on input line 340.
 (pdftex.def)             Requested size: 327.31708pt x 198.43785pt.
 [39] [40 <../pictures/PN_LEARNING.png>] <../pictures/PAP.png, id=148, 742.775pt
  x 365.365pt>
 File: ../pictures/PAP.png Graphic file (type png)
 <use ../pictures/PAP.png>
-Package pdftex.def Info: ../pictures/PAP.png used on input line 377.
+Package pdftex.def Info: ../pictures/PAP.png used on input line 375.
 (pdftex.def)             Requested size: 371.38658pt x 182.68205pt.
 [41] [42 <../pictures/PAP.png>]) [43] [44
 
@@ -767,7 +769,7 @@ Here is how much of TeX's memory you used:
  10209 multiletter control sequences out of 15000+600000
  64458 words of font info for 134 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,20n,43p,1453b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,20n,43p,1451b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -782,7 +784,7 @@ t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
 latino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/
 uplri8a.pfb>
 Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (67 
-pages, 3502935 bytes).
+pages, 3502596 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams

@@ -23,13 +23,13 @@
 \contentsline {section}{\numberline {3}Tracking Learning Detection - TLD}{25}
 \contentsline {subsection}{\numberline {3.1}Algorithmus}{25}
 \contentsline {subsection}{\numberline {3.2}Tracking}{26}
-\contentsline {subsubsection}{\numberline {3.2.1}Der optischen Flusses und der Lucas-Kanade-Algorithmus}{27}
+\contentsline {subsubsection}{\numberline {3.2.1}Der optische Fluss und der Lucas-Kanade-Algorithmus}{27}
 \contentsline {subsubsection}{\numberline {3.2.2}FB, NCC und Median Flow Tracker}{28}
 \contentsline {subsection}{\numberline {3.3}Detection}{30}
 \contentsline {subsubsection}{\numberline {3.3.1}Objekt-Modell}{32}
 \contentsline {subsubsection}{\numberline {3.3.2}Sliding-Window}{32}
 \contentsline {subsubsection}{\numberline {3.3.3}Varianzfilter}{32}
-\contentsline {subsubsection}{\numberline {3.3.4}Ensemble-Classifier}{34}
+\contentsline {subsubsection}{\numberline {3.3.4}Ensemble Classifier}{34}
 \contentsline {paragraph}{Random Ferns}{34}
 \contentsline {subsubsection}{\numberline {3.3.5}Template-Matching und Nearest-Neighbour-Classifier}{36}
 \contentsline {paragraph}{Template-Matching}{36}
