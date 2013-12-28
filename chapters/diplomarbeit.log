@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  25 DEC 2013 14:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  28 DEC 2013 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -638,7 +638,19 @@ Package pdftex.def Info: ../pictures/kopter.jpg used on input line 53.
 
 LaTeX Warning: Reference `abb:Kopter' on page 48 undefined on input line 62.
 
-[48 <../pictures/kopter.jpg>]) [49] [50
+[48 <../pictures/kopter.jpg>]
+Underfull \hbox (badness 1168) in paragraph at lines 75--76
+\T1/ppl/m/n/10.95 Da Videose-quen-zen nur be-d-ingt für die Ver-feinerung eines
+ Mod-els geeignet
+ []
+
+
+Underfull \hbox (badness 5832) in paragraph at lines 75--76
+\T1/ppl/m/n/10.95 sind, wur-den zusät-zlich Kam-erase-quen-zen genutzt. Dadurch
+ kann auf
+ []
+
+) [49] [50
 
 
 ]
@@ -763,10 +775,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7009 strings out of 493315
- 103178 string characters out of 6137903
- 191960 words of memory out of 5000000
- 10209 multiletter control sequences out of 15000+600000
+ 7010 strings out of 493315
+ 103193 string characters out of 6137903
+ 190971 words of memory out of 5000000
+ 10210 multiletter control sequences out of 15000+600000
  64458 words of font info for 134 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,20n,43p,1451b,621s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -784,7 +796,7 @@ t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
 latino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/
 uplri8a.pfb>
 Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (67 
-pages, 3502596 bytes).
+pages, 3503285 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams

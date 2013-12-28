@@ -50,9 +50,9 @@
 \contentsline {paragraph}{Klasse \textit {TLD}}{46}
 \contentsline {paragraph}{Klasse \textit {Tracker}}{46}
 \contentsline {paragraph}{Klasse \textit {Detector}}{46}
-\contentsline {paragraph}{Klasse \textit {VarianceClassifier}}{46}
-\contentsline {paragraph}{Klasse \textit {EnsembleClassifier}}{47}
-\contentsline {paragraph}{Klasse \textit {NearestNeigbourClassifier}}{47}
+\contentsline {paragraph}{Klasse \textit {Variance Classifier}}{46}
+\contentsline {paragraph}{Klasse \textit {Ensemble Classifier}}{47}
+\contentsline {paragraph}{Klasse \textit {NearestNeigbour Classifier}}{47}
 \contentsline {paragraph}{Klasse \textit {Result}}{47}
 \contentsline {paragraph}{Klasse \textit {Utility}}{47}
 \contentsline {paragraph}{Zus\IeC {\"a}tzliche Angaben}{47}

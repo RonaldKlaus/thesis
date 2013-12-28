@@ -9,6 +9,7 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Zusammenspiel der Komponenten im Programmablaufplan\relax }}{42}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Klassendiagramm zur Implementation mit den wichtigsten Attributen und Methoden\relax }}{45}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Das repr\IeC {\"a}sentative Koptermodell MINI-QUADROCOPTER QG 550 XS f\IeC {\"u}r die Durchf\IeC {\"u}hrung aller Tests.\relax }}{48}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Die Sequenzen als Datens\IeC {\"a}tze. BESCHREIBUNGEN\relax }}{49}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Trackingprobleme bei zu hoher Informationsdichte des Hintergrunds.\relax }}{54}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Trackingprobleme bei Teilmarkierung des gesuchten Objekts.\relax }}{54}
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Tesla C2050 versus Core i5-760 2.8Ghz, SSE, TBB \cite {OCW}\relax }}{57}
