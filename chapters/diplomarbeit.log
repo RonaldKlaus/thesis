@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  28 DEC 2013 13:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.11.25)  28 DEC 2013 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -665,37 +665,43 @@ rtet
 [51
 
 ]
-Underfull \hbox (badness 1783) in paragraph at lines 29--30
-\T1/ppl/m/n/10.95 Die natür-lich gegebe-nen Umwel-te-in-flüsse wie zum Beispiel
- un-ter-schiedliche
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 32--33
- \T1/ppl/b/n/10.95 De-tec-torkaskade[] \T1/ppl/m/n/10.95 Die let-zte Kom-po-nen
-te der De-tec-torkaskade, der Nearest-
+Underfull \hbox (badness 1178) in paragraph at lines 30--31
+ \T1/ppl/b/n/10.95 De-tek-torkaskade[] \T1/ppl/m/n/10.95 Die let-zte Kom-po-nen
+te der De-tek-torkaskade, der Near-est-
  []
 
 [52]
 
 LaTeX Warning: Reference `abb:problem_tracker' on page 53 undefined on input li
-ne 38.
+ne 35.
 
 <../pictures/problem_background_1.jpg, id=192, 796.4154pt x 213.9192pt>
 File: ../pictures/problem_background_1.jpg Graphic file (type jpg)
 <use ../pictures/problem_background_1.jpg>
 Package pdftex.def Info: ../pictures/problem_background_1.jpg used on input lin
-e 46.
+e 43.
 (pdftex.def)             Requested size: 398.20673pt x 106.95934pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [53] <../pictures/problem_background_2.jpg, id=196, 796.4154pt x 213.9192pt>
 File: ../pictures/problem_background_2.jpg Graphic file (type jpg)
 <use ../pictures/problem_background_2.jpg>
 Package pdftex.def Info: ../pictures/problem_background_2.jpg used on input lin
-e 57.
+e 54.
 (pdftex.def)             Requested size: 398.20673pt x 106.95934pt.
+
+Underfull \hbox (badness 1603) in paragraph at lines 85--86
+\T1/ppl/m/n/10.95 einen For-ground Fil-ter, der allerd-ings in dieser Ar-beit s
+icher-lich sig-nifikan-
+ []
+
 [54 <../pictures/problem_background_1.jpg> <../pictures/problem_background_2.jp
 g>]
-Underfull \vbox (badness 1874) has occurred while \output is active []
+Underfull \hbox (badness 1024) in paragraph at lines 94--95
+[]\T1/ppl/m/n/10.95 Neben dem Er-set-zen des Me-di-an-Flow Track-ers kön-nte ei
+n vol-lkommener
+ []
 
 [55]) [56]
 \openout2 = `chapter_6.aux'.
@@ -796,7 +802,7 @@ t/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
 latino/uplr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/palatino/
 uplri8a.pfb>
 Output written on /Users/ronald/Documents/thesis/chapters/diplomarbeit.pdf (67 
-pages, 3503285 bytes).
+pages, 3503421 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams
